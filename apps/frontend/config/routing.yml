@@ -1,7 +1,7 @@
 # default rules
 homepage:
   url:   /
-  param: { module: home, action: index }
+  param: { module: home, action: login }
 
 #default_symfony:
 #  url:   /symfony/:action/*

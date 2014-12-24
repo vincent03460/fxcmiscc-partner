@@ -3,6 +3,8 @@ prod:
   level:   err
   rotate:  on
   purge:   off
+  period:  7       ## Log files are rotated every 7 days by default
+  history: 10      ## A maximum history of 10 log files is kept
 
 #all:
 #  enabled: on
