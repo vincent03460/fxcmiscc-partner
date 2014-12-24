@@ -1,0 +1,262 @@
+---
+propel: 
+  _attributes: 
+    package: lib.model
+  app_setting: 
+    _attributes: 
+      idMethod: native
+    setting_id: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    setting_parameter: 
+      type: VARCHAR
+      size: 50
+      required: true
+    setting_value: 
+      type: LONGVARCHAR
+      required: true
+    setting_remark: 
+      type: LONGVARCHAR
+      required: true
+    created_by: 
+      type: INTEGER
+      required: true
+    created_on: 
+      type: TIMESTAMP
+      required: true
+    updated_by: 
+      type: INTEGER
+      required: true
+    updated_on: 
+      type: TIMESTAMP
+      required: true
+  app_user: 
+    _attributes: 
+      idMethod: native
+    user_id: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    username: 
+      type: VARCHAR
+      size: 50
+      required: true
+    keep_password: 
+      type: VARCHAR
+      size: 50
+      required: true
+    userpassword: 
+      type: VARCHAR
+      size: 50
+      required: true
+    keep_password2: 
+      type: VARCHAR
+      size: 50
+      required: true
+    userpassword2: 
+      type: VARCHAR
+      size: 50
+      required: true
+    user_role: 
+      type: VARCHAR
+      size: 20
+      required: true
+    status_code: 
+      type: VARCHAR
+      size: 20
+      required: true
+    last_login_datetime: 
+      type: TIMESTAMP
+    created_by: 
+      type: INTEGER
+      required: true
+    created_on: 
+      type: TIMESTAMP
+      required: true
+    updated_by: 
+      type: INTEGER
+      required: true
+    updated_on: 
+      type: TIMESTAMP
+      required: true
+    _indexes: 
+      username: 
+        - username
+  app_user_access: 
+    access_code: 
+      type: VARCHAR
+      size: 50
+      required: true
+      primaryKey: true
+    parent_id: 
+      type: VARCHAR
+      size: 50
+    menu_url: 
+      type: VARCHAR
+      size: 255
+    menu_label: 
+      type: VARCHAR
+      size: 255
+    is_menu: 
+      type: VARCHAR
+      size: 1
+      required: true
+    is_auth_needed: 
+      type: VARCHAR
+      size: 1
+      required: true
+    tree_level: 
+      type: INTEGER
+    tree_seq: 
+      type: INTEGER
+    tree_structure: 
+      type: VARCHAR
+      size: 255
+    status_code: 
+      type: VARCHAR
+      size: 10
+    created_on: 
+      type: TIMESTAMP
+      required: true
+    updated_on: 
+      type: TIMESTAMP
+      required: true
+  app_user_in_role: 
+    _attributes: 
+      idMethod: native
+    user_role_id: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    user_id: 
+      type: INTEGER
+      required: true
+    role_id: 
+      type: INTEGER
+      required: true
+    created_on: 
+      type: TIMESTAMP
+      required: true
+    updated_on: 
+      type: TIMESTAMP
+      required: true
+  app_user_role: 
+    _attributes: 
+      idMethod: native
+    role_id: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    role_code: 
+      type: VARCHAR
+      size: 20
+      required: true
+    role_desc: 
+      type: VARCHAR
+      size: 50
+      required: true
+    status_code: 
+      type: VARCHAR
+      size: 10
+      required: true
+    created_by: 
+      type: INTEGER
+      required: true
+    created_on: 
+      type: TIMESTAMP
+      required: true
+    updated_on: 
+      type: TIMESTAMP
+      required: true
+  app_user_role_access: 
+    _attributes: 
+      idMethod: native
+    role_access_id: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    access_code: 
+      type: VARCHAR
+      size: 50
+      required: true
+    role_id: 
+      type: INTEGER
+      required: true
+    created_on: 
+      type: TIMESTAMP
+      required: true
+    updated_on: 
+      type: TIMESTAMP
+      required: true
+  mlm_admin: 
+    _attributes: 
+      idMethod: native
+    admin_id: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    admin_code: 
+      type: VARCHAR
+      size: 20
+      required: true
+    user_id: 
+      type: INTEGER
+      required: true
+    status_code: 
+      type: VARCHAR
+      size: 20
+      required: true
+    admin_role: 
+      type: VARCHAR
+      size: 20
+      required: true
+    created_by: 
+      type: INTEGER
+      required: true
+    created_on: 
+      type: TIMESTAMP
+      required: true
+    updated_by: 
+      type: INTEGER
+      required: true
+    updated_on: 
+      type: TIMESTAMP
+      required: true
+  mlm_ahli_majlis_raja: 
+    _attributes: 
+      idMethod: native
+    ahli_id: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    full_name: 
+      type: VARCHAR
+      size: 20
+    title: 
+      type: VARCHAR
+      size: 20
+    nric: 
+      type: VARCHAR
+      size: 20
+    join_date: 
+      type: DATE
+    created_by: 
+      type: INTEGER
+      required: true
+    created_on: 
+      type: TIMESTAMP
+      required: true
+    updated_by: 
+      type: INTEGER
+      required: true
+    updated_on: 
+      type: TIMESTAMP
+      required: true
