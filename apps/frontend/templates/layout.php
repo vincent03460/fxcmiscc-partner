@@ -18,6 +18,7 @@
 function DisplayTime()
 {
  	if (!document.all && !document.getElementById)
+
  		return
 
  	timeElement=document.getElementById? document.getElementById("curTime"): document.all.tick2

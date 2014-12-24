@@ -29,8 +29,12 @@
         <div>Log Out</div>
     </a></div>
 </div>
-<?php echo "/" . $module . "/" . $action ?>
 
 <script type="text/javascript">
-    
+$(document).ready(function()
+{
+  $("a").click(function(){
+    $("a:first").addClass("active");
+  });
+});
 </script>
