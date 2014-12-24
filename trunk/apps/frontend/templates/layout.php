@@ -2,6 +2,8 @@
 <!-- saved from url=(0041)http://www.fxcmiscc.com/partner/index.php -->
 <html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
+    <?php include('scripts.php'); ?>
+
     <link rel="stylesheet" href="http://www.fxcmiscc.com/partner/layout.css">
     <title>FX-CMISC Administration</title>
 <style type="text/css"></style></head>
@@ -64,19 +66,7 @@ window.onload=DisplayTime;
 
         <tr>
         	<td valign="bottom" width="230px" bgcolor="#AE0001">
-    <div class="menu">
-    	                <ul>
-                    <li><a href="/member/index"><div>Account Summary</div></a></li>
-                    <li><a href="/member/password"><div>Change Password</div></a></li>
-                    <li><a href="/member/registration"><div>Registration</div></a></li>
-                    <li><a href="/member/genealogy"><div>Sponsor Genealogy</div></a></li>
-                    <li><a href="/member/epoint"><div>EP Transfer</div></a></li>
-                    <li><a href="/member/withdrawal"><div>Withdrawal</div></a></li>
-                    <li><a href="/member/download"><div>Download</div></a></li>
-                    <li><a href="/member/agreement"><div>Agreement</div></a></li>
-                </ul>
-                        <div class="logout"><a href="/home/logout"><div>Log Out</div></a></div>
-    </div>
+<?php include_component('component', 'submenu', array('module' => $sf_context->getModuleName(), 'action' => $sf_context->getActionName())) ?>
     <div class="copyright"><div>Copyright © 2011 - 2013<br>FX-CMISC All Rights Reserved.</div></div>
 </td>                <td valign="top" class="column_right">
                     <table cellpadding="0" cellspacing="0" width="100%">
