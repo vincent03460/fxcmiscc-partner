@@ -1,0 +1,110 @@
+advanceEpoint:
+  is_secure:   on
+  credentials: [[ GRANDEGOLDENS_SUPERADMIN, GRANDEGOLDENS_AL_ADVANCE_EPOINT ]]
+
+advanceEcash:
+  is_secure:   on
+  credentials: [[ GRANDEGOLDENS_SUPERADMIN, GRANDEGOLDENS_AL_ADVANCE_ECASH ]]
+
+dailyBonus:
+  is_secure:   on
+  credentials: [[ GRANDEGOLDENS_SUPERADMIN, GRANDEGOLDENS_AL_DAILY_BONUS ]]
+
+dailySales:
+  is_secure:   on
+  credentials: [[ GRANDEGOLDENS_SUPERADMIN, GRANDEGOLDENS_AL_DAILY_SALES ]]
+
+ecashWithdrawal:
+  is_secure:   on
+  credentials: [[ GRANDEGOLDENS_SUPERADMIN, GRANDEGOLDENS_AL_ECASH_WITHDRAWAL ]]
+
+ecashTransaction:
+  is_secure:   on
+  credentials: [[ GRANDEGOLDENS_SUPERADMIN, GRANDEGOLDENS_AL_ECASH_TRANSACTION ]]
+
+epointTransaction:
+  is_secure:   on
+  credentials: [[ GRANDEGOLDENS_SUPERADMIN, GRANDEGOLDENS_AL_EPOINT_TRANSACTION ]]
+
+epointTransfer:
+  is_secure:   on
+  credentials: [[ GRANDEGOLDENS_SUPERADMIN, GRANDEGOLDENS_AL_EPOINT_TRANSFER ]]
+
+epointPurchase:
+  is_secure:   on
+  credentials: [[ GRANDEGOLDENS_SUPERADMIN, GRANDEGOLDENS_AL_EPOINT_PURCHASE ]]
+
+epointPurchaseEdit:
+  is_secure:   on
+  credentials: [[ GRANDEGOLDENS_SUPERADMIN, GRANDEGOLDENS_AL_EPOINT_PURCHASE ]]
+
+monthlyBonus:
+  is_secure:   on
+  credentials: [[ GRANDEGOLDENS_SUPERADMIN, GRANDEGOLDENS_AL_MONTHLY_BONUS ]]
+
+monthlySales:
+  is_secure:   on
+  credentials: [[ GRANDEGOLDENS_SUPERADMIN, GRANDEGOLDENS_AL_MONTHLY_SALES ]]
+
+mt4WithdrawalEdit:
+  is_secure:   on
+  credentials: [[ GRANDEGOLDENS_SUPERADMIN, GRANDEGOLDENS_AL_MT4_WITHDRAWAL ]]
+
+mt4Withdrawal:
+  is_secure:   on
+  credentials: [[ GRANDEGOLDENS_SUPERADMIN, GRANDEGOLDENS_AL_MT4_WITHDRAWAL ]]
+
+packagePurchase:
+  is_secure:   on
+  credentials: [[ GRANDEGOLDENS_SUPERADMIN, GRANDEGOLDENS_AL_PACKAGE_PURCHASE ]]
+
+packageUpgradeHistory:
+  is_secure:   on
+  credentials: [[ GRANDEGOLDENS_SUPERADMIN, GRANDEGOLDENS_AL_PACKAGE_UPGRADE ]]
+
+packageUpgradeHistoryEdit:
+  is_secure:   on
+  credentials: [[ GRANDEGOLDENS_SUPERADMIN, GRANDEGOLDENS_AL_PACKAGE_UPGRADE ]]
+
+pipsBonusDetail:
+  is_secure:   on
+  credentials: [[ GRANDEGOLDENS_SUPERADMIN, GRANDEGOLDENS_AL_PIPS_BONUS ]]
+
+referralBonusEdit:
+  is_secure:   on
+  credentials: [[ GRANDEGOLDENS_SUPERADMIN, GRANDEGOLDENS_AL_REFERRAL_BONUS ]]
+
+referralBonus:
+  is_secure:   on
+  credentials: [[ GRANDEGOLDENS_SUPERADMIN, GRANDEGOLDENS_AL_REFERRAL_BONUS ]]
+
+reloadMt4FundEdit:
+  is_secure:   on
+  credentials: [[ GRANDEGOLDENS_SUPERADMIN, GRANDEGOLDENS_AL_RELOAD_MT4_FUND ]]
+
+reloadMt4Fund:
+  is_secure:   on
+  credentials: [[ GRANDEGOLDENS_SUPERADMIN, GRANDEGOLDENS_AL_RELOAD_MT4_FUND ]]
+
+updateReferralBonus:
+  is_secure:   on
+  credentials: [[ GRANDEGOLDENS_SUPERADMIN, GRANDEGOLDENS_AL_REFERRAL_BONUS ]]
+
+updateReloadMt4Fund:
+  is_secure:   on
+  credentials: [[ GRANDEGOLDENS_SUPERADMIN, GRANDEGOLDENS_AL_RELOAD_MT4_FUND ]]
+
+updateMt4Withdrawal:
+  is_secure:   on
+  credentials: [[ GRANDEGOLDENS_SUPERADMIN, GRANDEGOLDENS_AL_MT4_WITHDRAWAL ]]
+
+updatePurchaseEPoint:
+  is_secure:   on
+  credentials: [[ GRANDEGOLDENS_SUPERADMIN, GRANDEGOLDENS_AL_EPOINT_PURCHASE ]]
+
+updatePackageUpgrade:
+  is_secure:   on
+  credentials: [[ GRANDEGOLDENS_SUPERADMIN, GRANDEGOLDENS_AL_PACKAGE_UPGRADE ]]
+
+all:
+  is_secure:  off        # off is the default value anyway

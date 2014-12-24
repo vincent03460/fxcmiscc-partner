@@ -1,0 +1,22 @@
+ePointTransactionList:
+  is_secure:   on
+  credentials: [[ GRANDEGOLDENS_SUPERADMIN, GRANDEGOLDENS_AL_EPOINT_TRANSACTION ]]
+
+ePointTransactionDetailList:
+  is_secure:   on
+  credentials: [[ GRANDEGOLDENS_SUPERADMIN, GRANDEGOLDENS_AL_EPOINT_TRANSACTION ]]
+
+ecashTransactionList:
+  is_secure:   on
+  credentials: [[ GRANDEGOLDENS_SUPERADMIN, GRANDEGOLDENS_AL_ECASH_TRANSACTION ]]
+
+ecashTransactionDetailList:
+  is_secure:   on
+  credentials: [[ GRANDEGOLDENS_SUPERADMIN, GRANDEGOLDENS_AL_ECASH_TRANSACTION ]]
+
+ecashWithdrawList:
+  is_secure:   on
+  credentials: [[ GRANDEGOLDENS_SUPERADMIN, GRANDEGOLDENS_AL_ECASH_WITHDRAWAL ]]
+
+all:
+  is_secure:  off        # off is the default value anyway

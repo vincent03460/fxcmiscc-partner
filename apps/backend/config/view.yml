@@ -1,0 +1,17 @@
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    title:        FX-CMISC Administrator Backend
+    robots:       FX-CMISC Administrator Backend
+    description:  FX-CMISC Administrator Backend
+    keywords:     FX-CMISC Administrator Backend
+    language:     en
+
+  stylesheets:    []
+
+  javascripts:    []
+
+  has_layout:     on
+  layout:         layout

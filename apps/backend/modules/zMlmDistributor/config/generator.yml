@@ -1,0 +1,10 @@
+generator:
+  class:              sfPropelAdminGenerator
+  param:
+    model_class:      MlmDistributor
+    theme:            default
+
+    list:
+        title:          List of all Distributor
+        filters:        [distributor_id, distributor_code, full_name, email]
+        max_per_page:   100

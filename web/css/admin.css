@@ -1,0 +1,6080 @@
+html, body {
+    height: 100%;
+}
+#ap-container {
+    min-height: 100%;
+    position: relative;
+}
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    border: 0 none;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+body {
+    line-height: 1.5;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+caption, th, td {
+    font-weight: 400;
+}
+table, td, th {
+    vertical-align: top;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: "";
+}
+blockquote, q {
+    quotes: "" "";
+}
+a img {
+    border: medium none;
+}
+.main {
+    margin: 0 auto;
+    text-align: left;
+}
+.clear, .clr {
+    clear: both;
+}
+.dl1, .dl2, .dl5, .dl10, .dl15, .dl20, .dl25, .dl30, .dl35, .dl40, .dl45, .dl50, .dl55, .dl60, .dl65, .dl70, .dl75 {
+    display: inline;
+    float: left;
+}
+.dr1, .dr2, .dr5, .dr10, .dr15, .dr20, .dr25, .dr30, .dr35, .dr40, .dr45, .dr50, .dr55, .dr60, .dr65, .dr70, .dr75 {
+    display: inline;
+    float: right;
+}
+.dl1, .dr1 {
+    width: 1em;
+}
+.dl2, .dr2 {
+    width: 2em;
+}
+.dl5, .dr5 {
+    width: 5em;
+}
+.dl10, .dr10 {
+    width: 10em;
+}
+.dl15, .dr15 {
+    width: 15em;
+}
+.dl20, .dr20 {
+    width: 20em;
+}
+.dl25, .dr25 {
+    width: 25em;
+}
+.dl30, .dr30 {
+    width: 30em;
+}
+.dl35, .dr35 {
+    width: 35em;
+}
+.dl40, .dr40 {
+    width: 40em;
+}
+.dl45, .dr45 {
+    width: 45em;
+}
+.dl50, .dr50 {
+    width: 50em;
+}
+.dl55, .dr55 {
+    width: 55em;
+}
+.dl60, .dr60 {
+    width: 60em;
+}
+.dl65, .dr65 {
+    width: 65em;
+}
+.dl70, .dr70 {
+    width: 70em;
+}
+.dl75, .dr75 {
+    width: 75em;
+}
+.ml5 {
+    margin-left: 5em;
+}
+.ml10 {
+    margin-left: 10em;
+}
+.ml15 {
+    margin-left: 15em;
+}
+.ml20 {
+    margin-left: 20em;
+}
+.ml25 {
+    margin-left: 25em;
+}
+.ml30 {
+    margin-left: 30em;
+}
+.ml35 {
+    margin-left: 35em;
+}
+.ml40 {
+    margin-left: 40em;
+}
+.ml45 {
+    margin-left: 45em;
+}
+.ml50 {
+    margin-left: 50em;
+}
+.ml55 {
+    margin-left: 55em;
+}
+.ml60 {
+    margin-left: 60em;
+}
+.ml65 {
+    margin-left: 65em;
+}
+.ml70 {
+    margin-left: 70em;
+}
+.ml75 {
+    margin-left: 75em;
+}
+.mr5 {
+    margin-right: 5em;
+}
+.mr10 {
+    margin-right: 10em;
+}
+.mr15 {
+    margin-right: 15em;
+}
+.mr20 {
+    margin-right: 20em;
+}
+.mr25 {
+    margin-right: 25em;
+}
+.mr30 {
+    margin-right: 30em;
+}
+.mr35 {
+    margin-right: 35em;
+}
+.mr40 {
+    margin-right: 40em;
+}
+.mr45 {
+    margin-right: 45em;
+}
+.mr50 {
+    margin-right: 50em;
+}
+.mr55 {
+    margin-right: 55em;
+}
+.mr60 {
+    margin-right: 60em;
+}
+.mr65 {
+    margin-right: 65em;
+}
+.mr70 {
+    margin-right: 70em;
+}
+.mr75 {
+    margin-right: 75em;
+}
+.mt1 {
+    margin-top: 1em;
+}
+.mt5 {
+    margin-top: 5em;
+}
+.mt10 {
+    margin-top: 10em;
+}
+.mt20 {
+    margin-top: 20em;
+}
+.mt30 {
+    margin-top: 30em;
+}
+.mt40 {
+    margin-top: 40em;
+}
+.mt50 {
+    margin-top: 50em;
+}
+.fluid {
+    float: none;
+    width: auto;
+}
+.hp {
+    float: left;
+    width: 100%;
+}
+.clearfix, .main {
+    display: block;
+}
+.clearfix:after, .main:after {
+    clear: both;
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
+}
+* html .clearfix {
+    display: inline;
+    height: 1px;
+}
+body {
+    font: 400 75%/1.5em Arial,Helvetica,sans-serif;
+}
+p {
+    color: #111111;
+    letter-spacing: 0.01em;
+    padding: 0 0 1em;
+    word-spacing: 0.05em;
+}
+p img {
+    float: left;
+    margin: 0 1em 1em 0;
+    padding: 0;
+}
+p img.right {
+    float: right;
+    margin: 0 0 1em 1em;
+}
+h1, h2 {
+    line-height: 1;
+    word-spacing: 0.1em;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+h1 {
+    font-size: 18px;
+}
+h2 {
+    font-size: 16px;
+}
+h3, legend {
+    font-size: 16px;
+}
+legend {
+    padding-top: 20px;
+}
+h4 {
+    font-size: 14px;
+}
+h5, h6 {
+    font-size: 13px;
+}
+li ul, li ol {
+    margin: 0 1.5em;
+}
+ul, ol {
+    margin: 0 1.5em 1.5em;
+}
+dl {
+    margin: 0 0 1.5em;
+}
+a:hover {
+    text-decoration: underline;
+}
+table {
+    border-collapse: collapse;
+}
+tr, th, td {
+    margin: 0;
+}
+td {
+    padding: 2px 4px;
+}
+caption {
+    font-family: Georgia,serif;
+    text-align: center;
+}
+abbr, acronym {
+    border-bottom: 1px dotted #000000;
+}
+address {
+    font-style: italic;
+    margin-top: 1.5em;
+}
+del {
+    color: #000000;
+}
+blockquote {
+    border-left: 3px solid #CCCCCC;
+    font-style: italic;
+    margin: 1.5em;
+    padding-left: 1.5em;
+}
+pre, code {
+    margin: 1.5em 0;
+    white-space: pre;
+}
+pre, code, tt {
+    font: 1em/1.5 monospace;
+}
+tt {
+    display: block;
+    margin: 1.5em 0;
+}
+hr {
+    margin-bottom: 1.5em;
+}
+dl dt, th, strong, dfn {
+    font-weight: 700;
+}
+tfoot, em, dfn {
+    font-style: italic;
+}
+select:hover {
+    cursor: pointer;
+}
+input, select {
+    font-size: 10px;
+}
+.padding {
+    padding: 10px;
+}
+.adminlist {
+    font-size: 12px;
+}
+.adminform {
+    border-collapse: separate;
+    margin-top: 10px;
+    padding: 4px;
+}
+.adminform:first-of-type {
+    margin-top: 0;
+}
+fieldset.adminform {
+    margin: 0 5px 5px;
+}
+form[name="adminForm"] table {
+    width: 100%;
+}
+form[name="adminForm"] table tr[align="center"] td {
+    text-align: left;
+}
+input#position.combobox {
+    margin-left: 4px;
+    padding: 0 0 0 4px;
+    position: static !important;
+}
+input, select, textarea {
+    border-radius: 4px 4px 4px 4px;
+    padding: 2px 6px;
+}
+form[name="adminForm"] select {
+    margin-left: 2px;
+    margin-top: 2px;
+}
+hr {
+    display: block;
+    height: 1px;
+}
+#ap-logo {
+    float: left;
+    position: relative;
+    top: 2px;
+}
+#ap-logo img {
+    height: 24px;
+    width: auto;
+}
+#ap-login-logo {
+    border-radius: 10px 0 0 10px;
+    height: 30px;
+    left: -62px;
+    padding: 20px;
+    position: absolute;
+    top: 40px;
+    width: 20px;
+}
+#ap-login-icon {
+    display: block;
+    height: 32px;
+    width: 34px;
+}
+#ap-menu {
+    clear: left;
+    float: left;
+    margin: 0;
+    padding: 20px 2px;
+    width: 72px;
+}
+#ap-menu ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+#ap-menu li {
+    margin: 5px 0 10px;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    z-index: 400;
+}
+#ap-menu li ul {
+    display: none;
+    left: 90%;
+    min-width: 150px;
+    padding: 4px;
+    position: absolute;
+    top: 0;
+}
+#ap-menu li:hover ul {
+    display: block;
+}
+#ap-menu li.child, #ap-menu ul.submenu li {
+    background: none repeat scroll 0 0 transparent !important;
+    margin: 0;
+    text-align: left;
+}
+#ap-menu li ul.submenu {
+    border-radius: 5px 5px 5px 5px !important;
+}
+#ap-menu img {
+    display: block;
+    float: none !important;
+    height: 32px;
+    margin: 0 auto !important;
+    width: 32px;
+}
+#ap-menu .ap-avatar img {
+    height: auto;
+    width: 50px;
+}
+#ap-menu li a {
+    display: block;
+}
+#ap-menu li a:hover {
+    text-decoration: none;
+}
+#ap-menu .ap-avatar li a {
+    background: none repeat scroll 0 0 transparent !important;
+    padding-top: 0;
+}
+#ap-menu .ap-avatar img {
+    border-radius: 5px 5px 5px 5px;
+}
+#ap-menu #cpanel {
+    display: block;
+    margin: 10px auto;
+    padding: 0;
+}
+#ap-menu #cpanel div {
+    float: none !important;
+}
+#ap-menu div.icon, #ap-menu div.pf-icon {
+    background: none repeat scroll 0 50% transparent;
+    border: 0 none;
+    float: none;
+    margin: 5px 0;
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+}
+#ap-menu a span {
+    line-height: 1.4;
+}
+#ap-menu h3, #ap-footermenu h3 {
+    display: none;
+}
+#ap-container #ap-footerwrap {
+    bottom: 0;
+    height: 100px;
+    margin-top: 40px;
+    position: absolute;
+    width: 100%;
+}
+#ap-footermenu {
+    margin-top: 20px;
+    min-height: 32px;
+    padding: 10px 0 0 10px;
+}
+#ap-footermenu ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+#ap-footermenu li {
+    display: block;
+    float: left;
+    margin: 0 10px 10px 0;
+}
+#ap-footermenu ul li ul, #ap-footermenu li .component-label {
+    display: none;
+}
+#ap-main.ap-main-marginleft {
+    margin-left: 70px;
+}
+.ap-main-inner {
+    min-height: 700px;
+    overflow: hidden;
+}
+#ap-header {
+    padding: 10px 20px;
+}
+#ap-fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+.ap-padding {
+    padding: 20px 20px 0;
+}
+#ap-submenu {
+    padding: 0 5px;
+}
+#ap-submenu ul {
+    float: left;
+}
+#ap-submenu a:hover, .jpane-toggler:hover, .jpane-toggler-down:hover {
+    cursor: pointer;
+}
+#ap-submenu .active {
+    font-weight: bold;
+}
+#ap-submenu ul.menusub {
+    display: none;
+}
+.ap-inside, div .fluid.ap-inside, #ap-content-inner {
+    padding: 0;
+}
+.com_cpanel #ap-content-inner {
+    padding: 0;
+}
+#pf-apcontent #ap-content-inner {
+    padding: 0;
+}
+.ap-view-cpanel #ap-content-inner, .ap-view-dashboard #ap-content-inner, .ap-view-default #ap-content-inner, .ap-view-confwiz #ap-content-inner, .com_akeeba.ap-view-config #ap-content-inner {
+    padding: 0 20px;
+}
+.com_installer.ap-task- #ap-content-inner {
+    padding: 0 10px 10px;
+}
+#ap-sidebar {
+    padding: 0 10px 10px 0;
+}
+#ap-sidebar {
+    width: 19em;
+}
+#ap-mainbody {
+    position: relative;
+}
+#ap-mainbody .mr20, #ap-footer .mr20 {
+    margin-right: 22em;
+}
+#ap-mainbody .ml20, #ap-footer .ml20 {
+    margin-left: 22em;
+}
+#ap-mainbody {
+    margin: 162px 20px 0;
+    padding: 10px 0;
+}
+.ap-static-wrapper #ap-mainbody, .ap-static-wrapper #ap-mainbody.ap-tall, .ap-short .ap-static-wrapper #ap-mainbody, .ap-short .ap-static-wrapper #ap-mainbody.ap-tall {
+    margin: 1px 10px 0;
+}
+#ap-mainbody.ap-tall {
+    margin: 182px 20px 0;
+}
+.ap-short #ap-mainbody {
+    margin: 102px 20px 0;
+}
+.ap-short #ap-mainbody.ap-tall {
+    margin: 122px 20px 0;
+}
+#pf-margintop {
+    margin: 162px 20px 0;
+}
+#pf-margintop.ap-tall {
+    margin: 182px 20px 0;
+}
+.ap-short #pf-margintop {
+    margin: 102px 20px 0;
+}
+.ap-short #pf-margintop.ap-tall {
+    margin: 122px 20px 0;
+}
+#ap-header a, .button1 a:hover {
+    text-decoration: none;
+}
+#ap-header ul, #ap-header li, #ap-mainmenu ul, #ap-mainmenu li, #ap-submenu ul, #ap-submenu li, #ap-userstats ul, #ap-userstats li {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+#ap-topleft li, #ap-topright li {
+    padding: 0 5px 0 2px;
+}
+#ap-topright li.last, #ap-topleft li.last {
+    padding: 0 2px 0 6px;
+}
+#ap-submenu li {
+    line-height: 30px;
+    margin: 0 2px;
+    padding: 0;
+}
+#ap-submenu li ul {
+    z-index: 500;
+}
+#ap-submenu li ul li, #ap-submenu li ul li a {
+    background: none repeat scroll 0 0 transparent !important;
+    border-radius: 0 0 0 0;
+    line-height: normal;
+    margin: 0;
+}
+ul#submenu ul.submenu_dropdown, ul#submenu ul {
+    border: 0 none;
+    top: 100%;
+}
+#ap-header li, #ap-mainmenu li, #ap-submenu li, #ap-userstats li {
+    display: block;
+    float: left;
+}
+#ap-mainmenu {
+    margin: 0 0 10px;
+    padding: 0 4px;
+}
+#ap-mainmenu li {
+    display: block;
+    float: left;
+    margin-right: 4px;
+    padding: 0;
+}
+#ap-mainmenu li.separator span {
+    border-bottom: 1px solid #EEEEEE;
+    display: block;
+    height: 1px;
+    text-indent: -9999px;
+}
+#ap-mainmenu li.separator a {
+    height: 1px;
+}
+#ap-mainmenu li.separator a:hover {
+    background: none repeat scroll 0 0 transparent !important;
+    border: 1px solid #F8F8F8 !important;
+}
+#ap-mainmenu li {
+    position: relative;
+}
+#ap-mainmenu li img {
+    margin-right: 3px !important;
+    padding: 5px;
+}
+#ap-mainmenu li span.subarrow {
+    float: right;
+    height: 0;
+    margin: 8px 0 0 4px;
+    width: 0;
+}
+#ap-mainmenu li.parent span.subarrow {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #777777;
+}
+#ap-mainmenu li ul li.parent span.subarrow {
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #999999;
+    border-top: 5px solid transparent;
+}
+#ap-mainmenu li ul li span.subarrow {
+    position: absolute;
+    right: -2px;
+    top: -3px;
+}
+#ap-mainmenu li.home-item span.subarrow, #ap-mainmenu li.admin-item span.subarrow {
+    display: none;
+}
+#ap-mainmenu li ul {
+    display: none;
+    position: absolute;
+    top: 28px;
+    z-index: 500;
+}
+#ap-mainmenu li ul.component-list {
+    width: 370px;
+}
+#ap-mainmenu li:hover ul.component-list li {
+    float: left;
+    width: 44%;
+}
+#ap-mainmenu li:hover ul.component-list ul li {
+    float: none;
+    width: auto;
+}
+#ap-mainmenu li ul.component-list, #ap-mainmenu li ul.submenu {
+    left: -10%;
+}
+#ap-mainmenu li.home-item ul.submenu {
+    left: 0;
+    right: auto;
+}
+#ap-mainmenu li ul ul {
+    left: 0;
+}
+#ap-mainmenu li ul.component-list li ul.child-list, #ap-mainmenu li ul.submenu li ul {
+    left: 92%;
+}
+#ap-mainmenu li ul li.first-child {
+    width: 100% !important;
+}
+#ap-mainmenu li:hover ul, #ap-mainmenu li:hover ul li:hover ul {
+    display: block;
+}
+#ap-mainmenu li:hover ul ul {
+    display: none;
+    left: 95%;
+    position: absolute;
+    top: 2px;
+    z-index: 600;
+}
+#ap-mainmenu li:hover ul li {
+    float: none;
+    width: 100%;
+}
+#ap-mainmenu li:hover ul li a {
+    display: block;
+    float: none;
+    font-size: 14px;
+    white-space: nowrap;
+}
+#ap-mainmenu li:hover ul li.parent a.parent-link {
+    white-space: normal;
+}
+#ap-mainmenu li ul li, #ap-mainmenu li ul li:hover {
+    background: none repeat scroll 0 0 transparent !important;
+}
+#ap-sidemenu li a {
+    display: block;
+    float: right;
+    margin-left: 2px;
+    padding: 5px 11px;
+}
+#ap-mainmenu li:hover ul li li a {
+    font-size: 12px;
+}
+#ap-submenu li a, .add-module-link {
+    border-radius: 12px 12px 12px 12px;
+    padding: 4px 10px;
+}
+#ap-submenu li a:hover, .add-module-link:hover {
+    text-decoration: none;
+}
+#ap-userstats ul {
+    float: right;
+}
+#ap-userstats li {
+    margin: 0 6px;
+}
+#ap-userstats a {
+    font-weight: bold;
+    line-height: 24px;
+}
+#ap-topright {
+    font-size: 11px;
+    text-align: right;
+}
+#ap-footer {
+    font-size: 11px;
+    padding: 10px 5px;
+    text-shadow: 0 1px 1px #000000;
+}
+#ap-footer, #ap-footer p, #ap-footer a {
+    color: #A1A8B0;
+}
+#login #ap-footer {
+    background: none repeat scroll 0 0 transparent !important;
+    box-shadow: none;
+    text-align: center;
+}
+#ap-copyright {
+    float: left;
+    margin: 0 25px 0 5px;
+}
+#ap-version {
+    float: right;
+    margin: 0 5px 0 0;
+}
+#ap-title {
+    float: left;
+}
+.panel h3 {
+    padding: 0;
+}
+.panel h3, #ap-sidebar .module h3, #theme_wrapper .theme_sidebar .moduletable h3, #ap-content .module h3, #k2QuickIconsTitle {
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: 0 1px 1px #FFFFFF;
+}
+div.col .panel h3 {
+    margin-left: 0;
+    margin-right: 0;
+}
+.header {
+    clear: none !important;
+    float: none;
+    width: auto;
+}
+#toolbar {
+}
+#ap-content #toolbar {
+    height: 30px;
+    margin: 0 0 10px;
+}
+#ap-sidebar div.toolbar {
+    margin: 0 0 10px;
+    padding: 10px 0;
+}
+#ap-sidebar div.toolbar table.toolbar {
+    width: 100%;
+}
+#ap-sidebar .toolbar td {
+}
+#ap-content .toolbar td {
+}
+#ap-sidebar .toolbar a {
+    color: #2F3237;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 16px;
+    margin: 5px 0;
+    padding: 2px;
+}
+#ap-sidebar .toolbar a:hover {
+    margin: 5px -6px;
+    padding: 2px 2px 2px 12px;
+}
+.tool-tip {
+    float: left;
+    max-width: 200px;
+    padding: 5px;
+}
+.tool-title {
+    font-size: 100%;
+    font-weight: bold;
+    margin: -5px -5px 0;
+    padding: 5px;
+}
+.tool-text {
+    font-size: 100%;
+    margin: 0;
+}
+.list-footer {
+    padding: 10px;
+    text-align: center;
+}
+.list-footer a:hover {
+    cursor: pointer;
+}
+.admintable, .adminlist {
+    width: 100%;
+}
+.com_installer .adminform {
+    margin: 10px auto 0;
+    width: 90%;
+}
+.adminform td {
+    padding: 2px;
+}
+form[name="adminForm"] td[width="320"] {
+    padding: 2px !important;
+    width: 250px;
+}
+#metadescription, #metakeywords, textarea[name="metadesc"], textarea[name="metakey"] {
+    width: 80%;
+}
+#title.inputbox {
+    font-size: 14px;
+    width: 80%;
+}
+.key {
+    text-align: right;
+}
+.admintable td, .adminlist td, .adminlist th, .adminlist td.title {
+    padding: 8px 4px;
+    vertical-align: middle;
+}
+.quickAddTable.admintable td {
+    padding: 2px 4px;
+}
+.ap-task-edit .admintable td, .ap-task-edit .adminlist td {
+    vertical-align: top;
+}
+.adminlist th, .adminlist td.title {
+    vertical-align: bottom;
+}
+.order {
+    white-space: nowrap;
+}
+.order span {
+    display: block;
+    float: left;
+    padding: 0 2px 0 0;
+    width: 12px;
+}
+.order .text_area, .k2OrderBox {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    margin: 1px;
+    width: 20px;
+}
+.order .text_area:hover, .k2OrderBox:hover {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    color: #111111;
+    margin: 0;
+}
+.button2-left a, .button2-left div span {
+    cursor: pointer;
+    display: block;
+    float: left;
+    margin: 0 5px 0 0;
+    padding: 4px 8px;
+}
+.pagination .button2-left a, .pagination .button2-left div span, .pagination .button2-right a, .pagination .button2-right div span {
+    margin: 0 5px 0 0;
+    padding: 0 8px;
+}
+.pagination .button2-left.off, .pagination .button2-right.off {
+    margin: 0 5px 0 0;
+}
+.pagination a:hover {
+    box-shadow: 0 1px 1px #CCCCCC inset;
+}
+.pagination a:active {
+    box-shadow: 0 -2px 2px #CCCCCC inset;
+}
+.pagination div span {
+    cursor: text;
+}
+.button1 a {
+    cursor: pointer;
+    padding: 3px 10px;
+}
+.button1 {
+    float: right;
+}
+#form-login-username {
+    margin-top: 4px;
+}
+#ap-quicklink h3 {
+    padding: 0;
+}
+#ap-quicklink h3 a {
+    display: block;
+    font-weight: bold;
+    padding: 4px 9px 5px;
+    text-align: center;
+}
+#ap-quicklink h3 a:hover {
+    text-decoration: none;
+}
+#search {
+    margin-top: 2px;
+    width: 120px;
+}
+#toolbar-new a, #toolbar-delete a, #toolbar-trash a, #toolbar-edit a, #toolbar-save a, #toolbar-apply a, #toolbar-cancel a, #toolbar-default a {
+}
+input.system-openid, input.com-system-openid {
+    padding-left: 18px;
+}
+#system-message {
+    margin-bottom: 0;
+    padding: 0;
+}
+#system-message dt {
+    font-weight: bold;
+}
+#system-message dd {
+    font-weight: bold;
+    margin: 0;
+}
+#system-message dd ul {
+    list-style: none outside none;
+    margin: 0 auto;
+    padding: 10px;
+    width: 40%;
+}
+#system-message dd.message, #system-message dt.error, #system-message dt.notice {
+    margin: 10px 0;
+}
+#system-message dt {
+    display: none;
+}
+#system-message dd.error ul {
+    list-style: none outside none;
+}
+#system-message dd.notice ul {
+    list-style: none outside none;
+}
+#treecellhelp {
+    display: block;
+    float: left;
+    margin: 0;
+    overflow: hidden;
+    padding: 2px;
+    position: relative;
+    width: 25%;
+}
+#datacellhelp {
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 2px 0 0;
+    width: 73%;
+}
+.helpFrame {
+    height: 800px;
+    padding: 0 5px 0 10px;
+    width: 100%;
+}
+#editor-xtd-buttons {
+    margin: 5px 0 0;
+}
+textarea#text {
+    width: 97% !important;
+}
+#cpanel {
+    display: table;
+    margin: 0 0 5px;
+}
+.login-desc, .home-page {
+    font-size: 9px;
+    padding: 0;
+    text-align: center;
+}
+.sess_bar_outer {
+    border: 0 none !important;
+    height: 5px !important;
+    padding: 1px 0 !important;
+    width: 100% !important;
+}
+#ap-content-inner {
+    overflow: hidden;
+}
+#ap-content .module {
+    clear: both;
+}
+#ap-content .component-list {
+    margin: 0;
+}
+#ap-content .component-list .parent-link {
+    display: block;
+    width: 99%;
+}
+#ap-content .component-list li.parent {
+    display: block;
+    float: left;
+    font-weight: bold;
+    margin: 24px 0 9px 20px;
+    padding: 0;
+    position: relative;
+    width: 130px;
+}
+#ap-content .child-list {
+    display: none;
+    margin: 5px 0;
+}
+#ap-content .component-list li.child {
+    float: left;
+    font-weight: normal;
+    list-style: none outside none;
+    margin: 0 10px 0 0;
+}
+#ap-sidebar .component-list {
+    list-style: none outside none;
+    margin: 0 0 10px;
+}
+#ap-sidebar .component-list li {
+    margin: 0 0 5px;
+    padding: 2px;
+    position: relative;
+}
+#ap-sidebar .component-list li img {
+    margin: 2px 5px 0 0;
+}
+#ap-sidebar .component-list li a {
+    display: block;
+}
+#ap-sidebar .component-list li:hover {
+    cursor: pointer;
+}
+#ap-sidebar ul.child-list {
+    display: none;
+    padding: 10px;
+}
+#ap-sidebar li.parent:hover ul.child-list {
+    display: block;
+    left: -198px;
+    list-style: none outside none;
+    opacity: 0.8;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    width: 160px;
+    z-index: 700;
+}
+#login {
+    margin: 40px 10px 10px;
+}
+.login {
+    border-bottom: 1px solid #000000;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    width: 330px;
+}
+#form-login label {
+    display: block;
+    margin-left: 2px;
+}
+#form-login-password input, #form-login-username input {
+    font-size: 18px;
+    width: 95%;
+}
+#form-login-lang select {
+    font-size: 18px;
+    width: 99%;
+}
+#form-login .button_holder {
+    height: 32px;
+    margin: 10px 0 0;
+}
+#login h3 {
+    color: #333333;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 0 20px 10px;
+    text-shadow: 0 1px 1px #DDDDDD;
+}
+.ap-status span {
+    display: none;
+    float: none !important;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0 2px;
+    padding: 0 16px 0 30px !important;
+    position: relative;
+    width: 100px;
+    z-index: 900;
+}
+.ap-status {
+    float: left;
+    height: 20px;
+    margin: 0;
+    white-space: nowrap;
+    width: 32px;
+}
+.ap-status.status-bottom {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+.ap-status:hover span {
+    display: block !important;
+}
+.ap-status span span {
+    padding: 0 !important;
+}
+#ap-userstats {
+    padding: 2px 10px 5px 8px;
+    z-index: 900;
+}
+#quickAddContentForm #title, #quickAddContentForm #alias {
+    width: 90%;
+}
+#quickAddContentForm td select {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    padding: 3px 7px;
+    width: 110px;
+}
+#quickAddContentForm td select:hover {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    padding: 2px 6px;
+}
+#quickAddContentForm textarea {
+    height: 120px !important;
+    margin: 10px;
+    width: 90% !important;
+}
+.quickAddTable td.key {
+    width: 10%;
+}
+.quickadd_section_category td, .quickadd_state_frontpage td {
+    text-align: center;
+}
+span.quickadd_frontpage {
+    margin-left: 10px;
+}
+.ap-status .ap-icons span {
+    padding: 0;
+}
+.status-tools a, .status-tools span {
+    color: #F8F8F8;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222222;
+    white-space: nowrap;
+}
+.status-tools a:hover, .status-tools span:hover {
+    color: #CCCCCC;
+}
+.status-tools .loggedin-users {
+    padding: 5px 15px;
+}
+#ap-userstats #ap-quicklink, #ap-userstats #ap-myeditor, #ap-userstats .ap-spotlight {
+    float: right;
+}
+#ap-userstats .ap-spotlight {
+    margin-left: 5px;
+    margin-top: 3px;
+    width: auto;
+}
+#ap-userstats #ap-search {
+    border: 1px solid #111111;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 2px 2px #999999 inset, 0 1px 0 #666666;
+    padding: 3px 10px;
+    width: 100px;
+}
+#ap-userstats #ap-search:focus {
+    border: 1px solid #008DE5;
+    width: 200px;
+}
+#ap-userstats #search-results {
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 2px 3px #999999;
+    max-height: 600px;
+    overflow: auto;
+    right: 3px;
+    top: 100%;
+    width: 206px;
+}
+#ap-userstats .ap-search-text {
+    border-bottom: 1px solid #F3F3F3;
+    font-size: 11px;
+    margin: 0 10px;
+    padding-bottom: 4px;
+    width: auto;
+}
+#ap-userstats .ap-link:hover {
+    background-color: #F9F9F9;
+}
+#ap-userstats .ap-spotlight-link {
+    color: #008DE5 !important;
+}
+#ap-userstats .ap-type {
+    background: none repeat scroll 0 0 #F8F8F8;
+    border-bottom: 1px solid #F3F3F3;
+    color: #444444;
+    padding: 4px 10px;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+#ap-quicklink .parent, #ap-myeditor .parent {
+    background: -moz-linear-gradient(center top , #545454 0%, #333333 100%) repeat scroll 0 0 transparent;
+    border: 1px solid #222222;
+    border-radius: 4px 4px 4px 4px;
+    margin: 2px 5px 0 0;
+    position: relative;
+}
+#ap-quicklink .parent:hover, #ap-myeditor .parent:hover {
+    background: -moz-linear-gradient(center top , #333333 0%, #545454 100%) repeat scroll 0 0 transparent;
+}
+#ap-quicklink .submenu a, #ap-myeditor .submenu a {
+    background: -moz-linear-gradient(center top , #F8F8F8 0%, #CCCCCC 100%) repeat scroll 0 0 transparent;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px 4px 4px 4px;
+    display: block;
+    margin: 0 0 2px;
+    padding: 1px 0;
+    position: relative;
+    text-align: center;
+    width: 120px;
+}
+#ap-quicklink .submenu a:hover, #ap-myeditor .submenu a:hover {
+    border: 1px solid #0096E8;
+    color: #444444;
+    text-decoration: none;
+}
+#ap-quicklink .submenu a:active, #ap-myeditor .submenu a:active {
+    background: -moz-linear-gradient(center top , #CCCCCC 0%, #F8F8F8 100%) repeat scroll 0 0 transparent;
+}
+#ap-quicklink .parent .submenu {
+    width: 268px;
+}
+#ap-myeditor .parent .submenu {
+}
+#ap-quicklink .parent .submenu, #ap-myeditor .parent .submenu {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 10px #222222;
+    display: none;
+    margin: 0;
+    padding: 5px 2px;
+    position: absolute;
+    top: 100%;
+    z-index: 900;
+}
+#ap-quicklink .parent .submenu {
+    left: -120px;
+}
+#ap-myeditor .parent .submenu {
+    left: -60px;
+}
+#ap-quicklink .parent:hover .submenu, #ap-myeditor .parent:hover .submenu {
+    display: block;
+}
+#ap-quicklink .parent .submenu ul {
+    float: left;
+    width: 48%;
+}
+#ap-myeditor .parent .submenu ul {
+    float: none;
+    width: 99%;
+}
+#ap-quicklink .parent .submenu a, #ap-myeditor .parent .submenu a {
+    color: #222222;
+}
+.quickadd-icon, .myeditor-icon {
+    display: block;
+    float: left;
+    height: 20px;
+    width: 28px;
+}
+.quickadd-icon {
+    background-position: 6px -277px;
+}
+.myeditor-icon {
+    background-position: -54px -277px;
+}
+.quickadd-title, .myeditor-title {
+    display: none;
+}
+#menutype_form {
+    float: right;
+    margin: 2px 0 0;
+}
+#ap-quickadd select {
+    padding: 2px 3px;
+    width: 110px;
+}
+#ap-myeditor select {
+    width: 120px;
+}
+#editorarea iframe, #editorarea #codearea_cp {
+    height: 600px !important;
+    width: 100% !important;
+}
+#menu {
+    margin: 0;
+}
+#menu li.node {
+    list-style: none outside none;
+    margin: 0 0 10px;
+    padding: 10px;
+}
+#menu li.node li.node {
+    padding: 0;
+}
+dl.tabs {
+    float: left;
+    margin: 10px 0 -1px;
+    z-index: 50;
+}
+dl.tabs dt {
+    float: left;
+    margin-left: 2px;
+    padding: 4px 5px;
+}
+dl.tabs dt.open {
+    z-index: 100;
+}
+div.current {
+    clear: both;
+    padding: 10px;
+}
+div.current dd {
+    margin: 0;
+    padding: 0;
+}
+div.col {
+    float: left;
+}
+div.width-45 {
+    width: 42%;
+}
+div.width-55 {
+    width: 52%;
+}
+div.width-50 {
+    width: 49%;
+}
+div.width-70 {
+    width: 67%;
+}
+div.width-30 {
+    width: 27%;
+}
+div.width-60 {
+    width: 57%;
+}
+div.width-40 {
+    width: 37%;
+}
+.height-100 {
+    height: 100px;
+}
+.com_templates.ap-task-edit div.width-50 {
+    float: none;
+    width: 100%;
+}
+.com_templates.ap-task-edit .template-pad {
+    display: none;
+}
+.paramlist_value input[type="text"] {
+    max-width: 60%;
+}
+.paramlist_value select {
+    max-width: 80%;
+}
+#filter_sectionid, #filter_catid, #filter_authorid, #filter_state {
+    max-width: 110px;
+}
+#ext-gen17 {
+    padding: 10px;
+}
+#vmPage {
+}
+#vmPage .header {
+    font-size: 1em !important;
+}
+#vmPage .header h2 {
+    line-height: 46px;
+}
+.toolbar td.spacer {
+    display: none !important;
+    width: 0;
+}
+#vmPage .header img {
+    float: left;
+}
+#vmPage .x-tab-panel {
+    clear: both;
+}
+.tool-tip {
+    z-index: 500;
+}
+.ap-status .aplite-icons span {
+    padding: 0;
+}
+.aplite-icons a {
+    text-decoration: none;
+}
+#menu-container {
+    display: block !important;
+    height: 30px;
+    position: relative;
+    width: 99%;
+}
+#menu-container li {
+    margin: 4px;
+}
+#minwidth-body.full-mode .ap-status, #minwidth-body.full-mode #ap-header, #minwidth-body.full-mode #ap-submenu, #minwidth-body.full-mode #ap-footer {
+    display: none;
+}
+#minwidth-body.full-mode #ap-mainbody {
+    padding: 0;
+}
+#minwidth-body.full-mode #toolbar a {
+    margin: 4px 6px;
+}
+.footer-links li {
+    margin: 0 25px 0 0;
+}
+.com_configurator #toolbar a, .footer-links li a {
+    text-decoration: none;
+}
+.footer-links li ul {
+    margin: 0;
+}
+#tips p {
+    padding-bottom: 0;
+}
+#install-type label {
+    font-size: 13px;
+}
+#visual-refs h3 span {
+    padding-left: 10px;
+}
+#ap-topleft {
+    margin: 12px 10px 0;
+}
+#ap-topright {
+    margin: 12px 0 0 10px;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.right .module {
+    padding: 10px;
+}
+#ap-crumbs {
+    margin: 10px 10px 0;
+}
+#ap-crumbs ul {
+    list-style: none outside none;
+    margin: 0;
+}
+#ap-crumbs li {
+    display: inline;
+    line-height: 28px;
+    margin: 0;
+}
+#ap-footmods {
+    margin: 10px 20px;
+}
+#ap-footmods table {
+    width: 100%;
+}
+#ap-toolbar {
+    z-index: 800;
+}
+#ap-toolbar.status-bottom {
+    bottom: 27px;
+}
+#toolbar .button {
+    border-radius: 4px 4px 4px 4px;
+}
+#ap-toolbar span {
+    display: none;
+}
+#ap-toolbar .rsfinder span {
+    display: block;
+}
+#ap-toolbar .rsfinder {
+    float: right;
+    margin-right: 20px;
+}
+#ap-toolbar #rsResults {
+    bottom: 30px;
+    right: 5px;
+}
+#ap-toolbar td {
+    display: inline;
+}
+#ap-toolbar {
+    padding: 10px;
+}
+#ap-toolbar #toolbar {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+}
+#ap-toolbar #toolbar td {
+    margin: 5px;
+    padding: 4px 10px;
+}
+#toolbar-help, #ap-toolbar #toolbar-help {
+    display: none;
+}
+.pagination .limit {
+    float: right;
+    margin: 5px auto;
+    text-align: center;
+    width: 100px;
+}
+.pagination .limit select {
+    font-weight: bold;
+}
+.pagination .pagescounter {
+    display: none;
+    float: right;
+    text-align: center;
+}
+.pagination .numbers {
+    display: table;
+    float: left;
+    margin: 10px 10px 10px 35%;
+}
+.pagination .button2-left, .pagination .button2-right, .pagination .button2-left div, .pagination .button2-right div {
+    float: left;
+}
+.pagination .button2-left a, .pagination .button2-right a, .pagination .button2-left span, .pagination .button2-right span {
+    display: block;
+    float: left;
+    font-size: 11px;
+    height: 22px;
+    line-height: 22px;
+}
+.pagination .button2-left a, .pagination .button2-right a {
+    color: #333333;
+    cursor: pointer;
+}
+.pagination .button2-left span, .pagination .button2-right span {
+    color: #999999;
+    cursor: text;
+}
+input#position {
+    height: 15px !important;
+}
+#cpanel-inner {
+    padding-top: 6px;
+}
+#cpanel-inner .module {
+    clear: none;
+    float: left;
+    margin: 0 0 16px 16px;
+    width: 31.1%;
+}
+#cpanel-inner .module.half {
+    width: 47.5%;
+}
+#cpanel-inner .module-content {
+    height: 384px;
+    overflow: auto;
+    position: relative;
+}
+#cpanel-inner .module-footer {
+    min-height: 12px;
+    padding: 10px;
+}
+.add-module {
+    opacity: 0.4;
+}
+.add-module:hover {
+    opacity: 1;
+}
+.add-module-link {
+    display: block;
+    margin: 170px auto 0;
+    text-align: center;
+    width: 100px;
+}
+.add-module-tip {
+    margin: 10px auto;
+    text-align: center;
+}
+.module h3 {
+    margin: 0;
+    padding: 4px 10px;
+    text-align: center;
+}
+.ap-icon {
+    display: block;
+    height: 16px;
+    text-indent: -9999px;
+    width: 16px;
+}
+.ap-edit {
+    float: left;
+}
+.ap-disable {
+    float: right;
+}
+.ap-disable:hover {
+    cursor: pointer;
+}
+#ap-quicklink, #ap-myeditor {
+    float: left;
+}
+.ap-modal ul#submenu.configuration, .ap-modal ul#submenu.information {
+    float: left;
+    margin: -10px 0 10px;
+    z-index: 50;
+}
+.ap-modal ul#submenu.configuration li, .ap-modal ul#submenu.information li {
+    display: inline;
+    list-style: none outside none;
+}
+.ap-modal ul#submenu.configuration li a, .ap-modal ul#submenu.information li a {
+    background: none repeat scroll 0 0 #F0F0F0;
+    border-left: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+    border-top: 1px solid #CCCCCC;
+    color: #666666;
+    float: left;
+    margin-left: 3px;
+    padding: 4px 10px;
+}
+.ap-modal ul#submenu.configuration li a:hover, .ap-modal ul#submenu.information li a:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+.ap-modal ul#submenu.configuration a.active, .ap-modal ul#submenu.information a.active {
+    background: none repeat scroll 0 0 #F9F9F9;
+    border-bottom: 1px solid #F9F9F9;
+    color: #000000;
+    z-index: 100;
+}
+body {
+    background: url("../images/theme5/bg.png") repeat scroll 0 0 #F0ECEB;
+    color: #2F3237;
+}
+a {
+    color: #21759B;
+    text-decoration: none;
+}
+a:hover {
+    color: #035292;
+}
+#ap-mainmenu li ul li.submenu-arrow {
+    border-bottom: 7px solid #F8F8F8;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    box-shadow: 0 -3px 2px #999999;
+    height: 0;
+    left: 35%;
+    position: absolute;
+    top: -7px;
+    width: 0;
+}
+#ap-menu li ul li.submenu-arrow, #ap-mainmenu li ul li ul li.submenu-arrow {
+    border-bottom: 7px solid transparent;
+    border-right: 7px solid #F8F8F8;
+    border-top: 7px solid transparent;
+    box-shadow: none;
+    height: 0;
+    left: -7px;
+    position: absolute;
+    top: 10px;
+    width: 0;
+}
+#ap-mainmenu li.home-item ul li.submenu-arrow {
+    left: 10px;
+}
+#ap-mainmenu li.admin-item ul li.submenu-arrow, #ap-mainmenu li.tools-item ul li.submenu-arrow {
+    left: auto;
+    right: 10px;
+}
+#ap-mainmenu li ul, #ap-menu li ul.submenu {
+    background-color: #F8F8F8;
+    border: 1px solid #F4F4F4;
+    box-shadow: 0 0 3px #999999;
+    padding: 4px;
+}
+#ap-mainmenu li ul li a, #ap-menu li ul.submenu li a {
+    border: 1px solid #F8F8F8 !important;
+    color: #111111 !important;
+    font-size: 12px !important;
+    font-weight: normal;
+    height: auto;
+    margin: 2px 0;
+    padding: 1px 15px;
+    text-shadow: 0 1px 0 #FFFFFF !important;
+}
+#ap-mainmenu li ul li a:hover, #ap-menu li ul.submenu li a:hover {
+    background: url("../images/core/submenu-link.jpg") repeat-x scroll 0 -1px transparent;
+    border: 1px solid #235777 !important;
+    border-radius: 5px 5px 5px 5px;
+    color: #FFFFFF !important;
+    text-shadow: 0 1px 0 #111111 !important;
+}
+#ap-mainmenu li ul li a:active, #ap-menu li ul.submenu li a:active {
+    background: url("../images/core/submenu-link.jpg") repeat-x scroll 0 -40px transparent;
+}
+#ap-mainmenu li.active li a, #ap-mainmenu li li a, #ap-mainmenu li li a:hover, #ap-mainmenu li li a:active {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none !important;
+    color: #A0A7AF;
+    text-shadow: 0 1px 1px #000000;
+}
+#ap-mainmenu li li a:hover {
+    color: #CCCCCC;
+}
+#ap-mainmenu li.parent a {
+    position: relative;
+}
+#ap-mainmenu li.admin-item, #ap-mainmenu li.tools-item {
+    float: right;
+}
+#ap-mainmenu li.admin-item ul, #ap-mainmenu li.tools-item ul {
+    left: auto !important;
+    right: 0;
+    text-indent: 0;
+}
+#ap-mainmenu li.admin-item span.parent-name, #ap-mainmenu li.tools-item span.parent-name {
+    background: url("../images/icons-16.png") no-repeat scroll -868px -120px transparent;
+    display: block;
+    height: 16px;
+    margin-top: 2px;
+    text-indent: -9999px;
+    width: 16px;
+}
+#ap-mainmenu li.home-item span.parent-name {
+    background: url("../images/icons-16.png") no-repeat scroll -735px -120px transparent;
+    display: block;
+    height: 16px;
+    margin-top: 2px;
+    text-indent: -9999px;
+    width: 16px;
+}
+#ap-mainbody, .login {
+    border: 1px solid #131416;
+    border-radius: 10px 10px 10px 10px;
+}
+#ap-topleft, #ap-topright {
+    border: 1px solid #2D3035;
+    border-radius: 10px 10px 10px 10px;
+    padding: 1px 10px;
+}
+#ap-header #ap-topleft a, #ap-header #ap-topright a {
+    color: #060707;
+    text-shadow: 0 1px 1px #CCCCCC;
+}
+#ap-header #ap-topleft a:hover, #ap-header #ap-topright a:hover {
+    color: #000000;
+    text-shadow: 0 1px 1px #FFFFFF;
+}
+#ap-topleft:hover, #ap-topright:hover {
+    cursor: pointer;
+}
+#ap-mainmenu li.admin-item span.subarrow, #ap-mainmenu li.tools-item span.subarrow {
+    display: none;
+}
+.header {
+    background: none repeat scroll 0 0 transparent !important;
+    color: #333333 !important;
+    font-size: 18px !important;
+    font-weight: normal !important;
+    line-height: 24px !important;
+    padding: 0 !important;
+    text-shadow: 0 1px 1px #FFFFFF;
+}
+#ap-menu .panel {
+    border-radius: 0 10px 10px 0;
+    margin-bottom: 10px;
+    padding: 0;
+}
+#ap-mainmenu li a {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    height: 24px;
+    padding: 6px 14px 0;
+}
+#ap-mainmenu li a:hover {
+    text-decoration: none;
+}
+#ap-submenu li a {
+    color: #666666;
+    font-size: 13px;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+.add-module-link {
+    color: #CCD0D7;
+    font-size: 13px;
+}
+#ap-menu a {
+    color: #F8F8F8;
+    font-size: 11px;
+    text-shadow: 1px 1px 1px #000000;
+}
+#ap-crumbs li a, #ap-crumbs .last-crumb span {
+    background: url("../images/core/next.png") no-repeat scroll 0 50% transparent;
+    font-style: italic;
+    padding: 6px 10px 6px 20px;
+}
+#ap-crumbs li a span {
+    background: none repeat scroll 0 0 transparent;
+    padding: 0;
+}
+#ap-crumbs li a:hover {
+    color: #666666;
+    text-decoration: none;
+}
+#ap-crumbs li a:active {
+    text-shadow: 0 1px 1px #FFFFFF;
+}
+.ap-foot1, .ap-foot2, .ap-foot3, .ap-foot4 {
+    border: 1px solid #1A1D20;
+    min-height: 130px;
+    padding: 14px 20px;
+}
+.ap-foot1, .ap-foot2, .ap-foot3 {
+    margin-right: 10px;
+}
+.ap-foot4 {
+}
+#ap-footmods, #apfootmods h3, .ap-foot1, .ap-foot2, .ap-foot3, .ap-foot4, .ap-foot1 a, .ap-foot2 a, .ap-foot3 a, .ap-foot4 a {
+    color: #515B64;
+    font-size: 1em;
+    font-weight: bold;
+    text-shadow: 0 1px 1px #000000;
+}
+#ap-header a, #ap-quicklink h3 a, #login #ap-footer p, #login #ap-footer a, .ap-status a, .ap-status, .ap-status a:visited, .ap-status a:active, .ap-status a:link, #minwidth-body.full-mode #toolbar a, #ap-userstats a {
+    color: #FFFFFF;
+}
+input.system-openid, input.com-system-openid, .login a {
+    color: #000000;
+}
+dl.tabs dt {
+    color: #666666;
+}
+dl.tabs dt.open {
+    color: #000000;
+}
+hr {
+    background-color: transparent;
+}
+#ap-mainmenu li img {
+    border: 1px solid #363A40;
+    border-radius: 5px 5px 5px 5px;
+    margin: 4px 4px 0 0 !important;
+    padding: 1px;
+}
+.mceLayout table {
+    background: none repeat scroll 0 0 transparent !important;
+    border: 0 none !important;
+    border-radius: 0 0 0 0 !important;
+    padding: 0 !important;
+    width: auto !important;
+}
+#ap-content table.toolbar, #ap-toolbar table.toolbar {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    border-collapse: separate;
+    border-spacing: 2px;
+    float: right;
+    margin: 0;
+}
+.adminlist td, .admintable td, .mod_activitylog_pro li, #activitylog-data li {
+    border-bottom: 1px solid #D5D8DC;
+}
+.adminlist tr.row1 td, .adminlist tr:nth-child(2n) td, .mod_activitylog_pro li:nth-child(2n), #activitylog-data li:nth-child(2n) {
+    background: none repeat scroll 0 0 #EBF1F2;
+}
+.adminlist tr:hover td, .adminlist tr.row1:hover td, .mod_activitylog_pro li:hover, #activitylog-data li:hover {
+    background: -moz-linear-gradient(center top , #2989D8 1%, #1E5799 100%) repeat scroll 0 0 transparent;
+    color: #FFFFFF;
+}
+.adminlist tr:hover td a, .adminlist tr.row1:hover td a, .mod_activitylog_pro li:hover a, #activitylog-data li:hover a, .adminlist tr:hover td input {
+    color: #FFFFFF;
+}
+.adminlist tr:hover td.title, .adminlist tr:hover td.title a {
+    color: #666666;
+}
+.adminlist tfoot td, .admintable tfoot td {
+    border-bottom: 0 none;
+}
+body.mceContentBody {
+    padding: 5px;
+}
+body.mceContentBody:hover {
+    background-color: #FFF8E5;
+}
+.adminlist tfoot td, .admintable tfoot td, .adminlist tfoot tr:hover td, .admintable tfoot tr:hover td {
+    background: none repeat scroll 0 0 transparent;
+}
+.adminlist thead, .admintable thead, .adminlist td.title {
+    line-height: 1.2em;
+}
+.adminlist thead tr, .admintable thead tr {
+}
+.adminlist th, .adminlist td.title {
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+.adminlist th a, .adminlist td.title a {
+    color: #333333;
+    display: block;
+    float: left;
+    font-size: 11px;
+    font-weight: normal;
+}
+.adminlist th, .admintable th {
+}
+#ap-mainmenu li.active a, #ap-sidemenu li.active a, #ap-mainmenu li a:hover, #ap-sidemenu li a:hover {
+    outline: medium none;
+}
+.login {
+    background-color: #E5E5E5;
+}
+div#module-status.ap-status span, div#module-status.ap-status span a {
+    background-color: #222222;
+}
+div#module-status.ap-status span span {
+    background-color: transparent;
+}
+#ap-sidebar li.parent:hover ul.child-list {
+    background-color: #666666;
+}
+.com_configurator #ap-content {
+    background-color: #111111;
+}
+.tool-tip {
+    background: none repeat scroll 0 0 #444444;
+    border: 2px solid #23262A;
+    border-radius: 10px 10px 10px 10px;
+    color: #CCCCCC;
+    opacity: 0.9;
+    padding: 10px;
+    text-shadow: 0 1px 0 #000000;
+}
+.tool-title {
+    font-weight: normal;
+}
+.header, #menu li a {
+    background: none repeat scroll 0 0 transparent !important;
+}
+input.system-openid, input.com-system-openid {
+    background: url("http://openid.net/login-bg.gif") no-repeat scroll 0 50% #FFFFFF;
+}
+#system-message dd ul {
+    border-radius: 14px 14px 14px 14px;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0 1px 1px #000000;
+}
+#system-message dd ul a {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+#system-message dd.message ul {
+    background: url("../images/core/blue.jpg") repeat-x scroll 0 0 #418AB5;
+    border: 1px solid #4185A0;
+}
+#system-message dd.error ul {
+    background: url("../images/core/red.jpg") repeat-x scroll 0 0 #DE4444;
+    border: 1px solid #B74343;
+}
+#system-message dd.notice ul {
+    background: url("../images/core/orange.jpg") repeat-x scroll 0 0 #E49013;
+    border: 1px solid #C18911;
+}
+#system-message dd.success ul {
+    background: url("../images/core/green.jpg") repeat-x scroll 0 0 #82B23A;
+    border: 1px solid #74932F;
+}
+dl.tabs dt {
+    background: none repeat scroll 0 0 #F0F0F0;
+}
+dl.tabs dt.open {
+    background: none repeat scroll 0 0 #F9F9F9;
+}
+div.current {
+    box-shadow: 0 1px 3px #888888;
+}
+.ap-status .preview, .ap-status #betterpreview {
+    background: url("../images/icons/16/search.png") no-repeat scroll 5px 40% transparent;
+}
+.ap-status .unread-messages {
+    background: url("../images/icons/16/mail.png") no-repeat scroll 5px 40% transparent;
+}
+.ap-status .no-unread-messages {
+    background: url("../images/icons/16/mailopened.png") no-repeat scroll 5px 40% transparent;
+}
+.ap-status .loggedin-users {
+    background: url("../images/icons/16/user.png") no-repeat scroll 5px 40% transparent;
+}
+.ap-status .logout {
+    background: url("../images/icons/16/minus.png") no-repeat scroll 5px 40% transparent;
+}
+.ap-status .logout {
+    display: none !important;
+}
+#ap-sidebar .toolbar tbody {
+    display: block;
+    padding-bottom: 10px;
+}
+.toolbar a span {
+    background-repeat: no-repeat;
+    display: none;
+    float: left;
+    height: 16px;
+    margin: 0 2px 0 0;
+    width: 16px;
+}
+#ap-content #toolbar-new, #ap-content #toolbar-trash, #ap-content #toolbar-save, #ap-content #toolbar-cancel {
+    float: right;
+}
+.ap-footlogo {
+    background: url("../images/core/ap-logo.png") no-repeat scroll 100% 50% transparent;
+    padding: 5px 26px 5px 0;
+}
+.theme1 .ap-footlogo, .theme3 .ap-footlogo, .theme4 .ap-footlogo, .theme5 .ap-footlogo {
+    background: url("../images/core/light/ap-logo.png") no-repeat scroll 100% 50% transparent;
+    padding: 5px 26px 5px 0;
+}
+.icon-32-apply {
+    background-position: -150px 0;
+}
+.icon-32-archive {
+    background-position: -186px 0;
+}
+.icon-32-cancel {
+    background-position: -226px 0;
+}
+.icon-32-copy {
+    background-position: -60px 0;
+}
+.icon-32-default {
+}
+.icon-32-delete, .icon-32-trash {
+    background-position: -225px 0;
+}
+.icon-32-edit {
+}
+.icon-32-help {
+    background-position: -115px 0;
+}
+.icon-32-new {
+    background-position: -206px 0;
+}
+.icon-32-preview {
+    background-position: -320px 0;
+}
+.icon-32-publish {
+    background-position: -94px 0;
+}
+.icon-32-save {
+}
+.icon-32-unarchive {
+    background-position: -168px 0;
+}
+.icon-32-unpublish {
+    background-position: -74px 0;
+}
+#ap-crumbs {
+    border: 1px solid #8A8E97;
+    height: 28px;
+    overflow: hidden;
+    padding: 0 10px;
+}
+div.icon span.icon {
+    background-image: url("../images/header/header.png");
+}
+.icon-48-article-add {
+    background-position: 2px -20px;
+}
+.icon-48-article {
+    background-position: 2px -110px;
+}
+.icon-48-section {
+    background-position: 2px -878px;
+}
+.icon-48-category {
+    background-position: 2px -206px;
+}
+.icon-48-media {
+    background-position: 2px -590px;
+}
+.icon-48-menumgr {
+    background-position: 2px -686px;
+}
+.icon-48-frontpage {
+    background-position: 2px -402px;
+}
+.icon-48-language {
+    background-position: 2px -494px;
+}
+.icon-48-user {
+    background-position: 2px -782px;
+}
+.icon-48-config {
+    background-position: 2px -302px;
+}
+.jpane-toggler span {
+    background: url("../images/core/up.png") no-repeat scroll 100% 50% transparent;
+    padding-right: 20px;
+}
+.jpane-toggler-down span {
+    background: url("../images/core/down.png") no-repeat scroll 100% 50% transparent;
+    padding-right: 20px;
+}
+hr, #ap-topright li.last, #ap-topleft li.last, .pf_navigation #submenu, #ap-sidebar .component-list li.parent, #ap-content #menu .node, #ap-content #menu li.node li.node, .toolbar a, .toolbar a:hover, .ap-status span.messages {
+    border: 0 none;
+}
+#ap-content table.toolbar {
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+.toolbar td.button {
+    border: 1px solid #5C606B;
+    height: 26px;
+    padding: 0;
+}
+.toolbar td.button a {
+    display: block;
+    float: none;
+    padding: 5px 20px;
+}
+#quickadd_apply, .toolbar td#toolbar-save.button, .toolbar td#toolbar-send.button, .toolbar td#toolbar-forum-save.button, .toolbar td#toolbar-usergroup-save.button, .toolbar td#toolbar-setting-save.button, .toolbar td#toolbar-user-save.button, .toolbar td#toolbar-rank-save.button, .toolbar td#toolbar-dm_newdocument.button, .toolbar td#toolbar-dm_save.button, .toolbar td#toolbar-shajax-save.button {
+    background: url("../images/theme1/buttons.png") repeat-x scroll 0 -135px transparent;
+    border: 1px solid #01A7A7;
+}
+#file-upload-submit, #quickadd_save, .toolbar td#toolbar-new.button, .toolbar td#toolbar-forums-new.button, .toolbar td#toolbar-settings-new.button, .toolbar td#toolbar-usergroups-new.button, .toolbar td#toolbar-ranks-new.button, .toolbar td#toolbar-apply.button, .toolbar td#toolbar-dm_upload.button, .toolbar td#toolbar-dm_apply.button, .toolbar td#toolbar-popup-new.button {
+    background: url("../images/theme1/buttons.png") repeat-x scroll 0 -1px transparent;
+    border: 1px solid #71A63A;
+}
+#file-upload-submit, #quickadd_save, #quickadd_apply, .toolbar td#toolbar-new.button a, .toolbar td#toolbar-save.button a, .toolbar td#toolbar-send.button a, .toolbar td#toolbar-forums-new.button a, .toolbar td#toolbar-forum-save.button a, .toolbar td#toolbar-usergroup-save.button a, .toolbar td#toolbar-settings-new.button a, .toolbar td#toolbar-setting-save.button a, .toolbar td#toolbar-user-save.button a, .toolbar td#toolbar-usergroups-new.button a, .toolbar td#toolbar-ranks-new.button a, .toolbar td#toolbar-rank-save.button a, .toolbar td#toolbar-apply.button a, .toolbar td#toolbar-dm_newdocument.button a, .toolbar td#toolbar-dm_upload.button a, .toolbar td#toolbar-dm_save.button a, .toolbar td#toolbar-dm_apply.button a, .toolbar td#toolbar-popup-new.button a, .toolbar td#toolbar-shajax-save.button a {
+    color: #FFFFFF;
+    text-shadow: 0 1px 1px #333333;
+}
+#quickadd_apply:hover, .toolbar td#toolbar-save.button:hover, .toolbar td#toolbar-send.button:hover, .toolbar td#toolbar-forum-save.button:hover, .toolbar td#toolbar-usergroup-save.button:hover, .toolbar td#toolbar-setting-save.button:hover, .toolbar td#toolbar-user-save.button:hover, .toolbar td#toolbar-rank-save.button:hover, .toolbar td#toolbar-dm_newdocument.button:hover, .toolbar td#toolbar-dm_save.button:hover, .toolbar td#toolbar-shajax-save.button:hover {
+    background: url("../images/theme1/buttons.png") repeat-x scroll 0 -205px transparent;
+}
+#file-upload-submit:hover, #quickadd_save:hover, .toolbar td#toolbar-new.button:hover, .toolbar td#toolbar-forums-new.button:hover, .toolbar td#toolbar-settings-new.button:hover, .toolbar td#toolbar-usergroups-new.button:hover, .toolbar td#toolbar-ranks-new.button:hover, .toolbar td#toolbar-apply.button:hover, .toolbar td#toolbar-dm_upload.button:hover, .toolbar td#toolbar-dm_apply.button:hover, .toolbar td#toolbar-popup-new.button:hover {
+    background: url("../images/theme1/buttons.png") repeat-x scroll 0 -50px transparent;
+}
+#quickadd_reset, #activitylog-reset, .toolbar td#toolbar-trash.button, .toolbar td#toolbar-cancel.button, .toolbar td#toolbar-delete.button, .toolbar td#toolbar-forums-delete.button, .toolbar td#toolbar-forum-cancel.button, .toolbar td#toolbar-usergroup-cancel.button, .toolbar td#toolbar-setting-cancel.button, .toolbar td#toolbar-settings-delete.button, .toolbar td#toolbar-user-cancel.button, .toolbar td#toolbar-usergroups-delete.button, .toolbar td#toolbar-ranks-delete.button, .toolbar td#toolbar-rank-cancel.button, .toolbar td#toolbar-dm_cancel.button, #toolbar td.button[id*="delete"], #toolbar #toolbar-unsubscribe.button:nth-of-type(5) {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+}
+#quickadd_reset, #activitylog-reset, .toolbar td#toolbar-trash.button a, .toolbar td#toolbar-cancel.button a, .toolbar td#toolbar-delete.button a, .toolbar td#toolbar-forums-delete.button a, .toolbar td#toolbar-forum-cancel.button a, .toolbar td#toolbar-usergroup-cancel.button a, .toolbar td#toolbar-setting-cancel.button a, .toolbar td#toolbar-settings-delete.button a, .toolbar td#toolbar-user-cancel.button a, .toolbar td#toolbar-usergroups-delete.button a, .toolbar td#toolbar-ranks-delete.button a, .toolbar td#toolbar-rank-cancel.button a, .toolbar td#toolbar-dm_cancel.button a, #toolbar td[id*="delete"] a, #toolbar #toolbar-unsubscribe.button:nth-of-type(5) a {
+    color: #A64749;
+    padding: 5px;
+    text-decoration: underline;
+    text-shadow: 0 1px 1px #FFFFFF;
+}
+#quickadd_reset:hover, #activitylog-reset:hover, .toolbar td#toolbar-trash.button:hover, .toolbar td#toolbar-cancel.button:hover, .toolbar td#toolbar-delete.button:hover, .toolbar td#toolbar-forums-delete.button:hover, .toolbar td#toolbar-forum-cancel.button:hover, .toolbar td#toolbar-usergroup-cancel.button:hover, .toolbar td#toolbar-setting-cancel.button:hover, .toolbar td#toolbar-settings-delete.button:hover, .toolbar td#toolbar-user-cancel.button:hover, .toolbar td#toolbar-usergroups-delete.button:hover, .toolbar td#toolbar-ranks-delete.button:hover, .toolbar td#toolbar-rank-cancel.button:hover, .toolbar td#toolbar-dm_cancel.button:hover, #toolbar td.button[id*="delete"]:hover, #toolbar #toolbar-unsubscribe.button:nth-of-type(5):hover {
+    background: none repeat scroll 0 0 transparent;
+}
+#quickadd_reset:hover, #activitylog-reset:hover, .toolbar td#toolbar-trash.button a:hover, .toolbar td#toolbar-cancel.button a:hover, .toolbar td#toolbar-delete.button a:hover, .toolbar td#toolbar-forums-delete.button a:hover, .toolbar td#toolbar-forum-cancel.button a:hover, .toolbar td#toolbar-usergroup-cancel.button a:hover, .toolbar td#toolbar-setting-cancel.button a:hover, .toolbar td#toolbar-settings-delete.button a:hover, .toolbar td#toolbar-user-cancel.button a:hover, .toolbar td#toolbar-usergroups-delete.button a:hover, .toolbar td#toolbar-ranks-delete.button a:hover, .toolbar td#toolbar-rank-cancel.button a:hover, .toolbar td#toolbar-dm_cancel.button a:hover, #toolbar td[id*="delete"] a:hover, #toolbar #toolbar-unsubscribe.button:nth-of-type(5) a:hover {
+    color: #E33437;
+}
+.ap3.theme2 .toolbar td#toolbar-trash.button a, .ap3.theme2 .toolbar td#toolbar-cancel.button a, .ap3.theme2 .toolbar td#toolbar-delete.button a, .theme2 .toolbar td#toolbar-forums-delete.button a, .theme2 .toolbar td#toolbar-forum-cancel.button a, .theme2 .toolbar td#toolbar-usergroup-cancel.button a, .theme2 .toolbar td#toolbar-setting-cancel.button a, .theme2 .toolbar td#toolbar-settings-delete.button a, .theme2 .toolbar td#toolbar-user-cancel.button a, .theme2 .toolbar td#toolbar-usergroups-delete.button a, .theme2 .toolbar td#toolbar-ranks-delete.button a, .theme2 .toolbar td#toolbar-rank-cancel.button a, .theme2 .toolbar td#toolbar-dm_cancel.button a, .theme2 #toolbar td[id*="delete"] a, .theme2 #toolbar #toolbar-unsubscribe.button:nth-of-type(5) a {
+    color: #F29698;
+    text-shadow: 1px 1px 1px #313035;
+}
+.ap3.theme2 .toolbar td#toolbar-trash.button a:hover, .ap3.theme2 .toolbar td#toolbar-cancel.button a:hover, .ap3.theme2 .toolbar td#toolbar-delete.button a:hover, .theme2 .toolbar td#toolbar-forums-delete.button a:hover, .theme2 .toolbar td#toolbar-forum-cancel.button a:hover, .theme2 .toolbar td#toolbar-usergroup-cancel.button a:hover, .theme2 .toolbar td#toolbar-setting-cancel.button a:hover, .theme2 .toolbar td#toolbar-settings-delete.button a:hover, .theme2 .toolbar td#toolbar-user-cancel.button a:hover, .theme2 .toolbar td#toolbar-usergroups-delete.button a:hover, .theme2 .toolbar td#toolbar-ranks-delete.button a:hover, .theme2 .toolbar td#toolbar-rank-cancel.button a:hover, .theme2 .toolbar td#toolbar-dm_cancel.button a:hover, .theme2 #toolbar td[id*="delete"] a:hover, .theme2 #toolbar #toolbar-unsubscribe.button:nth-of-type(5) a:hover {
+    color: #FACACB;
+}
+.toolbar a {
+    color: #333333;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.toolbar a:hover {
+    color: #333333;
+    text-decoration: none;
+}
+hr, .admintable td, .adminlist th, .adminlist .row0, .adminlist .row1, .adminlist tr, h3.jpane-toggler, h3.jpane-toggler-down {
+    border-bottom: 1px solid #CCCCCC;
+}
+.paramlist_value hr {
+    display: none;
+}
+button, .button1 a, .list-footer a, .bullet1 strong a {
+    border: 1px solid #91969E;
+    color: #333333;
+    font-weight: bold;
+    text-shadow: 0 1px 1px #CCCCCC;
+}
+.pagination .limit select {
+    background: none repeat scroll 0 0 #DDDDDD;
+    border: 1px solid #91969E;
+    color: #333333;
+    font-weight: bold;
+    padding: 5px 10px;
+    text-shadow: 0 1px 1px #CCCCCC;
+}
+.button1 a {
+    border: 1px solid #777777;
+}
+button:hover, .button:hover, .button1 a:hover, .list-footer a:hover {
+    color: #555555;
+    cursor: pointer;
+}
+button:active, .button1 a:active, .list-footer a:active {
+    background: url("../images/core/button.jpg") repeat-x scroll 0 -22px #565B65;
+    outline: medium none;
+}
+.button2-left a:hover, .button2-right a:hover {
+    color: #444444;
+    text-decoration: none;
+}
+.button2-left a:active, .button2-right a:active {
+    border: 1px solid #8A8E97;
+    color: #222222;
+}
+input, textarea, select, table.adminform {
+    border: 1px solid #CCCCCC;
+}
+table {
+    border-style: solid !important;
+}
+#ap-quicklink h3, #minwidth-body.full-mode #ap-content {
+    border-bottom: medium none;
+}
+#ap-topleft li, #ap-topright li {
+    border-right: 1px solid #444444;
+}
+dl.tabs dt {
+    border-left: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+    border-top: 1px solid #CCCCCC;
+}
+dl.tabs dt.open {
+    border-bottom: 1px solid #F9F9F9;
+}
+div.current {
+    border: 1px solid #CCCCCC;
+}
+#ap-logo {
+    text-shadow: 0 1px 1px #000000;
+}
+#ap-userstats #ap-sitename, #ap-userstats #ap-title {
+    color: #EEEEEE;
+    float: left;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 1px 0 0 8px;
+    text-shadow: 1px 1px 0 #000000;
+}
+#ap-quicklink h3 a {
+    text-shadow: 0 1px 1px #0066FF;
+}
+#ap-quickadd select, #ap-myeditor select {
+    background: none repeat scroll 0 0 transparent !important;
+    border: 0 none;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+.quickadd_buttons input.button {
+    border-radius: 4px 4px 4px 4px;
+    font-size: 13px;
+    padding: 4px 10px;
+}
+.quickadd_buttons td {
+    padding: 4px 14px;
+}
+#quickadd_reset, #activitylog-reset {
+    box-shadow: none;
+}
+#quickAddContentForm .admintable td {
+    border-bottom: 1px solid #DDDDDD;
+}
+#ap-content #menu .separator {
+    list-style: none outside none;
+}
+#ap-sidebar .component-list li a {
+    font-weight: bold;
+    text-shadow: 0 1px 1px #FFFFFF;
+}
+#ap-sidebar .component-list .child-list a {
+    color: #CCCCCC;
+    text-shadow: 0 1px 1px #000000;
+}
+#ap-content .component-list {
+    background-image: url("../images/shelf.png");
+}
+#ap-content .component-list, #ap-content #menu {
+    box-shadow: 0 4px 15px #333333 inset;
+    display: table;
+    margin: 0 10px 10px;
+}
+#ap-content .component-list, #ap-content .component-list li, #ap-content #menu li {
+    list-style: none outside none;
+}
+#ap-content .component-list li, #ap-content #menu li {
+    margin: 10px 0;
+    padding: 10px;
+}
+#ap-content #menu {
+    width: 98%;
+}
+#ap-content .component-list li li, #ap-content #menu li li {
+    border: 0 none;
+    padding: 0;
+}
+#ap-content .component-list li.child, #ap-content .component-list ul.child-list, #ap-content #menu li ul {
+    margin-bottom: 0;
+}
+#ap-content .component-list a.parent-link {
+    color: #FFFFFF;
+    font-size: 14px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #000000;
+}
+#ap-content .component-list {
+    border-radius: 10px 10px 10px 10px;
+    padding: 0 0 20px 20px;
+}
+#ap-content #menu {
+    border-radius: 10px 10px 10px 10px;
+    padding: 0 0 20px;
+}
+#ap-content #menu li.node {
+    float: left;
+    height: 200px;
+    margin: 20px 0 0 20px;
+    overflow: auto;
+}
+#ap-content #menu li.node li.node {
+    display: none;
+}
+#ap-content .component-list .component-image {
+    background-color: #FFFFFF;
+    background-position: 50% 46%;
+    background-repeat: no-repeat;
+    border: 3px solid #EEEEEE;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 1px -2px 4px #333333;
+    display: block;
+    height: 120px;
+    margin: 0 auto;
+    width: 120px;
+}
+#ap-content .component-list .component-label {
+    display: block;
+    height: 20px;
+    margin-top: 5px;
+    overflow: hidden;
+}
+#ap-content #menu li.node {
+    background-color: #FFFFFF;
+    background-position: 50% 46%;
+    background-repeat: no-repeat;
+    border: 3px solid #EEEEEE;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 1px -2px 4px #333333;
+}
+#ap-content #menu li.node a {
+    font-size: 14px;
+}
+#ap-content #menu li.node ul {
+    margin-left: 0;
+    min-width: 140px;
+}
+#ap-content #menu li.node li a {
+    font-size: 12px;
+}
+#ap-content .com_banners .component-image {
+    background-image: url("../images/components/banners.png");
+}
+#ap-content .com_contact .component-image {
+    background-image: url("../images/components/contacts.png");
+}
+#ap-content .com_newsfeeds .component-image {
+    background-image: url("../images/components/newsfeeds.png");
+}
+#ap-content .com_poll .component-image {
+    background-image: url("../images/components/poll.png");
+}
+#ap-content .com_search .component-image {
+    background-image: url("../images/components/search.png");
+}
+#ap-content .com_weblinks .component-image {
+    background-image: url("../images/components/weblinks.png");
+}
+#ap-content .component-image {
+    background-image: url("../images/components/box.png");
+}
+#ap-content .com_adminpraise .component-image {
+    background-image: url("../images/components/adminpraise.png");
+}
+#ap-content .com_admintools .component-image {
+    background-image: url("../images/components/admintools.png");
+}
+#ap-content .com_akeeba .component-image {
+    background-image: url("../images/components/akeeba.jpg");
+}
+#ap-content .com_configurator .component-image {
+    background-image: url("../images/components/configurator.jpg");
+}
+#ap-content .com_community .component-image {
+    background-image: url("../images/components/jomsocial.png");
+}
+#ap-content .com_comprofiler .component-image {
+    background-image: url("../images/components/comprofiler.png");
+}
+#ap-content .com_docman .component-image {
+    background-image: url("../images/components/docman.png");
+}
+#ap-content .com_jce .component-image {
+    background-image: url("../images/components/jce.gif");
+}
+#ap-content .com_joomailermailchimpintegration .component-image {
+    background-image: url("../images/components/joomailer.png");
+}
+#ap-content .com_flexicontent .component-image {
+    background-image: url("../images/components/flexicontent.png");
+}
+#ap-content .com_k2 .component-image {
+    background-image: url("../images/components/k2.jpg");
+}
+#ap-content .com_k2mart .component-image {
+    background-image: url("../images/components/k2mart.png");
+}
+#ap-content .com_kunena .component-image {
+    background-image: url("../images/components/kunena.png");
+}
+#ap-content .com_ninjaboard .component-image {
+    background-image: url("../images/components/ninjaboard.png");
+}
+#ap-content .com_ninjaxplorer .component-image {
+    background-image: url("../images/components/ninjaxplorer.jpg");
+}
+#ap-content .com_nonumbermanager .component-image {
+    background-image: url("../images/components/nonumber.jpg");
+}
+#ap-content .com_phocagallery .component-image {
+    background-image: url("../images/components/phocagallery.jpg");
+}
+#ap-content .com_projectfork .component-image {
+    background-image: url("../images/components/projectfork.png");
+}
+#ap-content .com_sh404sef .component-image {
+    background-image: url("../images/components/sh404sef.png");
+}
+#ap-content .com_sobi2 .component-image {
+    background-image: url("../images/components/sobi2.jpg");
+}
+#ap-content .com_sobipro .component-image {
+    background-image: url("../images/components/sobipro.png");
+}
+#ap-content .com_tienda .component-image {
+    background-image: url("../images/components/tienda.png");
+}
+#ap-content .com_virtuemart .component-image {
+    background-image: url("../images/components/virtuemart.png");
+}
+#ap-content .com_xmap .component-image {
+    background-image: url("../images/components/xmap.jpg");
+}
+#ap-content .com_zoo .component-image {
+    background-image: url("../images/components/zoo.jpg");
+}
+button:active, .button1 a:active {
+    position: relative;
+    top: 1px;
+}
+body.contentpane {
+    background-color: #FFFFFF;
+    margin: 50px 10px 10px;
+}
+#ap-crumbs, .ap-foot1, .ap-foot2, .ap-foot3, .ap-foot4, .login, .button1 a, #system-message dd ul, .button2-left a, .list-footer a, #ap-content #menu .node, .theme_content, #theme_wrapper .theme_sidebar .moduletable, .pagination .limit, .button2-right.off, .button2-left.off, .button2-right span, .button2-left span, .pagination .button2-right a, #ap-sidebar li.parent:hover ul.child-list {
+    border-radius: 10px 10px 10px 10px;
+}
+#ap-mainmenu li ul {
+    border-radius: 5px 5px 5px 5px;
+}
+input#position, #ap-content .component-list li li {
+    border-radius: 0 0 0 0;
+}
+.button, button, #ap-toolbar #toolbar td, .pagination .limit select {
+    border-radius: 5px 5px 5px 5px;
+}
+#ap-mainbody h1, #ap-mainbody h2, #ap-mainbody h3, #ap-mainbody h4 {
+    text-shadow: 0 1px 1px #FFFFFF;
+}
+#ap-sidebar .module hr, .bullet1 li {
+    background: url("../images/core/heading.png") no-repeat scroll 50% 100% transparent;
+    border: 0 none;
+    margin-bottom: 5px;
+}
+#ap-mainmenu li ul {
+}
+#mm_subject {
+    font-size: 16px;
+    width: 50%;
+}
+#mm_message {
+    width: 98%;
+}
+.com_media td[width="200px"] {
+    width: 150px !important;
+}
+.com_media #folderview .view {
+    height: 460px;
+    margin: 0 0 10px;
+}
+.com_media #treeview {
+    width: auto;
+}
+.com_community #ap-content-inner {
+    background: none repeat scroll 0 0 #FFFFFF;
+}
+#ap-footer #ap-version .updatefound {
+    color: red !important;
+    text-decoration: underline;
+}
+div[style*="-1.2em"] {
+    margin: 0 auto 10px !important;
+}
+.ui-state-highlight, .ui-widget-content .ui-state-highlight {
+    background: -moz-linear-gradient(center top , #FEFCEA 0%, #EDDE7D 100%) repeat scroll 0 0 transparent;
+}
+div.akeeba-ui-config-header {
+    padding: 4px 8px;
+}
+.com_akeeba.ap-view-buadmin #toolbar td:nth-of-type(3) {
+    right: 80px !important;
+}
+.com_akeeba.ap-view-buadmin #toolbar #toolbar-publish {
+    right: 132px;
+}
+.com_contushdvideoshare #ap-content-inner div[style*="97%"] {
+    display: none;
+}
+#ap-menu li.com_contushdvideoshare .component-label {
+    display: block;
+    margin: 0 auto;
+    width: 50px;
+}
+.com_comprofiler #toolbar-switch {
+    display: none;
+}
+.cbtoolbarbar {
+    position: relative;
+    right: 10px;
+    top: -70px;
+    z-index: 100;
+}
+.cbtoolbarbar .cbtoolbar {
+    height: auto;
+}
+.cbtoolbarbar span {
+    display: none;
+}
+#cbAdminMainWrapper .header {
+    line-height: 32px !important;
+}
+.com_comprofiler .adminheading th.install {
+    padding-left: 10px;
+    vertical-align: middle;
+}
+.cbtoolbarbar a {
+    border: 0 none;
+    border-radius: 4px 4px 4px 4px;
+    color: #333333;
+}
+.cbtoolbarbar a:hover {
+    border: 0 none;
+    color: #333333;
+    padding: 1px 1px 1px 4px;
+}
+.theme2 .cbtoolbarbar a {
+    border: 0 none;
+    color: #EEEEEE;
+}
+.theme2 .cbtoolbarbar a:hover {
+    color: #CCCCCC;
+}
+.cbtoolbarbar a[href*="new"], .cbtoolbarbar a[href*="save"], .cbtoolbarbar a[onclick*="newField"], .cbtoolbarbar a[onclick*="newTab"], .cbtoolbarbar a[onclick*="newList"], .cbtoolbarbar a[href="#publishPlugin"] {
+    background: url("../images/theme1/buttons.png") repeat-x scroll 0 -1px transparent;
+    border: 1px solid #71A63A;
+    color: #FFFFFF;
+    padding: 1px 8px;
+    text-shadow: 0 1px 1px #333333;
+}
+.cbtoolbarbar a[href*="new"]:hover, .cbtoolbarbar a[href*="save"]:hover, .cbtoolbarbar a[onclick*="newField"]:hover, .cbtoolbarbar a[onclick*="newTab"]:hover, .cbtoolbarbar a[onclick*="newList"]:hover, .cbtoolbarbar a[href="#publishPlugin"]:hover {
+    background: url("../images/theme1/buttons.png") repeat-x scroll 0 -50px transparent;
+    padding: 1px 8px;
+}
+.cbtoolbarbar a[href*="remove"], .cbtoolbarbar a[href*="cancel"], .cbtoolbarbar a[href="#deletePlugin"], .cbtoolbarbar a[href*="#show"] {
+    color: #A64749;
+    text-shadow: none;
+}
+.cbtoolbarbar a[href*="remove"]:hover, .cbtoolbarbar a[href*="cancel"]:hover, .cbtoolbarbar a[href="#deletePlugin"]:hover, .cbtoolbarbar a[href*="#show"]:hover {
+    color: #E33437;
+}
+.theme2 .cbtoolbarbar a[href*="remove"], .theme2 .cbtoolbarbar a[href*="cancel"], .theme2 .cbtoolbarbar a[href="#deletePlugin"], .theme2 .cbtoolbarbar a[href*="#show"] {
+    color: #F29698;
+    text-shadow: 1px 1px 1px #313035;
+}
+.theme2 .cbtoolbarbar a[href*="remove"]:hover, .theme2 .cbtoolbarbar a[href*="cancel"]:hover, .theme2 .cbtoolbarbar a[href="#deletePlugin"]:hover, .theme2 .cbtoolbarbar a[href*="#show"]:hover {
+    color: #FACACB;
+}
+.theme2 #ap-content .header {
+    color: #333333 !important;
+    text-shadow: 0 1px 1px #FFFFFF;
+}
+img[src*="smcblogo"] {
+    display: none;
+}
+#cbAdminMainWrapper td {
+    text-align: left !important;
+}
+.com_comprofiler .adminlist th a.pagenav {
+    display: inline;
+    float: none;
+    font-size: 12px;
+}
+.com_comprofiler tfoot .cbpagination {
+    font-style: normal;
+}
+.com_installer.ap-task-doInstall .cpanel br {
+    display: none;
+}
+.button2-left .doclink {
+    background: none repeat scroll 0 0 transparent;
+}
+table.admintable td.paramlist_key {
+    width: 100px;
+}
+.template-title {
+    background: none repeat scroll 0 0 transparent;
+    color: #333333;
+    font-size: 14px;
+    height: auto;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-shadow: none;
+}
+#master-bar span.button {
+    border: 0 none;
+    box-shadow: none;
+}
+#master-bar span.button:hover {
+    color: #FFFFFF;
+}
+.g-surround .overlay {
+    position: relative;
+}
+.group-fusionmenu, .group-splitmenu {
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+    position: relative;
+    z-index: 181;
+}
+#ap-mainbody h3.g-title {
+    color: #FFFFFF;
+    text-shadow: 1px 1px 0 #000000;
+}
+.menuitems-patch {
+    top: 0 !important;
+}
+.com_jce.ap-type-group #toolbar #toolbar-new {
+    right: 90px;
+}
+.com_jce.ap-type-group #toolbar #toolbar-delete {
+    right: 40px;
+}
+.com_jce #sbox-overlay, .com_jce #sbox-window, .contentpane.ui-jce #toolbar {
+    display: none;
+}
+.com_community.ap-view-users #toolbar #toolbar-save {
+    right: 104px;
+}
+.com_community.ap-view-reports #toolbar #toolbar-trash:nth-of-type(4) {
+    right: 50px;
+}
+.com_jckman form[name="adminForm"] table {
+    width: auto;
+}
+.com_jckman div.sortableList div.sortableListDiv span.sortableListSpan ul {
+    position: relative;
+}
+div#k2QuickIconsTitle a span {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 0 1px 1px #FFFFFF;
+}
+div#k2QuickIconsTitle a {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    margin: 0;
+}
+#k2QuickIconsTitle, .com_k2.ap-view-item #hiddenDiv #system-message {
+    display: none;
+}
+#k2QuickIcons {
+    border-top: 0 none;
+}
+#k2QuickIcons img {
+    padding: 0 !important;
+}
+#k2QuickIcons div.icon a {
+    border: 0 none;
+}
+#k2QuickIcons div.icon a:hover {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    color: #333333;
+}
+.k2AdminCpanel div.icon a {
+    height: 90px;
+    width: 100px;
+}
+.com_k2 dl.tabs {
+    margin-left: 4px;
+}
+.k2Date {
+    font-size: 10px;
+    white-space: normal;
+    width: 20px;
+}
+table.adminFormK2 tr td input#title, table.adminFormK2 tr td input#alias {
+    width: 94%;
+}
+#adminFormK2Sidebar {
+    width: 230px;
+}
+#adminFormK2Sidebar input {
+    width: 80%;
+}
+.com_k2 #toolbar #toolbar-save:nth-of-type(2) {
+    border: 0 none;
+    border-radius: 0 0 0 0;
+    position: relative;
+    right: -32px;
+    text-shadow: none;
+    top: 1px;
+}
+.com_k2 #toolbar #toolbar-save:nth-of-type(2) a {
+    color: #333333;
+    text-shadow: none;
+}
+.com_k2 .k2AdminTableFiltersSelects select {
+    max-width: 130px;
+}
+.simpleTabsContent #system-message {
+    left: 0;
+    position: relative;
+    top: 0;
+}
+#k2martModule div.simpleTabsContent {
+    margin-top: 1px;
+}
+#k2martLeftColumn {
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 54%;
+}
+#k2martRightColumn {
+    margin-right: 20px;
+    width: 38%;
+}
+div.dummyHeight {
+    border-top: 1px solid #CCCCCC;
+    margin-top: 0;
+}
+.com_k2 #editor-xtd-buttons div.button2-left {
+    margin: 5px 4px 0 0;
+}
+div.simpleTabsContent.currentTab {
+    border: 1px solid #CCCCCC;
+    margin-top: 2px;
+}
+a#k2ToggleSidebar {
+    display: block;
+    float: right;
+    font-size: 11px;
+    height: 16px;
+    line-height: 16px;
+    margin-right: 2px;
+    padding: 0;
+    text-align: center;
+    width: 200px;
+}
+.com_kunena.ap-view-install #ap-content {
+    background: none repeat scroll 0 0 #FFFFFF;
+    padding: 10px;
+}
+.com_kunena #ap-content {
+    min-height: 520px;
+}
+.kadmin-welcome {
+    background: none repeat scroll 0 0 #EEEEEE;
+    margin-bottom: 10px;
+}
+.com_kunena .kadmin-right, .com_kunena .kadmin-footer {
+    background: none repeat scroll 0 0 transparent;
+}
+.com_kunena .kadmin-left {
+    background: none repeat scroll 0 0 #FFFFFF;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.com_kunena .kadmin-functitle {
+    border: 0 none;
+}
+.com_kunena #kadmin {
+    padding-top: 10px;
+}
+.com_kunena.ap-task-showTemplates #toolbar #toolbar-new {
+    right: 64px;
+}
+.alert-modalbox, #import-log {
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 10px 10px 10px 10px;
+}
+.com_flexicontent #ap-content .left {
+    float: none;
+}
+.com_flexicontent.edit.item .admintable .key {
+    display: none;
+}
+.flexi-icon-32 a {
+    display: block;
+    height: 32px;
+    padding: 5px;
+}
+.flexi-icon-32 {
+    margin-bottom: 5px;
+    padding-left: 5px !important;
+}
+.com_flexicontent .adminlist tr:hover td {
+}
+.com_flexicontent table.adminlist thead td {
+    vertical-align: top;
+}
+.com_flexicontent table.adminlist thead td {
+    border-left: 0 none;
+}
+.com_flexicontent #filterline #filter_id {
+    padding: 2px 0;
+    text-align: center;
+}
+.col_created, .col_revised, #col_id {
+    font-size: 9px;
+}
+.com_flexicontent.ap-view- .adminlist, .com_flexicontent.ap-view- .adminlist tr:hover td {
+    background: none repeat scroll 0 0 transparent !important;
+}
+.com_flexicontent .statetoggler li ul li img {
+    padding: 16px 0 0;
+}
+.com_ninjaboard div.pagination div.limit {
+    border-radius: 4px 4px 4px 4px;
+    width: auto;
+}
+.com_ninjaboard div.pagination div.limit select {
+    padding: 0;
+}
+.com_ninjaboard.ap-view-setting div.width-50 {
+    width: 90%;
+}
+.adminform.ninja-form {
+    font-size: 11px;
+}
+#nx_logo {
+    left: 10px;
+    position: relative;
+    width: 200px;
+}
+.com_ninjaxplorer table.adminheading {
+    margin-bottom: 0;
+}
+img[src$="_home.gif"], img[src$="_refresh.gif"], img[src$="_search.gif"], img[src$="systeminfo.gif"], img[src$="_copy.gif"], img[src$="_move.gif"], img[src$="_delete.gif"], img[src$="_chmod.gif"], img[src$="_upload.gif"], img[src$="_archive.gif"], img[src$="_up.png"], img[src$="bookmark_add.gif"], img[src$="dir.png"], img[src$="_edit.png"], img[src$="src.gif"], img[src$="_download.png"], #quick_jumpto img[src$="publish_x.png"], img[src$="_rename.gif"] {
+    display: inline-block;
+    font-size: 9px;
+    height: 0;
+    overflow: hidden;
+    padding-top: 16px;
+    text-indent: -9999px;
+    width: 16px;
+}
+img[src$="_home.gif"] {
+    background: url("../images/icons-16.png") no-repeat scroll -735px -120px transparent;
+}
+img[src$="_refresh.gif"] {
+    background: url("../images/icons-16.png") no-repeat scroll -67px -160px transparent;
+}
+img[src$="_search.gif"] {
+    background: url("../images/icons-16.png") no-repeat scroll -538px -80px transparent;
+}
+img[src$="systeminfo.gif"] {
+    background: url("../images/icons-16.png") no-repeat scroll -66px -120px transparent;
+}
+img[src$="_copy.gif"] {
+    background: url("../images/icons-16.png") no-repeat scroll -697px -240px transparent;
+}
+img[src$="_move.gif"] {
+    background: url("../images/icons-16.png") no-repeat scroll -804px -40px transparent;
+}
+img[src$="_delete.gif"] {
+    background: url("../images/icons-16.png") no-repeat scroll -468px 0 transparent;
+}
+img[src$="_chmod.gif"] {
+    background: url("../images/icons-16.png") no-repeat scroll -387px -240px transparent;
+}
+img[src$="_upload.gif"] {
+    background: url("../images/icons-16.png") no-repeat scroll -669px -160px transparent;
+}
+img[src$="_archive.gif"] {
+    background: url("../images/icons-16.png") no-repeat scroll -735px -160px transparent;
+}
+img[src$="_up.png"] {
+    background: url("../images/icons-16.png") no-repeat scroll -823px -240px transparent;
+}
+img[src$="bookmark_add.gif"] {
+    background: url("../images/icons-16.png") no-repeat scroll -943px -80px transparent;
+    margin-top: 3px;
+}
+#quick_jumpto img[src$="publish_x.png"] {
+    background: url("../images/icons-16.png") no-repeat scroll -468px 0 transparent;
+    margin-top: 3px;
+}
+img[src$="dir.png"] {
+    background: url("../images/icons-16.png") no-repeat scroll -1010px -194px transparent;
+}
+img[src$="_edit.png"] {
+    background: url("../images/icons-16.png") no-repeat scroll 0 -120px transparent;
+}
+img[src$="src.gif"] {
+    background: url("../images/icons-16.png") no-repeat scroll -538px -80px transparent;
+}
+img[src$="_download.png"] {
+    background: url("../images/icons-16.png") no-repeat scroll -888px -240px transparent;
+}
+img[src$="_rename.gif"] {
+    background: url("../images/icons-16.png") no-repeat scroll -953px -240px transparent;
+}
+img[src*="logo-phoca"], .com_phocadownload.ap-view- iframe, .com_phocagallery.ap-view- iframe, .ap-modal-view-phocagalleryd #toolbar {
+    display: none;
+}
+.com_phocagallery.ap-view- #sbox-content iframe {
+    display: block;
+}
+body.contentpane.ap-modal-view-phocagalleryd {
+    margin: 10px;
+}
+.com_sobi2 #ap-content-inner {
+    padding: 0 10px;
+}
+div[style*="sobi2_logo48"] {
+    display: none;
+}
+button[onclick*="sinstall"] {
+    font-size: 13px !important;
+    height: 24px !important;
+    margin-bottom: 10px;
+}
+.com_sobi2 table.SobiAdminHeading {
+    background: none repeat scroll 0 0 transparent;
+}
+.com_sobi2 table.SobiAdminHeading th {
+    border-bottom: 0 none;
+}
+.com_sobi2 img[alt*="Sigsiu.NET"] {
+    display: none;
+}
+.com_sobi2 #toolbar {
+    display: none;
+}
+.com_sobi2 .button {
+    color: #333333 !important;
+}
+.com_sobi2 h2 {
+    color: inherit !important;
+}
+.com_sobi2 table.adminform th, .com_sobi2 table.SobiAdminForm th, .com_sobi2 table.SobiAdminList th {
+    background: none repeat scroll 0 0 #EEEEEE;
+    color: #456190;
+    line-height: 1.6em;
+    text-shadow: 0 1px 1px #FFFFFF;
+}
+.com_sobi2 table.adminform th a, .com_sobi2 table.SobiAdminForm th a, .com_sobi2 table.SobiAdminList th a {
+    color: #456190 !important;
+}
+.com_sobi2 #toolbar-switch {
+    display: none;
+}
+.com_sobi2 table#sobitoolbar p.tableCell {
+    background-color: transparent;
+    border: 0 none;
+    padding: 2px 5px 2px 3px;
+    width: auto;
+}
+table.SobiAdminHeading th {
+    vertical-align: middle;
+}
+.com_sobi2 table#sobitoolbar td {
+    text-align: center;
+}
+.com_sobi2 div .menuWrapper ul li {
+    list-style: none outside none;
+}
+.com_sobi2 .menuTabHeader {
+    background: url("../images/core/heading.png") no-repeat scroll 50% 100% transparent;
+    color: #333333;
+    font-weight: bold;
+    padding-bottom: 10px;
+    text-shadow: 0 1px 1px #FFFFFF;
+    text-transform: uppercase;
+}
+.com_sobi2 #accordionTabs {
+    background: none repeat scroll 0 0 #DDDDDD;
+    border: 1px solid #AAAAAA;
+    border-radius: 5px 5px 5px 5px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    margin-top: 5px;
+    padding: 10px;
+}
+.com_sobi2 .dynamic-tab-pane-control .tab-row {
+    background: none repeat scroll 0 0 transparent;
+}
+.com_sobi2 .dynamic-tab-pane-control .tab-page {
+    border: 1px solid #CCCCCC;
+}
+.com_sobi2 .dynamic-tab-pane-control .tab-row .tab.selected, .com_sobi2 .dynamic-tab-pane-control .tab-row .tab {
+    border-color: #CCCCCC;
+    border-radius: 10px 10px 0 0;
+    letter-spacing: 0;
+}
+.com_sobi2 .dynamic-tab-pane-control .tab-row .tab {
+    background: none repeat scroll 0 0 #F0F0F0;
+    border-left: 1px solid #CCCCCC;
+    border-top: 1px solid #CCCCCC;
+}
+.com_sobi2 .dynamic-tab-pane-control .tab-row .tab a {
+    color: #333333;
+}
+.com_sobi2 .SobiAdminHeading {
+    clear: both;
+    margin-top: 0 !important;
+}
+.com_sobi2 table.SobiAdminList tr.row0 {
+    background-color: transparent;
+}
+.SobiAdminList tr td img, .SobiAdminList tr td input {
+    opacity: 0.2;
+}
+.SobiAdminList tr:hover td img, .SobiAdminList tr:hover td input {
+    opacity: 1;
+}
+.SobiAdminList tr:hover td {
+    background-color: #FFF8E5;
+}
+.com_sobi2 #sobitoolbar p img {
+    margin: 0;
+}
+.com_sobi2 #sobitoolbar {
+    float: none !important;
+    margin: 0 auto;
+    padding: 0;
+    width: auto;
+}
+.com_sobi2 #sobitoolbar {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+}
+.com_sobi2 #sobitoolbar a {
+    color: #333333;
+    font-weight: bold;
+    text-shadow: 0 1px 1px #CCCCCC;
+}
+.theme2.com_sobi2 #sobitoolbar a {
+    color: #EEEEEE;
+    font-weight: bold;
+    text-shadow: 0 1px 1px #111111;
+}
+.SPmenuWrapper ul {
+    list-style: none outside none;
+}
+.com_sobipro img[alt*="Sigsiu.NET"] {
+    display: none;
+}
+.iconothers span, .iconconfig span {
+    display: block;
+}
+.qcontrol td[style*="justify"] {
+    text-align: left !important;
+}
+.com_rereplacer #system-message {
+    left: 0;
+    position: relative;
+    top: 0;
+}
+.com_rereplacer div[style*="500"] {
+    width: 220px !important;
+}
+.com_rereplacer .jpane-slider #paramsarea {
+    width: 50%;
+}
+.com_rereplacer .button_view_state, .com_rereplacer .button_view_state div {
+    background-image: none !important;
+}
+.com_virtuemart a {
+    color: #21759B;
+}
+.com_virtuemart .toolbar a {
+    color: #333333;
+    font-weight: bold;
+}
+.com_virtuemart .toolbar td {
+    height: auto;
+    padding: 2px 5px;
+}
+.com_virtuemart div.toolbar {
+    float: none;
+}
+.com_virtuemart #toolbar-custom, .com_virtuemart .toolbar br {
+    display: none;
+}
+.com_virtuemart .toolbar td.divider {
+    border-right: 1px solid #5C606B;
+}
+.com_virtuemart .button2-left {
+    background: none repeat scroll 0 0 transparent;
+}
+.com_virtuemart .button2-left a, .com_virtuemart .button2-right a, .com_virtuemart .button2-left span, .com_virtuemart .button2-right span {
+    height: auto;
+    line-height: 12px;
+}
+.com_virtuemart .sidemenu-box {
+    background-color: transparent !important;
+}
+.com_virtuemart td[width="20%"][style*="vertical-align"] {
+    width: 180px !important;
+}
+.com_virtuemart td[width*="20"] .inputbox {
+    width: 50%;
+}
+.com_virtuemart input[onchange*="product_full_image_url"], .com_virtuemart input[onchange*="product_full_image_action"] {
+    width: 200px;
+}
+.com_virtuemart .sidemenu-pad center {
+    display: none;
+}
+.com_virtuemart form[name="adminForm"] table {
+    width: 99%;
+}
+.com_virtuemart form[name="adminForm"] table td[width="20%"] {
+    width: 50% !important;
+}
+.com_virtuemart form[name="adminForm"] table td[width="50%"] {
+    display: list-item;
+    list-style: none outside none;
+    width: 99% !important;
+}
+.com_virtuemart form[name="adminForm"] table td[width="20%"] input {
+    margin-top: 10px;
+}
+.com_virtuemart .adminform .adminform input, .com_virtuemart .adminform .adminform select {
+    max-width: 120px;
+}
+.com_virtuemart .adminform .adminform textarea {
+    max-width: 80%;
+}
+.theme2.com_virtuemart #ap-mainbody h2 {
+    color: #333333;
+}
+#ext-gen17 {
+    overflow: visible;
+}
+.re1, .re2, .re3, .re4, .artop, .rtop, .r3, .rr3, .re3, .rer3, .ra2, .rar2, .rs1, .rsr1, .res1, .resr1 {
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+.sidemenu-pad {
+    border-left: 0 none !important;
+    border-right: 0 none !important;
+}
+#content-box2 {
+    background: none repeat scroll 0 0 transparent !important;
+}
+.x-border-layout-ct #ap-container {
+    display: none;
+}
+.com_virtuemart #toolbar-switch, .com_virtuemart #toolbar td#toolbar-custom {
+    display: none;
+}
+.com_virtuemart #toolbar {
+    height: auto !important;
+    padding: 0;
+    position: relative;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+.com_virtuemart #toolbar table.toolbar {
+    float: none;
+    margin: 0 auto;
+    width: auto;
+}
+.com_virtuemart #toolbar td {
+    background: none repeat scroll 0 0 transparent !important;
+    display: table-cell;
+    position: relative;
+    right: 0;
+    text-align: center;
+    top: 0;
+}
+.com_virtuemart #toolbar a {
+    float: none;
+}
+.com_virtuemart .toolbar td.button a {
+    padding: 1px 5px;
+}
+.com_virtuemart .toolbar a div, .com_virtuemart .toolbar a img {
+    display: block;
+    margin: 0 auto;
+}
+.com_virtuemart #toolbar {
+    background: none repeat scroll 0 0 transparent;
+}
+.com_virtuemart #toolbar a {
+    color: #333333;
+    font-weight: bold;
+    text-shadow: 0 1px 1px #CCCCCC;
+}
+.theme2.com_virtuemart #toolbar a {
+    color: #EEEEEE;
+    font-weight: bold;
+    text-shadow: 0 1px 1px #111111;
+}
+.contentpane .menudottedline #toolbar table.toolbar {
+    float: none;
+}
+.contentpane .menudottedline #toolbar td {
+    display: table-cell;
+    position: relative;
+    right: 0;
+    top: 0;
+}
+.com_tienda th select, .com_tienda th input {
+    width: 80%;
+}
+.com_tienda #filter_id_from, .com_tienda #filter_id_to {
+    width: 20px;
+}
+.com_tienda .filterline th {
+    vertical-align: top;
+}
+.com_tienda .filterline .label {
+    display: block;
+}
+.com_tienda tr.filterline div.range div.rangeline {
+    text-align: left;
+}
+.com_tienda td[style*="180"] {
+    border: 1px solid #CCCCCC;
+    width: 140px !important;
+}
+.com_tienda div.leftmenu a.active {
+    background: none repeat scroll 0 0 transparent;
+}
+.com_tienda table .admintable input {
+    width: 80%;
+}
+.com_tienda .adminform {
+    padding: 0;
+}
+div.multiupload {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px 4px 4px 4px;
+    position: relative;
+}
+div.multiupload .multiupload {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    padding: 0;
+}
+.multiupload .lists {
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+.multiupload input {
+    opacity: 0;
+    position: relative;
+    text-align: right;
+    z-index: 2;
+}
+.com_zoo #nav div.bar {
+    border-radius: 0 0 0 0;
+}
+.com_zoo #nav {
+    padding: 0 20px;
+}
+.bullet1, #activitylog-data ul {
+    list-style: none outside none;
+    margin: 0;
+}
+#ualog_form select {
+    margin-bottom: 5px;
+    width: 97%;
+}
+#ualog_form {
+    padding: 10px;
+}
+.mod_activitylog_pro1 hr, .mod_activitylog_pro hr, #activitylog-data hr {
+    margin: 0;
+}
+.mod_activitylog_pro1 li, .mod_activitylog_pro li, #activitylog-data li {
+    margin-bottom: 0;
+    padding: 5px 10px;
+}
+#activitylog-reset {
+    float: right;
+    font-weight: normal;
+}
+#quickAddContentForm table.adminform {
+    border: 0 none;
+}
+.mod_quickitem_lite1 #quickAddContentForm #sectionid, .mod_quickitem_lite1 #quickAddContentForm #catid {
+    width: auto;
+}
+#jcalendar-ui-container table {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    border-radius: 0 0 0 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+#jcalendar-ui-container button {
+    background-color: inherit;
+    background-image: none;
+    border: 0 none;
+    border-radius: 0 0 0 0;
+    box-shadow: none;
+}
+#jcalendar-ui-container tr, #jcalendar-ui-container th, #jcalendar-ui-container td {
+    height: auto;
+}
+.com_projectfork #toolbar, .com_projectfork #toolbar-switch, .com_projectfork #pf_panel_nav_section {
+    display: none;
+}
+.com_projectfork #theme_desc {
+    margin: 0;
+}
+.com_projectfork .pf_welcome {
+    box-shadow: none;
+    margin: 4px 4px 0 0;
+}
+.com_projectfork #pf-wrapper {
+    padding-bottom: 10px;
+}
+.theme_content {
+    border: 1px solid #D5D8DC;
+}
+div.pf-icon {
+    border: 0 none;
+}
+.com_sh404sef .icon-48-sh404sef {
+    background-image: none;
+}
+.com_sh404sef div.sh404sef-toolbar-title {
+    background-repeat: no-repeat;
+    color: inherit;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1;
+    margin-left: 0;
+    padding-left: 0;
+}
+.com_sh404sef #left.cp-block {
+    width: 42%;
+}
+.com_sh404sef #right.cp-block {
+    width: 57%;
+}
+.com_sh404sef #left.cp-block .current {
+    padding: 5px;
+}
+.com_sh404sef .qcontrol td {
+    display: list-item;
+    list-style: none outside none;
+}
+.com_sh404sef .qcontrol td td {
+    display: table-cell;
+}
+.com_sh404sef #cpanel div.iconothers a {
+    width: 98px;
+}
+.com_sh404sef.ap-view-default #ap-content-inner {
+    padding: 0 10px;
+}
+.com_sh404sef #ap-content-inner #system-message {
+    display: none;
+}
+.com_sh404sef #search_all {
+    width: 100px;
+}
+.com_sh404sef #search_pageid {
+    width: 20px;
+}
+.com_sh404sef #filter_component, .com_sh404sef #filter_language, .com_sh404sef #filter_duplicate, .com_sh404sef #filter_alias, .com_sh404sef #filter_url_type {
+    width: 65px;
+}
+.com_sh404sef.ap-task-info .adminlist tr:hover td {
+    background: none repeat scroll 0 0 #F8F8F8;
+    color: #666666;
+}
+.com_sh404sef.ap-task-info .adminlist tr:hover td a {
+    color: #111111;
+}
+#sitemapsouter {
+    margin-left: 20px;
+    position: relative;
+    width: 95.5% !important;
+}
+.com_xmap .sitemap {
+    width: 97%;
+}
+div#optionsmenu {
+    left: auto !important;
+    right: 44px !important;
+    top: 96px !important;
+}
+.com_xmap div.sitemaplinks .sitemaplink {
+    border: 1px solid #AAAAAA;
+    margin-bottom: 10px;
+}
+input:focus, select:focus, textarea:focus {
+    background: none repeat scroll 0 0 #FCFBD6 !important;
+}
+#ap-menu {
+    border: 0 none;
+    border-radius: 0 10px 10px 0;
+}
+#ap-menu .panel {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    border-radius: 0 0 0 0;
+    box-shadow: none;
+}
+.sess_bar_outer {
+    border-radius: 2px 2px 2px 2px;
+    height: 12px !important;
+    margin: 0 auto;
+    position: relative;
+    top: -10px;
+    width: 70% !important;
+}
+.sess_bar {
+    border-radius: 2px 2px 2px 2px;
+    height: 12px !important;
+}
+#cpanel-inner .module, #ap-menu li ul, #ap-menu li ul.submenu {
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 4px #888888;
+}
+#cpanel-inner .module-footer {
+    border-radius: 0 0 10px 10px;
+}
+.module .adminlist, .module .admintable {
+    background: none repeat scroll 0 0 transparent !important;
+    border: 0 none !important;
+    border-radius: 0 0 0 0;
+    padding: 0 !important;
+}
+.module .adminlist td.title, .module .admintable td.title {
+    border-right: 0 none;
+    border-top: 0 none;
+}
+#form-login .button1 {
+    float: none;
+}
+#form-login .button1 a {
+    border-radius: 4px 4px 4px 4px;
+    display: block;
+    font-size: 13px;
+    height: 20px;
+    margin: 0 0 10px;
+    text-align: center;
+}
+.ap-edit {
+    background: url("../images/icons-16.png") no-repeat scroll -868px -120px transparent;
+}
+.module-edit-child .edit-icon span {
+    background: url("../images/icons-16.png") no-repeat scroll 0 -120px transparent;
+}
+.ap-disable {
+    background: url("../images/icons-16.png") no-repeat scroll -468px 0 transparent;
+}
+#ap-mainmenu li.home-item span.parent-name, #ap-mainmenu li.home-item.active span.parent-name {
+    background: url("../images/icons-16.png") no-repeat scroll -735px -120px transparent !important;
+}
+#ap-mainmenu li.admin-item span.parent-name, #ap-mainmenu li.admin-item.active span.parent-name {
+    background: url("../images/icons-16.png") no-repeat scroll -868px -120px transparent !important;
+}
+#ap-mainmenu li.tools-item span.parent-name, #ap-mainmenu li.tools-item span.parent-name {
+    background: url("../images/icons-16.png") no-repeat scroll -633px -240px transparent !important;
+}
+.theme2 #ap-mainmenu li.home-item span.parent-name, .theme2 #ap-mainmenu li.home-item.active span.parent-name, .theme5 #ap-mainmenu li.home-item span.parent-name, .theme5 #ap-mainmenu li.home-item.active span.parent-name {
+    background: url("../images/icons-16.png") no-repeat scroll -269px -278px transparent !important;
+}
+.theme2 #ap-mainmenu li.admin-item span.parent-name, .theme2 #ap-mainmenu li.admin-item.active span.parent-name, .theme5 #ap-mainmenu li.admin-item span.parent-name, .theme5 #ap-mainmenu li.admin-item.active span.parent-name, .theme2 .ap-edit, .theme5 .ap-edit {
+    background: url("../images/icons-16.png") no-repeat scroll -200px -278px transparent !important;
+}
+.theme2 #ap-mainmenu li.tools-item span.parent-name, .theme2 #ap-mainmenu li.tools-item span.parent-name, .theme5 #ap-mainmenu li.tools-item span.parent-name, .theme5 #ap-mainmenu li.tools-item span.parent-name {
+    background: url("../images/icons-16.png") no-repeat scroll -132px -280px transparent !important;
+}
+.theme2 .ap-disable, .theme5 .ap-disable {
+    background: url("../images/icons-16.png") no-repeat scroll -331px -276px transparent;
+}
+#ap-menu .component-label {
+    line-height: 14px;
+    overflow: hidden;
+}
+#ap-menu .component-image {
+    background-image: url("../images/icons-32.png");
+    background-position: 0 0;
+    display: block;
+    height: 32px;
+    margin: 0 auto;
+    width: 32px;
+}
+#ap-menu .submenu .component-image {
+    display: none;
+}
+#ap-footermenu .component-image {
+    background-image: url("../images/icons-24.png");
+    background-position: 0 0;
+    display: block;
+    height: 24px;
+    margin: 0 5px 0 0;
+    width: 24px;
+}
+.quickadd-icon, .myeditor-icon, #ap-menu li.first-child .component-child-image {
+    background-image: url("../images/icons-16.png");
+}
+#ap-menu li.first-child .component-child-image {
+    background-position: 0 0;
+    display: block;
+    float: left;
+    height: 16px;
+    margin-right: 4px;
+    width: 16px;
+}
+#ap-login-icon {
+    background: url("../images/icons-32.png") no-repeat scroll -809px -360px transparent;
+}
+.child-list .triangle {
+    height: 0;
+    left: -5px;
+    position: absolute;
+    top: 4px;
+    width: 0;
+}
+#ap-mainmenu .child-list .triangle {
+    left: -10px;
+    top: 4px;
+}
+#ap-mainmenu .parent-name, #ap-mainmenu .component-name {
+    display: inline-block;
+}
+#ap-mainmenu .active .parent-name, #ap-mainmenu .active .component-name {
+    background: url("../images/glow.png") no-repeat scroll 50% 14px transparent;
+}
+#ap-mainmenu .active:hover .parent-name, #ap-mainmenu .active:hover .component-name {
+    background: none repeat scroll 0 0 transparent !important;
+}
+#ap-menu .com_adminpraise .component-image {
+    background-position: -615px -359px;
+}
+#ap-menu .com_admintools .component-image {
+    background-position: -139px -240px;
+}
+#ap-menu .com_admintools .first-child .component-child-image {
+    background-position: -471px -80px;
+}
+#ap-footermenu .com_admintools .component-image {
+    background-position: -333px -200px;
+}
+#ap-menu .com_akeeba .component-image {
+    background-position: -67px -300px;
+}
+#ap-footermenu .com_akeeba .component-image {
+    background-position: -671px -250px;
+}
+#ap-menu .com_banners .component-image {
+    background-position: 2px -240px;
+}
+#ap-menu .com_banners .first-child .component-child-image {
+    background-position: -337px -80px;
+}
+#ap-footermenu .com_banners .component-image {
+    background-position: -132px -200px;
+}
+#ap-menu .com_comprofiler .component-image, #ap-menu .com_community .component-image {
+    background-position: -427px 0;
+}
+#ap-menu .com_comprofiler .first-child .component-child-image, #ap-menu .com_community .first-child .component-child-image {
+    background-position: -401px 0;
+}
+#ap-footermenu .com_comprofiler .component-image, #ap-footermenu .com_community .component-image {
+    background-position: -430px 0;
+}
+#ap-menu .com_configurator .component-image {
+    background-position: -421px -240px;
+}
+#ap-footermenu .com_configurator .component-image {
+    background-position: -732px -200px;
+}
+#ap-menu .com_contact .component-image {
+    background-position: -340px -360px;
+}
+#ap-menu .com_contact .first-child .component-child-image {
+    background-position: -67px -240px;
+}
+#ap-footermenu .com_contact .component-image {
+    background-position: -347px -300px;
+}
+#ap-menu .com_docman .component-image {
+    background-position: -67px -300px;
+}
+#ap-menu .com_docman .first-child .component-child-image {
+    background-position: -735px -160px;
+}
+#ap-footermenu .com_docman .component-image {
+    background-position: -671px -250px;
+}
+#ap-menu .com_jce .component-image, #ap-menu .com_jckman .component-image {
+    background-position: -352px -240px;
+}
+#ap-menu .com_jce .first-child .component-child-image, #ap-menu .com_jckman .first-child .component-child-image {
+    background-position: 0 -120px;
+}
+#ap-footermenu .com_jce .component-image, #ap-footermenu .com_jckman .component-image {
+    background-position: -600px -200px;
+}
+#ap-menu .com_joomailermailchimpintegration .component-image {
+    background-position: -478px -360px;
+}
+#ap-menu .com_joomailermailchimpintegration .first-child .component-child-image {
+    background-position: -322px -240px;
+}
+#ap-footermenu .com_joomailermailchimpintegration .component-image {
+    background-position: -484px -300px;
+}
+#ap-menu .com_kunena .component-image, #ap-menu .com_ninjaboard .component-image {
+    background-position: -504px -180px;
+}
+#ap-menu .com_kunena .first-child .component-child-image, #ap-menu .com_ninjaboard .first-child .component-child-image {
+    background-position: -268px -160px;
+}
+#ap-footermenu .com_kunena .component-image, #ap-footermenu .com_ninjaboard .component-image {
+    background-position: -600px -150px;
+}
+#ap-menu .com_newsfeeds .component-image {
+    background-position: -282px -120px;
+}
+#ap-menu .com_newsfeeds .first-child .component-child-image {
+    background-position: -671px -80px;
+}
+#ap-footermenu .com_newsfeeds .component-image {
+    background-position: -429px -100px;
+}
+#ap-menu .com_ninjaxplorer .component-image {
+    background-position: -670px -300px;
+}
+#ap-footermenu .com_ninjaxplorer .component-image {
+    background-position: -267px -250px;
+}
+#ap-menu .com_nonumbermanager .component-image {
+    background-position: -605px -300px;
+}
+#ap-menu .com_poll .component-image {
+    background-position: -792px -180px;
+}
+#ap-footermenu .com_poll .component-image {
+    background-position: -866px -150px;
+}
+#ap-menu .com_projectfork .component-image {
+    background-position: -575px -180px;
+}
+#ap-menu .com_phocagallery .component-image {
+    background-position: 0 -360px;
+}
+#ap-menu .com_phocagallery .first-child .component-child-image {
+    background-position: -474px -200px;
+}
+#ap-footermenu .com_phocagallery .component-image {
+    background-position: 0 -300px;
+}
+#ap-footermenu .com_projectfork .component-image {
+    background-position: -71px -50px;
+}
+#ap-menu .com_search .component-image {
+    background-position: -213px -120px;
+}
+#ap-footermenu .com_search .component-image {
+    background-position: -359px -100px;
+}
+#ap-menu .com_sobi2 .first-child .component-child-image {
+    background-position: -801px -160px;
+}
+#ap-menu .com_sh404sef .component-image {
+    background-position: -351px -120px;
+}
+#ap-menu .com_sh404sef .first-child .component-child-image {
+    background-position: -739px -80px;
+}
+#ap-footermenu .com_sh404sef .component-image {
+    background-position: -501px -100px;
+}
+#ap-menu .com_weblinks .component-image {
+    background-position: -72px -120px;
+}
+#ap-menu .com_weblinks .first-child .component-child-image {
+    background-position: -68px -80px;
+}
+#ap-footermenu .com_weblinks .component-image {
+    background-position: -216px -100px;
+}
+#ap-menu .com_xmap .component-image {
+    background-position: -360px -178px;
+}
+#ap-footermenu .com_xmap .component-image {
+    background-position: -467px -150px;
+}
+#ap-menu .com_k2 .component-image, #ap-menu .com_flexicontent .component-image {
+    background-position: 0 -60px;
+}
+#ap-footermenu .com_k2 .component-image, #ap-footermenu .com_flexicontent .component-image {
+    background-position: 0 -250px;
+}
+#ap-menu .com_k2mart .component-image, #ap-menu .com_virtuemart .component-image, #ap-menu .com_tienda .component-image, #ap-menu .com_redshop .component-image {
+    background-position: -639px 0;
+}
+#ap-footermenu .com_k2mart .component-image, #ap-footermenu .com_virtuemart .component-image, #ap-footermenu .com_tienda .component-image, #ap-footermenu .com_redshop .component-image {
+    background-position: -646px 0;
+}
+#system-debug {
+    background: -moz-linear-gradient(center top , #FFFFFF 0%, #E5E5E5 100%) repeat scroll 0 0 transparent;
+    padding: 10px;
+}
+.theme1 #ap-menu {
+    background: url("../images/theme1/nav.png") repeat-y scroll 100% 0 #4F5052;
+    box-shadow: 0 1px 1px #FFFFFF;
+}
+.theme1 #cpanel-inner .module, .theme1 #cpanel-inner .module-footer, .theme1 .sess_bar_outer, .theme1 .sess_bar, .theme1 #ap-menu li ul li.first-child {
+    background-image: url("../images/theme1/ui.png") !important;
+    background-repeat: repeat-x;
+}
+.theme1 .sess_bar_outer {
+    background-position: 0 -410px;
+    border: 1px solid #CCCCCC !important;
+}
+.theme1 .sess_bar {
+    background-position: 0 -384px;
+}
+.theme1 #cpanel-inner .module, .theme1 #ap-menu li ul li.first-child {
+    background-position: 0 -208px;
+}
+.theme1 #cpanel-inner .module-footer {
+    background-position: 0 -274px;
+}
+.theme1 #cpanel-inner .module-content {
+    background-color: #F6F2EF;
+}
+.com_cpanel #ap-mainbody {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.com_cpanel #ap-mainbody, .com_cpanel #ap-content {
+    background: none repeat scroll 0 0 transparent !important;
+    border: 0 none !important;
+    box-shadow: none;
+}
+.theme1 #form-login .button1 a {
+    background: url("../images/theme1/buttons.png") repeat-x scroll 0 -134px transparent;
+    border: 1px solid #0F8484;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 1px #333333;
+}
+.theme1 #form-login .button1 a:hover {
+    border: 1px solid #02B7B7;
+}
+.theme1 #form-login .button1 a:active {
+    background: url("../images/theme1/buttons.png") repeat-x scroll 0 -184px transparent;
+}
+.theme1 #ap-mainbody, .theme1 .login {
+    border: 1px solid #AAAAAA;
+}
+.theme1 #ap-header {
+    background: url("../images/core/light/header.jpg") repeat-x scroll 0 0 #A6A3AE;
+}
+.theme1 #ap-mainmenu {
+    border-bottom: 1px solid #C4C2BC;
+}
+.theme1 #ap-mainmenu {
+    box-shadow: 1px 0 1px #FFFFFF;
+}
+.theme1 #ap-mainmenu li a {
+    color: #333333;
+    text-shadow: 0 1px 1px #DDDDDD;
+}
+.theme1 #ap-mainmenu, .theme1 #ap-mainmenu li, .theme1 #ap-submenu, .theme1 #ap-submenu li a, .theme1 #ap-footer {
+    background: url("../images/theme1/ui.png") repeat-x scroll 0 -52px transparent;
+}
+.theme1 #ap-mainmenu li.active, .theme1 #ap-sidemenu li.active {
+    background: url("../images/theme1/ui.png") repeat-x scroll 0 0 transparent;
+}
+.theme1 #ap-mainmenu li:hover, .theme1 #ap-submenu li a.active, .theme1 #ap-sidemenu li:hover {
+    background: url("../images/theme1/ui.png") repeat-x scroll 0 -92px transparent;
+}
+.theme1 #ap-topleft, .theme1 #ap-topright, .theme1 .button, .theme1 button, .theme1 .button1 a {
+    background: url("../images/core/light/toplinks.jpg") repeat-x scroll 0 0 #A7A2AB;
+    border: 1px solid #CCCCCC;
+    box-shadow: 0 0 1px #FFFFFF;
+}
+.theme1 #ap-topleft:hover, .theme1 #ap-topright:hover, .theme1 button:hover, .theme1 .button1 a:active {
+    background: url("../images/core/light/toplinks.jpg") repeat-x scroll 0 -23px #A7A2AB;
+}
+.theme1 #ap-mainbody, .theme1 .login {
+    background: url("../images/theme1/body.png") repeat-x scroll 0 0 #D7D5CE;
+    box-shadow: 0 1px 1px #FFFFFF;
+}
+.theme1 #ap-submenu {
+}
+.theme1 #ap-submenu li a, .theme1 .add-module-link {
+    border: 1px solid #B1B0AE;
+    color: #333333;
+    font-weight: bold;
+    text-shadow: 0 1px 1px #FFFFFF;
+}
+.theme1 .add-module-link {
+    background: none repeat scroll 0 0 #E6E3E0;
+    box-shadow: 0 1px 1px #BCBBAF inset;
+}
+.theme1 .add-module-link:hover {
+    background: none repeat scroll 0 0 #DAD8D2;
+}
+.theme1 #ap-crumbs {
+    background: url("../images/core/light/mainlinks.jpg") repeat-x scroll 0 0 #A7A2AB;
+    border: 1px solid #888888;
+}
+.theme1 #toolbar .button, .theme1.com_k2 #toolbar #toolbar-save:nth-of-type(2) {
+    background: url("../images/theme1/buttons.png") repeat-x scroll 0 -400px transparent;
+}
+.theme1 #toolbar .button:hover, .theme1.com_k2 #toolbar #toolbar-save:nth-of-type(2):hover {
+    background: none repeat scroll 0 0 #ABAAA4;
+}
+.theme1 #ap-content {
+    background-color: #E6E3E0;
+}
+.theme1 div.current {
+    background-color: #FFFFFF;
+}
+.theme1 .admintable, .theme1 .adminlist, .theme1 .adminform, .theme1 #ap-menu li ul li, .theme1 div.simpleTabsContent.currentTab {
+    background-color: #F6F2EF;
+    color: #666666;
+}
+.theme1 .admintable a, .theme1 .adminlist a {
+    color: #333333;
+}
+.theme1 .adminlist th, .theme1 .admintable th, .theme1 .adminlist .title {
+    background: url("../images/theme1/ui.png") repeat-x scroll 0 -512px transparent;
+    border-bottom: 1px solid #B1B0AE;
+    border-top: 1px solid #B1B0AE;
+}
+.theme1 .adminlist .filterline th {
+    background: none repeat scroll 0 0 #F6F2EF;
+}
+.theme1 .adminlist th:last-of-type, .theme1 .admintable th:last-of-type {
+    border-right: 0 none;
+}
+.theme1 .adminlist tfoot, .theme1 .admintable tfoot {
+    background: url("../images/theme1/ui.png") repeat-x scroll 0 -274px transparent;
+    border-top: 1px solid #B1B0AE;
+}
+.theme1 .sess_bar_outer {
+    background: none repeat scroll 0 0 #BBBBBB;
+}
+.theme1 #ap-footmods, .theme1 #apfootmods h3, .theme1 .ap-foot1, .theme1 .ap-foot2, .theme1 .ap-foot3, .theme1 .ap-foot4, .theme1 .ap-foot1 a, .theme1 .ap-foot2 a, .theme1 .ap-foot3 a, .theme1 .ap-foot4 a {
+    color: #777777;
+    text-shadow: 0 1px 1px #FFFFFF;
+}
+.theme1 #ap-topleft li, .theme1 #ap-topright li {
+    border-right: 1px solid #CCCCCC;
+}
+.theme1 #ap-topleft li.last, .theme1 #ap-topright li.last {
+    border-right: 0 none;
+}
+.theme1 li.first-child {
+    border-bottom: 1px solid #AAAAAA;
+}
+.theme1 #ap-menu li.first-child a {
+    color: #333333;
+    font-weight: bold;
+}
+.theme1 #ap-mainmenu li ul li.first-child {
+    background: none repeat scroll 0 0 #444444 !important;
+    border-bottom: 1px solid #222222;
+}
+.theme1 #ap-footer, .theme1 #ap-footer p, .theme1 #ap-footer a {
+    color: #666666 !important;
+    text-shadow: 0 1px 1px #FFFFFF;
+}
+.theme1 #form-login-password input, .theme1 #form-login-username input, .theme1 #form-login-lang select {
+    background: none repeat scroll 0 0 #F8F8F8;
+    border: 1px solid #AAAAAA;
+}
+.theme1 #ualog_form select, .theme1 #itemtype {
+    background: url("../images/theme1/ui.png") repeat-x scroll 0 -331px transparent;
+    border: 1px solid #AAAAAA;
+}
+.theme1 div#module-status.ap-status span, .theme1 div#module-status.ap-status span a, .theme1 #ap-quickadd, .theme1 #ap-myeditor, .theme1 #ap-userstats, .theme1 #ap-footermenu {
+    background-color: #2F2A26 !important;
+}
+.theme1 div#module-status.ap-status span span {
+    background-color: transparent;
+}
+.theme1 .bullet1 li {
+    background: none repeat scroll 0 0 transparent;
+    border-bottom: 1px solid #AAAAAA;
+    border-top: 1px solid #FFFFFF;
+}
+.theme1 .bullet1 li:first-of-type {
+    border-top: 0 none;
+}
+.theme1 #ap-sidebar .module hr {
+    background: none repeat scroll 0 0 transparent;
+}
+.theme1 .tool-tip {
+    background: none repeat scroll 0 0 #666666;
+    color: #FFFFFF;
+}
+.theme1 #ap-content div.icon {
+    background: url("../images/theme1/icon.png") no-repeat scroll 50% 0 transparent;
+    border: 0 none;
+    color: #333333;
+}
+.theme1 dl.tabs dt, .theme1 ul.simpleTabsNavigation li a {
+    background-color: #EEEEEA !important;
+}
+.theme1 dl.tabs dt.open, .theme1 ul.simpleTabsNavigation li a.current {
+    background-color: #FFFFFF !important;
+}
+.theme1 #toolbar .button, .theme1.com_k2 #toolbar #toolbar-save:nth-of-type(2) {
+    background: none repeat scroll 0 0 #CBCAC2;
+}
+.theme1 .button2-left a, .theme1 .button2-right span, .theme1 .button2-left span, .theme1 .pagination .button2-right a {
+    background: url("../images/theme1/ui.png") repeat-x scroll 0 0 transparent;
+    border: 1px solid #666666;
+}
+.theme1 .button2-left a, .theme1 .pagination .button2-right a {
+    color: #888888;
+    text-shadow: 0 1px 1px #FFFFFF;
+}
+.theme1 .button2-right span, .theme1 .button2-left span {
+    color: #CCCCCC;
+    text-shadow: 0 1px 1px #FFFFFF;
+}
+.theme1 .pagination .button2-left a, .theme1 .pagination .button2-right a, .theme1 #editor-xtd-buttons .button2-left a, .theme1 #editor-xtd-buttons .button2-right a {
+    color: #333333;
+}
+.theme1 #ap-menu .triangle {
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #D1D0C8;
+    border-top: 10px solid transparent;
+}
+.theme1 #ap-mainmenu .triangle {
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #444444;
+    border-top: 10px solid transparent;
+}
+.theme1 #ap-content .component-list {
+    background-color: #D7D6CF;
+    border: 1px solid #FFFFFF;
+}
+.theme1 #ap-content .component-list a.parent-link {
+    color: #333333;
+    text-shadow: 1px 1px 1px #FFFFFF;
+}
+.theme1 #ap-login-logo {
+    background: url("../images/theme1/nav.png") repeat-y scroll 100% 0 #3A3B42;
+    border: 1px solid #333333;
+    box-shadow: -1px 1px 1px #222222;
+}
+.theme1 #toolbar-switch {
+    background: url("../images/theme1/arrow.png") no-repeat scroll 100% 0 transparent;
+}
+.theme1 #toolbar-switch:active {
+    background: url("../images/theme1/arrow.png") no-repeat scroll 100% 100% transparent;
+}
+.theme1 #ap-submenu {
+    border-bottom: 1px solid #D1CFCB;
+    border-top: 1px solid #D1CFCB;
+}
+.theme1 #ap-userstats #ap-sitename, .theme1 .header {
+    color: #CFCEC6 !important;
+    text-shadow: 1px 1px 1px #000000;
+}
+body.theme2 {
+    background: url("../images/theme2/bg.png") repeat scroll 0 0 transparent;
+}
+.theme2 #ap-menu {
+    background: url("../images/theme2/nav.png") repeat-y scroll 100% 0 #302F32;
+    box-shadow: 0 1px 1px #222222;
+}
+.theme2 #cpanel-inner .module, .theme2 #cpanel-inner .module-footer, .theme2 .sess_bar_outer, .theme2 .sess_bar, .theme2 #ap-menu li ul li.first-child {
+    background-image: url("../images/theme2/ui.png") !important;
+    background-repeat: repeat-x;
+}
+.theme2 .sess_bar_outer {
+    background-position: 0 -410px;
+    border: 1px solid #CCCCCC !important;
+}
+.theme2 .sess_bar {
+    background-position: 0 -384px;
+}
+.theme2 #cpanel-inner .module, .theme2 #ap-menu li ul li.first-child {
+    background-position: 0 -208px;
+}
+.theme2 #cpanel-inner .module-footer {
+    background-position: 0 -274px;
+}
+.theme2 #cpanel-inner .module-content {
+    background-color: #F1F1F1;
+}
+.theme2 #form-login .button1 a {
+    background: url("../images/theme2/buttons.png") repeat-x scroll 0 -536px transparent;
+    border: 1px solid #111111;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 1px #333333;
+}
+.theme2 #form-login .button1 a:hover {
+    border: 1px solid #333333;
+}
+.theme2 #form-login .button1 a:active {
+    background: url("../images/theme2/buttons.png") repeat-x scroll 0 -586px transparent;
+}
+.theme2 #ap-mainbody, .theme2 .login {
+    border: 1px solid #222222;
+}
+.theme2 #ap-header {
+    background: url("../images/core/light/header.jpg") repeat-x scroll 0 0 #A6A3AE;
+}
+.theme2 #ap-mainmenu {
+    border-bottom: 1px solid #111111;
+}
+.theme2 #ap-mainmenu li a {
+    color: #F8F8F8;
+    text-shadow: 0 1px 1px #000000;
+}
+.theme2 #ap-mainmenu, .theme2 #ap-mainmenu li, .theme2 #ap-submenu, .theme2 #ap-submenu li a, .theme2 #ap-footer {
+    background: url("../images/theme2/ui.png") repeat-x scroll 0 -52px transparent;
+}
+.theme2 #ap-mainmenu li ul li {
+    box-shadow: none;
+}
+.theme2 #ap-mainmenu li.active, .theme2 #ap-sidemenu li.active {
+    background: url("../images/theme2/ui.png") repeat-x scroll 0 0 transparent;
+}
+.theme2 #ap-mainmenu li:hover, .theme2 #ap-submenu li a.active, .theme2 #ap-sidemenu li:hover {
+    background: url("../images/theme2/ui.png") repeat-x scroll 0 -92px transparent;
+}
+.theme2 #ap-topleft, .theme2 #ap-topright, .theme2 .button, .theme2 button, .theme2 .button1 a {
+    background: url("../images/core/light/toplinks.jpg") repeat-x scroll 0 0 #A7A2AB;
+    border: 1px solid #CCCCCC;
+    box-shadow: 0 0 1px #888888;
+}
+.theme2 #ap-topleft:hover, .theme2 #ap-topright:hover, .theme2 button:hover, .theme2 .button1 a:active {
+    background: url("../images/core/light/toplinks.jpg") repeat-x scroll 0 -23px #A7A2AB;
+}
+.theme2 #ap-mainbody {
+    background: url("../images/theme2/body.png") repeat-x scroll 0 0 #4D4C4B;
+}
+.theme2 .login {
+    background: url("../images/theme2/body.png") repeat-x scroll 0 0 #4D4C4B;
+}
+#login.theme2 h3, .theme2 #form-login label, .theme2 .login-desc, .theme2 .home-page, .theme2 .login a {
+    color: #EEEEEE;
+    text-shadow: 1px 1px 1px #111111;
+}
+.theme2 #ap-submenu {
+}
+.theme2 #ap-submenu li a, .theme2 .add-module-link {
+    border: 1px solid #313131;
+    color: #EEEEEE;
+    font-weight: bold;
+    text-shadow: 0 1px 1px #222222;
+}
+.theme2 .add-module-link {
+    background: none repeat scroll 0 0 #444444;
+    box-shadow: 0 1px 2px #343434 inset;
+}
+.theme2 .add-module-link:hover {
+    background: none repeat scroll 0 0 #333333;
+}
+.theme2 #ap-crumbs li {
+    position: relative;
+}
+.theme2 #ap-crumbs {
+    background: none repeat scroll 0 0 #555555;
+    border: 1px solid #333333;
+}
+.theme2 #ap-crumbs, .theme2 #ap-crumbs a {
+    color: #EEEEEE;
+    text-shadow: 1px 1px 1px #111111;
+}
+.theme2 #ap-crumbs a, .theme2 #ap-crumbs span {
+    background: none repeat scroll 0 0 transparent;
+}
+.theme2 #ap-crumbs a {
+    padding: 6px 12px 6px 6px;
+}
+.theme2 #ap-crumbs span {
+    padding: 0;
+}
+.theme2 #ap-crumbs li.last-crumb span {
+    padding-left: 8px;
+}
+.theme2 #ap-crumbs span.next-arrow {
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #000000;
+    border-top: 5px solid transparent;
+    height: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 3px;
+    width: 0;
+}
+.theme2 #toolbar .button, .theme2.com_k2 #toolbar #toolbar-save:nth-of-type(2) {
+    background: url("../images/theme2/buttons.png") repeat-x scroll 0 -400px transparent;
+}
+.theme2 #toolbar .button:hover, .theme2.com_k2 #toolbar #toolbar-save:nth-of-type(2):hover {
+    background: none repeat scroll 0 0 #111111;
+}
+.theme2 #ap-content {
+    background-color: #E3E3E3;
+}
+.theme2 div.current {
+    background-color: #FFFFFF;
+}
+.theme2 .admintable, .theme2 .adminlist, .theme2 .adminform, .theme2 #ap-menu li ul li {
+    background-color: #F5F2F2;
+    color: #666666;
+}
+.theme2 .admintable a, .theme2 .adminlist a {
+    color: #333333;
+}
+.theme2 .adminlist th, .theme2 .admintable th, .theme2 .adminlist .title {
+    background: url("../images/theme2/ui.png") repeat-x scroll 0 -512px transparent;
+    border-bottom: 1px solid #B1B0AE;
+    border-top: 1px solid #B1B0AE;
+}
+.theme2 .adminlist .filterline th {
+    background: none repeat scroll 0 0 #F6F2EF;
+}
+.theme2 .adminlist th:last-of-type, .theme2 .admintable th:last-of-type {
+    border-right: 0 none;
+}
+.theme2 .adminlist tfoot, .theme2 .admintable tfoot {
+    background: none repeat scroll 0 0 #DDDDDD;
+    border-bottom: 1px solid #BBBBBB;
+    border-top: 1px solid #BBBBBB;
+}
+.theme2 .adminlist tfoot tr:hover td, .theme2 .admintable tfoot tr:hover td {
+    background: none repeat scroll 0 0 transparent;
+}
+.theme2 div.simpleTabsContent.currentTab {
+    background-color: #F6F6F6;
+    color: #666666;
+}
+.theme2 .sess_bar_outer {
+    background: none repeat scroll 0 0 #BBBBBB;
+}
+.theme2 #ap-footmods, .theme2 #apfootmods h3, .theme2 .ap-foot1, .theme2 .ap-foot2, .theme2 .ap-foot3, .theme2 .ap-foot4, .theme2 .ap-foot1 a, .theme2 .ap-foot2 a, .theme2 .ap-foot3 a, .theme2 .ap-foot4 a {
+    color: #777777;
+    text-shadow: 0 1px 1px #FFFFFF;
+}
+.theme2 #ap-topleft li, .theme2 #ap-topright li {
+    border-right: 1px solid #CCCCCC;
+}
+.theme2 #ap-topleft li.last, .theme2 #ap-topright li.last {
+    border-right: 0 none;
+}
+.theme2 li.first-child {
+    border-bottom: 1px solid #AAAAAA;
+}
+.theme2 #ap-menu li.first-child a {
+    color: #EEEEEE;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #000000;
+}
+.theme2 #ap-footer, .theme2 #ap-footer p, .theme2 #ap-footer a {
+    color: #CCCCCC !important;
+    text-shadow: 0 1px 1px #222222;
+}
+.theme2 #form-login-password input, .theme2 #form-login-username input, .theme2 #form-login-lang select {
+    background: none repeat scroll 0 0 #F8F8F8;
+    border: 1px solid #AAAAAA;
+}
+.theme2 #ualog_form select, .theme2 #itemtype {
+    background: url("../images/theme2/ui.png") repeat-x scroll 0 -331px transparent;
+    border: 1px solid #AAAAAA;
+}
+.theme2 div#module-status.ap-status span, .theme2 div#module-status.ap-status span a, .theme2 #ap-quickadd, .theme2 #ap-myeditor, .theme2 #ap-userstats, .theme2 #ap-footermenu {
+    background-color: #000000 !important;
+}
+.theme2 div#module-status.ap-status span span {
+    background-color: transparent;
+}
+.theme2 .bullet1 li {
+    background: none repeat scroll 0 0 transparent;
+    border-bottom: 1px solid #AAAAAA;
+    border-top: 1px solid #FFFFFF;
+}
+.theme2 .bullet1 li:first-of-type {
+    border-top: 0 none;
+}
+.theme2 #ap-sidebar .module hr {
+    background: none repeat scroll 0 0 transparent;
+}
+.theme2 .tool-tip {
+    background: none repeat scroll 0 0 #666666;
+    color: #FFFFFF;
+}
+.theme2 #ap-content div.icon {
+    background: url("../images/theme2/icon.png") no-repeat scroll 50% 0 transparent;
+    border: 0 none;
+    color: #333333;
+}
+.theme2 dl.tabs dt, .theme2 ul.simpleTabsNavigation li a {
+    background-color: #DDDDDD !important;
+}
+.theme2 dl.tabs dt.open, .theme2 ul.simpleTabsNavigation li a.current {
+    background-color: #FFFFFF !important;
+}
+.theme2 #toolbar .button, .theme2.com_k2 #toolbar #toolbar-save:nth-of-type(2) {
+    background: none repeat scroll 0 0 #333333;
+}
+.theme2 #toolbar .button a, .theme2.com_k2 #toolbar #toolbar-save:nth-of-type(2) a {
+    color: #EEEEEE;
+}
+.theme2 .button2-left a, .theme2 .button2-right span, .theme2 .button2-left span, .theme2 .pagination .button2-right a {
+    background: url("../images/theme2/ui.png") repeat-x scroll 0 0 transparent;
+    border: 1px solid #333333;
+}
+.theme2 .button2-left a, .theme2 .pagination .button2-right a {
+    color: #CCCCCC;
+    text-shadow: 0 1px 1px #222222;
+}
+.theme2 .button2-right span, .theme2 .button2-left span {
+    color: #777777;
+    text-shadow: 0 1px 1px #444444;
+}
+.theme2 .pagination .button2-left a, .theme2 .pagination .button2-right a, .theme2 #editor-xtd-buttons .button2-left a, .theme2 #editor-xtd-buttons .button2-right a {
+    color: #EEEEEE;
+}
+.theme2 #quickadd_textarea #editor-xtd-buttons .button2-left a, .theme2 #quickadd_textarea .button2-left a {
+    color: #333333;
+    text-shadow: 0 1px 1px #FFFFFF;
+}
+.theme2 #ap-menu .triangle {
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #565654;
+    border-top: 10px solid transparent;
+}
+.theme2 #ap-mainmenu .triangle {
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #444444;
+    border-top: 10px solid transparent;
+}
+.theme2 #cpanel-inner .module, .theme2 #ap-menu li ul {
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 4px #222222;
+    cursor: move;
+}
+#cpanel-inner .module {
+    -moz-transition: -moz-transform 0.2s ease-out 0s;
+}
+#cpanel-inner .module.moving {
+    -moz-transform: scale(0.9);
+    opacity: 0.25;
+}
+.theme2 #ap-menu li ul {
+    border: 0 none;
+}
+.theme2 .panel h3 {
+    background: none repeat scroll 0 0 transparent;
+    color: #333333;
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: 0 1px 1px #FFFFFF;
+}
+.theme2 #ap-sidebar .module h3, .theme2 #theme_wrapper .theme_sidebar .moduletable h3, .theme2 #ap-content .module h3, .theme2 #k2QuickIconsTitle {
+    background: none repeat scroll 0 0 transparent;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: 0 1px 1px #000000;
+}
+.theme2 #ap-mainmenu .active .parent-name, .theme2 #ap-mainmenu .active .component-name {
+    background: url("../images/theme2/glow.png") no-repeat scroll 50% 14px transparent;
+}
+.theme2 #ap-content .component-list {
+    border: 1px solid #555553;
+    box-shadow: 0 4px 15px #000000 inset;
+}
+.theme2 #ap-login-logo {
+    background: url("../images/theme2/nav.png") repeat-y scroll 100% 0 #3A3B42;
+    border: 1px solid #333333;
+    box-shadow: -1px 1px 1px #222222;
+}
+.theme2 #toolbar-switch {
+    background: url("../images/theme2/arrow.png") no-repeat scroll 100% 0 transparent;
+}
+.theme2 #toolbar-switch:active {
+    background: url("../images/theme2/arrow.png") no-repeat scroll 100% 100% transparent;
+}
+.theme2 #ap-submenu {
+    border-bottom: 1px solid #454545;
+    border-top: 1px solid #444444;
+}
+.theme2 #ap-userstats #ap-sitename, .theme2 .header {
+    color: #666666 !important;
+    text-shadow: 1px 1px 1px #000000;
+}
+body.theme3 {
+    background: url("../images/theme3/bg.png") repeat scroll 0 0 transparent;
+}
+.theme3 #ap-menu {
+    background: url("../images/theme3/nav.png") repeat-y scroll 100% 0 #3A3B42;
+    box-shadow: 0 1px 1px #222222;
+}
+.theme3 #cpanel-inner .module, .theme3 #cpanel-inner .module-footer, .theme3 .sess_bar_outer, .theme3 .sess_bar, .theme3 #ap-menu li ul li.first-child {
+    background-image: url("../images/theme3/ui.png") !important;
+    background-repeat: repeat-x;
+}
+.theme3 .sess_bar_outer {
+    background-position: 0 -410px;
+    border: 1px solid #CCCCCC !important;
+}
+.theme3 .sess_bar {
+    background-position: 0 -384px;
+}
+.theme3 #cpanel-inner .module, .theme3 #ap-menu li ul li.first-child {
+    background-position: 0 -208px;
+}
+.theme3 #cpanel-inner .module-footer {
+    background-position: 0 -274px;
+}
+.theme3 #cpanel-inner .module-content {
+    background-color: #F1F1F1;
+}
+.theme3 #form-login .button1 a {
+    background: url("../images/theme3/buttons.png") repeat-x scroll 0 -536px transparent;
+    border: 1px solid #111111;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 1px #333333;
+}
+.theme3 #form-login .button1 a:hover {
+    border: 1px solid #333333;
+}
+.theme3 #form-login .button1 a:active {
+    background: url("../images/theme3/buttons.png") repeat-x scroll 0 -586px transparent;
+}
+.theme3 #ap-mainbody, .theme3 .login {
+    border: 1px solid #AAAAAA;
+}
+.theme3 #ap-header {
+    background: url("../images/core/light/header.jpg") repeat-x scroll 0 0 #A6A3AE;
+}
+.theme3 #ap-mainmenu {
+    border-bottom: 1px solid #999999;
+    box-shadow: 0 1px 0 #CCCCCC;
+}
+.theme3 #ap-mainmenu li a {
+    color: #333333;
+    text-shadow: 0 1px 0 #CCCCCC;
+}
+.theme3 #ap-mainmenu, .theme3 #ap-mainmenu li, .theme3 #ap-submenu, .theme3 #ap-submenu li a, .theme3 #ap-footer {
+    background: url("../images/theme3/ui.png") repeat-x scroll 0 -52px transparent;
+}
+.theme3 #ap-mainmenu li ul li {
+    box-shadow: none;
+}
+.theme3 #ap-mainmenu li.active, .theme3 #ap-sidemenu li.active {
+    background: url("../images/theme3/ui.png") repeat-x scroll 0 0 transparent;
+}
+.theme3 #ap-mainmenu li:hover, .theme3 #ap-submenu li a.active, .theme3 #ap-sidemenu li:hover {
+    background: url("../images/theme3/ui.png") repeat-x scroll 0 -92px transparent;
+}
+.theme3 #ap-mainmenu li ul li.first-child {
+    background: none repeat scroll 0 0 #444444 !important;
+    border-bottom: 1px solid #222222;
+}
+.theme3 #ap-topleft, .theme3 #ap-topright, .theme3 .button, .theme3 button, .theme3 .button1 a {
+    background: url("../images/core/light/toplinks.jpg") repeat-x scroll 0 0 #A7A2AB;
+    border: 1px solid #CCCCCC;
+    box-shadow: 0 0 1px #FFFFFF;
+}
+.theme3 #ap-topleft:hover, .theme3 #ap-topright:hover, .theme3 button:hover, .theme3 .button1 a:active {
+    background: url("../images/core/light/toplinks.jpg") repeat-x scroll 0 -23px #A7A2AB;
+}
+.theme3 #ap-mainbody {
+    background: url("../images/theme3/body.png") repeat-x scroll 0 0 #E3E3E3;
+}
+.theme3 .login {
+    background: url("../images/theme3/body.png") repeat-x scroll 0 0 #D2D2D2;
+}
+.theme3 #ap-submenu {
+}
+.theme3 #ap-submenu li a, .theme3 .add-module-link {
+    border: 1px solid #848484;
+    color: #333333;
+    font-weight: bold;
+    text-shadow: 0 1px 0 #CCCCCC;
+}
+.theme3 .add-module-link {
+    background: none repeat scroll 0 0 #B8BABA;
+    box-shadow: 0 1px 1px #CCCCCC inset;
+}
+.theme3 .add-module-link:hover {
+    background: none repeat scroll 0 0 #444444;
+    box-shadow: 0 1px 1px #333333 inset;
+    color: #EEEEEE;
+    text-shadow: 0 1px 0 #000000;
+}
+.theme3 #ap-crumbs {
+    background: url("../images/theme3/ui.png") repeat-x scroll 0 -512px transparent;
+    border: 1px solid #AAAAAA;
+}
+.theme3.com_cpanel #ap-crumbs {
+    background: url("../images/theme3/ui.png") repeat-x scroll 0 0 transparent;
+    border: 1px solid #9CA1A7;
+}
+.theme3 #toolbar .button, .theme3.com_k2 #toolbar #toolbar-save:nth-of-type(2) {
+    background: url("../images/theme3/buttons.png") repeat-x scroll 0 -400px transparent;
+}
+.theme3 #toolbar .button:hover, .theme3.com_k2 #toolbar #toolbar-save:nth-of-type(2):hover {
+    background: none repeat scroll 0 0 #AAAAAA;
+}
+.theme3 #ap-content {
+    background-color: #E3E3E3;
+}
+.theme3 div.current {
+    background-color: #FFFFFF;
+}
+.theme3 .admintable, .theme3 .adminlist, .theme3 .adminform, .theme3 #ap-menu li ul li {
+    background-color: #F5F5F5;
+    color: #666666;
+}
+.theme3 .admintable a, .theme3 .adminlist a {
+    color: #333333;
+}
+.theme3 .adminlist th, .theme3 .admintable th, .theme3 .adminlist .title {
+    background: url("../images/theme3/ui.png") repeat-x scroll 0 -512px transparent;
+    border-bottom: 1px solid #B1B0AE;
+    border-top: 1px solid #B1B0AE;
+}
+.theme3 .adminlist .filterline th {
+    background: none repeat scroll 0 0 #F6F2EF;
+}
+.theme3 .adminlist th:last-of-type, .theme3 .admintable th:last-of-type {
+    border-right: 0 none;
+}
+.theme3 .adminlist tfoot, .theme3 .admintable tfoot {
+    background: none repeat scroll 0 0 #DDDDDD;
+    border-bottom: 1px solid #BBBBBB;
+    border-top: 1px solid #BBBBBB;
+}
+.theme3 .adminlist tfoot tr:hover td, .theme3 .admintable tfoot tr:hover td {
+    background: none repeat scroll 0 0 transparent;
+}
+.theme3 div.simpleTabsContent.currentTab {
+    background-color: #F6F6F6;
+    color: #666666;
+}
+.theme3 .header {
+    color: #EEEEEE !important;
+    text-shadow: 1px 1px 0 #000000;
+}
+.theme3 .sess_bar_outer {
+    background: none repeat scroll 0 0 #BBBBBB;
+}
+.theme3 #ap-footmods, .theme3 #apfootmods h3, .theme3 .ap-foot1, .theme3 .ap-foot2, .theme3 .ap-foot3, .theme3 .ap-foot4, .theme3 .ap-foot1 a, .theme3 .ap-foot2 a, .theme3 .ap-foot3 a, .theme3 .ap-foot4 a {
+    color: #777777;
+    text-shadow: 0 1px 1px #FFFFFF;
+}
+.theme3 #ap-topleft li, .theme3 #ap-topright li {
+    border-right: 1px solid #CCCCCC;
+}
+.theme3 #ap-topleft li.last, .theme3 #ap-topright li.last {
+    border-right: 0 none;
+}
+.theme3 li.first-child {
+    border-bottom: 1px solid #AAAAAA;
+}
+.theme3 #ap-menu li.first-child a {
+    color: #333333;
+    font-weight: bold;
+    text-shadow: 0 1px 0 #CCCCCC;
+}
+.theme3 #ap-footer, .theme3 #ap-footer p, .theme3 #ap-footer a {
+    color: #333333 !important;
+    text-shadow: 0 1px 1px #CCCCCC;
+}
+.theme3 #form-login-password input, .theme3 #form-login-username input, .theme3 #form-login-lang select {
+    background: none repeat scroll 0 0 #F8F8F8;
+    border: 1px solid #AAAAAA;
+}
+.theme3 #ualog_form select, .theme3 #itemtype {
+    background: url("../images/theme3/ui.png") repeat-x scroll 0 -331px transparent;
+    border: 1px solid #AAAAAA;
+}
+.theme3 div#module-status.ap-status span, .theme3 div#module-status.ap-status span a, .theme3 #ap-quickadd, .theme3 #ap-myeditor, .theme3 #ap-userstats, .theme3 #ap-footermenu {
+    background-color: #3A3A3A !important;
+}
+.theme3 div#module-status.ap-status span span {
+    background-color: transparent;
+}
+.theme3 .bullet1 li {
+    background: none repeat scroll 0 0 transparent;
+    border-bottom: 1px solid #AAAAAA;
+    border-top: 1px solid #FFFFFF;
+}
+.theme3 .bullet1 li:first-of-type {
+    border-top: 0 none;
+}
+.theme3 #ap-sidebar .module hr {
+    background: none repeat scroll 0 0 transparent;
+}
+.theme3 .tool-tip {
+    background: none repeat scroll 0 0 #666666;
+    color: #FFFFFF;
+}
+.theme3 #ap-content div.icon {
+    background: url("../images/theme3/icon.png") no-repeat scroll 50% 0 transparent;
+    border: 0 none;
+    color: #333333;
+}
+.theme3 dl.tabs dt, .theme3 ul.simpleTabsNavigation li a {
+    background-color: #DDDDDD !important;
+}
+.theme3 dl.tabs dt.open, .theme3 ul.simpleTabsNavigation li a.current {
+    background-color: #FFFFFF !important;
+}
+.theme3 #toolbar .button, .theme3.com_k2 #toolbar #toolbar-save:nth-of-type(2) {
+    background: none repeat scroll 0 0 #CCCCCC;
+}
+.theme3 .button2-left a, .theme3 .button2-right span, .theme3 .button2-left span, .theme3 .pagination .button2-right a {
+    background: url("../images/theme3/ui.png") repeat-x scroll 0 0 transparent;
+    border: 1px solid #CCCCCC;
+    text-shadow: 0 1px 0 #CCCCCC;
+}
+.theme3 .pagination .button2-left a, .theme3 .pagination .button2-right a, .theme3 #editor-xtd-buttons .button2-left a, .theme3 #editor-xtd-buttons .button2-right a {
+    color: #111111;
+}
+.theme3 #ap-menu .triangle {
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #B6B8B9;
+    border-top: 10px solid transparent;
+}
+.theme3 #ap-mainmenu .triangle {
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #444444;
+    border-top: 10px solid transparent;
+}
+.theme3 #cpanel-inner .module, .theme3 #ap-menu li ul {
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 4px #222222;
+}
+.theme3 #ap-menu li ul {
+    border: 0 none;
+}
+.theme3 .panel h3 {
+    background: none repeat scroll 0 0 transparent;
+    color: #333333;
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: 0 1px 1px #FFFFFF;
+}
+.theme3 #ap-sidebar .module h3, .theme3 #theme_wrapper .theme_sidebar .moduletable h3, .theme3 #ap-content .module h3, .theme3 #k2QuickIconsTitle {
+    background: none repeat scroll 0 0 transparent;
+    color: #333333;
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: 0 1px 1px #EEEEEE;
+}
+.theme3 #ap-mainmenu .active .parent-name, .theme3 #ap-mainmenu .active .component-name {
+    background: url("../images/theme3/glow.png") no-repeat scroll 50% 14px transparent;
+}
+.theme3 #ap-crumbs span.next-arrow {
+    display: none;
+}
+.theme3 #ap-content .component-list a.parent-link {
+    color: #333333;
+    text-shadow: 1px 1px 1px #DDDDDD;
+}
+.theme3 #ap-login-logo {
+    background: url("../images/theme3/nav.png") repeat-y scroll 100% 0 #3A3B42;
+    border: 1px solid #333333;
+    box-shadow: -1px 1px 1px #222222;
+}
+.theme3 #toolbar-switch {
+    background: url("../images/theme3/arrow.png") no-repeat scroll 100% 0 transparent;
+}
+.theme3 #toolbar-switch:active {
+    background: url("../images/theme3/arrow.png") no-repeat scroll 100% 100% transparent;
+}
+.theme3 #ap-submenu {
+    border-bottom: 1px solid #CCCCCC;
+    border-top: 1px solid #CCCCCC;
+}
+body.theme4 {
+    background: url("../images/theme4/bg.png") repeat scroll 0 0 transparent;
+}
+.theme4 #ap-menu {
+    background: url("../images/theme4/nav.png") repeat-y scroll 100% 0 #3A3B42;
+    box-shadow: 0 1px 1px #222222;
+}
+.theme4 #cpanel-inner .module, .theme4 #cpanel-inner .module-footer, .theme4 .sess_bar_outer, .theme4 .sess_bar, .theme4 #ap-menu li ul li.first-child {
+    background-image: url("../images/theme4/ui.png") !important;
+    background-repeat: repeat-x;
+}
+.theme4 .sess_bar_outer {
+    background-position: 0 -410px;
+    border: 1px solid #CCCCCC !important;
+}
+.theme4 .sess_bar {
+    background-position: 0 -384px;
+}
+.theme4 #cpanel-inner .module, .theme4 #ap-menu li ul li.first-child {
+    background-position: 0 -208px;
+}
+.theme4 #cpanel-inner .module-footer {
+    background-position: 0 -274px;
+}
+.theme4 #cpanel-inner .module-content {
+    background-color: #F1F1F1;
+}
+.theme4 #form-login .button1 a {
+    background: url("../images/theme4/buttons.png") repeat-x scroll 0 -536px transparent;
+    border: 1px solid #111111;
+    color: #FFFFFF;
+    text-shadow: 1px -1px 1px #000000;
+}
+.theme4 #form-login .button1 a:hover {
+    border: 1px solid #333333;
+}
+.theme4 #form-login .button1 a:active {
+    background: url("../images/theme4/buttons.png") repeat-x scroll 0 -586px transparent;
+}
+.theme4 #ap-mainbody, .theme4 .login {
+    border: 1px solid #AAAAAA;
+}
+.theme4 #ap-header {
+    background: url("../images/core/light/header.jpg") repeat-x scroll 0 0 #A6A3AE;
+}
+.theme4 #ap-mainmenu {
+    border-bottom: 1px solid #CCCCCC;
+    box-shadow: 0 1px 0 #FFFFFF;
+}
+.theme4 #ap-mainmenu li a {
+    color: #333333;
+    text-shadow: 0 1px 0 #CCCCCC;
+}
+.theme4 #ap-mainmenu, .theme4 #ap-mainmenu li, .theme4 #ap-submenu, .theme4 #ap-submenu li a, .theme4 #ap-footer {
+    background: url("../images/theme4/ui.png") repeat-x scroll 0 -52px transparent;
+}
+.theme4 #ap-mainmenu li ul li {
+    box-shadow: none;
+}
+.theme4 #ap-mainmenu li.active, .theme4 #ap-sidemenu li.active {
+    background: url("../images/theme4/ui.png") repeat-x scroll 0 0 transparent;
+}
+.theme4 #ap-mainmenu li:hover, .theme4 #ap-submenu li a.active, .theme4 #ap-sidemenu li:hover {
+    background: url("../images/theme4/ui.png") repeat-x scroll 0 -92px transparent;
+}
+.theme4 #ap-topleft, .theme4 #ap-topright, .theme4 .button, .theme4 button, .theme4 .button1 a {
+    background: url("../images/core/light/toplinks.jpg") repeat-x scroll 0 0 #A7A2AB;
+    border: 1px solid #CCCCCC;
+    box-shadow: 0 0 1px #FFFFFF;
+}
+.theme4 #ap-topleft:hover, .theme4 #ap-topright:hover, .theme4 button:hover, .theme4 .button1 a:active {
+    background: url("../images/core/light/toplinks.jpg") repeat-x scroll 0 -23px #A7A2AB;
+}
+.theme4 #ap-mainbody {
+    background: url("../images/theme4/body.png") repeat-x scroll 0 0 #E3E3E3;
+}
+.theme4 .login {
+    background: url("../images/theme4/body.png") repeat-x scroll 0 0 #D2D2D2;
+}
+.theme4 #ap-submenu {
+}
+.theme4 #ap-submenu li a, .theme4 .add-module-link {
+    border: 1px solid #CCCCCC;
+    color: #555555;
+    font-weight: bold;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+.theme4 .add-module-link {
+    background: none repeat scroll 0 0 #D3D5D5;
+    box-shadow: 0 1px 1px #CCCCCC inset;
+}
+.theme4 .add-module-link:hover {
+    background: none repeat scroll 0 0 #444444;
+    border: 1px solid #222222;
+    box-shadow: 0 1px 1px #333333 inset;
+    color: #EEEEEE;
+    text-shadow: 0 1px 0 #000000;
+}
+.theme4 #ap-crumbs {
+    background: url("../images/theme4/ui.png") repeat-x scroll 0 -512px transparent;
+    border: 1px solid #888888;
+}
+.theme4 #toolbar .button, .theme4.com_k2 #toolbar #toolbar-save:nth-of-type(2) {
+    background: url("../images/theme4/buttons.png") repeat-x scroll 0 -400px transparent;
+}
+.theme4 #toolbar .button:hover, .theme4.com_k2 #toolbar #toolbar-save:nth-of-type(2):hover {
+    background: none repeat scroll 0 0 #BBBBBB;
+}
+.theme4 #ap-content {
+    background-color: #E3E3E3;
+}
+.theme4 div.current {
+    background-color: #FFFFFF;
+}
+.theme4 .admintable, .theme4 .adminlist, .theme4 .adminform, .theme4 #ap-menu li ul li, .theme4 div.simpleTabsContent.currentTab {
+    background-color: #F6F6F6;
+    color: #666666;
+}
+.theme4 .admintable a, .theme4 .adminlist a {
+    color: #333333;
+}
+.theme4 .adminlist th, .theme4 .admintable th, .theme4 .adminlist .title {
+    background: url("../images/theme4/ui.png") repeat-x scroll 0 -512px transparent;
+    border-bottom: 1px solid #B1B0AE;
+    border-top: 1px solid #B1B0AE;
+}
+.theme4 .adminlist .filterline th {
+    background: none repeat scroll 0 0 #E0E0DF;
+}
+.theme4 .adminlist th:last-of-type, .theme4 .admintable th:last-of-type {
+    border-right: 0 none;
+}
+.theme4 .adminlist tfoot, .theme4 .admintable tfoot {
+    background: none repeat scroll 0 0 #DDDDDD;
+    border-bottom: 1px solid #BBBBBB;
+    border-top: 1px solid #BBBBBB;
+}
+.theme4 .adminlist tfoot tr:hover td, .theme4 .admintable tfoot tr:hover td {
+    background: none repeat scroll 0 0 transparent;
+}
+.theme4 .header {
+    color: #EEEEEE !important;
+    text-shadow: 1px 1px 0 #000000;
+}
+.theme4 .sess_bar_outer {
+    background: none repeat scroll 0 0 #BBBBBB;
+}
+.theme4 #ap-footmods, .theme4 #apfootmods h3, .theme4 .ap-foot1, .theme4 .ap-foot2, .theme4 .ap-foot3, .theme4 .ap-foot4, .theme4 .ap-foot1 a, .theme4 .ap-foot2 a, .theme4 .ap-foot3 a, .theme4 .ap-foot4 a {
+    color: #777777;
+    text-shadow: 0 1px 1px #FFFFFF;
+}
+.theme4 #ap-topleft li, .theme4 #ap-topright li {
+    border-right: 1px solid #CCCCCC;
+}
+.theme4 #ap-topleft li.last, .theme4 #ap-topright li.last {
+    border-right: 0 none;
+}
+.theme4 li.first-child {
+    border-bottom: 1px solid #AAAAAA;
+}
+.theme4 #ap-menu li.first-child a {
+    color: #333333;
+    font-weight: bold;
+    text-shadow: 0 1px 0 #CCCCCC;
+}
+.theme4 #ap-footer, .theme4 #ap-footer p, .theme4 #ap-footer a {
+    color: #999999 !important;
+    text-shadow: 0 1px 1px #FFFFFF;
+}
+.theme4 #form-login-password input, .theme4 #form-login-username input, .theme4 #form-login-lang select {
+    background: none repeat scroll 0 0 #F8F8F8;
+    border: 1px solid #AAAAAA;
+}
+.theme4 #ualog_form select, .theme4 #itemtype {
+    background: url("../images/theme4/ui.png") repeat-x scroll 0 -331px transparent;
+    border: 1px solid #AAAAAA;
+}
+.theme4 div#module-status.ap-status span, .theme4 div#module-status.ap-status span a, .theme4 #ap-quickadd, .theme4 #ap-myeditor, .theme4 #ap-userstats, .theme4 #ap-footermenu {
+    background-color: #3A3A3A !important;
+}
+.theme4 div#module-status.ap-status span span {
+    background-color: transparent;
+}
+.theme4 .bullet1 li {
+    background: none repeat scroll 0 0 transparent;
+    border-bottom: 1px solid #AAAAAA;
+    border-top: 1px solid #FFFFFF;
+}
+.theme4 .bullet1 li:first-of-type {
+    border-top: 0 none;
+}
+.theme4 #ap-sidebar .module hr {
+    background: none repeat scroll 0 0 transparent;
+}
+.theme4 .tool-tip {
+    background: none repeat scroll 0 0 #666666;
+    color: #FFFFFF;
+}
+.theme4 #ap-content div.icon {
+    background: url("../images/theme4/icon.png") no-repeat scroll 50% 0 transparent;
+    border: 0 none;
+    color: #333333;
+}
+.theme4 dl.tabs dt, .theme4 ul.simpleTabsNavigation li a {
+    background-color: #DDDDDD !important;
+}
+.theme4 dl.tabs dt.open, .theme4 ul.simpleTabsNavigation li a.current {
+    background-color: #FFFFFF !important;
+}
+.theme4 #toolbar .button, .theme4.com_k2 #toolbar #toolbar-save:nth-of-type(2) {
+    background: none repeat scroll 0 0 #CCCCCC;
+}
+.theme4 .button2-left a, .theme4 .button2-right span, .theme4 .button2-left span, .theme4 .pagination .button2-right a {
+    background: url("../images/theme4/ui.png") repeat-x scroll 0 0 transparent;
+    border: 1px solid #CCCCCC;
+    text-shadow: 0 1px 0 #CCCCCC;
+}
+.theme4 .pagination .button2-left a, .theme4 .pagination .button2-right a, .theme4 #editor-xtd-buttons .button2-left a, .theme4 #editor-xtd-buttons .button2-right a {
+    color: #111111;
+}
+.theme4 #ap-menu .triangle {
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #E1E2E2;
+    border-top: 10px solid transparent;
+}
+.theme4 #ap-mainmenu .triangle {
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #444444;
+    border-top: 10px solid transparent;
+}
+.theme4 #cpanel-inner .module, .theme4 #ap-menu li ul {
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 4px #222222;
+}
+.theme4 #ap-menu li ul {
+    border: 0 none;
+}
+.theme4 .panel h3 {
+    background: none repeat scroll 0 0 transparent;
+    color: #333333;
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: 0 1px 1px #FFFFFF;
+}
+.theme4 #ap-sidebar .module h3, .theme4 #theme_wrapper .theme_sidebar .moduletable h3, .theme4 #ap-content .module h3, .theme4 #k2QuickIconsTitle {
+    background: none repeat scroll 0 0 transparent;
+    color: #333333;
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: 0 1px 1px #EEEEEE;
+}
+.theme4 #ap-mainmenu .active .parent-name, .theme4 #ap-mainmenu .active .component-name {
+    background: url("../images/theme4/glow.png") no-repeat scroll 50% 14px transparent;
+}
+.theme4 #ap-crumbs span.next-arrow {
+    display: none;
+}
+.theme4 #ap-content .component-list {
+    border: 1px solid #FFFFFF;
+}
+.theme4 #ap-content .component-list a.parent-link {
+    color: #333333;
+    text-shadow: 1px 1px 1px #FFFFFF;
+}
+.theme4 #ap-login-logo {
+    background: url("../images/theme4/nav.png") repeat-y scroll 100% 0 #3A3B42;
+    border: 1px solid #333333;
+    box-shadow: -1px 1px 1px #222222;
+}
+.theme4 #toolbar-switch {
+    background: url("../images/theme4/arrow.png") no-repeat scroll 100% 0 transparent;
+}
+.theme4 #toolbar-switch:active {
+    background: url("../images/theme4/arrow.png") no-repeat scroll 100% 100% transparent;
+}
+.theme4 #ap-submenu {
+    border-bottom: 1px solid #CCCCCC;
+    border-top: 1px solid #CCCCCC;
+}
+body.theme5 {
+    background: url("../images/theme5/bg.jpg") repeat scroll 0 0 transparent;
+}
+.theme5 #ap-menu {
+    background: url("../images/theme5/nav.png") repeat-y scroll 100% 0 #122442;
+    box-shadow: 0 1px 1px #222222;
+}
+.theme5 #cpanel-inner .module, .theme5 #cpanel-inner .module-footer, .theme5 .sess_bar, .theme5 #ap-menu li ul li.first-child {
+    background-image: url("../images/theme5/ui.png") !important;
+    background-repeat: repeat-x;
+}
+.theme5 .sess_bar_outer {
+    background: none repeat scroll 0 0 #060D19 !important;
+}
+.theme5 .sess_bar_outer {
+    border: 1px solid #060D19 !important;
+    box-shadow: 0 0 1px #6B94E3;
+}
+.theme5 .sess_bar {
+    background-position: 0 -384px;
+}
+.theme5 #cpanel-inner .module, .theme5 #ap-menu li ul li.first-child {
+    background-position: 0 -208px;
+}
+.theme5 #cpanel-inner .module-footer {
+    background-position: 0 -274px;
+}
+.theme5 #cpanel-inner .module-content {
+    background-color: #F1F1F1;
+}
+.theme5 #form-login .button1 a {
+    background: url("../images/theme5/buttons.png") repeat-x scroll 0 -536px transparent;
+    border: 1px solid #111111;
+    color: #FFFFFF;
+    text-shadow: 1px -1px 1px #000000;
+}
+.theme5 #form-login .button1 a:hover {
+    border: 1px solid #333333;
+}
+.theme5 #form-login .button1 a:active {
+    background: url("../images/theme5/buttons.png") repeat-x scroll 0 -586px transparent;
+}
+.theme5 #ap-mainbody {
+    border: 1px solid #14294A;
+    box-shadow: 2px 2px 2px #333333;
+}
+.theme5.com_cpanel #ap-mainbody {
+    border: 0 none;
+    box-shadow: none;
+}
+.theme5 .login {
+    border: 1px solid #14294A;
+    box-shadow: 0 2px 3px #333333;
+}
+.theme5 #ap-header {
+    background: url("../images/core/light/header.jpg") repeat-x scroll 0 0 #A6A3AE;
+}
+.theme5 #ap-mainmenu {
+    border-bottom: 1px solid #14294A;
+    box-shadow: 0 2px 3px #333333;
+}
+.theme5 #ap-mainmenu li a, .theme5 .login p, .theme5 .login a {
+    color: #FFFFFF;
+    text-shadow: 0 1px 1px #111111;
+}
+.theme5 #ap-mainmenu, .theme5 #ap-mainmenu li, .theme5 #ap-submenu, .theme5 .add-module-link, .theme5 #ap-submenu li a, .theme5 #ap-footer {
+    background: url("../images/theme5/ui.png") repeat-x scroll 0 -52px transparent;
+}
+.theme5 #ap-mainmenu li ul li {
+    box-shadow: none;
+}
+.theme5 #ap-mainmenu li.active, .theme5 #ap-sidemenu li.active {
+    background: url("../images/theme5/ui.png") repeat-x scroll 0 0 transparent;
+}
+.theme5 #ap-mainmenu li:hover, .theme5 #ap-submenu li a.active, .theme5 #ap-sidemenu li:hover, .theme5 #ap-submenu li a:hover, .theme5 .add-module-link:hover {
+    background: url("../images/theme5/ui.png") repeat-x scroll 0 -92px transparent;
+}
+.theme5 #ap-topleft, .theme5 #ap-topright, .theme5 .button, .theme5 button, .theme5 .button1 a {
+    background: url("../images/core/light/toplinks.jpg") repeat-x scroll 0 0 #A7A2AB;
+    border: 1px solid #CCCCCC;
+    box-shadow: 0 0 1px #FFFFFF;
+}
+.theme5 #ap-topleft:hover, .theme5 #ap-topright:hover, .theme5 button:hover, .theme5 .button1 a:active {
+    background: url("../images/core/light/toplinks.jpg") repeat-x scroll 0 -23px #A7A2AB;
+}
+.theme5 #ap-mainbody {
+    background: url("../images/theme5/body.png") repeat-x scroll 0 0 #E3E3E3;
+}
+.theme5 .login {
+    background: url("../images/theme5/body.png") repeat-x scroll 0 0 #14294A;
+}
+.theme5 #ap-submenu {
+}
+.theme5 #ap-submenu li a, .theme5 .add-module-link {
+    border: 1px solid #14294A;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-shadow: 0 1px 1px #111111;
+}
+.theme5 #ap-crumbs {
+    background: url("../images/theme5/ui.png") repeat-x scroll 0 -512px transparent;
+    border: 1px solid #888888;
+}
+.theme5 #toolbar .button, .theme5.com_k2 #toolbar #toolbar-save:nth-of-type(2) {
+    background: url("../images/theme5/buttons.png") repeat-x scroll 0 -400px transparent;
+}
+.theme5 #toolbar .button:hover, .theme5.com_k2 #toolbar #toolbar-save:nth-of-type(2):hover {
+    background: none repeat scroll 0 0 #BBBBBB;
+}
+.theme5 #ap-content {
+    background-color: #E3E3E3;
+}
+.theme5 div.current {
+    background-color: #FFFFFF;
+}
+.theme5 .admintable, .theme5 .adminlist, .theme5 .adminform, .theme5 #ap-menu li ul li, .theme5 div.simpleTabsContent.currentTab {
+    background-color: #F6F6F6;
+    color: #666666;
+}
+.theme5 .admintable a, .theme5 .adminlist a {
+    color: #333333;
+}
+.theme5 .adminlist th, .theme5 .admintable th, .theme5 .adminlist .title {
+    background: url("../images/theme5/ui.png") repeat-x scroll 0 -512px transparent;
+    border-bottom: 1px solid #B1B0AE;
+    border-top: 1px solid #B1B0AE;
+}
+.theme5 .adminlist .filterline th {
+    background: none repeat scroll 0 0 #E0E0DF;
+}
+.theme5 .adminlist th:last-of-type, .theme5 .admintable th:last-of-type {
+    border-right: 0 none;
+}
+.theme5 .adminlist tfoot, .theme5 .admintable tfoot {
+    background: none repeat scroll 0 0 #DDDDDD;
+    border-bottom: 1px solid #BBBBBB;
+    border-top: 1px solid #BBBBBB;
+}
+.theme5 .adminlist tfoot tr:hover td, .theme5 .admintable tfoot tr:hover td {
+    background: none repeat scroll 0 0 transparent;
+}
+.theme5 .header {
+    color: #EEEEEE !important;
+    text-shadow: 1px 1px 0 #000000;
+}
+.theme5 #ap-footmods, .theme5 #apfootmods h3, .theme5 .ap-foot1, .theme5 .ap-foot2, .theme5 .ap-foot3, .theme5 .ap-foot4, .theme5 .ap-foot1 a, .theme5 .ap-foot2 a, .theme5 .ap-foot3 a, .theme5 .ap-foot4 a {
+    color: #777777;
+    text-shadow: 0 1px 1px #FFFFFF;
+}
+.theme5 #ap-topleft li, .theme5 #ap-topright li {
+    border-right: 1px solid #CCCCCC;
+}
+.theme5 #ap-topleft li.last, .theme5 #ap-topright li.last {
+    border-right: 0 none;
+}
+.theme5 li.first-child {
+    border-bottom: 1px solid #AAAAAA;
+}
+.theme5 #ap-menu li.first-child a {
+    color: #333333;
+    font-weight: bold;
+    text-shadow: 0 1px 0 #CCCCCC;
+}
+.theme5 #ap-footer, .theme5 #ap-footer p, .theme5 #ap-footer a {
+    color: #FFFFFF !important;
+    text-shadow: 0 1px 1px #111111;
+}
+.theme5 #form-login-password input, .theme5 #form-login-username input, .theme5 #form-login-lang select {
+    background: none repeat scroll 0 0 #F8F8F8;
+    border: 1px solid #111111;
+    box-shadow: 0 0 1px #9DD4FF;
+}
+.theme5 #ualog_form select, .theme5 #itemtype {
+    background: url("../images/theme5/ui.png") repeat-x scroll 0 -331px transparent;
+    border: 1px solid #AAAAAA;
+}
+.theme5 div#module-status.ap-status span, .theme5 div#module-status.ap-status span a, .theme5 #ap-quickadd, .theme5 #ap-myeditor, .theme5 #ap-userstats, .theme5 #ap-footermenu {
+    background-color: #0E1C34 !important;
+}
+.theme5 div#module-status.ap-status span span {
+    background-color: transparent;
+}
+.theme5 .bullet1 li {
+    background: none repeat scroll 0 0 transparent;
+    border-bottom: 1px solid #AAAAAA;
+    border-top: 1px solid #FFFFFF;
+}
+.theme5 .bullet1 li:first-of-type {
+    border-top: 0 none;
+}
+.theme5 #ap-sidebar .module hr {
+    background: none repeat scroll 0 0 transparent;
+}
+.theme5 .tool-tip {
+    background: none repeat scroll 0 0 #666666;
+    color: #FFFFFF;
+}
+.theme5 #ap-content div.icon {
+    background: url("../images/theme5/icon.png") no-repeat scroll 50% 0 transparent;
+    border: 0 none;
+    color: #333333;
+}
+.theme5 dl.tabs dt, .theme5 ul.simpleTabsNavigation li a {
+    background-color: #DDDDDD !important;
+}
+.theme5 dl.tabs dt.open, .theme5 ul.simpleTabsNavigation li a.current {
+    background-color: #FFFFFF !important;
+}
+.theme5 #toolbar .button, .theme5.com_k2 #toolbar #toolbar-save:nth-of-type(2) {
+    background: none repeat scroll 0 0 #CCCCCC;
+}
+.theme5 .button2-left a, .theme5 .button2-right span, .theme5 .button2-left span, .theme5 .pagination .button2-right a {
+    background: url("../images/theme5/ui.png") repeat-x scroll 0 0 transparent;
+    border: 1px solid #CCCCCC;
+    text-shadow: 0 1px 0 #CCCCCC;
+}
+.theme5 .pagination .button2-left a, .theme5 .pagination .button2-right a, .theme5 #editor-xtd-buttons .button2-left a, .theme5 #editor-xtd-buttons .button2-right a {
+    color: #111111;
+}
+.theme5 #ap-menu .triangle {
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #E1E2E2;
+    border-top: 10px solid transparent;
+}
+.theme5 #ap-mainmenu .triangle {
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #444444;
+    border-top: 10px solid transparent;
+}
+.theme5 #cpanel-inner .module, .theme5 #ap-menu li ul {
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 4px #222222;
+}
+.theme5 #ap-menu li ul {
+    border: 0 none;
+}
+.theme5 .panel h3 {
+    background: none repeat scroll 0 0 transparent;
+    color: #333333;
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+.theme5 #ap-sidebar .module h3, .theme5 #theme_wrapper .theme_sidebar .moduletable h3, .theme5 #ap-content .module h3, .theme5 #k2QuickIconsTitle {
+    background: none repeat scroll 0 0 transparent;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: 0 1px 1px #111111;
+}
+.theme5 #ap-mainmenu .active .parent-name, .theme5 #ap-mainmenu .active .component-name {
+    background: url("../images/theme5/glow.png") no-repeat scroll 50% 14px transparent;
+}
+.theme5 #ap-crumbs span.next-arrow {
+    display: none;
+}
+.theme5 #ap-content .component-list {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+}
+.theme5 #ap-content .component-list a.parent-link {
+    color: #582716;
+    text-shadow: 0 1px 0 #FBA985;
+}
+.theme5 #ap-login-logo {
+    background: url("../images/theme5/nav.png") repeat-y scroll 100% 0 #3A3B42;
+    border: 1px solid #333333;
+    box-shadow: -1px 1px 1px #222222;
+}
+.theme5 #toolbar-switch {
+    background: url("../images/theme5/arrow.png") no-repeat scroll 100% 0 transparent;
+}
+.theme5 #toolbar-switch:active {
+    background: url("../images/theme5/arrow.png") no-repeat scroll 100% 100% transparent;
+}
+.theme5 #ap-submenu {
+    border-bottom: 1px solid #14294A;
+    border-top: 1px solid #14294A;
+}
+.theme5 #ap-quicklink .parent, .theme5 #ap-myeditor .parent {
+    background: -moz-linear-gradient(center top , #1A487C 0%, #14294A 100%) repeat scroll 0 0 transparent;
+    border: 1px solid #14294A;
+}
+.theme5 #ap-quicklink .parent:hover, .theme5 #ap-myeditor .parent:hover {
+    background: -moz-linear-gradient(center top , #14294A 0%, #1A487C 100%) repeat scroll 0 0 transparent;
+}
+.theme5 #ap-mainmenu li.parent span.subarrow {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #122442;
+}
+.theme5 #ap-mainmenu li ul li.parent span.subarrow {
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #122442;
+    border-top: 5px solid transparent;
+}
+.theme5 .ap-main-inner {
+    padding: 0 2px 5px 0;
+}
+.theme5 #quickadd_save {
+    background: url("../images/theme5/buttons.png") repeat-x scroll 0 -1px transparent;
+    border: 1px solid #124A13;
+}
+.theme5 #quickadd_apply {
+    background: url("../images/theme5/buttons.png") repeat-x scroll 0 -135px transparent;
+    border: 1px solid #14294A;
+}
+.theme5 #alt-toolbar .toolbar a {
+    color: #FFFFFF !important;
+    text-shadow: 1px 1px 1px #000000;
+}
+img[src$="tick.png"], img[src$="disabled.png"], img[src$="publish_g.png"], img[src$="publish_r.png"], img[src$="publish_x.png"], img[src$="publish_y.png"], img[src$="icon-16-default.png"], img[src$="mainmenu.png"], a[onclick*="accessregistered"], a[onclick*="accessspecial"], a[onclick*="accesspublic"], img[src$="uparrow.png"], img[src$="downarrow.png"] {
+    display: block;
+    font-size: 9px;
+    height: 0;
+    margin-top: 5px;
+    overflow: hidden;
+    padding-top: 16px;
+    text-indent: -9999px;
+    width: 16px;
+}
+img[src$="filesave.png"] {
+    display: block;
+    font-size: 9px;
+    height: 0;
+    margin-left: 2px;
+    overflow: hidden;
+    padding-top: 16px;
+    text-indent: -9999px;
+    width: 16px;
+}
+img[src$="tick.png"], img[src$="publish_g.png"], img[src$="publish_x.png"]:active, .module-edit-child span.active {
+    background: url("../images/icons-16.png") no-repeat scroll -109px -993px transparent;
+}
+img[src$="publish_x.png"], img[src$="tick.png"]:active, img[src$="publish_g.png"]:active, .module-edit-child span {
+    background: url("../images/icons-16.png") no-repeat scroll -73px -993px transparent;
+}
+img[src$="disabled.png"] {
+    background: url("../images/icons-16.png") no-repeat scroll -440px -993px transparent;
+}
+img[src$="publish_r.png"] {
+    background: url("../images/icons-16.png") no-repeat scroll -406px -993px transparent;
+}
+img[src$="publish_y.png"] {
+    background: url("../images/icons-16.png") no-repeat scroll -370px -993px transparent;
+}
+img[src$="icon-16-default.png"] {
+    background: url("../images/icons-16.png") no-repeat scroll -202px -80px transparent;
+}
+img[src$="mainmenu.png"] {
+    background: url("../images/icons-16.png") no-repeat scroll -804px -40px transparent;
+}
+img[src$="filesave.png"] {
+    background: url("../images/icons-16.png") no-repeat scroll -469px -160px transparent;
+}
+a[onclick*="accessregistered"], a[onclick*="accessspecial"], a[onclick*="accesspublic"] {
+    height: 18px;
+    width: 18px;
+}
+a[onclick*="accessregistered"] {
+    background: url("../images/icons-16.png") no-repeat scroll -175px -992px transparent;
+}
+a[onclick*="accessspecial"] {
+    background: url("../images/icons-16.png") no-repeat scroll -245px -992px transparent;
+}
+a[onclick*="accesspublic"] {
+    background: url("../images/icons-16.png") no-repeat scroll -315px -992px transparent;
+}
+img[src$="uparrow.png"] {
+    background: url("../images/icons-16.png") no-repeat scroll -972px -976px transparent;
+}
+img[src$="downarrow.png"] {
+    background: url("../images/icons-16.png") no-repeat scroll -972px -1003px transparent;
+}
+.adminlist tr:hover img[src$="uparrow.png"] {
+    background: url("../images/icons-16.png") no-repeat scroll -943px -976px transparent;
+}
+.adminlist tr:hover img[src$="downarrow.png"] {
+    background: url("../images/icons-16.png") no-repeat scroll -943px -1003px transparent;
+}
+.com_joomailermailchimpintegration.ap-view-main #ap-content-inner, .com_joomailermailchimpintegration.ap-view-create #ap-content-inner, .com_joomailermailchimpintegration.ap-view-campaigns #ap-content-inner {
+    background: none repeat scroll 0 0 #FFFFFF;
+    padding: 10px;
+}
+.com_joomailermailchimpintegration.ap-view-main #savedButtons {
+    margin-bottom: 10px;
+}
+.com_joomailermailchimpintegration table.adminlist thead th {
+    height: auto !important;
+}
+.com_joomailermailchimpintegration.ap-view-subscribers #ap-content-inner h3 {
+    text-align: center;
+}
+#joomailermailchimpintegrationfooterlogo, img[alt="Joomailer"] {
+    display: none;
+}
+#joomailermailchimpintegrationfooter {
+    float: none;
+    text-align: center;
+}
+.com_joomailermailchimpintegration.ap-task-edit.ap-view-templates #toolbar, .com_joomailermailchimpintegration.ap-view-create #toolbar {
+    display: none !important;
+}
+.toolbar img, .toolbar br, #ap-toolbar td.divider {
+    display: none;
+}
+.toolbar center, .toolbar div {
+    display: inline;
+}
+#ap-title .header img {
+    display: none;
+}
+.com_zoo .creation-form .element > strong {
+    float: none;
+}
+.com_zoo .creation-form .element {
+    background: none repeat scroll 0 0 transparent;
+    border-bottom: 1px solid #EEEEEE;
+}
+.com_zoo .trigger .button {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+}
+.com_zoo div.width-60 {
+    width: 65%;
+}
+.com_zoo div.width-40 {
+    width: 29%;
+}
+.com_zoo .mceLayout {
+    height: 500px !important;
+    width: 99% !important;
+}
+.com_zoo .mceLayout .mceIframeContainer iframe {
+    height: 398px !important;
+    width: 100% !important;
+}
+.com_zoo table.list tbody td {
+    vertical-align: middle;
+}
+.com_cckjseblod ul#submenu.configuration {
+    margin: 0;
+}
+.com_cckjseblod ul#submenu.configuration li a {
+    text-indent: 0;
+}
+.theme2.com_cckjseblod ul#submenu.configuration li a, .theme2.com_cckjseblod ul#submenu.configuration .add-module-link {
+    background: none repeat scroll 0 0 #444444;
+    border: 1px solid #313131;
+    box-shadow: 0 1px 2px #343434 inset;
+    color: #EEEEEE;
+    text-shadow: 0 1px 1px #222222;
+}
+.com_cckjseblod #submenu li a, .com_cckjseblod #submenu li a:visited, .com_cckjseblod #submenu span.nolink {
+    border-right: 0 none;
+    color: #333333 !important;
+    display: block;
+    margin: 2px 0;
+    padding: 1px 12px !important;
+    text-indent: -10px;
+}
+.theme2.com_cckjseblod #submenu li a, .theme2.com_cckjseblod #submenu li a:visited, .theme2.com_cckjseblod #submenu span.nolink, .theme3.com_cckjseblod #submenu li a:hover, .theme4.com_cckjseblod #submenu li a:hover, .com_cckjseblod #toolbar-new_jseblod.button a, .com_cckjseblod #toolbar-apply_jseblod.button a, .com_cckjseblod #toolbar-save_jseblod.button a {
+    color: #FFFFFF !important;
+}
+#submenu img {
+    display: none;
+}
+.com_cckjseblod .legend-border {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    font-style: normal;
+}
+.com_cckjseblod #modal-top div#toolbar {
+    padding: 0 10px;
+}
+.toolbar .divider {
+    display: none !important;
+}
+.com_cckjseblod table.toolbar a, .com_cckjseblod table.toolbar a:visited {
+    color: #333333 !important;
+}
+.theme2.com_cckjseblod table.toolbar a, .theme2.com_cckjseblod table.toolbar a:visited {
+    color: #EEEEEE !important;
+}
+.com_cckjseblod #toolbar-new_jseblod.button, .com_cckjseblod #toolbar-save_jseblod.button, .com_cckjseblod #toolbar-apply_jseblod.button {
+    border-radius: 4px 4px 4px 4px;
+    position: absolute;
+}
+.com_cckjseblod #toolbar-cancel_jseblod.button {
+    background: none repeat scroll 0 0 transparent !important;
+    position: absolute;
+}
+.com_cckjseblod #toolbar-cancel_jseblod.button a {
+    padding: 5px;
+}
+.com_cckjseblod #toolbar-cancel_jseblod.button {
+    right: 0;
+}
+.com_cckjseblod #toolbar-new_jseblod.button {
+    right: 55px;
+}
+.com_cckjseblod #toolbar-save_jseblod.button {
+    right: 50px;
+}
+.com_cckjseblod #toolbar-apply_jseblod.button {
+    right: 172px;
+}
+.com_cckjseblod #toolbar-new_jseblod.button, .com_cckjseblod #toolbar-apply_jseblod.button {
+    background: url("../images/theme1/buttons.png") repeat-x scroll 0 -1px transparent;
+    border: 1px solid #71A63A;
+    color: #FFFFFF;
+    text-shadow: 0 1px 1px #333333;
+}
+.com_cckjseblod #toolbar-new_jseblod.button:hover, .com_cckjseblod #toolbar-apply_jseblod.button:hover {
+    background: url("../images/theme1/buttons.png") repeat-x scroll 0 -50px transparent;
+}
+.com_cckjseblod #toolbar-save_jseblod.button {
+    background: url("../images/theme1/buttons.png") repeat-x scroll 0 -135px transparent;
+    border: 1px solid #01A7A7;
+    color: #FFFFFF;
+    text-shadow: 0 1px 1px #333333;
+}
+.com_cckjseblod #toolbar-save_jseblod.button:hover {
+    background: url("../images/theme1/buttons.png") repeat-x scroll 0 -205px transparent;
+}
+.com_cckjseblod #toolbar-cancel_jseblod.button a {
+    color: #A64749 !important;
+    text-shadow: 0 1px 1px #FFFFFF;
+}
+.com_cckjseblod #toolbar-cancel_jseblod.button a:hover {
+    color: #E33437 !important;
+}
+.theme2.com_cckjseblod #toolbar-cancel_jseblod.button a {
+    color: #F29698 !important;
+    text-shadow: 1px 1px 1px #313035;
+}
+.theme2.com_cckjseblod #toolbar-cancel_jseblod.button a:hover {
+    color: #FACACB !important;
+}
+.xhtmlsuite .xs_toolbar table {
+    background: none repeat scroll 0 0 transparent !important;
+    border: 0 none !important;
+    border-radius: 0 0 0 0 !important;
+    margin-bottom: 0 !important;
+    padding: 0 !important;
+}
+body.contentpane {
+    background: none repeat scroll 0 0 #FFFFFF;
+}
+#module-status.ap-status a#betterpreview_link span, #module-status.ap-status a#betterpreview_link span.inactive {
+    background-image: none;
+    margin: 0 2px !important;
+}
+#module-status.ap-status span#betterpreview {
+    margin-right: 2px;
+}
+#module-status a#cachecleaner span {
+    background-image: url("../images/icons/16/minus.png");
+    background-position: 5px 40% !important;
+}
+#module-status a#addtomenu span {
+    background-image: url("../images/icons/16/add.png");
+    background-position: 10px 4px !important;
+}
+.com_configurator #ap-title, .com_configurator #ap-submenu, .com_configurator #top {
+    display: none;
+}
+.com_configurator #ap-mainbody, .com_configurator #ap-content {
+    background: none repeat scroll 0 0 transparent !important;
+    border: 0 none !important;
+}
+.com_configurator a:link, .com_configurator a:active, .com_configurator a:visited {
+    text-decoration: none;
+}
+.com_configurator #ap-content {
+    margin-top: 36px;
+}
+.com_configurator #toolbar #toolbar-apply {
+    right: 2px;
+}
+.com_configurator .container_12, .com_configurator .container_16, .com_configurator #tabs .ui-widget-content {
+    width: 99%;
+}
+.com_configurator #tabs .ui-tabs-panel {
+    width: 90%;
+}
+#treeview td.button, #fileview td.button {
+    background: none repeat scroll 0 0 transparent !important;
+    border: 0 none;
+}
+.com_rokdownloads #toolbar #toolbar-upload {
+    border-radius: 4px 4px 4px 4px;
+    position: absolute;
+    right: 0;
+}
+a[href*="edit"]:after {
+    background: none repeat scroll 0 0 black;
+    display: block;
+    height: 16px;
+    width: 16px;
+}
+#ap-content-inner {
+    overflow: visible;
+    position: relative;
+}
+#toolbar-switch {
+    display: block;
+    float: right;
+    height: 28px;
+    position: absolute;
+    right: 10px;
+    text-indent: -9999px;
+    top: 12px;
+    width: 28px;
+}
+#condensed-toolbar {
+    height: 40px;
+}
+#toolbar {
+    height: 0 !important;
+    overflow: hidden;
+    padding-top: 28px;
+    position: absolute;
+    right: 42px;
+    top: 12px;
+    width: 30%;
+    z-index: 100;
+}
+#toolbar table.toolbar {
+    float: right;
+}
+#toolbar td {
+    display: list-item;
+    list-style: none outside none;
+    position: relative;
+    right: -32px;
+    top: 1px;
+}
+#toolbar .button {
+    border: 0 none;
+    box-shadow: none !important;
+}
+#toolbar .button {
+    border-radius: 0 0 0 0;
+}
+#toolbar #toolbar-delete, #toolbar #toolbar-new, #toolbar #toolbar-trash, #toolbar #toolbar-save, #toolbar #toolbar-apply, #toolbar #toolbar-cancel, #toolbar #toolbar-send, #toolbar #toolbar-forums-new, #toolbar #toolbar-forums-delete, .com_templates #toolbar #toolbar-default, #toolbar #toolbar-usergroup-save, #toolbar #toolbar-usergroup-cancel, #toolbar #toolbar-forum-save, #toolbar #toolbar-forum-cancel, #toolbar #toolbar-settings-new, #toolbar #toolbar-setting-save, #toolbar #toolbar-setting-cancel, #toolbar #toolbar-settings-delete, #toolbar #toolbar-user-save, #toolbar #toolbar-user-cancel, #toolbar #toolbar-usergroups-new, #toolbar #toolbar-usergroups-delete, #toolbar #toolbar-ranks-new, #toolbar #toolbar-ranks-delete, #toolbar #toolbar-rank-save, #toolbar #toolbar-rank-cancel, #toolbar #toolbar-dm_newdocument, #toolbar #toolbar-dm_upload, .com_akeeba.ap-view-buadmin #toolbar #toolbar-publish, #toolbar #toolbar-dm_save, #toolbar #toolbar-dm_apply, #toolbar #toolbar-dm_cancel, #toolbar #toolbar-addUsers, #toolbar #toolbar-create-campaign, #toolbar #toolbar-shareReport, #toolbar #toolbar-unsubscribe, #toolbar td[id*="delete"], #toolbar #toolbar-popup-new, #toolbar #toolbar-shajax-save {
+    border-radius: 4px 4px 4px 4px;
+    display: block;
+    position: absolute;
+    top: 0;
+}
+#toolbar #toolbar-save, #toolbar #toolbar-usergroup-save, #toolbar #toolbar-forum-save, #toolbar #toolbar-setting-save, #toolbar #toolbar-user-save, #toolbar #toolbar-rank-save, #toolbar #toolbar-dm_save, #toolbar #toolbar-create-campaign, #toolbar #toolbar-popup-new {
+    right: 50px;
+}
+.com_content #toolbar #toolbar-new, #toolbar #toolbar-forums-new, #toolbar #toolbar-settings-new, #toolbar #toolbar-usergroups-new, #toolbar #toolbar-ranks-new {
+    right: 45px;
+}
+#toolbar #toolbar-apply, #toolbar #toolbar-dm_apply {
+    right: 172px;
+}
+#toolbar #toolbar-send {
+    right: 54px;
+}
+#toolbar #toolbar-new {
+    right: 50px;
+}
+.com_templates #toolbar #toolbar-default {
+    right: 0;
+    top: 1px;
+}
+#toolbar #toolbar-dm_upload {
+    right: 94px;
+}
+#toolbar #toolbar-dm_newdocument, #toolbar #toolbar-shajax-save {
+    right: 0;
+}
+.com_users #toolbar #toolbar-new {
+    right: 100px;
+}
+.com_users #toolbar #toolbar-delete {
+    right: 50px;
+}
+#toolbar #toolbar-addUsers, #toolbar #toolbar-shareReport, #toolbar #toolbar-unsubscribe {
+    right: 5px;
+}
+#toolbar #toolbar-unsubscribe:nth-of-type(3) {
+    right: 55px;
+}
+.com_phocadownload #toolbar #toolbar-new:nth-of-type(7) {
+    right: 125px;
+}
+.com_menus.ap-task-deleteMenu #toolbar #toolbar-delete {
+    right: 55px;
+}
+#toolbar #toolbar-delete, #toolbar #toolbar-trash, #toolbar #toolbar-cancel, #toolbar #toolbar-forums-delete, #toolbar #toolbar-usergroup-cancel, #toolbar #toolbar-forum-cancel, #toolbar #toolbar-setting-cancel, #toolbar #toolbar-settings-delete, #toolbar #toolbar-user-cancel, #toolbar #toolbar-usergroups-delete, #toolbar #toolbar-ranks-delete, #toolbar #toolbar-rank-cancel, #toolbar #toolbar-dm_cancel, #toolbar td[id*="delete"] {
+    right: 0;
+    top: 0;
+}
+.com_sobipro #toolbar td[id*="delete"]:first-of-type {
+    right: 100px;
+}
+.contentpane #toolbar {
+    background: url("../images/theme4/ui.png") repeat-x scroll 0 0 transparent !important;
+    height: 30px !important;
+    left: 0;
+    margin: 0 !important;
+    padding: 5px;
+    position: fixed;
+    top: 0;
+    width: 99%;
+}
+.contentpane #toolbar .button {
+    border-radius: 4px 4px 4px 4px;
+    display: list-item;
+    float: left !important;
+    left: auto !important;
+    margin: 1px 4px;
+    position: static !important;
+    right: auto !important;
+    top: auto !important;
+}
+.contentpane table.toolbar {
+    border: 0 none !important;
+}
+.contentpane ul#submenu.configuration, .contentpane ul#submenu.information {
+    margin-top: 10px;
+}
+.contentpane .header {
+    display: none;
+}
+#sbox-window {
+    background: none repeat scroll 0 0 #222222 !important;
+    padding: 2px !important;
+}
+#sbox-content, #sbox-window {
+    border-radius: 5px 5px 5px 5px;
+}
+#toolbar-help {
+    display: none !important;
+}
+#alt-toolbar #toolbar {
+    height: auto !important;
+    overflow: visible;
+    padding: 4px 0 2px;
+    position: relative;
+    right: 0;
+    top: 0;
+    width: auto;
+}
+#alt-toolbar .toolbar td.button a {
+    padding: 0 5px;
+    text-decoration: none;
+    text-shadow: none;
+}
+.theme1 #alt-toolbar .toolbar td.button a, .theme3 #alt-toolbar .toolbar td.button a, .theme4 #alt-toolbar .toolbar td.button a {
+    color: #333333;
+}
+.theme2 #alt-toolbar .toolbar td.button a {
+    color: #EEEEEE !important;
+}
+#alt-toolbar #toolbar table.toolbar {
+    float: none;
+    margin: 0 auto;
+}
+#alt-toolbar #toolbar td {
+    background: none repeat scroll 0 0 transparent !important;
+    border: 0 none !important;
+    border-radius: 0 0 0 0;
+    display: table-cell;
+    padding: 0 4px;
+    position: relative !important;
+    right: 0 !important;
+    text-align: center;
+    top: 0 !important;
+}
+.ap-task-edit #alt-toolbar #toolbar td, .ap-view-item #alt-toolbar #toolbar td {
+    width: 88px;
+}
+#alt-toolbar .toolbar a span {
+    display: block;
+    float: none;
+    height: 32px;
+    margin: 0 auto;
+    opacity: 0.9;
+    width: 32px;
+}
+#alt-toolbar .toolbar a span:hover {
+    opacity: 1;
+}
+.theme2 #alt-toolbar .toolbar a span {
+    opacity: 1;
+}
+.theme2 #alt-toolbar .toolbar a span:hover {
+    opacity: 0.6;
+}
+#alt-toolbar .icon-32-cpanel {
+    background: url("../images/toolbar/icon-32-cpanel.png") repeat scroll 0 0 transparent !important;
+}
+#alt-toolbar .icon-32-menus {
+    background: url("../images/toolbar/icon-32-menu.png") repeat scroll 0 0 transparent;
+}
+#alt-toolbar .icon-32-delete {
+    background: url("../images/toolbar/icon-32-trash.png") repeat scroll 0 0 transparent;
+}
+#alt-toolbar .icon-32-help {
+    background: url("../images/toolbar/icon-32-help.png") repeat scroll 0 0 transparent;
+}
+#alt-toolbar .icon-32-new {
+    background: url("../images/toolbar/icon-32-new.png") repeat scroll 0 0 transparent;
+}
+#alt-toolbar .icon-32-save-new, #alt-toolbar .icon-32-savenew, #alt-toolbar a[onclick*="saveAndNew"] .icon-32-save {
+    background: url("../images/toolbar/icon-32-savenew.png") repeat scroll 0 0 transparent;
+}
+#alt-toolbar .icon-32-edit {
+    background: url("../images/toolbar/icon-32-edit.png") no-repeat scroll 50% 0 transparent;
+}
+#alt-toolbar .icon-32-trash {
+    background: url("../images/toolbar/icon-32-trash.png") repeat scroll 0 0 transparent;
+}
+#alt-toolbar .icon-32-copy, #alt-toolbar .icon-32-save-copy {
+    background: url("../images/toolbar/icon-32-copy.png") repeat scroll 0 0 transparent;
+}
+#alt-toolbar .icon-32-move, #alt-toolbar .icon-32-move_f2 {
+    background: url("../images/toolbar/icon-32-move.png") repeat scroll 0 0 transparent;
+}
+#alt-toolbar .icon-32-unpublish {
+    background: url("../images/toolbar/icon-32-unpublish.png") repeat scroll 0 0 transparent;
+}
+#alt-toolbar .icon-32-publish {
+    background: url("../images/toolbar/icon-32-publish.png") repeat scroll 0 0 transparent;
+}
+#alt-toolbar .icon-32-archive, #alt-toolbar .icon-32-archive_f2, #alt-toolbar .icon-32-export, #alt-toolbar .icon-32-download {
+    background: url("../images/toolbar/icon-32-archive.png") repeat scroll 0 0 transparent;
+}
+#alt-toolbar .icon-32-unarchive, #alt-toolbar .icon-32-checkin, #alt-toolbar .icon-32-import {
+    background: url("../images/toolbar/icon-32-unarchive.png") repeat scroll 0 0 transparent;
+}
+#alt-toolbar .icon-32-popup-Popup, #alt-toolbar .icon-32-config, #alt-toolbar .icon-32-cpanel, #alt-toolbar .icon-32-options {
+    background: url("../images/toolbar/icon-32-config.png") repeat scroll 0 0 transparent;
+}
+#alt-toolbar .icon-32-save, #alt-toolbar .icon-32-save-close {
+    background: url("../images/toolbar/icon-32-save.png") repeat scroll 0 0 transparent;
+}
+#alt-toolbar .icon-32-apply, #alt-toolbar .icon-32-upload, #alt-toolbar .icon-32-save-apply {
+    background: url("../images/toolbar/icon-32-apply.png") repeat scroll 0 0 transparent;
+}
+#alt-toolbar .icon-32-cancel {
+    background: url("../images/toolbar/icon-32-cancel.png") repeat scroll 0 0 transparent;
+}
+#alt-toolbar .icon-32-default {
+    background: url("../images/toolbar/icon-32-default.png") repeat scroll 0 0 transparent;
+}
+#alt-toolbar .icon-32-preview {
+    background: url("../images/toolbar/icon-32-preview.png") repeat scroll 0 0 transparent;
+}
+#alt-toolbar .icon-32-html {
+    background: url("../images/toolbar/icon-32-html.png") repeat scroll 0 0 transparent;
+}
+#alt-toolbar .icon-32-css {
+    background: url("../images/toolbar/icon-32-css.png") repeat scroll 0 0 transparent;
+}
+#alt-toolbar .icon-32-forward {
+    background: url("../images/toolbar/icon-32-forward.png") repeat scroll 0 0 transparent;
+}
+#alt-toolbar .icon-32-Link, #alt-toolbar .icon-32-back {
+    background: url("../images/toolbar/icon-32-back.png") repeat scroll 0 0 transparent;
+}
+#alt-toolbar .icon-32-user {
+    background-image: url("../images/toolbar/icon-32-user.png") !important;
+}
+#alt-toolbar .icon-32-user {
+    background-image: url("../images/toolbar/icon-32-user.png") !important;
+}
+#alt-toolbar .icon-32-refresh {
+    background: url("../images/toolbar/icon-32-rebuild.png") repeat scroll 0 0 transparent;
+}
+#module-41 p {
+    font-family: Georgia,Times,serif;
+    font-style: italic;
+}
+#module-41 p:first-of-type {
+    background: url("../images/joomla-love.png") no-repeat scroll 40% 6px transparent;
+    padding-top: 50px;
+}
+#ap-content div.icon {
+    float: left;
+    font-size: 11px;
+    margin: 5px 0 0 12px;
+    text-align: center;
+}
+#ap-content div.icon a {
+    color: #333333;
+    display: block;
+    float: left;
+    height: 114px;
+    padding: 30px 20px 0;
+    text-decoration: none;
+    vertical-align: middle;
+    width: 80px;
+}
+#ap-content div.icon span {
+    display: block;
+    line-height: 12px;
+}
+#ap-content div.icon img {
+    margin: 5px 0;
+    padding: 0;
+}
+#ap-content div.icon a {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+}
+#ap-content div.icon a:hover {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    color: #21759B;
+}
+#ap-content div.icon span.icon {
+    height: 55px;
+}
+.com_cpanel #ap-content div.icon {
+    background: none repeat scroll 0 0 transparent;
+    float: left;
+    font-size: 11px;
+    margin: 4px 0 0 4px;
+    text-align: center;
+}
+.com_cpanel #ap-content div.icon a {
+    color: #333333;
+    display: block;
+    float: left;
+    height: 74px;
+    padding: 10px 0 0;
+    text-decoration: none;
+    vertical-align: middle;
+    width: 64px;
+}
+.com_cpanel #ap-content div.icon span {
+    display: block;
+    line-height: 12px;
+}
+.com_cpanel #ap-content div.icon img {
+    margin: 5px 0;
+    padding: 0;
+}
+.com_cpanel #ap-content div.icon a {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+}
+.com_cpanel #ap-content div.icon a:hover {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    color: #21759B;
+}
+.com_cpanel #ap-content div.icon span.icon {
+    height: 32px;
+}
+.module-edit li {
+    background-color: transparent !important;
+    border-bottom: 0 none !important;
+    padding: 0;
+}
+.module-edit, .module-edit-child {
+    font-size: 10px;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+.module-edit-parent {
+    float: left;
+    height: 20px;
+    position: relative;
+}
+.edit-separator {
+    border-bottom: 1px solid #CCCCCC;
+    border-top: 1px solid #CCCCCC;
+    clear: both;
+    color: #999999;
+}
+.module-edit-child {
+    background-color: #F8F8F8;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 3px #999999;
+    color: #333333;
+    display: none;
+    font-weight: normal;
+    left: -6px;
+    padding: 5px 12px;
+    position: absolute;
+    text-align: left;
+    top: 16px;
+    z-index: 300;
+}
+.module-edit-parent:hover .module-edit-child {
+    display: block;
+}
+.module-edit-child a {
+    clear: left;
+    color: #111111;
+    display: block;
+    line-height: 14px;
+    margin: 4px 0;
+    padding: 4px 0;
+}
+.module-edit-child span {
+    display: block;
+    float: left;
+    height: 16px;
+    margin-right: 5px;
+    width: 16px;
+}
+.module-disable {
+    visibility: hidden;
+}
+.module-title:hover .module-disable {
+    visibility: visible;
+}
+.com_cpanel .module-title:hover {
+    cursor: move;
+}
+.overlay {
+    background-color: #000000;
+    height: 100%;
+    left: 0;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+#ap-main {
+    min-height: 98%;
+}
+.ap-modal legend {
+    padding-top: 5px;
+}
+.contentpane.ap-modal-com_media #toolbar, .ap-modal #uploadForm legend {
+    display: none;
+}
+.ap-modal-com_media #imageForm fieldset {
+    padding: 5px;
+}
+#ap-modal-content {
+    padding: 5px;
+}
+.ap-modal #uploadForm {
+    margin: 0 auto;
+    width: 96%;
+}
+.ap-modal #uploadForm fieldset.actions {
+    background-color: #EEEEEE;
+    border: 1px solid #DDDDDD;
+    padding: 5px;
+    text-align: center;
+}
+#module-status {
+    text-align: right;
+}
+#module-status, #module-status a {
+    background: none repeat scroll 0 0 transparent !important;
+    color: #EEEEEE;
+    text-shadow: 1px 1px 1px #000000;
+}
+#module-status a:hover {
+    color: #AAAAAA;
+    text-decoration: none;
+}
+#module-status span {
+    background: none repeat scroll 0 0 transparent !important;
+    margin: 0 20px 0 0;
+}
+#text_toolbar .toolbar img {
+    display: inline;
+}
