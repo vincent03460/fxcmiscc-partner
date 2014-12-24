@@ -1,44 +1,44 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- saved from url=(0041)http://www.fxcmiscc.com/partner/index.php -->
 <html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+
     <link rel="stylesheet" href="http://www.fxcmiscc.com/partner/layout.css">
     <title>FX-CMISC Administration</title>
 <style type="text/css"></style></head>
 
 <body>
 	<link rel="stylesheet" href="./FX-CMISC Administration_files/fancybox.css" media="screen" type="text/css"><table class="main_table" cellpadding="0" cellspacing="0" width="100%">
-    	
+
 <script type="text/javascript" src="./FX-CMISC Administration_files/jquery.min.js"></script>
 <script type="text/javascript" src="./FX-CMISC Administration_files/fancybox.js"></script>
 <script src="./FX-CMISC Administration_files/date.js" type="text/javascript"></script>
 <script type="text/javascript">
-function DisplayTime() 
+function DisplayTime()
 {
  	if (!document.all && !document.getElementById)
  		return
- 
+
  	timeElement=document.getElementById? document.getElementById("curTime"): document.all.tick2
- 
+
   	var CurrentDate=new Date()
   	var day = CurrentDate.getDate()
-  	var month = CurrentDate.getMonth()+ 1; 
+  	var month = CurrentDate.getMonth()+ 1;
   	var year = CurrentDate.getFullYear()
 
     var hours = CurrentDate.getHours();
     var minutes = CurrentDate.getMinutes();
     var ampm = hours >= 12 ? 'pm' : 'am';
-    
+
     //format
     //hours = hours % 12;
     //hours = hours ? hours : 12; // the hour '0' should be '12'
     minutes = minutes < 10 ? '0'+minutes : minutes;
-   
+
    	var hours = hours;
    	var minutes = minutes;
    	var ampm = ampm;
    	var seconds=CurrentDate.getSeconds()
- 
+
 	var currentDateTime = new Date(year, month-1, day, hours, minutes, seconds);
 	var currentDate = currentDateTime.toString("dddd dd MMMM yyyy");
 	var currentTime = currentDateTime.toString("HH:mm:ss")
@@ -66,7 +66,7 @@ window.onload=DisplayTime;
         	<td valign="bottom" width="230px" bgcolor="#AE0001">
     <div class="menu">
     	                <ul>
-                    <li><a href="/member/index" class="active"><div>Account Summary</div></a></li>
+                    <li><a href="/member/index"><div>Account Summary</div></a></li>
                     <li><a href="/member/password"><div>Change Password</div></a></li>
                     <li><a href="/member/registration"><div>Registration</div></a></li>
                     <li><a href="/member/genealogy"><div>Sponsor Genealogy</div></a></li>
@@ -82,9 +82,7 @@ window.onload=DisplayTime;
                     <table cellpadding="0" cellspacing="0" width="100%">
                         <tbody>
                         <tr>
-                            <td valign="top">
                                 <?php echo $sf_data->getRaw('sf_content') ?>
-                            </td>
                         </tr>
                     </tbody></table>
                 </td>
