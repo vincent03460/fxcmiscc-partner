@@ -1,0 +1,26 @@
+index:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+company:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+investment:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+maximExecutor:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+marketNews:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+contactUs:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+all:
+  is_secure:  off        # off is the default value anyway
