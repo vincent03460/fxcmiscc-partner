@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * zMlmAccountLedger actions.
+ *
+ * @package    sf_sandbox
+ * @subpackage zMlmAccountLedger
+ * @author     Your name here
+ * @version    SVN: $Id: actions.class.php 2288 2006-10-02 15:22:13Z fabien $
+ */
+class zMlmAccountLedgerActions extends autozMlmAccountLedgerActions
+{
+}

@@ -1,0 +1,12 @@
+rendering: ~
+web_debug: ~
+security:  ~
+
+# generally, you will want to insert your own filters here
+datepickerLanguagePack:                 # Filters need a unique name
+  class: sfDatepickerLanguagePackFilter
+
+cache:     ~
+common:    ~
+flash:     ~
+execution: ~

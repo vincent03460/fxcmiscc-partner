@@ -1,0 +1,1 @@
+Please explain what is individual trader sales

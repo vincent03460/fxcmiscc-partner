@@ -1,0 +1,50 @@
+ap:
+  is_secure:   on
+  credentials: [ GRANDEGOLDENS_SUPERADMIN ]
+
+applicationSetting:
+  is_secure:   on
+  credentials: [[ GRANDEGOLDENS_SUPERADMIN, GRANDEGOLDENS_AL_SETTING ]]
+
+bonusList:
+  is_secure:   on
+  credentials: [[ GRANDEGOLDENS_SUPERADMIN, GRANDEGOLDENS_BONUS_LIST ]]
+
+changePassword:
+  is_secure:   on
+  credentials: [[ GRANDEGOLDENS_SUPERADMIN, GRANDEGOLDENS_AL_CHANGE_PASSWORD ]]
+
+dashboard:
+  is_secure:   on
+  credentials: [[ GRANDEGOLDENS_SUPERADMIN, GRANDEGOLDENS_dashboard ]]
+
+masterLogin:
+  is_secure:   on
+  credentials: [[ GRANDEGOLDENS_SUPERADMIN, GRANDEGOLDENS_AL_DIST_LIST ]]
+
+packageList:
+  is_secure:   on
+  credentials: [[ GRANDEGOLDENS_SUPERADMIN, GRANDEGOLDENS_AL_PACKAGE ]]
+
+packageCreate:
+  is_secure:   on
+  credentials: [[ GRANDEGOLDENS_SUPERADMIN, GRANDEGOLDENS_AL_PACKAGE ]]
+
+packageEdit:
+  is_secure:   on
+  credentials: [[ GRANDEGOLDENS_SUPERADMIN, GRANDEGOLDENS_AL_PACKAGE ]]
+
+packageUpdate:
+  is_secure:   on
+  credentials: [[ GRANDEGOLDENS_SUPERADMIN, GRANDEGOLDENS_AL_PACKAGE ]]
+
+userList:
+  is_secure:   on
+  credentials: [[ GRANDEGOLDENS_SUPERADMIN, GRANDEGOLDENS_AL_USER_LIST ]]
+
+userRole:
+  is_secure:   on
+  credentials: [[ GRANDEGOLDENS_SUPERADMIN, GRANDEGOLDENS_AL_USER_ROLE ]]
+
+all:
+  is_secure:  off        # off is the default value anyway

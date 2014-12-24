@@ -1,0 +1,7 @@
+loginSuccess:
+  has_layout:     off
+  stylesheets: 	  []
+
+redirectToFrontendSuccess:
+  has_layout:     off
+  stylesheets: 	  []

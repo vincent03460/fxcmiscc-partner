@@ -1,0 +1,14 @@
+index:
+  is_secure:   on
+  credentials: [GRANDEGOLDENS_SUPERADMIN]
+
+edit:
+  is_secure:   on
+  credentials: [GRANDEGOLDENS_SUPERADMIN]
+
+list:
+  is_secure:   on
+  credentials: [GRANDEGOLDENS_SUPERADMIN]
+
+all:
+  is_secure:  off        # off is the default value anyway
