@@ -18,6 +18,17 @@ test:
     no_script_name:         off
     etag:                   off
 
+all:
+  .actions:
+    login_module:           home
+    login_action:           loginSecurity
+
+    secure_module:          home
+    secure_action:          loginSecurity
+  .settings:
+    i18n: on
+#    rich_text_js_dir:       js/tiny_mce
+
 #all:
 #  .actions:
 #    default_module:         default   # Default module and action to be called when

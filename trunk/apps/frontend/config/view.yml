@@ -4,7 +4,7 @@ default:
 
   metas:
     title:        FX-CMISC
-    robots:       index, follow
+    robots:       FX-CMISC
     description:  FX-CMISC
     keywords:     FX-CMISC
     language:     en

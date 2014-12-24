@@ -2,6 +2,35 @@
 propel: 
   _attributes: 
     package: lib.model
+  app_login_log: 
+    _attributes: 
+      idMethod: native
+    log_id: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    access_ip: 
+      type: VARCHAR
+      size: 50
+      required: true
+    user_id: 
+      type: INTEGER
+      required: true
+    remark: 
+      type: LONGVARCHAR
+    created_by: 
+      type: INTEGER
+      required: true
+    created_on: 
+      type: TIMESTAMP
+      required: true
+    updated_by: 
+      type: INTEGER
+      required: true
+    updated_on: 
+      type: TIMESTAMP
+      required: true
   app_setting: 
     _attributes: 
       idMethod: native
@@ -82,6 +111,12 @@ propel:
     updated_on: 
       type: TIMESTAMP
       required: true
+    access_ip: 
+      type: VARCHAR
+      size: 45
+    remark: 
+      type: VARCHAR
+      size: 1000
     _indexes: 
       username: 
         - username
@@ -194,6 +229,309 @@ propel:
     updated_on: 
       type: TIMESTAMP
       required: true
+  demo_dist_commission_ledger: 
+    _attributes: 
+      idMethod: native
+    commission_id: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    dist_id: 
+      type: INTEGER
+      required: true
+    commission_type: 
+      type: VARCHAR
+      size: 20
+      required: true
+    transaction_type: 
+      type: VARCHAR
+      size: 20
+      required: true
+    ref_id: 
+      type: INTEGER
+    month_traded: 
+      type: INTEGER
+    year_traded: 
+      type: INTEGER
+    credit: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+      required: true
+      default: 0.00
+    debit: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+      required: true
+      default: 0.00
+    balance: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+      required: true
+      default: 0.00
+    remark: 
+      type: VARCHAR
+      size: 255
+    pips_downline_username: 
+      type: VARCHAR
+      size: 50
+    pips_mt4_id: 
+      type: VARCHAR
+      size: 50
+    pips_rebate: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    pips_level: 
+      type: INTEGER
+    pips_lots_traded: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    created_by: 
+      type: INTEGER
+      required: true
+    created_on: 
+      type: TIMESTAMP
+      required: true
+    updated_by: 
+      type: INTEGER
+      required: true
+    updated_on: 
+      type: TIMESTAMP
+      required: true
+    status_code: 
+      type: VARCHAR
+      size: 25
+  demo_file_download: 
+    _attributes: 
+      idMethod: native
+    file_id: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    file_type: 
+      type: VARCHAR
+      size: 255
+    file_src: 
+      type: VARCHAR
+      size: 255
+    file_name: 
+      type: VARCHAR
+      size: 255
+    content_type: 
+      type: VARCHAR
+      size: 255
+    status_code: 
+      type: VARCHAR
+      size: 20
+    remarks: 
+      type: VARCHAR
+      size: 255
+    created_by: 
+      type: INTEGER
+      required: true
+    created_on: 
+      type: TIMESTAMP
+      required: true
+    updated_by: 
+      type: INTEGER
+      required: true
+    updated_on: 
+      type: TIMESTAMP
+      required: true
+  demo_pip_csv: 
+    _attributes: 
+      idMethod: native
+    pip_id: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    month_traded: 
+      type: INTEGER
+    year_traded: 
+      type: INTEGER
+    file_id: 
+      type: INTEGER
+    pips_string: 
+      type: LONGVARCHAR
+    login_id: 
+      type: INTEGER
+    login_name: 
+      type: VARCHAR
+      size: 255
+    deposit: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    withdraw: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    in_out: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    credit: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    volume: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    commission: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    taxes: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    agent: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    storage: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    profit: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    last_balance: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    status_code: 
+      type: VARCHAR
+      size: 255
+      required: true
+    remarks: 
+      type: VARCHAR
+      size: 255
+    created_by: 
+      type: INTEGER
+      required: true
+    created_on: 
+      type: TIMESTAMP
+      required: true
+    updated_by: 
+      type: INTEGER
+      required: true
+    updated_on: 
+      type: TIMESTAMP
+      required: true
+  email_contact: 
+    _attributes: 
+      idMethod: native
+    email_id: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    remark: 
+      type: VARCHAR
+      size: 255
+    send_status: 
+      type: VARCHAR
+      size: 20
+    receiver_name: 
+      type: VARCHAR
+      size: 255
+      required: true
+    receiver_country: 
+      type: VARCHAR
+      size: 255
+      required: true
+    receiver_email: 
+      type: VARCHAR
+      size: 255
+      required: true
+    receiver_contact: 
+      type: VARCHAR
+      size: 255
+      required: true
+    status_code: 
+      type: VARCHAR
+      size: 20
+      required: true
+    _indexes: 
+      receiver_email: 
+        - receiver_email
+  mlm_account_ledger: 
+    _attributes: 
+      idMethod: native
+    account_id: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    dist_id: 
+      type: INTEGER
+      required: true
+    account_type: 
+      type: VARCHAR
+      size: 20
+      required: true
+    transaction_type: 
+      type: VARCHAR
+      size: 20
+      required: true
+    credit: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+      required: true
+      default: 0.00
+    debit: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+      required: true
+      default: 0.00
+    balance: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+      required: true
+      default: 0.00
+    remark: 
+      type: VARCHAR
+      size: 255
+    internal_remark: 
+      type: LONGVARCHAR
+    ref_id: 
+      type: INTEGER
+    ref_type: 
+      type: VARCHAR
+      size: 20
+    created_by: 
+      type: INTEGER
+      required: true
+    created_on: 
+      type: TIMESTAMP
+      required: true
+    updated_by: 
+      type: INTEGER
+      required: true
+    updated_on: 
+      type: TIMESTAMP
+      required: true
+    _indexes: 
+      dist_id: 
+        - dist_id
+        - account_type
+      dist_id_2: 
+        - dist_id
+        - account_type
+        - transaction_type
   mlm_admin: 
     _attributes: 
       idMethod: native
@@ -229,25 +567,1740 @@ propel:
     updated_on: 
       type: TIMESTAMP
       required: true
-  mlm_ahli_majlis_raja: 
+  mlm_announcement: 
     _attributes: 
       idMethod: native
-    ahli_id: 
+    announcement_id: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    title: 
+      type: VARCHAR
+      size: 255
+      required: true
+    title_cn: 
+      type: VARCHAR
+      size: 255
+      required: true
+    title_jp: 
+      type: VARCHAR
+      size: 255
+    content: 
+      type: LONGVARCHAR
+      required: true
+    content_cn: 
+      type: LONGVARCHAR
+      required: true
+    content_jp: 
+      type: LONGVARCHAR
+    short_content: 
+      type: LONGVARCHAR
+    short_content_cn: 
+      type: LONGVARCHAR
+    short_content_jp: 
+      type: LONGVARCHAR
+    status_code: 
+      type: VARCHAR
+      size: 20
+      required: true
+    created_by: 
+      type: INTEGER
+      required: true
+    created_on: 
+      type: TIMESTAMP
+      required: true
+    updated_by: 
+      type: INTEGER
+      required: true
+    updated_on: 
+      type: TIMESTAMP
+      required: true
+  mlm_customer_enquiry: 
+    _attributes: 
+      idMethod: native
+    enquiry_id: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    distributor_id: 
+      type: INTEGER
+      required: true
+    contact_no: 
+      type: VARCHAR
+      size: 255
+    title: 
+      type: VARCHAR
+      size: 255
+    admin_read: 
+      type: VARCHAR
+      size: 1
+    admin_updated: 
+      type: VARCHAR
+      size: 1
+    distributor_read: 
+      type: VARCHAR
+      size: 1
+    distributor_updated: 
+      type: VARCHAR
+      size: 1
+    created_by: 
+      type: INTEGER
+      required: true
+    created_on: 
+      type: TIMESTAMP
+      required: true
+    updated_by: 
+      type: INTEGER
+      required: true
+    updated_on: 
+      type: TIMESTAMP
+      required: true
+  mlm_customer_enquiry_detail: 
+    _attributes: 
+      idMethod: native
+    detail_id: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    customer_enquiry_id: 
+      type: INTEGER
+      required: true
+    message: 
+      type: LONGVARCHAR
+    reply_from: 
+      type: VARCHAR
+      size: 15
+    status_code: 
+      type: VARCHAR
+      size: 10
+    created_by: 
+      type: INTEGER
+      required: true
+    created_on: 
+      type: TIMESTAMP
+      required: true
+    updated_by: 
+      type: INTEGER
+      required: true
+    updated_on: 
+      type: TIMESTAMP
+      required: true
+  mlm_daily_bonus_log: 
+    _attributes: 
+      idMethod: native
+    log_id: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    access_ip: 
+      type: VARCHAR
+      size: 50
+      required: true
+    bonus_type: 
+      type: VARCHAR
+      size: 10
+      required: true
+    bonus_date: 
+      type: TIMESTAMP
+      required: true
+    created_by: 
+      type: INTEGER
+      required: true
+    created_on: 
+      type: TIMESTAMP
+      required: true
+    updated_by: 
+      type: INTEGER
+      required: true
+    updated_on: 
+      type: TIMESTAMP
+      required: true
+  mlm_daily_dist_mt4_credit: 
+    _attributes: 
+      idMethod: native
+    credit_id: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    dist_id: 
+      type: INTEGER
+      required: true
+    mt4_user_name: 
+      type: VARCHAR
+      size: 50
+    mt4_credit: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    traded_datetime: 
+      type: TIMESTAMP
+    created_by: 
+      type: INTEGER
+      required: true
+    created_on: 
+      type: TIMESTAMP
+      required: true
+    updated_by: 
+      type: INTEGER
+      required: true
+    updated_on: 
+      type: TIMESTAMP
+      required: true
+  mlm_daily_pips_csv: 
+    _attributes: 
+      idMethod: native
+    pip_id: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    traded_datetime: 
+      type: TIMESTAMP
+    file_id: 
+      type: INTEGER
+    pips_string: 
+      type: LONGVARCHAR
+    login_id: 
+      type: INTEGER
+    login_name: 
+      type: VARCHAR
+      size: 255
+      required: true
+    balance: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    credit: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    commissions: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    taxes: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    storage: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    profit: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    interest: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    tax: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    unrealizedPL: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    equity: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    status_code: 
+      type: VARCHAR
+      size: 255
+      required: true
+    remarks: 
+      type: VARCHAR
+      size: 255
+    created_by: 
+      type: INTEGER
+      required: true
+    created_on: 
+      type: TIMESTAMP
+      required: true
+    updated_by: 
+      type: INTEGER
+      required: true
+    updated_on: 
+      type: TIMESTAMP
+      required: true
+  mlm_daily_pips_file: 
+    _attributes: 
+      idMethod: native
+    file_id: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    file_type: 
+      type: VARCHAR
+      size: 255
+    file_src: 
+      type: VARCHAR
+      size: 255
+    file_name: 
+      type: VARCHAR
+      size: 255
+    content_type: 
+      type: VARCHAR
+      size: 255
+    status_code: 
+      type: VARCHAR
+      size: 20
+    remarks: 
+      type: VARCHAR
+      size: 255
+    created_by: 
+      type: INTEGER
+      required: true
+    created_on: 
+      type: TIMESTAMP
+      required: true
+    updated_by: 
+      type: INTEGER
+      required: true
+    updated_on: 
+      type: TIMESTAMP
+      required: true
+  mlm_debit_account: 
+    _attributes: 
+      idMethod: native
+    debit_id: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    dist_id: 
+      type: INTEGER
+      required: true
+    created_by: 
+      type: INTEGER
+      required: true
+    created_on: 
+      type: TIMESTAMP
+      required: true
+    updated_by: 
+      type: INTEGER
+      required: true
+    updated_on: 
+      type: TIMESTAMP
+      required: true
+  mlm_dist_commission_ledger: 
+    _attributes: 
+      idMethod: native
+    commission_id: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    dist_id: 
+      type: INTEGER
+      required: true
+    commission_type: 
+      type: VARCHAR
+      size: 20
+      required: true
+    transaction_type: 
+      type: VARCHAR
+      size: 20
+      required: true
+    ref_id: 
+      type: INTEGER
+    month_traded: 
+      type: INTEGER
+    year_traded: 
+      type: INTEGER
+    credit: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+      required: true
+      default: 0.00
+    debit: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+      required: true
+      default: 0.00
+    balance: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+      required: true
+      default: 0.00
+    remark: 
+      type: VARCHAR
+      size: 255
+    pips_downline_username: 
+      type: VARCHAR
+      size: 50
+    pips_mt4_id: 
+      type: VARCHAR
+      size: 50
+    pips_rebate: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    pips_level: 
+      type: INTEGER
+    pips_lots_traded: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    created_by: 
+      type: INTEGER
+      required: true
+    created_on: 
+      type: TIMESTAMP
+      required: true
+    updated_by: 
+      type: INTEGER
+      required: true
+    updated_on: 
+      type: TIMESTAMP
+      required: true
+    status_code: 
+      type: VARCHAR
+      size: 25
+  mlm_dist_epoint_purchase: 
+    _attributes: 
+      idMethod: native
+    purchase_id: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    dist_id: 
+      type: INTEGER
+      required: true
+    currency_type: 
+      type: VARCHAR
+      size: 10
+      default: USD
+    amount: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+      required: true
+      default: 0.00
+    transaction_type: 
+      type: VARCHAR
+      size: 20
+      required: true
+    image_src: 
+      type: VARCHAR
+      size: 255
+    status_code: 
+      type: VARCHAR
+      size: 20
+    remarks: 
+      type: VARCHAR
+      size: 255
+    payment_reference: 
+      type: VARCHAR
+      size: 50
+    bank_id: 
+      type: INTEGER
+      default: 1
+    bank_code: 
+      type: VARCHAR
+      size: 50
+    bill_create_ip: 
+      type: VARCHAR
+      size: 50
+    time_start: 
+      type: VARCHAR
+      size: 50
+    time_expire: 
+      type: VARCHAR
+      size: 50
+    approve_reject_datetime: 
+      type: TIMESTAMP
+    approved_by_userid: 
+      type: INTEGER
+    created_by: 
+      type: INTEGER
+      required: true
+    created_on: 
+      type: TIMESTAMP
+      required: true
+    updated_by: 
+      type: INTEGER
+      required: true
+    updated_on: 
+      type: TIMESTAMP
+      required: true
+    payment_method: 
+      type: VARCHAR
+      size: 10
+    pg_success: 
+      type: VARCHAR
+      size: 10
+    pg_msg: 
+      type: LONGVARCHAR
+    pg_bill_no: 
+      type: VARCHAR
+      size: 255
+    pg_ret_encode_type: 
+      type: VARCHAR
+      size: 255
+    pg_currency_type: 
+      type: VARCHAR
+      size: 255
+    pg_signature: 
+      type: LONGVARCHAR
+    return_string: 
+      type: LONGVARCHAR
+    _indexes: 
+      dist_id: 
+        - dist_id
+  mlm_dist_mt4: 
+    _attributes: 
+      idMethod: native
+    mt4_id: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    dist_id: 
+      type: INTEGER
+      required: true
+    mt4_user_name: 
+      type: VARCHAR
+      size: 50
+    mt4_password: 
+      type: VARCHAR
+      size: 50
+    rank_id: 
+      type: INTEGER
+    created_by: 
+      type: INTEGER
+      required: true
+    created_on: 
+      type: TIMESTAMP
+      required: true
+    updated_by: 
+      type: INTEGER
+      required: true
+    updated_on: 
+      type: TIMESTAMP
+      required: true
+    _indexes: 
+      dist_id: 
+        - dist_id
+  mlm_dist_package_purchase: 
+    _attributes: 
+      idMethod: native
+    purchase_id: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    dist_id: 
+      type: INTEGER
+      required: true
+    rank_id: 
+      type: INTEGER
+    rank_code: 
+      type: VARCHAR
+      size: 20
+    amount: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+      required: true
+      default: 0.00
+    transaction_type: 
+      type: VARCHAR
+      size: 20
+      required: true
+    image_src: 
+      type: VARCHAR
+      size: 255
+    status_code: 
+      type: VARCHAR
+      size: 20
+    remarks: 
+      type: VARCHAR
+      size: 255
+    approve_reject_datetime: 
+      type: TIMESTAMP
+    approved_by_userid: 
+      type: INTEGER
+    created_by: 
+      type: INTEGER
+      required: true
+    created_on: 
+      type: TIMESTAMP
+      required: true
+    updated_by: 
+      type: INTEGER
+      required: true
+    updated_on: 
+      type: TIMESTAMP
+      required: true
+  mlm_dist_pairing: 
+    _attributes: 
+      idMethod: native
+    pairing_id: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    dist_id: 
+      type: INTEGER
+      required: true
+    left_balance: 
+      type: INTEGER
+      required: true
+      default: 0
+    right_balance: 
+      type: INTEGER
+      required: true
+      default: 0
+    flush_limit: 
+      type: INTEGER
+      required: true
+      default: 0
+    created_by: 
+      type: INTEGER
+      required: true
+    created_on: 
+      type: TIMESTAMP
+      required: true
+    updated_by: 
+      type: INTEGER
+      required: true
+    updated_on: 
+      type: TIMESTAMP
+      required: true
+  mlm_dist_pairing_ledger: 
+    _attributes: 
+      idMethod: native
+    pairing_id: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    dist_id: 
+      type: INTEGER
+      required: true
+    left_right: 
+      type: VARCHAR
+      size: 10
+      required: true
+    transaction_type: 
+      type: VARCHAR
+      size: 20
+      required: true
+    credit: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+      required: true
+      default: 0.00
+    debit: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+      required: true
+      default: 0.00
+    balance: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+      required: true
+      default: 0.00
+    remark: 
+      type: VARCHAR
+      size: 255
+    created_by: 
+      type: INTEGER
+      required: true
+    created_on: 
+      type: TIMESTAMP
+      required: true
+    updated_by: 
+      type: INTEGER
+      required: true
+    updated_on: 
+      type: TIMESTAMP
+      required: true
+  mlm_distributor: 
+    _attributes: 
+      idMethod: native
+    distributor_id: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    distributor_code: 
+      type: VARCHAR
+      size: 50
+      required: true
+    user_id: 
+      type: INTEGER
+      required: true
+    account_type: 
+      type: VARCHAR
+      size: 100
+    mt4_investor_password: 
+      type: VARCHAR
+      size: 100
+    internal_remark: 
+      type: LONGVARCHAR
+    status_code: 
+      type: VARCHAR
+      size: 20
+      required: true
+    full_name: 
+      type: VARCHAR
+      size: 100
+    nickname: 
+      type: VARCHAR
+      size: 100
+    mt4_user_name: 
+      type: VARCHAR
+      size: 50
+    mt4_password: 
+      type: VARCHAR
+      size: 50
+    ic: 
+      type: VARCHAR
+      size: 100
+    country: 
+      type: VARCHAR
+      size: 100
+    address: 
+      type: VARCHAR
+      size: 255
+    address2: 
+      type: VARCHAR
+      size: 255
+    city: 
+      type: VARCHAR
+      size: 100
+    state: 
+      type: VARCHAR
+      size: 100
+    postcode: 
+      type: VARCHAR
+      size: 30
+    email: 
+      type: VARCHAR
+      size: 100
+    alternate_email: 
+      type: VARCHAR
+      size: 100
+    contact: 
+      type: VARCHAR
+      size: 30
+    gender: 
+      type: VARCHAR
+      size: 10
+    dob: 
+      type: DATE
+    bank_name: 
+      type: VARCHAR
+      size: 50
+    bank_acc_no: 
+      type: VARCHAR
+      size: 50
+    bank_holder_name: 
+      type: VARCHAR
+      size: 50
+    bank_swift_code: 
+      type: VARCHAR
+      size: 50
+    bank_branch: 
+      type: VARCHAR
+      size: 255
+    bank_address: 
+      type: VARCHAR
+      size: 255
+    visa_debit_card: 
+      type: VARCHAR
+      size: 18
+    ezy_cash_card: 
+      type: VARCHAR
+      size: 50
+    tree_level: 
+      type: INTEGER
+    tree_structure: 
+      type: LONGVARCHAR
+    placement_tree_level: 
+      type: INTEGER
+    placement_tree_structure: 
+      type: LONGVARCHAR
+    init_rank_id: 
+      type: INTEGER
+    init_rank_code: 
+      type: VARCHAR
+      size: 30
+    upline_dist_id: 
+      type: INTEGER
+    upline_dist_code: 
+      type: VARCHAR
+      size: 50
+    tree_upline_dist_id: 
+      type: INTEGER
+    tree_upline_dist_code: 
+      type: VARCHAR
+      size: 50
+    total_left: 
+      type: INTEGER
+      default: 0
+    total_right: 
+      type: INTEGER
+      default: 0
+    placement_position: 
+      type: VARCHAR
+      size: 10
+    placement_datetime: 
+      type: TIMESTAMP
+    rank_id: 
+      type: INTEGER
+    promax_rank_id: 
+      type: INTEGER
+    rank_code: 
+      type: VARCHAR
+      size: 30
+    mt4_rank_id: 
+      type: INTEGER
+    active_datetime: 
+      type: TIMESTAMP
+    activated_by: 
+      type: INTEGER
+    leverage: 
+      type: VARCHAR
+      size: 10
+    spread: 
+      type: VARCHAR
+      size: 10
+    deposit_currency: 
+      type: VARCHAR
+      size: 20
+    deposit_amount: 
+      type: VARCHAR
+      size: 20
+    sign_name: 
+      type: VARCHAR
+      size: 50
+    sign_date: 
+      type: TIMESTAMP
+    term_condition: 
+      type: INTEGER
+      default: 0
+    ib_commission: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+      required: true
+      default: 0.00
+    is_ib: 
+      type: VARCHAR
+      size: 1
+      required: true
+      default: 0
+    created_by: 
+      type: INTEGER
+      required: true
+    created_on: 
+      type: TIMESTAMP
+      required: true
+    updated_by: 
+      type: INTEGER
+      required: true
+    updated_on: 
+      type: TIMESTAMP
+      required: true
+    package_purchase_flag: 
+      type: VARCHAR
+      size: 1
+      required: true
+      default: N
+    file_bank_pass_book: 
+      type: VARCHAR
+      size: 255
+    file_proof_of_residence: 
+      type: VARCHAR
+      size: 255
+    file_nric: 
+      type: VARCHAR
+      size: 255
+    excluded_structure: 
+      type: VARCHAR
+      size: 1
+      default: N
+    product_mte: 
+      type: VARCHAR
+      size: 1
+      default: N
+    product_fxgold: 
+      type: VARCHAR
+      size: 1
+      default: N
+    remark: 
+      type: VARCHAR
+      size: 255
+    register_remark: 
+      type: LONGVARCHAR
+    loan_account: 
+      type: VARCHAR
+      size: 1
+      default: N
+    diamond_downline_id: 
+      type: LONGVARCHAR
+    diamond_status: 
+      type: VARCHAR
+      size: 50
+    diamond_date_start: 
+      type: TIMESTAMP
+    diamond_date_end: 
+      type: TIMESTAMP
+    diamond_date_achieve: 
+      type: TIMESTAMP
+    diamond_sales: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    vip_downline_id: 
+      type: LONGVARCHAR
+    vip_status: 
+      type: VARCHAR
+      size: 50
+    vip_date_start: 
+      type: TIMESTAMP
+    vip_date_end: 
+      type: TIMESTAMP
+    vip_date_achieve: 
+      type: TIMESTAMP
+    vip_sales: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    degold_downline_id: 
+      type: LONGVARCHAR
+    degold_status: 
+      type: VARCHAR
+      size: 50
+    degold_date_start: 
+      type: TIMESTAMP
+    degold_date_end: 
+      type: TIMESTAMP
+    degold_date_achieve: 
+      type: TIMESTAMP
+    degold_sales: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    additional_sales: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+      default: 0.00
+    _indexes: 
+      distributor_code: 
+        - distributor_code
+      upline_dist_id: 
+        - upline_dist_id
+      tree_upline_dist_id: 
+        - tree_upline_dist_id
+      distributor_code_2: 
+        - distributor_code
+        - status_code
+  mlm_ecash_withdraw: 
+    _attributes: 
+      idMethod: native
+    withdraw_id: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    dist_id: 
+      type: INTEGER
+      required: true
+    deduct: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+      required: true
+      default: 0.00
+    amount: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+      required: true
+      default: 0.00
+    bank_in_to: 
+      type: VARCHAR
+      size: 50
+    status_code: 
+      type: VARCHAR
+      size: 20
+    approve_reject_datetime: 
+      type: TIMESTAMP
+    remarks: 
+      type: VARCHAR
+      size: 255
+    created_by: 
+      type: INTEGER
+      required: true
+    created_on: 
+      type: TIMESTAMP
+      required: true
+    updated_by: 
+      type: INTEGER
+      required: true
+    updated_on: 
+      type: TIMESTAMP
+      required: true
+  mlm_file_download: 
+    _attributes: 
+      idMethod: native
+    file_id: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    file_type: 
+      type: VARCHAR
+      size: 255
+    file_src: 
+      type: VARCHAR
+      size: 255
+    file_name: 
+      type: VARCHAR
+      size: 255
+    content_type: 
+      type: VARCHAR
+      size: 255
+    status_code: 
+      type: VARCHAR
+      size: 20
+    remarks: 
+      type: VARCHAR
+      size: 255
+    created_by: 
+      type: INTEGER
+      required: true
+    created_on: 
+      type: TIMESTAMP
+      required: true
+    updated_by: 
+      type: INTEGER
+      required: true
+    updated_on: 
+      type: TIMESTAMP
+      required: true
+  mlm_member_application: 
+    _attributes: 
+      idMethod: native
+    member_id: 
       type: INTEGER
       required: true
       autoIncrement: true
       primaryKey: true
     full_name: 
       type: VARCHAR
-      size: 20
-    title: 
+      size: 100
+    email: 
       type: VARCHAR
-      size: 20
-    nric: 
+      size: 100
+    contact: 
       type: VARCHAR
-      size: 20
-    join_date: 
+      size: 30
+    qq: 
+      type: VARCHAR
+      size: 30
+    gender: 
+      type: VARCHAR
+      size: 10
+    country: 
+      type: VARCHAR
+      size: 100
+    dob: 
       type: DATE
+    status_code: 
+      type: VARCHAR
+      size: 30
+    created_by: 
+      type: INTEGER
+      required: true
+    created_on: 
+      type: TIMESTAMP
+      required: true
+    updated_by: 
+      type: INTEGER
+      required: true
+    updated_on: 
+      type: TIMESTAMP
+      required: true
+  mlm_member_questionnaire: 
+    _attributes: 
+      idMethod: native
+    questionnaire_id: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    member_id: 
+      type: INTEGER
+      required: true
+    q1: 
+      type: VARCHAR
+      size: 100
+    q2: 
+      type: VARCHAR
+      size: 100
+    q3: 
+      type: VARCHAR
+      size: 100
+    q4: 
+      type: VARCHAR
+      size: 100
+    q5: 
+      type: VARCHAR
+      size: 100
+    q6: 
+      type: VARCHAR
+      size: 100
+    q7: 
+      type: VARCHAR
+      size: 100
+    q8: 
+      type: VARCHAR
+      size: 100
+    s1: 
+      type: VARCHAR
+      size: 100
+    s2: 
+      type: VARCHAR
+      size: 100
+    s3: 
+      type: VARCHAR
+      size: 100
+    status_code: 
+      type: VARCHAR
+      size: 30
+    created_by: 
+      type: INTEGER
+      required: true
+    created_on: 
+      type: TIMESTAMP
+      required: true
+    updated_by: 
+      type: INTEGER
+      required: true
+    updated_on: 
+      type: TIMESTAMP
+      required: true
+  mlm_mt4_reload_fund: 
+    _attributes: 
+      idMethod: native
+    reload_id: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    dist_id: 
+      type: INTEGER
+      required: true
+    mt4_user_name: 
+      type: VARCHAR
+      size: 25
+      required: true
+    amount: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+      required: true
+      default: 0.00
+    status_code: 
+      type: VARCHAR
+      size: 20
+    approve_reject_datetime: 
+      type: TIMESTAMP
+    remarks: 
+      type: VARCHAR
+      size: 255
+    created_by: 
+      type: INTEGER
+      required: true
+    created_on: 
+      type: TIMESTAMP
+      required: true
+    updated_by: 
+      type: INTEGER
+      required: true
+    updated_on: 
+      type: TIMESTAMP
+      required: true
+  mlm_mt4_withdraw: 
+    _attributes: 
+      idMethod: native
+    withdraw_id: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    dist_id: 
+      type: INTEGER
+      required: true
+    mt4_user_name: 
+      type: VARCHAR
+      size: 25
+      required: true
+    amount_requested: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+      required: true
+      default: 0.00
+    handling_fee: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    grand_amount: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    currency_code: 
+      type: VARCHAR
+      size: 25
+    payment_type: 
+      type: VARCHAR
+      size: 25
+    status_code: 
+      type: VARCHAR
+      size: 20
+    approve_reject_datetime: 
+      type: TIMESTAMP
+    remarks: 
+      type: VARCHAR
+      size: 255
+    created_by: 
+      type: INTEGER
+      required: true
+    created_on: 
+      type: TIMESTAMP
+      required: true
+    updated_by: 
+      type: INTEGER
+      required: true
+    updated_on: 
+      type: TIMESTAMP
+      required: true
+  mlm_package: 
+    _attributes: 
+      idMethod: native
+    package_id: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    package_name: 
+      type: VARCHAR
+      size: 50
+      required: true
+    price: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    color: 
+      type: VARCHAR
+      size: 10
+    commission: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    monthly_roi: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    pips_gen: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    public_purchase: 
+      type: VARCHAR
+      size: 1
+      required: true
+      default: 1
+    leader_bonus: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    pips: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    generation: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    pips2: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    generation2: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    pips3: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    generation3: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    created_by: 
+      type: INTEGER
+      required: true
+    created_on: 
+      type: TIMESTAMP
+      required: true
+    updated_by: 
+      type: INTEGER
+      required: true
+    updated_on: 
+      type: TIMESTAMP
+      required: true
+  mlm_package_challenge: 
+    _attributes: 
+      idMethod: native
+    challenge_id: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    dist_id: 
+      type: INTEGER
+      required: true
+    challenge_type: 
+      type: VARCHAR
+      size: 20
+      required: true
+    date_from: 
+      type: TIMESTAMP
+      required: true
+    date_to: 
+      type: TIMESTAMP
+      required: true
+    total_sales: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+      required: true
+      default: 0.00
+    remark: 
+      type: VARCHAR
+      size: 255
+    internal_remark: 
+      type: LONGVARCHAR
+    created_by: 
+      type: INTEGER
+      required: true
+    created_on: 
+      type: TIMESTAMP
+      required: true
+    updated_by: 
+      type: INTEGER
+      required: true
+    updated_on: 
+      type: TIMESTAMP
+      required: true
+  mlm_package_pips: 
+    _attributes: 
+      idMethod: native
+    pips_id: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    totol_sponsor: 
+      type: INTEGER
+      required: true
+    pips: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    generation: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    pips2: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    generation2: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    created_by: 
+      type: INTEGER
+      required: true
+    created_on: 
+      type: TIMESTAMP
+      required: true
+    updated_by: 
+      type: INTEGER
+      required: true
+    updated_on: 
+      type: TIMESTAMP
+      required: true
+  mlm_package_promax: 
+    _attributes: 
+      idMethod: native
+    package_id: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    package_name: 
+      type: VARCHAR
+      size: 50
+      required: true
+    price: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    color: 
+      type: VARCHAR
+      size: 10
+    commission: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    monthly_roi: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    pips_gen: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    public_purchase: 
+      type: VARCHAR
+      size: 1
+      required: true
+      default: 1
+    created_by: 
+      type: INTEGER
+      required: true
+    created_on: 
+      type: TIMESTAMP
+      required: true
+    updated_by: 
+      type: INTEGER
+      required: true
+    updated_on: 
+      type: TIMESTAMP
+      required: true
+    pips: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    generation: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    pips2: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    generation2: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+  mlm_package_upgrade_history: 
+    _attributes: 
+      idMethod: native
+    upgrade_id: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    dist_id: 
+      type: INTEGER
+      required: true
+    package_id: 
+      type: INTEGER
+    mt4_user_name: 
+      type: VARCHAR
+      size: 255
+    mt4_password: 
+      type: VARCHAR
+      size: 255
+    transaction_code: 
+      type: VARCHAR
+      size: 20
+    amount: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+      required: true
+      default: 0.00
+    status_code: 
+      type: VARCHAR
+      size: 20
+    remarks: 
+      type: VARCHAR
+      size: 255
+    created_by: 
+      type: INTEGER
+      required: true
+    created_on: 
+      type: TIMESTAMP
+      required: true
+    updated_by: 
+      type: INTEGER
+      required: true
+    updated_on: 
+      type: TIMESTAMP
+      required: true
+  mlm_pip_csv: 
+    _attributes: 
+      idMethod: native
+    pip_id: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    month_traded: 
+      type: INTEGER
+    year_traded: 
+      type: INTEGER
+    file_id: 
+      type: INTEGER
+    pips_string: 
+      type: LONGVARCHAR
+    login_id: 
+      type: INTEGER
+    login_name: 
+      type: VARCHAR
+      size: 255
+    deposit: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    withdraw: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    in_out: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    credit: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    volume: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    commission: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    taxes: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    agent: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    storage: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    profit: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    last_balance: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    status_code: 
+      type: VARCHAR
+      size: 255
+      required: true
+    remarks: 
+      type: VARCHAR
+      size: 255
+    created_by: 
+      type: INTEGER
+      required: true
+    created_on: 
+      type: TIMESTAMP
+      required: true
+    updated_by: 
+      type: INTEGER
+      required: true
+    updated_on: 
+      type: TIMESTAMP
+      required: true
+    _indexes: 
+      file_id: 
+        - file_id
+      file_id_2: 
+        - file_id
+        - status_code
+  mlm_roi_dividend: 
+    _attributes: 
+      idMethod: native
+    devidend_id: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    dist_id: 
+      type: INTEGER
+    mt4_user_name: 
+      type: VARCHAR
+      size: 50
+    idx: 
+      type: INTEGER
+    account_ledger_id: 
+      type: INTEGER
+    dividend_date: 
+      type: TIMESTAMP
+      required: true
+    package_id: 
+      type: INTEGER
+    package_price: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+      required: true
+      default: 0.00
+    roi_percentage: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+      required: true
+      default: 0.00
+    mt4_balance: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+      default: 0.00
+    dividend_amount: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+      required: true
+      default: 0.00
+    remarks: 
+      type: VARCHAR
+      size: 255
+    status_code: 
+      type: VARCHAR
+      size: 20
+      required: true
+    created_by: 
+      type: INTEGER
+      required: true
+    created_on: 
+      type: TIMESTAMP
+      required: true
+    updated_by: 
+      type: INTEGER
+      required: true
+    updated_on: 
+      type: TIMESTAMP
+      required: true
+    first_dividend_date: 
+      type: TIMESTAMP
+    _indexes: 
+      dist_id: 
+        - dist_id
+        - mt4_user_name
+        - dividend_date
+      mt4_user_name: 
+        - mt4_user_name
+  mlm_roi_forecast: 
+    _attributes: 
+      idMethod: native
+    roi_id: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    date_year: 
+      type: INTEGER
+      required: true
+    date_month: 
+      type: INTEGER
+      required: true
+    roi_3k_5k: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    roi_10k_15k: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    roi_30k_50k: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+    created_by: 
+      type: INTEGER
+      required: true
+    created_on: 
+      type: TIMESTAMP
+      required: true
+    updated_by: 
+      type: INTEGER
+      required: true
+    updated_on: 
+      type: TIMESTAMP
+      required: true
+    _indexes: 
+      date_from: 
+        - date_year
+        - date_month
+        - roi_3k_5k
+        - roi_10k_15k
+  payment_gateway_log: 
+    _attributes: 
+      idMethod: native
+    log_id: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    amount: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+      required: true
+      default: 0.00
+    handling_amount: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+      required: true
+      default: 0.00
+    submit_string: 
+      type: LONGVARCHAR
+    transaction_type: 
+      type: VARCHAR
+      size: 20
+    status_code: 
+      type: VARCHAR
+      size: 20
     created_by: 
       type: INTEGER
       required: true
