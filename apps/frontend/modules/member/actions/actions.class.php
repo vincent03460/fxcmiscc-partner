@@ -15,6 +15,11 @@ class memberActions extends sfActions
         return $this->redirect('/member/summary');
     }
 
+    public function executeSummary()
+    {
+
+    }
+
     public function executeWithdrawal()
     {
 
