@@ -70,4 +70,4 @@
         </table>
     </form>
 </td>
-<td valign="top" align="right"><img src="./registration_files/pic_registration.jpg"></td>
+<td valign="top" align="right"><img src="/images/pic_registration.jpg"></td>

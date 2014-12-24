@@ -42,21 +42,21 @@
                                                     onclick="changeOption(&#39;EP1&#39;)"></td>
                             <td valign="top" style="padding:0px">
                                 <div style="padding:2px 0px 3px 0px">EP1</div>
-                                                    <span id="EP1" style="display:none">
-                                                        <div><input type="radio" name="ep" value="Self EP"
-                                                                    onclick="showPartner(&#39;Self&#39;)"> Self EP1
-                                                        </div>
-                                                        <div><input type="radio" name="ep" value="Other"
-                                                                    onclick="showPartner(&#39;Other&#39;)"> Other
-                                                        </div>
-                                                        <div class="fl" style="padding-left:30px; padding-top:5px">
-                                                            <input type="text" name="ep1_partner" id="ep1_partner"
-                                                                   value="" placeholder="Partner ID"
-                                                                   style="display:none; width:165px"
-                                                                   onchange="checkUser(&#39;ep1_icon&#39;, this.value)">
-                                                        </div>
-                                                        <div class="fl check_icon" id="ep1_icon"></div>
-                                                    </span>
+                                    <span id="EP1" style="display:none">
+                                        <div><input type="radio" name="ep" value="Self EP"
+                                                    onclick="showPartner(&#39;Self&#39;)"> Self EP1
+                                        </div>
+                                        <div><input type="radio" name="ep" value="Other"
+                                                    onclick="showPartner(&#39;Other&#39;)"> Other
+                                        </div>
+                                        <div class="fl" style="padding-left:30px; padding-top:5px">
+                                            <input type="text" name="ep1_partner" id="ep1_partner"
+                                                   value="" placeholder="Partner ID"
+                                                   style="display:none; width:165px"
+                                                   onchange="checkUser(&#39;ep1_icon&#39;, this.value)">
+                                        </div>
+                                        <div class="fl check_icon" id="ep1_icon"></div>
+                                    </span>
                             </td>
                         </tr>
                         </tbody>
@@ -75,4 +75,4 @@
         </table>
     </form>
 </td>
-<td valign="top" align="right"><img src="./ep_transfer_files/pic_ep-transfer.jpg"></td>
+<td valign="top" align="right"><img src="/images/pic_ep-transfer.jpg"></td>
