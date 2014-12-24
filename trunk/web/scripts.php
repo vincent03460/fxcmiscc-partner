@@ -42,7 +42,8 @@ echo "<link rel='stylesheet' type='text/css' media='screen' href='/css/validate/
 echo "<link rel='stylesheet' type='text/css' media='screen' href='/css/datatables/css/table.css'/>";
 echo "<link rel='stylesheet' type='text/css' media='screen' href='/css/jquery.treeview.css'/>";
 echo "<link rel='stylesheet' type='text/css' media='screen' href='/css/jquery.checkboxtree.css'/>";
+echo "<link rel='stylesheet' type='text/css' media='screen' href='/css/layout.css'/>";
 echo "<link rel='stylesheet' type='text/css' media='screen' href='/js/bgstretcher/bgstretcher.css'/>";
 
-echo "<title>Grandegoldens</title>";
+echo "<title>FX-CMISC Administration</title>";
 echo "<link rel='shortcut icon' href='/favicon.ico' />";
