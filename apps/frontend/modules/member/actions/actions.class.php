@@ -10,36 +10,43 @@
  */
 class memberActions extends sfActions
 {
-  public function executeIndex()
-  {
+    public function executeIndex()
+    {
+        return $this->redirect('/member/summary');
+    }
 
-  }
-  public function executeWithdrawal()
-  {
+    public function executeWithdrawal()
+    {
 
-  }
-  public function executeRegistration()
-  {
+    }
 
-  }
-  public function executePassword()
-  {
+    public function executeRegistration()
+    {
 
-  }
-  public function executeGenealogy()
-  {
+    }
 
-  }
-  public function executeEpoint()
-  {
+    public function executePassword()
+    {
 
-  }
-  public function executeDownload()
-  {
+    }
 
-  }
-  public function executeAgreement()
-  {
+    public function executeGenealogy()
+    {
 
-  }
+    }
+
+    public function executeEpoint()
+    {
+
+    }
+
+    public function executeDownload()
+    {
+
+    }
+
+    public function executeAgreement()
+    {
+
+    }
 }
