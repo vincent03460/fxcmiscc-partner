@@ -27,4 +27,4 @@
         </table>
     </form>
 </td>
-<td valign="top" align="right"><img src="./change_password_files/pic_change-password.jpg"></td>
+<td valign="top" align="right"><img src="/images/pic_change-password.jpg"></td>

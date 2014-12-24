@@ -74,4 +74,4 @@
         </tbody>
     </table>
 </td>
-<td valign="top" align="right"><img src="./withdrawal_files/pic_withdrawal.jpg"></td>
+<td valign="top" align="right"><img src="/images/pic_withdrawal.jpg"></td>
