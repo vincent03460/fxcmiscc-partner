@@ -53,4 +53,4 @@
         </tbody>
     </table>
 </td>
-<td valign="top" align="right"><img src="./account_summary_files/pic_account-summary.jpg"></td>
+<td valign="top" align="right"><img src="/images/pic_account-summary.jpg"></td>
