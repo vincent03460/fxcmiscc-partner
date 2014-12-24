@@ -10,12 +10,36 @@
  */
 class memberActions extends sfActions
 {
-  /**
-   * Executes index action
-   *
-   */
   public function executeIndex()
   {
-    $this->forward('default', 'module');
+
+  }
+  public function executeWithdrawal()
+  {
+
+  }
+  public function executeRegistration()
+  {
+
+  }
+  public function executePassword()
+  {
+
+  }
+  public function executeGenealogy()
+  {
+
+  }
+  public function executeEpoint()
+  {
+
+  }
+  public function executeDownload()
+  {
+
+  }
+  public function executeAgreement()
+  {
+
   }
 }
