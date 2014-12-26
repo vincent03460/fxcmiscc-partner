@@ -865,9 +865,9 @@ class marketingListActions extends sfActions
     function getTotalUpgradeAmount($distId)
     {
         $query = "SELECT SUM(package.price) AS _sum
-                        FROM grandegoldens.mlm_distributor newDist
-                            LEFT JOIN grandegoldens.mlm_package_upgrade_history history ON history.dist_id = newDist.distributor_id
-                            LEFT JOIN grandegoldens.mlm_package package ON package.package_id = history.package_id
+                        FROM mlm_distributor newDist
+                            LEFT JOIN mlm_package_upgrade_history history ON history.dist_id = newDist.distributor_id
+                            LEFT JOIN mlm_package package ON package.package_id = history.package_id
                         WHERE newDist.loan_account = 'N'
                             AND history.transaction_code = 'PACKAGE UPGRADE' AND newDist.distributor_id = ".$distId."
                         group by dist_id";

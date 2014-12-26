@@ -420,7 +420,7 @@ function populateDgAddPanel() {
                 <select id="doAction" name="doAction">
                     <option value="EPOINT">Transfer e-Point</option>
                     <option value="ECASH">Transfer e-Wallet</option>
-                    <option value="DEGOLD">Transfer degold</option>
+<!--                    <option value="FXCMISCC">Transfer FXCMISCC</option>-->
                     <option value="PROMO">Transfer Promo</option>
                 </select>
             </td>

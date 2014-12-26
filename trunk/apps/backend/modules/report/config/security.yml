@@ -1,46 +1,46 @@
 convertEcashToEpoint:
   is_secure:   on
-  credentials: [[ GRANDEGOLDENS_SUPERADMIN, GRANDEGOLDENS_AL_REPORT_CONVERT_ECASH_TO_EPOINT ]]
+  credentials: [[ FXCMISCC_SUPERADMIN, FXCMISCC_AL_REPORT_CONVERT_ECASH_TO_EPOINT ]]
 
 epointTransfer:
   is_secure:   on
-  credentials: [[ GRANDEGOLDENS_SUPERADMIN, GRANDEGOLDENS_AL_REPORT_EPOINT_TRANSFER ]]
+  credentials: [[ FXCMISCC_SUPERADMIN, FXCMISCC_AL_REPORT_EPOINT_TRANSFER ]]
 
 groupSales:
   is_secure:   on
-  credentials: [[ GRANDEGOLDENS_SUPERADMIN, GRANDEGOLDENS_AL_REPORT_GROUP_SALES ]]
+  credentials: [[ FXCMISCC_SUPERADMIN, FXCMISCC_AL_REPORT_GROUP_SALES ]]
 
 individualTraderSales:
   is_secure:   on
-  credentials: [[ GRANDEGOLDENS_SUPERADMIN, GRANDEGOLDENS_AL_REPORT_INDIVIDUAL_TRADER_SALES ]]
+  credentials: [[ FXCMISCC_SUPERADMIN, FXCMISCC_AL_REPORT_INDIVIDUAL_TRADER_SALES ]]
 
 leaderSales:
   is_secure:   on
-  credentials: [[ GRANDEGOLDENS_SUPERADMIN ]]
+  credentials: [[ FXCMISCC_SUPERADMIN ]]
 
 mt4Withdrawal:
   is_secure:   on
-  credentials: [[ GRANDEGOLDENS_SUPERADMIN, GRANDEGOLDENS_AL_REPORT_MT4_WITHDRAWAL ]]
+  credentials: [[ FXCMISCC_SUPERADMIN, FXCMISCC_AL_REPORT_MT4_WITHDRAWAL ]]
 
 referralBonus:
   is_secure:   on
-  credentials: [[ GRANDEGOLDENS_SUPERADMIN, GRANDEGOLDENS_AL_REPORT_REFERRAL_BONUS ]]
+  credentials: [[ FXCMISCC_SUPERADMIN, FXCMISCC_AL_REPORT_REFERRAL_BONUS ]]
 
 totalMt4Reload:
   is_secure:   on
-  credentials: [[ GRANDEGOLDENS_SUPERADMIN, GRANDEGOLDENS_AL_REPORT_TOTAL_MT4_RELOAD ]]
+  credentials: [[ FXCMISCC_SUPERADMIN, FXCMISCC_AL_REPORT_TOTAL_MT4_RELOAD ]]
 
 totalPackagePurchase:
   is_secure:   on
-  credentials: [[ GRANDEGOLDENS_SUPERADMIN, GRANDEGOLDENS_AL_REPORT_PACKAGE_PURCHASE ]]
+  credentials: [[ FXCMISCC_SUPERADMIN, FXCMISCC_AL_REPORT_PACKAGE_PURCHASE ]]
 
 totalPackageUpgrade:
   is_secure:   on
-  credentials: [[ GRANDEGOLDENS_SUPERADMIN, GRANDEGOLDENS_AL_REPORT_PACKAGE_UPGRADE ]]
+  credentials: [[ FXCMISCC_SUPERADMIN, FXCMISCC_AL_REPORT_PACKAGE_UPGRADE ]]
 
 totalVolumeTraded:
   is_secure:   on
-  credentials: [[ GRANDEGOLDENS_SUPERADMIN, GRANDEGOLDENS_AL_REPORT_TOTAL_VOLUME_TRADED ]]
+  credentials: [[ FXCMISCC_SUPERADMIN, FXCMISCC_AL_REPORT_TOTAL_VOLUME_TRADED ]]
 
 all:
   is_secure:  off        # off is the default value anyway
