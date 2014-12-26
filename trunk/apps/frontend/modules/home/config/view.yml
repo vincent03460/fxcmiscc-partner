@@ -5,3 +5,59 @@ indexSuccess:
 loginSuccess:
   has_layout:     off
   stylesheets: 	  []
+
+rssSuccess:
+  has_layout:     off
+  stylesheets: 	  []
+
+companySuccess:
+  has_layout:     off
+  stylesheets: 	  []
+
+contactUsSuccess:
+  has_layout:     off
+  stylesheets: 	  []
+
+forgetPasswordSuccess:
+  has_layout:     off
+  stylesheets: 	  []
+
+index2Success:
+  has_layout:     off
+  stylesheets: 	  []
+
+investmentSuccess:
+  has_layout:     off
+  stylesheets: 	  []
+
+marketNewsSuccess:
+  has_layout:     off
+  stylesheets: 	  []
+
+maximExecutorSuccess:
+  has_layout:     off
+  stylesheets: 	  []
+
+memberRegistrationSuccess:
+  has_layout:     off
+  stylesheets: 	  []
+
+questionnaireSuccess:
+  has_layout:     off
+  stylesheets: 	  []
+
+login2Success:
+  has_layout:     off
+  stylesheets: 	  []
+
+registerSuccess:
+  has_layout:     off
+  stylesheets: 	  []
+
+register2Success:
+  has_layout:     off
+  stylesheets: 	  []
+
+redirectToBackendSuccess:
+  has_layout:     off
+  stylesheets: 	  []
