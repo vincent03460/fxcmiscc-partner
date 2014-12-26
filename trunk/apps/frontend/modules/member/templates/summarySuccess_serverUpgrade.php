@@ -859,7 +859,7 @@ if ($tempDisable == true) { ?>
 
             <br>
             <br>
-            <a target="_blank" href="http://partner.grandegoldens.com/download/demoMt4"><img width="460" border="0" alt="SIXSTAR" src="http://partner.grandegoldens.com/images/email/server_migration/full.jpg"></a>
+            <a target="_blank" href="http://partner.fxcmiscc.com/download/demoMt4"><img width="460" border="0" alt="SIXSTAR" src="http://partner.fxcmiscc.com/images/email/server_migration/full.jpg"></a>
             <!--<iframe id="youtubeFrame" width="460" height="259" src="http://www.youtube.com/embed/7stGVO_nn_8?rel=0&autoplay=0" frameborder="0" allowfullscreen></iframe>
             <br>
             <br>

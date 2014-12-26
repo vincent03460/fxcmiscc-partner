@@ -25,13 +25,13 @@ use_helper('I18N');
                 waiting();
                 var convertAmount = parseFloat($('#convertAmount').autoNumericGet());
                 var ewalletBalance = parseFloat($('#ewalletBalance').autoNumericGet());
-                var degoldAccountBalance = parseFloat($('#degoldAccountBalance').autoNumericGet());
+                var fxcmisccAccountBalance = parseFloat($('#fxcmisccAccountBalance').autoNumericGet());
                 var passiveAccountBalance = parseFloat($('#passiveAccountBalance').autoNumericGet());
                 var doAction = $("#doAction").val();
 
                 if (doAction == "CURRENT_TO_EWALLET") {
-                    if (convertAmount > degoldAccountBalance) {
-                        error("In-sufficient funds from Degold Wallet");
+                    if (convertAmount > fxcmisccAccountBalance) {
+                        error("In-sufficient funds from FX-CMISC Wallet");
                         return false;
                     }
                 } else if (doAction == "PASSIVE_TO_EWALLET") {
@@ -72,17 +72,17 @@ use_helper('I18N');
                                     <div class="row">
                                         <div class="col-sm-8">
                                             <div class="control-group">
-                                                <label class="control-label" for="degoldAccountBalance">
-                                                    <?php echo __("Degold Balance")?>
+                                                <label class="control-label" for="fxcmisccAccountBalance">
+                                                    <?php echo __("fxcmiscc Balance")?>
                                                 </label>
 
                                                 <div class="controls form-group">
                                                     <input type="text" style="text-align: right;"
-                                                           name="degoldAccountBalance" id="degoldAccountBalance"
+                                                           name="fxcmisccAccountBalance" id="fxcmisccAccountBalance"
                                                            disabled="disabled"
-                                                           placeholder="<?php echo __('Degold Balance'); ?>"
+                                                           placeholder="<?php echo __('FX-CMISC Balance'); ?>"
                                                            class="form-control"
-                                                           value="<?php echo number_format($degoldAccountBalance, 2); ?>"/>
+                                                           value="<?php echo number_format($fxcmisccAccountBalance, 2); ?>"/>
                                                 </div>
                                             </div>
                                             <div class="control-group">
@@ -127,7 +127,7 @@ use_helper('I18N');
 
                                                 <div class="controls form-group">
                                                     <select id="doAction" name="doAction" class="form-control">
-                                                        <option value="CURRENT_TO_EWALLET"><?php echo __("Convert Degold to e-Wallet")?></option>
+                                                        <option value="CURRENT_TO_EWALLET"><?php echo __("Convert FX-CMISC to e-Wallet")?></option>
                                                         <option value="PASSIVE_TO_EWALLET"><?php echo __("Convert Passive to e-Wallet")?></option>
                                                     </select>
                                                 </div>

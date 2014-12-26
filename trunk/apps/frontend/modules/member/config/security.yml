@@ -78,7 +78,7 @@ downloadMT4:
   is_secure:   on
   credentials: [[ FXCMISCC_DISTRIBUTOR ]]
 
-degoldLog:
+fxcmisccLog:
   is_secure:   on
   credentials: [[ FXCMISCC_DISTRIBUTOR ]]
 

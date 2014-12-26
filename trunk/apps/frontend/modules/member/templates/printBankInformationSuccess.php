@@ -4,7 +4,7 @@ use_helper('I18N');
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Grandegoldens</title>
+    <title>FX-CMISC</title>
     <link href="/light-blue/css/application.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
@@ -86,14 +86,14 @@ use_helper('I18N');
                             <div class="col-sm-6 col-print-6">
                                 <h4 class="details-title">Company Information</h4>
                                 <h3 class="company-name">
-                                    Grandegoldens
+                                    FX-CMISC
                                 </h3>
                                 <address>
                                     <strong>St Martins Tower</strong><br>
                                     2202/level22, 31 Market Street,<br>
                                     Sydney, NSW 2000<br>
                                     <br>
-                                    <abbr title="Work email">e-mail:</abbr> <a href="mailto:#">support@grandegoldens.com</a><br>
+                                    <abbr title="Work email">e-mail:</abbr> <a href="mailto:#">support@fxcmiscc.com</a><br>
                                     <abbr title="Work Phone">phone:</abbr> +64 223436260<br>
                                 </address>
                             </div>

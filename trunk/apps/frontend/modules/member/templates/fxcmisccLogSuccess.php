@@ -20,7 +20,7 @@ use_helper('I18N');
                     "bProcessing": true,
                     "bServerSide": true,
                     "bAutoWidth": false,
-                    "sAjaxSource": "/finance/degoldLogList",
+                    "sAjaxSource": "/finance/fxcmisccLogList",
                     "sPaginationType": "full_numbers",
                     "aaSorting": [
                         [0,'desc']

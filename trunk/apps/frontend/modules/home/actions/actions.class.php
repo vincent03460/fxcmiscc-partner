@@ -323,7 +323,7 @@ class homeActions extends sfActions
 												<em>
 													Best Regards,<br>
 													<strong>FX-CMISC</strong><br>
-													E mail : support@fxcmiscc.com
+													E mail : support@f.com
 												</em>
 											</font>
 										</td>

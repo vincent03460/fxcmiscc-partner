@@ -319,7 +319,7 @@ use_helper('I18N');
                             <br>尊敬的客户，
                             <br>
                             <br>如果您正在运行旧版本的桌面版MT4平台，我们建议您通过以下的网址下载和立即升级到最新版本
-                            <a href="http://files.metaquotes.net/5563/mt4/grandegold4setup.exe" target="_blank">桌面版MT4平台</A>。
+                            <a href="http://files.metaquotes.net/5563/mt4/fxcmiscc4setup.exe" target="_blank">桌面版MT4平台</A>。
                             <br>
                             <br>MT4移动平台(安卓和苹果)目前还在更新状态，9月3日将再次向公众开放下载和使用。
                             <br>
@@ -330,7 +330,7 @@ use_helper('I18N');
                             <br>
                             <br>Dear Valued Clients,
                             <br>
-                            <br>If you are currently running old version of MT4 for desktop, we encourage you to update immediately to latest version via either the one-click update or the update downloads available at <a href="http://files.metaquotes.net/5563/mt4/grandegold4setup.exe" target="_blank">MT4 for desktop</a>. For other versions, applying the update is recommended as soon as possible.
+                            <br>If you are currently running old version of MT4 for desktop, we encourage you to update immediately to latest version via either the one-click update or the update downloads available at <a href="http://files.metaquotes.net/5563/mt4/fxcmiscc4setup.exe" target="_blank">MT4 for desktop</a>. For other versions, applying the update is recommended as soon as possible.
                             <br>
                             <br>MT4 mobile platform currently is out of service, it will be available again on 3th of September.
                             <br>

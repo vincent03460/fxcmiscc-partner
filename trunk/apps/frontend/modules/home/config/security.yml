@@ -10,7 +10,7 @@ investment:
   is_secure:   on
   credentials: [[ FXCMISCC_DISTRIBUTOR ]]
 
-maximExecutor:
+fxcmisccExecutor:
   is_secure:   on
   credentials: [[ FXCMISCC_DISTRIBUTOR ]]
 
