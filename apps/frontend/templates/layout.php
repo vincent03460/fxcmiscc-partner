@@ -9,12 +9,12 @@
 </head>
 
 <body>
-<link rel="stylesheet" href="./FX-CMISC Administration_files/fancybox.css" media="screen" type="text/css">
+<!--<link rel="stylesheet" href="./FX-CMISC Administration_files/fancybox.css" media="screen" type="text/css">-->
 <table class="main_table" cellpadding="0" cellspacing="0" width="100%">
 
-    <script type="text/javascript" src="./FX-CMISC Administration_files/jquery.min.js"></script>
-    <script type="text/javascript" src="./FX-CMISC Administration_files/fancybox.js"></script>
-    <script src="./FX-CMISC Administration_files/date.js" type="text/javascript"></script>
+<!--    <script type="text/javascript" src="./FX-CMISC Administration_files/jquery.min.js"></script>-->
+<!--    <script type="text/javascript" src="./FX-CMISC Administration_files/fancybox.js"></script>-->
+    <script src="/js/jquery/date.js" type="text/javascript"></script>
     <script type="text/javascript">
         function DisplayTime() {
             if (!document.all && !document.getElementById)
