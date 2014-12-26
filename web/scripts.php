@@ -31,10 +31,6 @@ echo "<link rel='stylesheet' type='text/css' href='/js/fancybox/jquery.fancybox-
 
 if ($sf_user->getCulture() == "cn") {
     echo "<script type='text/javascript' src='/js/jquery/localization/messages_cn.js'></script>";
-} else if ($sf_user->getCulture() == "kr") {
-    echo "<script type='text/javascript' src='/js/jquery/localization/messages_kr.js'></script>";
-} else if ($sf_user->getCulture() == "jp") {
-    echo "<script type='text/javascript' src='/js/jquery/localization/messages_jp.js'></script>";
 }
 
 echo "<link rel='stylesheet' href='/css/smoothness/jquery-ui-1.8.18.custom.css' type='text/css'/>";

@@ -1,3 +1,4 @@
+<?php use_helper('I18N') ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -57,7 +58,7 @@
                 <tr>
                     <td class="header_logo"><a href="/member/summary">
                         <img src="/images/logo_white.png"></a></td>
-                    <td class="header_title">Welcome, TENGCHEEKENT.</td>
+                    <td class="header_title"><?php echo __("Welcome") ?>, <?php echo $sf_user->getAttribute(Globals::SESSION_USERNAME); ?></td>
                     <td align="right" class="header_title" style="font-size:12px"><span id="curTime"></span></td>
                 </tr>
                 </tbody>
@@ -105,6 +106,147 @@
 
         <div id="fancybox-title"></div>
         <a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div>
+</div>
+
+<script type="text/template" id="settings-template">
+  <div class="setting clearfix">
+    <div>Background</div>
+    <div id="background-toggle" class="pull-left btn-group" data-toggle="buttons-radio">
+      <% dark = background == 'dark'; light = background == 'light';%>
+
+      <button type="button" data-value="dark" class="btn btn-sm btn-transparent <%= dark ? 'active' : '' %>">Dark</button>
+      <button type="button" data-value="light" class="btn btn-sm btn-transparent <%= light ? 'active' : '' %>">Light</button>
+    </div>
+  </div>
+  <div class="setting clearfix">
+    <div>Sidebar on the</div>
+    <div id="sidebar-toggle" class="pull-left btn-group" data-toggle="buttons-radio">
+      <% onRight = sidebar == 'right'%>
+
+      <button type="button" data-value="left" class="btn btn-sm btn-transparent <%= onRight ? '' : 'active' %>">Left</button>
+      <button type="button" data-value="right" class="btn btn-sm btn-transparent <%= onRight ? 'active' : '' %>">Right</button>
+    </div>
+  </div>
+  <div class="setting clearfix">
+    <div>Sidebar</div>
+    <div id="display-sidebar-toggle" class="pull-left btn-group" data-toggle="buttons-radio">
+      <% display = displaySidebar%>
+
+      <button type="button" data-value="true" class="btn btn-sm btn-transparent <%= display ? 'active' : '' %>">Show</button>
+      <button type="button" data-value="false" class="btn btn-sm btn-transparent <%= display ? '' : 'active' %>">Hide</button>
+    </div>
+  </div>
+</script>
+
+<script type="text/template" id="sidebar-settings-template">
+  <% auto = sidebarState == 'auto'%>
+    <% if (auto) { %>
+
+  <button type="button"
+          data-value="icons"
+          class="btn-icons btn btn-transparent btn-sm eicon-switch"></button>
+  <button type="button"
+          data-value="auto"
+          class="btn-auto btn btn-transparent btn-sm eicon-resize-full"></button>
+  <% } else { %>
+
+  <button type="button"
+          data-value="auto"
+          class="btn btn-transparent btn-sm eicon-resize-full"></button>
+  <% } %>
+</script>
+
+<script type='text/javascript' src='/js/jquery/jquery.blockUI.js'></script>
+<script type="text/javascript">
+    function waiting() {
+        /*$("#waitingLB h3").html("<h3>Loading...</h3><div id='loader' class='loader'><img id='img-loader' src='/images/loading.gif' alt='Loading'/></div>");*/
+        $("#waitingLB h3").html("<h3 style='font-size: 16px; width: 100%; padding-left: 0px; background-color:inherit; color: black; line-height:0px; margin-top: 20px; font-weight: bold;'><?php echo __("Loading");?>...</h3><div id='loader' class='loader'><img id='img-loader' style='margin-top: 16px; padding-bottom: 15px;' src='/images/loading.gif' alt='Loading'/></div>");
+
+        $.blockUI({
+            message: $("#waitingLB")
+            , css: {
+                border: 'none',
+                padding: '5px',
+                'background-color': '#fff',
+                '-webkit-border-radius': '10px',
+                '-moz-border-radius': '10px',
+                'border-radius': '10px',
+                opacity: .8,
+                color: '#000'
+            }});
+        $(".blockOverlay").css("z-index", 1010);
+        $(".blockPage").css("z-index", 1011);
+    }
+    function alert(data) {
+        var msgs = "";
+        if ($.isArray(data)) {
+            jQuery.each(data, function(key, value) {
+                msgs = value + "<br>";
+            });
+        } else {
+            msgs = data + "<br>";
+        }
+
+        var alertPanel = "<div style='padding: 10px; line-height :normal; font-weight: bold; font-size:13px;' class='ui-state-highlight ui-corner-all'><p><span style='float: left; margin-right: .3em;' class='ui-icon ui-icon-info'></span>";
+        alertPanel += msgs + "</p><br><button id='alertPanelCloseButton'  class='btn btn-danger'>Close</button></div>";
+        $("#waitingLB h3").html(alertPanel);
+        $.blockUI({
+            message: $("#waitingLB")
+            , css: {
+                border: 'none',
+                padding: '5px',
+                '-webkit-border-radius': '10px',
+                '-moz-border-radius': '10px',
+                'border-radius': '10px',
+                opacity: .9
+            }});
+        $(".blockOverlay").css("z-index", 1010);
+        $(".blockPage").css("z-index", 1011);
+        $('.blockOverlay').attr('title', 'Click to unblock').click($.unblockUI);
+    }
+    function error(data) {
+        var msgs = "";
+        if ($.isArray(data)) {
+            jQuery.each(data, function(key, value) {
+                msgs = value + "<br>";
+            });
+        } else {
+            msgs = data + "<br>";
+        }
+
+        var errorPanel = "<div style='padding: 10px; line-height :normal; font-weight: bold; font-size:13px;' class='ui-state-error ui-corner-all'>";
+        errorPanel += "<p><span style='float: left; margin-right: .3em;' class='ui-icon ui-icon-alert'></span>";
+        errorPanel += msgs + "</p><br><button id='errorPanelCloseButton'  class='btn btn-danger'>Close</button></div>";
+        $("#waitingLB h3").html(errorPanel);
+        $.blockUI({
+            message: $("#waitingLB")
+            , css: {
+                border: 'none',
+                padding: '5px',
+                '-webkit-border-radius': '10px',
+                '-moz-border-radius': '10px',
+                'border-radius': '10px',
+                opacity: .9
+            }});
+        $(".blockOverlay").css("z-index", 1010);
+        $(".blockPage").css("z-index", 1011);
+        $('.blockOverlay').attr('title', 'Click to unblock').click($.unblockUI);
+    }
+    $(function() {
+        $("#errorPanelCloseButton").live("click", function(event) {
+            event.preventDefault();
+            $.unblockUI();
+        });
+        $("#alertPanelCloseButton").live("click", function(event) {
+            event.preventDefault();
+            $.unblockUI();
+        });
+    });
+</script>
+<img src="/images/loading.gif" style="display: none;">
+
+<div id="waitingLB" style="display: none; cursor: default">
+    <h3 style="font-size: 16px; width: 100%; padding-left: 0px; background-color:inherit; color: black; line-height:0px; margin-top: 0px"><?php echo __('We are processing your request. Please be patient.') ?></h3>
 </div>
 </body>
 </html>

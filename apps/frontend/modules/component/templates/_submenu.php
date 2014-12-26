@@ -1,32 +1,35 @@
+<?php
+use_helper('I18N');
+?>
 <div class="menu">
     <ul>
         <li><a href="/member/summary">
-            <div>Account Summary</div>
+            <div><?php echo __("Account Summary") ?></div>
         </a></li>
-        <li><a href="/member/password">
-            <div>Change Password</div>
+        <li><a href="/member/passwordSetting">
+            <div><?php echo __("Password Settings") ?></div>
         </a></li>
-        <li><a href="/member/registration">
-            <div>Registration</div>
+        <li><a href="/member/memberRegistration">
+            <div><?php echo __("Registration") ?></div>
         </a></li>
-        <li><a href="/member/genealogy">
-            <div>Sponsor Genealogy</div>
+        <li><a href="/member/sponsorTree">
+            <div><?php echo __("Sponsor Genealogy") ?></div>
         </a></li>
-        <li><a href="/member/epoint">
-            <div>EP Transfer</div>
+        <li><a href="/member/transferEpoint">
+            <div><?php echo __("e-Point Transfer") ?></div>
         </a></li>
         <li><a href="/member/withdrawal">
-            <div>Withdrawal</div>
+            <div><?php echo __("Withdrawal") ?></div>
         </a></li>
         <li><a href="/member/download">
-            <div>Download</div>
+            <div><?php echo __("Download") ?></div>
         </a></li>
         <li><a href="/member/agreement">
-            <div>Agreement</div>
+            <div><?php echo __("Agreement") ?></div>
         </a></li>
     </ul>
     <div class="logout"><a href="/home/logout">
-        <div>Log Out</div>
+        <div><?php echo __("Log Out") ?></div>
     </a></div>
 </div>
 

@@ -275,7 +275,7 @@ $(function() {
                     <td>&nbsp;</td>
                     <td colspan="5">
                         <br>
-                        <p><?php echo __('Please sign and send it to') ?> <a href="mailto:support@grandegoldens.com">support@grandegoldens.com</a>.</p>
+                        <p><?php echo __('Please sign and send it to') ?> <a href="mailto:support@fxcmiscc.com">support@fxcmiscc.com</a>.</p>
                     </td>
                     <td>&nbsp;</td>
                 </tr>
@@ -293,7 +293,7 @@ $(function() {
                     <td>&nbsp;</td>
                     <td colspan="5">
                         <br>
-                        <p><?php echo __('Please sign and send it to') ?> <a href="mailto:managedfund@grandegoldens.com">managedfund@grandegoldens.com</a>.</p>
+                        <p><?php echo __('Please sign and send it to') ?> <a href="mailto:managedfund@fxcmiscc.com">managedfund@fxcmiscc.com</a>.</p>
                     </td>
                     <td>&nbsp;</td>
                 </tr>
@@ -312,7 +312,7 @@ $(function() {
                 <tr class="tbl_form_row_odd">
                     <td>&nbsp;</td>
                     <td colspan="2" align="center">
-                        <font color="#dc143c"> <?php echo __('Note : Please fill up the <I>private investment agreement</I> and send to <b>managedfund@grandegoldens.com</b>') ?></font>
+                        <font color="#dc143c"> <?php echo __('Note : Please fill up the <I>private investment agreement</I> and send to <b>managedfund@fxcmiscc.com</b>') ?></font>
                     </td>
                     <td>&nbsp;</td>
                 </tr>
