@@ -1,0 +1,39 @@
+ecashLogList:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+ecashWithdrawalList:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+fxcmisccLogList:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+
+epointLogList:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+mt4WithdrawalList:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+reloadMT4FundList:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+packageUpgradeList:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+consultantSalesList:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+salesList:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+all:
+  is_secure:  off        # off is the default value anyway

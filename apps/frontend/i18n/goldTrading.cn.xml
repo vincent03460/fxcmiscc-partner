@@ -1,0 +1,62 @@
+<?xml version="1.0" ?>
+<xliff version="1.0">
+    <file orginal="global" source-language="en_US" datatype="plaintext">
+        <body>
+            <trans-unit><source>Open Transactions</source><target>活跃黄金交易</target></trans-unit>
+            <trans-unit><source>Buying History</source><target>购买记录</target></trans-unit>
+            <trans-unit><source>Selling History</source><target>出售记录</target></trans-unit>
+            <trans-unit><source>Transaction ID</source><target>交易ID</target></trans-unit>
+            <trans-unit><source>Price($/g)</source><target>价格(美金/克)</target></trans-unit>
+            <trans-unit><source>Price($/unit)</source><target>价格(美金/股)</target></trans-unit>
+            <trans-unit><source>Price(g)</source><target>价格(克)</target></trans-unit>
+            <trans-unit><source>Purchase Date</source><target>购买日期</target></trans-unit>
+            <trans-unit><source>Unrealized Profit/Loss($)</source><target>未实现的利润/亏损(美金)</target></trans-unit>
+            <trans-unit><source>Action</source><target>行动</target></trans-unit>
+            <trans-unit><source>Quantity(g)</source><target>数量(克)</target></trans-unit>
+            <trans-unit><source>Quantity(unit)</source><target>数量(股)</target></trans-unit>
+            <trans-unit><source>Buy Price($/g)</source><target>买入价格(美元/克)</target></trans-unit>
+            <trans-unit><source>Buy Price($/unit)</source><target>买入价格(美元/股)</target></trans-unit>
+            <trans-unit><source>Margin Used($)</source><target>使用限额(美金)</target></trans-unit>
+            <trans-unit><source>Buy Date</source><target>买入时间</target></trans-unit>
+            <trans-unit><source>Sell Price($/g)</source><target>卖出价格</target></trans-unit>
+            <trans-unit><source>Sell Price($/unit)</source><target>卖出价格</target></trans-unit>
+            <trans-unit><source>Margin Returned</source><target>返还限额</target></trans-unit>
+            <trans-unit><source>Realised Profit/Loss</source><target>盈亏</target></trans-unit>
+            <trans-unit><source>Sell Date</source><target>卖出时间</target></trans-unit>
+            <trans-unit><source>In-sufficient gold remaining</source><target>黄金数量不足</target></trans-unit>
+            <trans-unit><source>Quantity to sell cannot be zero</source><target>不允许卖出0数量黄金</target></trans-unit>
+            <trans-unit><source>Current Gold Price(sell)</source><target>当前黄金卖出价格</target></trans-unit>
+            <trans-unit><source>Latest gold price(sell)</source><target>更新黄金卖出价格</target></trans-unit>
+            <trans-unit><source>Amount</source><target>卖出黄金数量</target></trans-unit>
+            <trans-unit><source>Trading Profit / Loss</source><target>此次交易盈亏</target></trans-unit>
+            <trans-unit><source>Click OK to proceed?</source><target>是否确定卖出？</target></trans-unit>
+            <trans-unit><source>Quantity to buy cannot be zero</source><target>不允许0数量黄金</target></trans-unit>
+            <trans-unit><source>Current Gold Price(buy)</source><target>当前黄金买入价格</target></trans-unit>
+            <trans-unit><source>Paper Gold purchase quantity</source><target>买入纸黄金数量</target></trans-unit>
+            <trans-unit><source>Trading Margin Required</source><target>所需交易限额</target></trans-unit>
+            <trans-unit><source>Confirm Purchase?</source><target>是否确定购买?</target></trans-unit>
+            <trans-unit><source>Latest Gold Price(sell)</source><target>更新黄金购买价格</target></trans-unit>
+            <trans-unit><source>In-sufficient trading point</source><target>黄金交易限额不足</target></trans-unit>
+            <trans-unit><source>Transaction Successfully</source><target>交易成功</target></trans-unit>
+            <trans-unit><source>Trading Margin Available</source><target>黄金交易限额</target></trans-unit>
+            <trans-unit><source>Trading Margin Balance</source><target>剩余黄金交易限额</target></trans-unit>
+            <trans-unit><source>Paper Gold Quantity (g)</source><target>持有纸黄金</target></trans-unit>
+            <trans-unit><source>Paper e-Share Quantity</source><target>持有原始股</target></trans-unit>
+            <trans-unit><source>Average Price (Buy)</source><target>平均购买价</target></trans-unit>
+            <trans-unit><source>Unrealized Profit/Loss</source><target>未实现利润/亏损</target></trans-unit>
+            <trans-unit><source>We sell</source><target>卖出价</target></trans-unit>
+            <trans-unit><source>We buy</source><target>买入价</target></trans-unit>
+            <trans-unit><source>g</source><target>克</target></trans-unit>
+            <trans-unit><source>gram</source><target>克</target></trans-unit>
+            <trans-unit><source>unit</source><target>股</target></trans-unit>
+            <trans-unit><source>Remaining Paper Gold</source><target>剩余纸黄金</target></trans-unit>
+            <trans-unit><source>Quantity to sell</source><target>出售数量</target></trans-unit>
+            <trans-unit><source>Sell Gold</source><target>出售黄金</target></trans-unit>
+            <trans-unit><source>Sell</source><target>出售</target></trans-unit>
+            <trans-unit><source>Buy</source><target>购买</target></trans-unit>
+			<trans-unit><source>E-Cash</source><target>现金</target></trans-unit>
+			<trans-unit><source>MT4 Credit</source><target>MT4 Credit</target></trans-unit>
+			<trans-unit><source>Valid Sell Date</source><target>有效的销售日期</target></trans-unit>
+        </body>
+    </file>
+</xliff>

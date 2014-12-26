@@ -1,0 +1,896 @@
+<?xml version="1.0" ?>
+<xliff version="1.0">
+    <file orginal="global" source-language="en_US" datatype="plaintext">
+        <body>
+            <trans-unit>
+                <source>Afghanistan</source>
+                <target>阿富汗</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Albania</source>
+                <target>阿尔巴尼亚</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Algeria</source>
+                <target>阿尔及利亚</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>American Samoa</source>
+                <target>美洲萨摩亚</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Andorra</source>
+                <target>安道尔</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Argentina</source>
+                <target>阿根廷</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Armenia</source>
+                <target>亚美尼亚</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Aruba</source>
+                <target>阿鲁巴</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Ascension Land</source>
+                <target>上生土地</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Australia</source>
+                <target>澳洲</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Austria</source>
+                <target>奥地利</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Azerbaijan</source>
+                <target>阿塞拜疆</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Bahrain</source>
+                <target>巴林</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Belgium</source>
+                <target>比利时</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Belize</source>
+                <target>伯利兹</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Benin</source>
+                <target>比宁</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Bhutan</source>
+                <target>不丹</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Bolivia</source>
+                <target>玻利维亚</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Bosnia</source>
+                <target>波斯尼亚</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Botswana</source>
+                <target>博茨瓦纳</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Brazil</source>
+                <target>巴西</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Brunei</source>
+                <target>汶莱</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Bulgaria</source>
+                <target>保加利亚</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Burkina Faso</source>
+                <target>布吉纳法索</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Burundi</source>
+                <target>布隆迪</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Cambodia</source>
+                <target>柬埔寨</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Cameron</source>
+                <target>Cameron</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Canada</source>
+                <target>加拿大</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Chad</source>
+                <target>乍得</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Chile</source>
+                <target>智利</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>China (PRC)</source>
+                <target>中国(中华人民共和国)</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Colombia</source>
+                <target>哥伦比亚</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Costa Rica</source>
+                <target>格斯达里加</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Croatia</source>
+                <target>克罗地亚</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Cuba</source>
+                <target>古巴</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Cyprus</source>
+                <target>塞浦路斯</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Czech Republic</source>
+                <target>捷克</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Denmark</source>
+                <target>丹麦</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Deigo Garicia</source>
+                <target>Deigo Garicia</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Djibouti</source>
+                <target>吉布提</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Ecuador</source>
+                <target>厄瓜多尔</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Egypt</source>
+                <target>埃及</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>El Salvador</source>
+                <target>萨尔瓦多</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Equatorial Guinea</source>
+                <target>赤道几内亚</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Eritrea</source>
+                <target>厄立特里亚</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Estonia</source>
+                <target>爱沙尼亚</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Ethiopia</source>
+                <target>埃塞俄比亚</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Faeroe Islands</source>
+                <target>法罗岛</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Falkland Islands</source>
+                <target>福克兰群岛</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Fiji Islands</source>
+                <target>斐济海岛</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Finland</source>
+                <target>芬兰</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>France</source>
+                <target>法国</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>French Antilles</source>
+                <target>法国安的列斯群岛</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>French Guiana</source>
+                <target>法属圭亚那</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>French Polynesia</source>
+                <target>法属波利尼西亚</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Gabon</source>
+                <target>加蓬</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Gambia</source>
+                <target>冈比亚</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Georgia</source>
+                <target>佐治亚</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Germany</source>
+                <target>德国</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Ghana</source>
+                <target>加纳</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Gibraltar</source>
+                <target>直布罗陀</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Greece</source>
+                <target>希腊</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Greenland</source>
+                <target>格陵兰</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Guinea-Bissau</source>
+                <target>几内亚- 比绍</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Guinea (PRP)</source>
+                <target>基尼(PRP)</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>HongKong</source>
+                <target>香港</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Hungary</source>
+                <target>匈牙利</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Iceland</source>
+                <target>冰岛</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Indonesia</source>
+                <target>印度尼西亚</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Islands</source>
+                <target>海岛</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Israel</source>
+                <target>以色列</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Italy</source>
+                <target>意大利</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Jamaica</source>
+                <target>牙买加</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Japan</source>
+                <target>日本</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Jordan</source>
+                <target>乔丹</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Kazakhsthan</source>
+                <target>哈萨克斯坦</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Kenya</source>
+                <target>肯尼亚</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Kiribati</source>
+                <target>基里巴斯</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Korea North</source>
+                <target>韩国北部</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Korea South</source>
+                <target>韩国南</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Kuwait</source>
+                <target>科威特</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Laos</source>
+                <target>老挝</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Latvia</source>
+                <target>拉脱维亚</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Lebanon</source>
+                <target>黎巴嫩</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Lesotho</source>
+                <target>莱索托</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Liberia</source>
+                <target>利比里亚</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Libya</source>
+                <target>利比亚</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Liechtenstein</source>
+                <target>列支敦士登</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Lithuania</source>
+                <target>立陶宛</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Luxembourg</source>
+                <target>卢森堡</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Macau</source>
+                <target>澳门</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Macedonia</source>
+                <target>马其顿</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Madagascar</source>
+                <target>马达加斯加</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Malawi</source>
+                <target>马拉维</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Malaysia</source>
+                <target>马来西亚</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Maldives</source>
+                <target>马尔代夫</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Mali Republic</source>
+                <target>马里共和国</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Malta</source>
+                <target>马耳他</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Martinique</source>
+                <target>马提尼克岛</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Maurutania</source>
+                <target>毛里塔尼亚</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Mauritius</source>
+                <target>毛里求斯</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Mexico</source>
+                <target>墨西哥</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Mongolia</source>
+                <target>蒙古</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Morocco</source>
+                <target>摩洛哥</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Mozambique</source>
+                <target>莫桑比克</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Myanmar</source>
+                <target>缅甸</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Namibia</source>
+                <target>纳米比亚</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Nauru</source>
+                <target>瑙鲁</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Nepal</source>
+                <target>尼泊尔</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Netherlands</source>
+                <target>荷兰</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>New Zealand</source>
+                <target>新西兰</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Nicaragua</source>
+                <target>尼加拉瓜</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Niger</source>
+                <target>尼日尔</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Nigeria</source>
+                <target>尼日利亚</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Niue</source>
+                <target>纽埃</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Norfolk Island</source>
+                <target>诺福克岛</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Norway</source>
+                <target>挪威</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Oman</source>
+                <target>阿曼</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Pakistan</source>
+                <target>巴基斯坦</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Palau</source>
+                <target>帕劳</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Palestine</source>
+                <target>巴勒斯坦</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Panama</source>
+                <target>巴拿马</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Paraguay</source>
+                <target>巴拉圭</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Peru</source>
+                <target>秘鲁</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Philippines</source>
+                <target>菲律宾</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Poland</source>
+                <target>波兰</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Portugal</source>
+                <target>葡萄牙</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Qatar</source>
+                <target>卡塔尔</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Reunion Island</source>
+                <target>留尼汪岛</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Romania</source>
+                <target>罗马尼亚</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Russia</source>
+                <target>俄国</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Rwanda</source>
+                <target>卢旺达</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>San Marino</source>
+                <target>圣马力诺</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Saudi Arabia</source>
+                <target>沙特阿拉伯</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Senegal</source>
+                <target>塞内加尔</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Serbia</source>
+                <target>塞尔维亚</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Seychelles Islands</source>
+                <target>塞舌尔群岛海岛</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Sierra Leone</source>
+                <target>塞阿里昂</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Singapore</source>
+                <target>新加坡</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Slovak Republic</source>
+                <target>斯洛伐克语共和国</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Slovenia</source>
+                <target>斯洛文尼亚</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Solomon Islands</source>
+                <target>所罗门群岛</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>South Africa</source>
+                <target>南非</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Spain</source>
+                <target>西班牙</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Sri Lanka</source>
+                <target>斯里南卡</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Sudan</source>
+                <target>苏丹</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Suriname</source>
+                <target>苏里南</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Swaziland</source>
+                <target>斯威士兰</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Sweden</source>
+                <target>瑞典</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Switzerland</source>
+                <target>瑞士</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Syria</source>
+                <target>叙利亚</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Taiwan</source>
+                <target>台湾</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Tajikistan</source>
+                <target>塔吉克斯坦</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Tanzania</source>
+                <target>坦桑尼亚</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Thailand</source>
+                <target>泰国</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Toto</source>
+                <target>多多</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Tonga Islands</source>
+                <target>汤加海岛</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Tunisia</source>
+                <target>突尼斯</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Turkey</source>
+                <target>土耳其</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Turkmenistan</source>
+                <target>土库曼</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Tuvalu</source>
+                <target>图瓦卢</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Uganda</source>
+                <target>乌干达</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Ukraine</source>
+                <target>乌克兰</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>UAE</source>
+                <target>阿拉伯联合酋长国</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>United Kingdom</source>
+                <target>英国</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>USA</source>
+                <target>美国</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Uruguay</source>
+                <target>乌拉圭</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Uzbekistan</source>
+                <target>乌兹别克斯坦</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Vanuatu</source>
+                <target>瓦努阿图</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Vatican City</source>
+                <target>梵蒂冈市</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Venezuela</source>
+                <target>委内瑞拉</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Vietnam</source>
+                <target>越南</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Western Samoa</source>
+                <target>西萨摩亚</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Yemen</source>
+                <target>也门</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Yugoslavia</source>
+                <target>南斯拉夫</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Zambia</source>
+                <target>赞比亚</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Zanzibar</source>
+                <target>桑给巴尔</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Zimbabwe</source>
+                <target>津巴布韦</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

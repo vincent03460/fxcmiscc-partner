@@ -1,0 +1,19 @@
+demoSuccess:
+  has_layout:     off
+  stylesheets: 	  []
+
+indexSuccess:
+  has_layout:     off
+  stylesheets: 	  []
+
+uploadFxGuideCNSuccess:
+  has_layout:     off
+  stylesheets: 	  []
+
+uploadFxGuideENSuccess:
+  has_layout:     off
+  stylesheets: 	  []
+
+uploadFxGuideJPSuccess:
+  has_layout:     off
+  stylesheets: 	  []
