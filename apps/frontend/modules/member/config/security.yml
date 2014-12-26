@@ -1,0 +1,238 @@
+activeMember:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+accountSummary:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+accountConversion:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+activeMemberList:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+inactiveMemberList:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+announcement:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+announcementList:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+accountVerification:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+activateMember:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+bonusDetails:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+convertCp2ToCp1:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+currentLog:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+currentWithdrawal:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+customerEnquiry:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+customerEnquiryDetail:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+doCustomerEnquiry:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+doCustomerEnquiryDetail:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+doInvestment:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+dailyReport:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+downloadMT4:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+degoldLog:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+passiveLog:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+promoLog:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+epointLog:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+ewalletLog:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+ewalletWithdrawal:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+fundsDeposit:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+fundManagementReturn:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+fetchAnnouncementById:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+fetchPackage:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+fundManagementReport:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+investmentFinancialPackage:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+loginPassword:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+maintenanceLog:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+memberRegistration:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+memberRegistration2:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+monthlyReport:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+myFinancialPackage:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+passwordSetting:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+packagePurchaseViaBankTransfer:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+packageUpgrade:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+pendingMemberList:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+placePlacement:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+mt4Withdrawal:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+purchasePackage:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+placementTree:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+reloadTopup:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+reinvest:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+consultantSalesList:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+salesList:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+sponsorTree:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+summary:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+tradingLog:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+transferEpoint:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+transferEcash:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+transferPromo:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+transactionPassword:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+viewProfile:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+viewBankInformation:
+  is_secure:   on
+  credentials: [[ FXCMISCC_DISTRIBUTOR ]]
+
+all:
+  is_secure:  off        # off is the default value anyway

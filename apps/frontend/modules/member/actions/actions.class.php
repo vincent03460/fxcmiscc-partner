@@ -17,41 +17,35 @@ class memberActions extends sfActions
 
     public function executeSummary()
     {
-
     }
 
     public function executeWithdrawal()
     {
-
     }
 
     public function executeRegistration()
     {
-
     }
 
     public function executePassword()
     {
-
     }
 
     public function executeGenealogy()
     {
-
     }
 
     public function executeEpoint()
     {
-
     }
 
     public function executeDownload()
     {
-
     }
 
     public function executeAgreement()
     {
-
     }
+
+    // TODO
 }

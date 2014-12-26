@@ -29,12 +29,10 @@
         <div>Log Out</div>
     </a></div>
 </div>
-<?php echo "/" . $module . "/" . $action ?>
 
 <script type="text/javascript">
 
-jQuery(document).ready(function($)
-{
+$(document).ready(function() {
     var url = "<?php echo "/" . $module . "/" . $action ?>";
     $("div.menu").find("a[href='"+url+"']").addClass("active");
 });

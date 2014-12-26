@@ -1,0 +1,23 @@
+bdetailsSuccess:
+  has_layout:     off
+  stylesheets: 	  []
+
+certificateSuccess:
+  has_layout:     off
+  stylesheets: 	  []
+
+forgetPasswordSuccess:
+  has_layout:     off
+  stylesheets: 	  []
+
+printBankInformationSuccess:
+  has_layout:     off
+  stylesheets: 	  []
+
+registerSuccess:
+  has_layout:     off
+  stylesheets: 	  []
+
+registerInfoSuccess:
+  has_layout:     off
+  stylesheets: 	  []
