@@ -1,0 +1,72 @@
+
+.stats-node {
+    font-family: arial;
+    font-size: 11px;
+    position: relative;
+}
+.stats-node img {
+    cursor: pointer;
+}
+.stats-node-line {
+    background: none repeat scroll 0 0 #666666;
+    height: 1px;
+    width: 1px;
+}
+/*.tooltip {
+    background: none repeat scroll 0 0 lightblue;
+    border: 1px solid black;
+    display: none;
+    left: 50px;
+    padding: 2px 5px;
+    position: absolute;
+    text-align: left;
+    top: -10px;
+    width: 180px;
+    z-index: 999;
+}*/
+.network-bottom-more-node {
+}
+.network-bottom-more-node a {
+    background: url("more.gif") no-repeat scroll center top transparent;
+    display: block;
+    height: 23px;
+}
+.network-top-more-node a {
+    background: url("upmore.gif") no-repeat scroll center top transparent;
+    display: block;
+    height: 23px;
+}
+.network-username {
+    font-weight: bold;
+    overflow: auto;
+    text-align: center;
+}
+.network-button-wraper {
+}
+.network-register {
+    background: url("icon-register.png") repeat scroll 0 0 transparent;
+    display: block;
+    height: 48px;
+    text-indent: -99999px;
+    width: 48px;
+}
+.network-register:hover {
+    background-position: 0 -48px;
+}
+.network-add-investment {
+    background: url("icon-add-investment.png") repeat scroll 0 0 transparent;
+    display: block;
+    height: 29px;
+    text-indent: -99999px;
+    width: 48px;
+}
+.network-add-investment:hover {
+    background-position: 0 -29px;
+}
+.tooltip table {
+    width: 100%;
+}
+.tooltip table td {
+    padding: 2px 3px;
+    vertical-align: top;
+}

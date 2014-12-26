@@ -1,0 +1,65 @@
+
+.stats-node {
+    font-family: arial;
+    font-size: 11px;
+}
+.stats-node table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.stats-node td {
+    font-size: 11px;
+    font-weight: bold;
+    padding: 2px;
+    text-align: center;
+    width: 50%;
+}
+.stats-node .header div {
+    background: none repeat scroll 0 0 #BC8F3E;
+    height: 30px;
+    overflow: hidden;
+    padding: 5px;
+    text-align: center;
+}
+.stats-node .header div, .stats-node .header div a:active, .stats-node .header div a:hover, .stats-node .header div a:visited, .stats-node .header div a:link {
+    color: #FFFFFF;
+    font-size: 11px;
+    font-weight: bold;
+}
+.stats-node .header div a:hover {
+    text-decoration: none;
+}
+.stats-node .header img {
+    margin: 0 auto;
+}
+.stats-node .rank {
+    color: #BC8F3E;
+    font-weight: bold;
+}
+.stats-node-line {
+    background: none repeat scroll 0 0 #D0A04A;
+    height: 1px;
+    width: 1px;
+}
+.total-downlines {
+    background: none repeat scroll 0 0 #979697;
+    color: #FFFFFF;
+}
+.total-downlines-no {
+    background: none repeat scroll 0 0 #979697;
+    border-top: 1px solid white;
+    color: #FFFFFF;
+}
+.stats-bottom-more-node a {
+    background: url("down.gif") no-repeat scroll center top transparent;
+    display: block;
+    height: 41px;
+}
+.stats-top-more-node a {
+    background: url("up.gif") no-repeat scroll center top transparent;
+    display: block;
+    height: 41px;
+}
+.genealogy-search-form {
+    margin-bottom: 15px;
+}
