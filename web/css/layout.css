@@ -221,6 +221,15 @@ h2
 	font-weight:bold;
 }
 
+input.error {
+    background-color: #FFE2E2;
+}
+
+label.error {
+    background-color: transparent;
+    color: #E00000;
+}
+
 .logout
 {
 	position:absolute;

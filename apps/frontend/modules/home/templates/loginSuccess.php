@@ -61,10 +61,10 @@ $culture = $sf_user->getCulture();
                     }
                     ?>
                     <?php if ($sf_flash->has('warningMsg')) { ?>
-                    <div class="alert alert-warning" style="width: 285px">
-                        <button type="button" class="close" data-dismiss="alert">
-                            <i class="icon-remove"></i>
-                        </button>
+                    <div class="alert alert-error" style="width: 285px">
+<!--                        <button type="button" class="close" data-dismiss="alert">-->
+<!--                            <i class="icon-remove"></i>-->
+<!--                        </button>-->
                         <strong style="line-height: 15px;"><?php echo $sf_flash->get('warningMsg') ?></strong>
                         <br/>
                     </div>
