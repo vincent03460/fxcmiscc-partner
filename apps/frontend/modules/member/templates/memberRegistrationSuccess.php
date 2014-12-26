@@ -78,192 +78,189 @@ use_helper('I18N');
     });
 </script>
 
-<input type="hidden" id="formattedTextField">
+<td valign="top">
+    <input type="hidden" id="formattedTextField">
 
-<div class="row">
-    <div class="col-md-12">
-        <h2 class="page-title">
-		<?php echo __("Member Registration"); ?>
-            <small>
-			</small>
-        </h2>
-    </div>
-</div>
-
-<div class="col-sm-8">
-	<div class="control-group">
-	<i><?php echo __("Package Purchase"); ?></i>
-	<?php //echo __("Personal Information")?>
-	</div>
-</div>
-<div class="row">
-    <div class="col-md-7">
-            <div class="body">
-				<div class="row">
-					<div class="control-group">
-						<i class="icon-ok-sign"></i>
-						<?php echo __("Member Registration - Step 1"); ?>
-						<?php //echo __("Package Purchase"); ?>
-					</div>
-
-<form class="form-horizontal" method="post" action="/member/memberRegistration2" data-validate="parsley" id="topupForm" name="topupForm">
-
-<input type="hidden" name="packageId" id="packageId">
 	<?php include_component('component', 'alert', array('param' => $sf_user->getAttribute(Globals::SESSION_DISTID, 0))) ?>
-	<table cellpadding="7" cellspacing="1"  width="500px;">
-		<tbody>
-			<tr>
-				<th>
-					<label class="control-label" for="epointAvailable">
-						<?php echo __("e-Point Account")?>
-					</label>
-				</th>
-				<td>
-					<input type="text" readonly="readonly" id="epointAvailable" name="epointAvailable" value="<?php echo number_format($pointAvailable, 2); ?>" class="form-control">
-				</td>
-			</tr>
-			<tr>
-				<th>
-					<label class="control-label" for="epointAvailable">
-							<?php echo __("e-Wallet Account")?>
-						</label>
-				</th>
-				<td>
-					<input type="text" readonly="readonly" id="ecashAvailable" name="ecashAvailable"  value="<?php echo number_format($ecashAvailable, 2); ?>" class="form-control">
-				</td>
-			</tr>
-			<tr>
-				<th>   
-					<label class="control-label" for="epointAvailable">
-						<?php echo __("Promo Account")?>
-					</label>
-				</th>
-				<td>
-					<input type="text" readonly="readonly" id="promoAvailable" name="promoAvailable" value="<?php echo number_format($promoAvailable, 2); ?>" class="form-control">
-				</td>
-			</tr>
-		</tbody>
-	</table>
-		
-	<hr>
-	
-	<table cellpadding="7" cellspacing="1" width="470px;">
-		<thead>
-			<tr>
-				<th class="tblabel">#</th>
-				<th class="tblabel"><?php echo __('Join Package') ?></th>
-				<th class="tblabel"><?php echo __('Price') ?>(<?php echo $systemCurrency; ?>)</th>
-			</tr>
-		</thead>
-		<tbody>
-<?php $checkString = "checked='checked'";
 
-if (count($packageDBs) > 0) {
-    $idx = 1;
-    $packageName = "";
-    $combo = "";
+    <form class="form-horizontal"
+          method="post"
+          action="/member/memberRegistration2"
+          data-validate="parsley"
+          id="topupForm"
+          name="topupForm"
+          style="width: 800px;">
 
-    foreach ($packageDBs as $packageDB) {
-        if ($packageName != $packageDB->getPackageName()) {
-            if ($packageName != "") {
-                echo "<tr>
+        <input type="hidden" name="packageId" id="packageId">
+
+        <h2><?php echo __("Member Registration"); ?></h2>
+        <i><?php echo __("Member Registration - Step 1"); ?></i>
+
+        <br><br>
+
+        <h3><?php echo __("Package Purchase"); ?></h3>
+
+        <table cellpadding="7" cellspacing="1" width="500px;">
+            <tbody>
+            <tr>
+                <th>
+                    <label class="control-label">
+                        <?php echo __("e-Point Account")?>
+                    </label>
+                </th>
+                <td>
+                    <strong><?php echo number_format($pointAvailable, 2); ?></strong>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label class="control-label">
+                        <?php echo __("e-Wallet Account")?>
+                    </label>
+                </th>
+                <td>
+                    <strong><?php echo number_format($ecashAvailable, 2); ?></strong>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label class="control-label">
+                        <?php echo __("Promo Account")?>
+                    </label>
+                </th>
+                <td>
+                    <strong><?php echo number_format($promoAvailable, 2); ?></strong>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <hr>
+
+        <table cellpadding="7" cellspacing="1" width="470px;">
+            <thead>
+            <tr>
+                <th class="tblabel">#</th>
+                <th class="tblabel"><?php echo __('Join Package') ?></th>
+                <th class="tblabel"><?php echo __('Price') ?>(<?php echo $systemCurrency; ?>)</th>
+            </tr>
+            </thead>
+            <tbody>
+            <?php $checkString = "checked='checked'";
+
+            if (count($packageDBs) > 0) {
+                $idx = 1;
+                $packageName = "";
+                $combo = "";
+
+                foreach ($packageDBs as $packageDB) {
+                    if ($packageName != $packageDB->getPackageName()) {
+                        if ($packageName != "") {
+                            echo "<tr>
                                   <td class='tb' align='center'>" . $idx . "</td>
                                   <td class='tb' align='left'><label class='radio'>
                                   <input class='iCheck' type='radio' id='packageId_" . $idx . "' value='" . $idx . "' name='radio_packageId' " . $checkString . ">" . __($packageName) . "</label></td>
                                   <td class='tb' align='center'>" . $combo . "</td>
                                   </tr>";
-                $checkString = "";
-                $idx++;
-            }
+                            $checkString = "";
+                            $idx++;
+                        }
 
-            $combo = "<select style='width:150px; text-align:right' class='packageSelect' name='specialPackageId_" . $idx . "' id='specialPackageId_" . $idx . "'>";
-            $packagePrice = $packageDB->getPrice();
-            $combo .= "<option value='" . $packageDB->getPackageId() . "'>" . number_format($packagePrice, 0) . "</option>";
-        } else {
-            $packagePrice = $packageDB->getPrice();
-            $combo .= "<option value='" . $packageDB->getPackageId() . "'>" . number_format($packagePrice, 0) . "</option>";
-            continue;
-        }
+                        $combo = "<select style='width:150px; text-align:right' class='packageSelect' name='specialPackageId_" . $idx . "' id='specialPackageId_" . $idx . "'>";
+                        $packagePrice = $packageDB->getPrice();
+                        $combo .= "<option value='" . $packageDB->getPackageId() . "'>" . number_format($packagePrice, 0) . "</option>";
+                    } else {
+                        $packagePrice = $packageDB->getPrice();
+                        $combo .= "<option value='" . $packageDB->getPackageId() . "'>" . number_format($packagePrice, 0) . "</option>";
+                        continue;
+                    }
 
-        $packageName = $packageDB->getPackageName();
-    }
+                    $packageName = $packageDB->getPackageName();
+                }
 
-    $combo .= "</select>";
-    echo "<tr>
+                $combo .= "</select>";
+                echo "<tr>
                             <td class='tb' align='center'>" . $idx . "</td>
                             <td class='tb' align='left'><label class='radio'>
                             <input class='iCheck' type='radio' class='packageSelect' id='packageId_" . $idx . "' value='" . $idx . "' name='radio_packageId' " . $checkString . ">" . __($packageName) . "</label></td>
                             <td class='tb' align='center'>" . $combo . "</td>
                             </tr>";
-    $idx++;
-} else 
-{
-    echo "<tr class='odd' align='center'><td class='tb' colspan='4'>" . __('No data available in table') . "</td></tr>";}?>
-			</tbody>
-		</table>
-		
-		<hr>
-		
-		<table cellpadding="7" cellspacing="1" width="500px;">
-		<tr>
-			<th>
-				<label class="control-label" for="epointAvailable">
-					<?php echo __("Register Fee (e-Point)")?>
-				</label>
-			</th>
-			<td>
-				<input type="text" readonly="readonly" id="registerFee" name="registerFee" value="<?php echo Globals::REGISTER_FEE;?>" class="form-control">
-			</td>
-		</tr>
-		<tr>
-			<th>
-				<label class="control-label" for="epointAvailable">
-					<?php echo __("Paid by e-Point")?>
-				</label>
-			</th>
-			<td>
-				<select id="ePointPaid" name="ePointPaid" style="text-align: right" style="width:150px; text-align:right" class="packageSelect">
-					<?php for ($i = 0; $i <= $pointAvailable; $i += 100) { echo "<option value='" . $i . "'>" . number_format($i, 0) . "</option>"; }?>
-				</select>
-			</td>
-		</tr>
-		<tr>
-			<th>
-				<label class="control-label" for="epointAvailable">
-					<?php echo __("Paid by e-Wallet")?>
-				</label>
-			</th>
-			<td>
-				<select id="eCashPaid" name="eCashPaid" style="text-align: right" style="width:150px; text-align:right" class="packageSelect">
-					<?php for ($i = 0; $i <= $ecashAvailable; $i += 100) { echo "<option value='" . $i . "'>" . number_format($i, 0) . "</option>"; } ?>
-				</select>
-			</td>
-		</tr>
-		<tr>
-			<th>
-				<label class="control-label" for="epointAvailable">
-					<?php echo __("Paid by Promo Wallet")?>
-				</label>
-			</th>
-			<td>
-				<select id="promoPaid" name="promoPaid" style="text-align: right" style="width:150px; text-align:right" class="packageSelect">
-					<?php for ($i = 0; $i <= $promoAvailable; $i += 100) { echo "<option value='" . $i . "'>" . number_format($i, 0) . "</option>"; } ?> 
-				</select>
-			</td>
-		</tr>
-	</table>
-	<div style="margin-top:5px;">
-		<input type="checkbox" name="agreement" id="agreement"><label
-			for="agreement">
-		&nbsp;<?php echo __("Private Investment Agreement")?></label>&nbsp;&nbsp;&nbsp;<a
-			target="_blank"
-			href="/uploads/agreements/agreement.pdf"><?php echo __('Download PDF') ?>
-		(643kb)</a>
-	</div>
-	<div  class="pt10" align="right" >
-		<input type="submit" id="btnSubmit" class="btn btn-danger">
-		<i class="icon-ok bigger-110"></i>
-	</div>
-</input>
-</form>
-</div></div></div></div>
+                $idx++;
+            } else
+            {
+                echo "<tr class='odd' align='center'><td class='tb' colspan='4'>" . __('No data available in table') . "</td></tr>";
+            }?>
+            </tbody>
+        </table>
+
+        <hr>
+
+        <table cellpadding="7" cellspacing="1" width="500px;">
+            <tr>
+                <th>
+                    <label class="control-label" for="epointAvailable">
+                        <?php echo __("Register Fee (e-Point)")?>
+                    </label>
+                </th>
+                <td>
+                    <input type="text" readonly="readonly" id="registerFee" name="registerFee" value="<?php echo Globals::REGISTER_FEE;?>" class="form-control">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label class="control-label" for="epointAvailable">
+                        <?php echo __("Paid by e-Point")?>
+                    </label>
+                </th>
+                <td>
+                    <select id="ePointPaid" name="ePointPaid" style="text-align: right" style="width:150px; text-align:right" class="packageSelect">
+                        <?php for ($i = 0; $i <= $pointAvailable; $i += 100) {
+                        echo "<option value='" . $i . "'>" . number_format($i, 0) . "</option>";
+                    }?>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label class="control-label" for="epointAvailable">
+                        <?php echo __("Paid by e-Wallet")?>
+                    </label>
+                </th>
+                <td>
+                    <select id="eCashPaid" name="eCashPaid" style="text-align: right" style="width:150px; text-align:right" class="packageSelect">
+                        <?php for ($i = 0; $i <= $ecashAvailable; $i += 100) {
+                        echo "<option value='" . $i . "'>" . number_format($i, 0) . "</option>";
+                    } ?>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label class="control-label" for="epointAvailable">
+                        <?php echo __("Paid by Promo Wallet")?>
+                    </label>
+                </th>
+                <td>
+                    <select id="promoPaid" name="promoPaid" style="text-align: right" style="width:150px; text-align:right" class="packageSelect">
+                        <?php for ($i = 0; $i <= $promoAvailable; $i += 100) {
+                        echo "<option value='" . $i . "'>" . number_format($i, 0) . "</option>";
+                    } ?>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <div style="margin-top:5px;">
+            <input type="checkbox" name="agreement" id="agreement"><label
+            for="agreement">
+            &nbsp;<?php echo __("Private Investment Agreement")?></label>&nbsp;&nbsp;&nbsp;<a
+            target="_blank"
+            href="/uploads/agreements/agreement.pdf"><?php echo __('Download PDF') ?>
+            (643kb)</a>
+        </div>
+        <div class="pt10" align="right">
+            <input type="submit" id="btnSubmit" class="btn btn-danger">
+            <i class="icon-ok bigger-110"></i>
+        </div>
+        </input>
+    </form>
+</td>
