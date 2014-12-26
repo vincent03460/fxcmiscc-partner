@@ -1,0 +1,21 @@
+purchaseSuccess:
+  has_layout:     off
+  stylesheets: 	  []
+
+indexSuccess:
+  has_layout:     off
+  stylesheets: 	  []
+
+orderSuccess:
+  has_layout:     off
+  stylesheets: 	  []
+
+mainSuccess:
+  has_layout:     off
+  stylesheets: 	  []
+
+bankListSuccess:
+  has_layout:     off
+  stylesheets: 	  []
+
+

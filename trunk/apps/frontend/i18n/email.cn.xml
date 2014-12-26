@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<xliff version="1.0">
+    <file orginal="global" source-language="en_US" datatype="plaintext">
+        <body>
+            <trans-unit id="1">
+                <source>Vital Universe Group Registration email notification</source>
+                <target>Vital Universe Group Registration email notification</target>
+            </trans-unit>
+            <trans-unit id="2">
+                <source>Dear %1%</source>
+                <target>%1%,您好!</target>
+            </trans-unit>
+            <trans-unit id="2">
+                <source>Your registration request has been successfully sent to Vital Universe Group</source>
+                <target>Vital Universe Group 已收到您的注册申请</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

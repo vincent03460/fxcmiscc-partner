@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<xliff version="1.0">
+    <file orginal="global" source-language="en_US" datatype="plaintext">
+        <body>
+            <trans-unit><source>Days</source><target>天</target></trans-unit>
+            <trans-unit><source>Hours</source><target>时</target></trans-unit>
+            <trans-unit><source>Minutes</source><target>分</target></trans-unit>
+            <trans-unit><source>Seconds</source><target>秒</target></trans-unit>
+        </body>
+    </file>
+</xliff>

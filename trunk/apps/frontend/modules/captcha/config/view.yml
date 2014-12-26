@@ -1,0 +1,15 @@
+imageSuccess:
+  has_layout:     off
+  stylesheets: 	  []
+
+newSessionSuccess:
+  has_layout:     off
+  stylesheets: 	  []
+
+imageRequestSuccess:
+  has_layout:     off
+  stylesheets: 	  []
+
+ProcessSuccess:
+  has_layout:     off
+  stylesheets: 	  []

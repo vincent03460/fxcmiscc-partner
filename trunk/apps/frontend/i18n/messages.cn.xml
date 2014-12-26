@@ -2,7 +2,1052 @@
 <xliff version="1.0">
     <file orginal="global" source-language="en_US" datatype="plaintext">
         <body>
-            <trans-unit><source>abc</source><target>一二三</target></trans-unit>
+            <trans-unit id="1">
+                <source>Share Holder Login</source>
+                <target>股东登录</target>
+            </trans-unit>
+            <trans-unit id="2">
+                <source>Shareholder ID</source>
+                <target>股东ID</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Trader ID</source>
+                <target>会员ID</target>
+            </trans-unit>
+            <trans-unit id="3">
+                <source>Password</source>
+                <target>密码</target>
+            </trans-unit>
+            <trans-unit id="4">
+                <source>Register</source>
+                <target>立即注册</target>
+            </trans-unit>
+            <trans-unit id="5">
+                <source>Forget Password?</source>
+                <target>忘记密码?</target>
+            </trans-unit>
+            <trans-unit id="6">
+                <source>For the safest data input use the</source>
+                <target>为保证您的密码安全</target>
+            </trans-unit>
+            <trans-unit id="6">
+                <source>virtual keyboard below</source>
+                <target>请使用以下虚拟键盘</target>
+            </trans-unit>
+            <trans-unit id="7">
+                <source>Security Code</source>
+                <target>验证码</target>
+            </trans-unit>
+            <trans-unit id="8">
+                <source>Sponsor ID</source>
+                <target>推荐人帐号</target>
+            </trans-unit>
+            <trans-unit id="9">
+                <source>Sponsor Name</source>
+                <target>推荐人姓名</target>
+            </trans-unit>
+            <trans-unit id="10">
+                <source>Set Password</source>
+                <target>一级密码</target>
+            </trans-unit>
+            <trans-unit id="11">
+                <source>Confirm Password</source>
+                <target>确认一级密码</target>
+            </trans-unit>
+            <trans-unit id="12">
+                <source>Full Name</source>
+                <target>姓名</target>
+            </trans-unit>
+            <trans-unit id="13">
+                <source>Alias</source>
+                <target>昵称</target>
+            </trans-unit>
+            <trans-unit id="14">
+                <source>Passport/ID Card No</source>
+                <target>身份证</target>
+            </trans-unit>
+            <trans-unit id="15">
+                <source>Country</source>
+                <target>国家</target>
+            </trans-unit>
+            <trans-unit id="16">
+                <source>Address</source>
+                <target>地址</target>
+            </trans-unit>
+            <trans-unit id="15">
+                <source>Postal Code</source>
+                <target>邮编</target>
+            </trans-unit>
+            <trans-unit id="16">
+                <source>Email</source>
+                <target>电邮</target>
+            </trans-unit>
+            <trans-unit id="17">
+                <source>Contact No</source>
+                <target>手机号码</target>
+            </trans-unit>
+            <trans-unit id="18">
+                <source>Gender</source>
+                <target>性别</target>
+            </trans-unit>
+            <trans-unit id="19">
+                <source>Date of Birth</source>
+                <target>生日</target>
+            </trans-unit>
+            <trans-unit id="20">
+                <source>I have read and agreed to the</source>
+                <target>我已阅读同意</target>
+            </trans-unit>
+            <trans-unit id="21">
+                <source>Terms &amp; Conditions</source>
+                <target>条款</target>
+            </trans-unit>
+            <trans-unit id="22">
+                <source>and</source>
+                <target>和</target>
+            </trans-unit>
+            <trans-unit id="23">
+                <source>Privacy Policy</source>
+                <target>隐私政策</target>
+            </trans-unit>
+            <trans-unit id="24">
+                <source>Male</source>
+                <target>男</target>
+            </trans-unit>
+            <trans-unit id="25">
+                <source>Female</source>
+                <target>女</target>
+            </trans-unit>
+            <trans-unit id="26">
+                <source>Member Registration</source>
+                <target>会员注册</target>
+            </trans-unit>
+            <trans-unit id="27">
+                <source>Shareholder has been registered successfully.</source>
+                <target>股东注册成功</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Trader has been registered successfully.</source>
+                <target>会员注册成功</target>
+            </trans-unit>
+            <trans-unit id="28">
+                <source>Your Shareholder ID</source>
+                <target>登陆账号为</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Your Trader ID</source>
+                <target>登陆账号为</target>
+            </trans-unit>
+			<trans-unit id="29">
+                <source>Bank Name</source>
+                <target>银行名称</target>
+            </trans-unit>
+			<trans-unit id="30">
+                <source>Bank Holder Name</source>
+                <target>银行账户姓名</target>
+            </trans-unit>
+			<trans-unit id="31">
+                <source>Bank Account No</source>
+                <target>银行账号</target>
+            </trans-unit>
+            <trans-unit><source>Language</source><target>语言</target></trans-unit>
+            <trans-unit><source>Server Time</source><target>服务器时间</target></trans-unit>
+            <trans-unit><source>Current CPS price</source><target>当前股价</target></trans-unit>
+            <trans-unit><source>Gold Price</source><target>黄金价格</target></trans-unit>
+            <trans-unit><source>Current Location</source><target>当前位置</target></trans-unit>
+            <trans-unit><source>Account Summary</source><target>帐户摘要首页</target></trans-unit>
+            <trans-unit><source>Summary</source><target>首页</target></trans-unit>
+            <trans-unit><source>Home</source><target>主页</target></trans-unit>
+            <trans-unit><source>Personal Profile</source><target>个人信息</target></trans-unit>
+            <trans-unit><source>View Profile</source><target>个人资料</target></trans-unit>
+            <trans-unit><source>Profile</source><target>个人资料</target></trans-unit>
+            <trans-unit><source>Change Password</source><target>登录密码修改</target></trans-unit>
+            <trans-unit><source>Change Trx Password</source><target>二级密码修改</target></trans-unit>
+            <trans-unit><source>Change Security Password</source><target>二级密码修改</target></trans-unit>
+            <trans-unit><source>Change Transaction Password</source><target>交易密码修改</target></trans-unit>
+            <trans-unit><source>Account Verification</source><target>身份资料审核</target></trans-unit>
+            <trans-unit><source>My Certificates</source><target>我的证书</target></trans-unit>
+            <trans-unit><source>Gold Trading</source><target>黄金走势</target></trans-unit>
+            <trans-unit><source>Business</source><target>业务管理</target></trans-unit>
+            <trans-unit><source>Place New Shareholder</source><target>安置股东列表</target></trans-unit>
+            <trans-unit><source>Place New Trader</source><target>安置会员列表</target></trans-unit>
+            <trans-unit><source>Reinvest CPS</source><target>追加投资</target></trans-unit>
+            <trans-unit><source>Pin Purchase</source><target>购买PIN</target></trans-unit>
+            <trans-unit><source>Transfer Pin</source><target>PIN转账</target></trans-unit>
+            <trans-unit><source>Pin Transaction Log</source><target>PIN明细</target></trans-unit>
+            <trans-unit><source>Finance</source><target>账务管理</target></trans-unit>
+            <trans-unit><source>Transfer E-Cash</source><target>现金转账</target></trans-unit>
+            <trans-unit><source>Transfer MT4 Credit</source><target>MT4 Credit 转账</target></trans-unit>
+            <trans-unit><source>E-Cash Transfer</source><target>现金转账</target></trans-unit>
+            <trans-unit><source>MT4 Credit Transfer</source><target>MT4 Credit 转账</target></trans-unit>
+            <trans-unit><source>e-Point Transfer</source><target>注册币转账</target></trans-unit>
+            <trans-unit><source>Gold Redemption</source><target>提取实物黄金</target></trans-unit>
+            <trans-unit><source>Gold Withdrawal</source><target>黄金兑现</target></trans-unit>
+            <trans-unit><source>E-Cash Withdrawal</source><target>现金兑现</target></trans-unit>
+            <trans-unit><source>MT4 Credit Withdrawal</source><target>MT4 Credit 兑现</target></trans-unit>
+            <trans-unit><source>e-Wallet Log</source><target>现金币明细</target></trans-unit>
+            <trans-unit><source>MT4 Credit Log</source><target>MT4 Credit 明细</target></trans-unit>
+            <trans-unit><source>e-Point Log</source><target>注册币明细</target></trans-unit>
+            <trans-unit><source>Bonus Details</source><target>结算明细</target></trans-unit>
+            <trans-unit><source>Bonus Commission</source><target>分红查询</target></trans-unit>
+            <trans-unit><source>Bonus Commission Listing</source><target>分红列表</target></trans-unit>
+            <trans-unit><source>Bonus Commission Detail</source><target>分红明细</target></trans-unit>
+            <trans-unit><source>Bulletin</source><target>公告留言</target></trans-unit>
+            <trans-unit><source>Enquiry</source><target>留言</target></trans-unit>
+            <trans-unit><source>Announcement</source><target>公告</target></trans-unit>
+            <trans-unit><source>Announcements</source><target>公告</target></trans-unit>
+            <trans-unit><source>Genealogy</source><target>团队架购图</target></trans-unit>
+            <trans-unit><source>Sponsor</source><target>团队发展谱图</target></trans-unit>
+            <trans-unit><source>Placement</source><target>组织系谱图</target></trans-unit>
+            <trans-unit><source>Global Auto Placement</source><target>国际公排谱图</target></trans-unit>
+            <trans-unit><source>Logout</source><target>登出</target></trans-unit>
+            <trans-unit><source>Upload Document</source><target>身份证件图片</target></trans-unit>
+            <trans-unit><source>Submit</source><target>提交</target></trans-unit>
+            <trans-unit><source>Cancel</source><target>取消</target></trans-unit>
+            <trans-unit><source>Documents</source><target>资料证件</target></trans-unit>
+            <trans-unit><source>Date Submitted</source><target>提交时间</target></trans-unit>
+            <trans-unit><source>Status</source><target>审核状态</target></trans-unit>
+            <trans-unit><source>Verified by</source><target>审核人</target></trans-unit>
+            <trans-unit><source>Date Verified</source><target>审核时间</target></trans-unit>
+            <trans-unit><source>Remarks</source><target>描述</target></trans-unit>
+            <trans-unit><source>Download</source><target>下载</target></trans-unit>
+            <trans-unit><source>Title</source><target>标题</target></trans-unit>
+            <trans-unit><source>Date</source><target>时间</target></trans-unit>
+            <trans-unit><source>close</source><target>关闭</target></trans-unit>
+            <trans-unit><source>In</source><target>进账</target></trans-unit>
+            <trans-unit><source>Out</source><target>出账</target></trans-unit>
+            <trans-unit><source>Balance</source><target>余额</target></trans-unit>
+            <trans-unit><source>Account Balance</source><target>账户余额</target></trans-unit>
+            <trans-unit><source>FX-CMISC Balance</source><target>FX-CMISC币账户余额</target></trans-unit>
+            <trans-unit><source>Passive Balance</source><target>静态币账户余额</target></trans-unit>
+            <trans-unit><source>Action</source><target>動作</target></trans-unit>
+            <trans-unit><source>E-Cash Balance</source><target>现金余额</target></trans-unit>
+            <trans-unit><source>e-Wallet Balance</source><target>现金币余额</target></trans-unit>
+            <trans-unit><source>e-Wallet Account</source><target>现金币账户</target></trans-unit>
+            <trans-unit><source>FX-CMISC Account</source><target>FX-CMISC币账户</target></trans-unit>
+            <trans-unit><source>Passive Account</source><target>静态币账户</target></trans-unit>
+            <trans-unit><source>MT4 Credit Balance</source><target>MT4 Credit 余额</target></trans-unit>
+            <trans-unit><source>e-Point Balance</source><target>注册币余额</target></trans-unit>
+            <trans-unit><source>e-Cash Withdraw Amount</source><target>兑现金额</target></trans-unit>
+            <trans-unit><source>MT4 Credit Withdraw Amount</source><target>MT4 Credit 兑现金额</target></trans-unit>
+            <trans-unit><source>Transaction Password</source><target>交易密码</target></trans-unit>
+            <trans-unit><source>Transaction Password is not valid</source><target>交易密码不正确</target></trans-unit>
+            <trans-unit><source>Minimum withdraw $500</source><target>兑现金额不能少过$500</target></trans-unit>
+            <trans-unit><source>withdrawal amount must be $500</source><target>兑现金额$500</target></trans-unit>
+            <trans-unit><source>Withdrawal Amount</source><target>兑现金额</target></trans-unit>
+            <trans-unit><source>redeem amount must be 100g</source><target>提取实物黄金规定100克</target></trans-unit>
+            <trans-unit><source>Gold Dividend Balance</source><target>现有黄金数量</target></trans-unit>
+            <trans-unit><source>Redeem gold success</source><target>提取实物黄金成功</target></trans-unit>
+            <trans-unit><source>In-sufficient E-Cash</source><target>金额数量不足</target></trans-unit>
+            <trans-unit><source>In-sufficient MT4 Credit</source><target>MT4 Credit 数量不足</target></trans-unit>
+            <trans-unit><source>In-sufficient e-Point</source><target>注册币数量不足</target></trans-unit>
+            <trans-unit><source>In-sufficient gold amount</source><target>黄金数量不足</target></trans-unit>
+            <trans-unit><source>In-sufficient Pin</source><target>Pin数量不足</target></trans-unit>
+            <trans-unit><source>Cannot transfer to own account</source><target>不可转Pin给自己户口</target></trans-unit>
+            <trans-unit><source>Gold Amount</source><target>黄金数量</target></trans-unit>
+            <trans-unit><source>Invalid trx password</source><target>请输入正确二级密码</target></trans-unit>
+            <trans-unit><source>Invalid Security password</source><target>请输入正确二级密码</target></trans-unit>
+            <trans-unit><source>System cannot get gold price, please try again</source><target>系统黄金价有误请再试一次</target></trans-unit>
+            <trans-unit><source>Withdraw gold success</source><target>黄金售卖成功</target></trans-unit>
+            <trans-unit><source>Message</source><target>内容</target></trans-unit>
+            <trans-unit><source>Reply Message</source><target>留言内容</target></trans-unit>
+            <trans-unit><source>Reply By</source><target>留言人</target></trans-unit>
+            <trans-unit><source>Reply Date</source><target>留言时间</target></trans-unit>
+            <trans-unit><source>View</source><target>检查</target></trans-unit>
+            <trans-unit><source>Shareholder Name</source><target>股东姓名</target></trans-unit>
+            <trans-unit><source>Trader Name</source><target>ID号</target></trans-unit>
+            <trans-unit><source>Transfer E-Cash Amount</source><target>转账现金币金额</target></trans-unit>
+            <trans-unit><source>Transfer MT4 Credit Amount</source><target>转账 MT4 Credit</target></trans-unit>
+            <trans-unit><source>Transfer E-Point Amount</source><target>转账注册币</target></trans-unit>
+            <trans-unit><source>Transfer success</source><target>成功转帐</target></trans-unit>
+            <trans-unit><source>In-sufficient E-Cash Amount</source><target>金额不足够</target></trans-unit>
+            <trans-unit><source>In-sufficient MT4 Credit Amount</source><target>MT4 Credit 不足够</target></trans-unit>
+            <trans-unit><source>You are not allow to transfer to own account.</source><target>您只能转账金额给别的户口</target></trans-unit>
+            <trans-unit><source>Account Details</source><target>财务概况</target></trans-unit>
+            <trans-unit><source>CPS</source><target>优先股</target></trans-unit>
+            <trans-unit><source>Dividend (g)</source><target>股息(克)</target></trans-unit>
+            <trans-unit><source>PIN</source><target>PIN</target></trans-unit>
+            <trans-unit><source>Pin</source><target>PIN</target></trans-unit>
+            <trans-unit><source>E-Cash</source><target>现金</target></trans-unit>
+            <trans-unit><source>MT4 Credit</source><target>MT4 Credit</target></trans-unit>
+            <trans-unit><source>e-Cash</source><target>现金</target></trans-unit>
+            <trans-unit><source>Trading Margin</source><target>交易限额</target></trans-unit>
+            <trans-unit><source>GAP</source><target>国际公排奖限度</target></trans-unit>
+            <trans-unit><source>Inactive Shareholders</source><target>未激活股东</target></trans-unit>
+            <trans-unit><source>Inactive Trader</source><target>未激活会员</target></trans-unit>
+            <trans-unit><source>Registered Time</source><target>注册时间</target></trans-unit>
+            <trans-unit><source>Activate</source><target>激活</target></trans-unit>
+            <trans-unit><source>Active</source><target>激活</target></trans-unit>
+            <trans-unit><source>Delete</source><target>删除</target></trans-unit>
+            <trans-unit><source>Login Now</source><target>现在登录</target></trans-unit>
+            <trans-unit><source>Login</source><target>登录</target></trans-unit>
+            <trans-unit><source>PIN Available</source><target>PIN余额</target></trans-unit>
+            <trans-unit><source>PIN Used to Activate</source><target>PIN用于激活</target></trans-unit>
+            <trans-unit><source>e-Point Available</source><target>注册币余额</target></trans-unit>
+            <trans-unit><source>e-Point Used to Activate</source><target>注册币用于激活</target></trans-unit>
+            <trans-unit><source>Activate Shareholder</source><target>激活股东</target></trans-unit>
+            <trans-unit><source>Activate Trader</source><target>激活会员</target></trans-unit>
+            <trans-unit><source>Old Login Password</source><target>旧登录密码</target></trans-unit>
+            <trans-unit><source>New Login Password</source><target>新登录密码</target></trans-unit>
+            <trans-unit><source>Re-enter Login Password</source><target>确认新登录密码</target></trans-unit>
+            <trans-unit><source>Old Transaction Password</source><target>旧交易密码</target></trans-unit>
+            <trans-unit><source>New Transaction Password</source><target>新交易密码</target></trans-unit>
+            <trans-unit><source>Re-enter Transaction Password</source><target>确认新交易密码</target></trans-unit>
+            <trans-unit><source>Activation Date</source><target>激活时间</target></trans-unit>
+            <trans-unit><source>Registered Date</source><target>注册时间</target></trans-unit>
+            <trans-unit><source>Position</source><target>安置</target></trans-unit>
+            <trans-unit><source>Place Shareholder History</source><target>安置股东记录表</target></trans-unit>
+            <trans-unit><source>Place Trader History</source><target>安置会员记录表</target></trans-unit>
+            <trans-unit><source>Placement ID</source><target>安置会员</target></trans-unit>
+            <trans-unit><source>Placement Name</source><target>安置ID号</target></trans-unit>
+            <trans-unit><source>Placement Date</source><target>安置时间</target></trans-unit>
+            <trans-unit><source>No. of PIN required</source><target>追加PIN</target></trans-unit>
+            <trans-unit><source>Quantity</source><target>购买数量</target></trans-unit>
+            <trans-unit><source>Required Amount</source><target>所需金额</target></trans-unit>
+            <trans-unit><source>Transfer PIN Quantity</source><target>转账PIN数量</target></trans-unit>
+            <trans-unit><source>CPS Price</source><target>股价</target></trans-unit>
+            <trans-unit><source>Type</source><target>类型</target></trans-unit>
+            <trans-unit><source>Purchase Date</source><target>购买时间</target></trans-unit>
+            <trans-unit><source>Action Date</source><target>使用时间</target></trans-unit>
+            <trans-unit><source>Sponsor Tree</source><target>团队发展谱图</target></trans-unit>
+            <trans-unit><source>Placement Tree</source><target>组织系谱图</target></trans-unit>
+            <trans-unit><source>You are not entitle for Global Auto Placement</source><target>您不合格国际公排奖</target></trans-unit>
+            <trans-unit><source>Please accept our Terms &amp; Conditions and Privacy Policy</source><target>请勾选'我已阅读同意条款和隐私政策'再行登录</target></trans-unit>
+            <trans-unit><source>Correct captcha is required</source><target>请输入正确的验证码</target></trans-unit>
+            <trans-unit><source>Sponsor ID cannot be blank</source><target>请输入推荐人帐号</target></trans-unit>
+            <trans-unit><source>Invalid Sponsor ID</source><target>请输入正确推荐人帐号</target></trans-unit>
+            <trans-unit><source>Please enter the same password as above</source><target>密码设置输入不一致,请检查</target></trans-unit>
+            <trans-unit><source>left</source><target>左</target></trans-unit>
+            <trans-unit><source>Left</source><target>左边</target></trans-unit>
+            <trans-unit><source>Middle</source><target>中间</target></trans-unit>
+            <trans-unit><source>right</source><target>右</target></trans-unit>
+            <trans-unit><source>Right</source><target>右边</target></trans-unit>
+            <trans-unit><source>Search</source><target>查寻</target></trans-unit>
+            <trans-unit><source>charge 5% handling fees when withdrawal requested</source><target>提现手续费用5%</target></trans-unit>
+            <trans-unit><source>every transfer action need to pay USD%1%.00 processing fees</source><target>现金转账需付%1%元美金手续费</target></trans-unit>
+            <trans-unit><source>Refer to MGIG management</source><target>向枫叶国际管理层询问</target></trans-unit>
+            <trans-unit><source>Our web server is in the midst of maintenance. We are sorry for any inconvenience caused.</source><target>我们的网络服务器在维护中。 我们很抱歉导致了您的不便。</target></trans-unit>
+            <trans-unit><source>Our web server is in the midst of maintenance until 14 December, 2011. We are sorry for any inconvenience caused.</source><target>我们的网络服务器在维护中，14号12月回复正常。 我们很抱歉导致了您的不便。</target></trans-unit>
+            <trans-unit><source>Gold Market Closed</source><target>黄金市场已经关闭</target></trans-unit>
+            <trans-unit><source>Withdrawal Status</source><target>兑现状态</target></trans-unit>
+            <trans-unit><source>Withdrawal</source><target>兑现</target></trans-unit>
+            <trans-unit><source>WITHDRAWAL</source><target>兑现</target></trans-unit>
+            <trans-unit><source>Amount</source><target>总数</target></trans-unit>
+            <trans-unit><source>DSB</source><target>业绩奖</target></trans-unit>
+            <trans-unit><source>DRB</source><target>推荐奖</target></trans-unit>
+            <trans-unit><source>GDB</source><target>见点奖</target></trans-unit>
+            <trans-unit><source>Total</source><target>总</target></trans-unit>
+            <trans-unit><source>Bonus Date</source><target>日期从</target></trans-unit>
+            <trans-unit><source>Bonus</source><target>积分</target></trans-unit>
+            <trans-unit><source>to</source><target>至</target></trans-unit>
+            <trans-unit><source>From Shareholder</source><target>会员编号</target></trans-unit>
+            <trans-unit><source>From Trader</source><target>会员编号</target></trans-unit>
+            <trans-unit><source>View Details</source><target>查看内容</target></trans-unit>
+            <trans-unit><source>Details</source><target>查看</target></trans-unit>
+            <trans-unit><source>Member Id</source><target>会员编号</target></trans-unit>
+            <trans-unit><source>e-Cash Wallet</source><target>现金币钱包余额</target></trans-unit>
+            <trans-unit><source>MT4 Credit Wallet</source><target>MT4 Credit 余额</target></trans-unit>
+            <trans-unit><source>Name</source><target>用户名</target></trans-unit>
+            <trans-unit><source>e-Point Wallet</source><target>注册币钱包</target></trans-unit>
+            <trans-unit><source>e-Point</source><target>注册币</target></trans-unit>
+            <trans-unit><source>Package Rank</source><target>等级</target></trans-unit>
+            <trans-unit><source>e-Share Balance</source><target>电子股余额</target></trans-unit>
+            <trans-unit><source>Last Login</source><target>上次登入</target></trans-unit>
+            <trans-unit><source>Maintenance Wallet</source><target>种子钱包</target></trans-unit>
+            <trans-unit><source>SYSTEM MAINTENANCE</source><target>管理费</target></trans-unit>
+            <trans-unit><source>System Maintenance</source><target>管理费</target></trans-unit>
+            <trans-unit><source>Maintenance Balance</source><target>积分回流余额</target></trans-unit>
+            <trans-unit><source>E-Share Trading Center</source><target>原始股交易所</target></trans-unit>
+            <trans-unit><source>Package Type</source><target>配套</target></trans-unit>
+            <trans-unit><source>Payment Type</source><target>付款方式</target></trans-unit>
+            <trans-unit><source>Available</source><target>可用的</target></trans-unit>
+            <trans-unit><source>Place Here</source><target>放置位置</target></trans-unit>
+            <trans-unit><source>Member activated successfully.</source><target>会员成功被激活.</target></trans-unit>
+            <trans-unit><source>Do you want to proceed to member placement?</source><target>您要继续组织系谱图吗?</target></trans-unit>
+            <trans-unit><source>Are you sure want to place this member into this position?</source><target>您确定此会员放置在此位置吗?</target></trans-unit>
+            <trans-unit><source>Transaction Type</source><target>交易款项</target></trans-unit>
+            <trans-unit><source>PROCESS CHARGES</source><target>手续收费</target></trans-unit>
+            <trans-unit><source>REGISTER</source><target>注册</target></trans-unit>
+            <trans-unit><source>TRANSFER TO</source><target>转账给</target></trans-unit>
+            <trans-unit><source>TRANSFER FROM</source><target>转账来自</target></trans-unit>
+            <trans-unit><source>COMPANY</source><target>公司贷款</target></trans-unit>
+            <trans-unit><source>No records found</source><target>没有匹配结果</target></trans-unit>
+            <trans-unit><source>PENDING</source><target>未批准</target></trans-unit>
+            <trans-unit><source>APPROVE</source><target>批准</target></trans-unit>
+            <trans-unit><source>Cash Flow Point Chart</source><target>现金流点图</target></trans-unit>
+            <trans-unit><source>This Month Sales</source><target>当月销售额</target></trans-unit>
+            <trans-unit><source>This Month CPS</source><target>当月销售额</target></trans-unit>
+            <trans-unit><source>Carry Forward CPS</source><target>上期转来</target></trans-unit>
+            <trans-unit><source>Commission Type</source><target>积分分类</target></trans-unit>
+            <trans-unit><source>Credit</source><target>进账</target></trans-unit>
+            <trans-unit><source>Debit</source><target>出账</target></trans-unit>
+            <trans-unit><source>Daily Max</source><target>单日封顶</target></trans-unit>
+            <trans-unit><source>User Name</source><target>ID号</target></trans-unit>
+            <trans-unit><source>Elementary School</source><target>初级配套</target></trans-unit>
+            <trans-unit><source>Middle School</source><target>中级配套</target></trans-unit>
+            <trans-unit><source>High School</source><target>高级配套</target></trans-unit>
+            <trans-unit><source>Cash Account</source><target>现金户口</target></trans-unit>
+            <trans-unit><source>Forex Account</source><target>外汇户口</target></trans-unit>
+            <trans-unit><source>Education Account</source><target>教育户口</target></trans-unit>
+            <trans-unit><source>Member Login</source><target>账号登入</target></trans-unit>
+            <trans-unit><source>Secure login</source><target>安全登录</target></trans-unit>
+            <trans-unit><source>Forgot username</source><target>忘记用户名</target></trans-unit>
+            <trans-unit><source>Forgot Username</source><target>忘记用户名</target></trans-unit>
+            <trans-unit><source>Username</source><target>用户名</target></trans-unit>
+            <trans-unit><source>password</source><target>密码</target></trans-unit>
+            <trans-unit><source>Warning</source><target>警告</target></trans-unit>
+            <trans-unit><source>Past Performance</source><target>过往表现</target></trans-unit>
+            <trans-unit><source>Trading spot forex, CFDs, options, and spread bets is risky and not suitable for everyone. All of these products (excluding Binary CFDs and Binary Spread Bets) are leveraged, and you can lose more than your initial deposit. Don’t trade more than you can afford to lose.</source><target>交易即期外汇，差价合约，期权和传播的赌注是有风险的，而不是每个人都适合。所有这些产品（不包括二进制差价合约（CFD）和二进制传播投注）具有杠杆作用，你可以失去超过您最初的保证金。不要交易超过你能承受的损失。</target></trans-unit>
+            <trans-unit><source>Past performance is not indicative of future results, as returns may vary according to market conditions. Trading in foreign exchange is speculative and may involve the loss of principal; therefore, funds placed under management should be risk capital funds that if lost will not significantly affect one's personal financial well being. No representation is being made that participating in a managed forex account or managed forex trading program will necessarily lead to profit. Investors may incur into a series of consecutive losses and substantial equity-draw-downs that can deplete their funds before the occurrence of any meaningful profit accumulation.</source><target>过往表现并不预示未来的结果，作为回报可能会根据市场情况而有所不同。外汇交易是投机性的，并可能涉及的本金损失，因此，基金管理下的风险资本基金，其损失将不会显着影响一个人的个人财务状况。没有表示一个外汇帐户管理或参与管理的外汇交易计划必然导致利润。投资者可能产生到一系列连续亏损和庞大的资本绘制起伏，可以耗尽他们的资金发生前的任何有意义的利润积累。</target></trans-unit>
+            <trans-unit><source>The Consortium</source><target>该联盟</target></trans-unit>
+            <trans-unit><source>Fund Management</source><target>分红奖</target></trans-unit>
+            <trans-unit><source>FUND MANAGEMENT</source><target>分红奖</target></trans-unit>
+            <trans-unit><source>MaximTrade Executor</source><target>SIXSTAR金融执行者</target></trans-unit>
+            <trans-unit><source>MaximTrade™ Executor</source><target>Maximtrade™ Executor</target></trans-unit>
+            <trans-unit><source>Executor</source><target>执行者</target></trans-unit>
+            <trans-unit><source>MaximTrade</source><target>SIXSTAR金融集团</target></trans-unit>
+            <trans-unit><source>Market News</source><target>市场动态</target></trans-unit>
+            <trans-unit><source>Contact Us</source><target>联系我们</target></trans-unit>
+            <trans-unit><source>Member Area</source><target>会员区</target></trans-unit>
+            <trans-unit><source>Consortium by SIXSTAR</source><target>SIXSTAR金融集团联盟</target></trans-unit>
+            <trans-unit><source>Consortium is the latest project undertaken by SIXSTAR to develop a cooperative for financial leverage with a pioneering inclusion of third party individuals.</source><target>联盟是最新的项目发展合作具有开拓包括第三方的个人财务杠杆由SIXSTAR金融集团的交易进行。</target></trans-unit>
+            <trans-unit><source>Our business model is simple and straight forward : to maximize leverage through a system of pooled resources coupled with trading technology and expertise. Our objective is clear : to profit in an exponential manner to benefit both company and clients.</source><target>我们的商业模式是简单而直接的：通过系统汇集资源，再加上交易技术和专业知识，最大程度地发挥。我们的目标很明确：以指数方式获利，以造福两国公司和客户。</target></trans-unit>
+            <trans-unit><source>Business Model</source><target>商业模式</target></trans-unit>
+            <trans-unit><source>Identifying Forte</source><target>确定长处</target></trans-unit>
+            <trans-unit><source>One of the most powerful tools successful people use on a regular basis is leverage. Leverage means utilizing the strengths of other people, processes and things, to do a lot more than what you would have otherwise done alone.</source><target>成功的人定期使用的最有力的工具之一是杠杆。杠杆是指利用的其他人员，流程和活动的优势，做更多的事情比什么，否则你会独自完成。</target></trans-unit>
+            <trans-unit><source>The famous Greek mathematician, Archimedes, said</source><target>著名的希腊数学家阿基米德说，</target></trans-unit>
+            <trans-unit><source>Give me a lever long enough and a place to stand, and I can move the world.</source><target>给我一个足够长的杠杆和一个支点，我可以移动的世界。</target></trans-unit>
+            <trans-unit><source>The financial market is an immensely rich environment for those well endorsed enough to take advantage of. While Professional traders and Portfolio managers do make an obscene amount of money, other traders just experience the tip of the iceberg of wealth.</source><target>金融市场是一个非常丰富的环境，以及批准足够的利用。专业交易员和投资组合经理做大笔的钱，其他交易者可以体验到财富的冰山的尖端。</target></trans-unit>
+            <trans-unit><source>For most traders, making money consistently is a difficult task. There are times where your judgment will be wrong or your timing will be off, resulting in loss of money. This is why the average individual is not actively trading, causing many opportunities to slip by and profit potential lost.</source><target>对于大多数交易者，赚钱始终是一项艰巨的任务。有很多次，你的判断是错误的或你的时间将被关闭，造成损失的钱。这是为什么个人平均不积极交易，导致很多机会溜走的潜在利润损失。</target></trans-unit>
+            <trans-unit><source>Being consistently successful at trading takes knowledge, expertise and capital. The winner-takes-all nature of trading the markets explains the income disparity within the industry.</source><target>一贯成功的交易需要知识，技能和资本。 “赢家通吃所有市场交易性质的解释行业内的收入差距。</target></trans-unit>
+            <trans-unit><source>The difference between simply trying to be rich and becoming fabulously rich traders lies in expertise, technology and systems.</source><target>无非是想成为富豪，成为非常富有的商人之间的区别在于专业知识，技术和系统。</target></trans-unit>
+            <trans-unit><source>What makes the difference</source><target>是什么让差异</target></trans-unit>
+            <trans-unit><source>Extraordinary profits are made by spotting an</source><target>非经常性损益是由点状出血的</target></trans-unit>
+            <trans-unit><source>incorrect</source><target>不正确</target></trans-unit>
+            <trans-unit><source>price and trading on it.</source><target>它的价格和交易。</target></trans-unit>
+            <trans-unit><source>But this is easier said than done and not everyone can get rich using this method. There is only so much money to be made in any one arbitrage opportunity. The first person who acts usually gets the biggest piece of the pie.</source><target>但是，这是说起来容易做起来难，并不是每个人都使用这种方法，可以得到丰富。只有这么多钱，可以在任何一个套利机会。第一人的行为通常得到了最大的一块蛋糕。</target></trans-unit>
+            <trans-unit><source>There's another reason why superior expertise is key: the "moving first" advantage.</source><target>还有另外一个原因，卓越的专业知识是关键：“移动第一”的优势。</target></trans-unit>
+            <trans-unit><source>Let's say for example some news hits the market and that traders interpret this news at different speeds.</source><target>比方说，例如一些消息冲击市场，贸易商解释这条消息以不同的速度。</target></trans-unit>
+            <trans-unit><source>One trader figures out what the news means in a second, while the other traders require five seconds. Still, there are some other traders that require an entire day or maybe even up to a month to figure things out.</source><target>一位交易商计算出什么消息指在第二，而其他的交易者需要五秒钟。不过，也有一些其他的交易者，需要一整天的时间，甚至长达一个月的去理出头绪来。</target></trans-unit>
+            <trans-unit><source>The early traders earn the extra money. They get into action early, at optimal prices, and reap most of the gains while the other, later, slower traders pile on.</source><target>早期的商人赚取额外的钱。他们进入行动早，最优的价格，以及获得的大部分涨幅，而其他的，以后，速度较慢的商人桩上。</target></trans-unit>
+            <trans-unit><source>Where SIXSTAR steps in</source><target>SIXSTAR金融步骤</target></trans-unit>
+            <trans-unit><source>Individual investors lack the skills, expertise and technology to consistently profit from his trading. Needless to say, a more effective way is to pool resources to consistently come out ahead in this ruthless pursuit for trading gains.</source><target>个人投资者缺乏技能，专业知识和技术，不断从他的交易中获利。不用说，更有效的方式是集中资源，始终出人头地，无情地追求交易收益。</target></trans-unit>
+            <trans-unit><source>This is why the considerable resources of SIXSTAR is combined with those of its clients/shareholders; enlarging the capital base of both to profit from the immerse opportunities the financial markets of the day has to offer – the currency market.</source><target>这就是为什么相当多的资源SIXSTAR金融相结合，与它的客户/股东，扩大资本基础都浸泡的一天的金融市场所提供的机遇 - 货币市场中获利。</target></trans-unit>
+            <trans-unit><source>Creating Value Added</source><target>创建增值</target></trans-unit>
+            <trans-unit><source>With the vast selection of platforms out there, the question here is 'why choose SIXSTAR?' An intelligent client always seeks to get his money's worth and such is the inspiration behind the 'Consortium Model'.</source><target>有广阔的选择平台，这里的问题是“为什么选择SIXSTAR金融吗？”智能客户端总是设法得到他的钱的价值和这样的“联盟模式”背后的灵感。</target></trans-unit>
+            <trans-unit><source>State-of-the art trading technology</source><target>国家先进的交易技术</target></trans-unit>
+            <trans-unit><source>Capital enhancement</source><target>资本增强</target></trans-unit>
+            <trans-unit><source>In line with resource pooling, SIXSTAR will match clients' capital up to a maximum bonus of a dollar to dollar capital enhancement. This also means that you could have up to twice your original capital working for you. The reason for this is simple. With the Maximtrade™ Executor, more profits are generated not only for you, but for the company as well. Moreover, we take the risk with you so you can have peace of mind that we will do our utmost to ensure positive results.</source><target>在资源池，SIXSTAR金融将符合客户的资本美元美元的资金提高到最高积分。这也意味着，你最多可以有两次为你工作，你的原始资本。这样做的原因是简单的。随着Maximtrade™遗嘱执行人，不仅对你产生更多的利润，但公司以及。此外，我们采取的风险与你，让你可以安心，我们会尽最大的努力，确保积极的结果。</target></trans-unit>
+            <trans-unit><source>Our confidence</source><target>我们的信心</target></trans-unit>
+            <trans-unit><source>All clients fund are individually and severally insured in the form of a parental guarantee provided by our parent company MY Group Inc. Specifically, every dollar invested by our client is backed by a corresponding share of the parent company. With this unique arrangement, investors have the comfort and knowledge that in the unlikely event of insolvency of SIXSTAR, they have in their hands the shares of a public listed company in which they can use to mitigate such risks.</source><target>所有的客户基金的个别和连带被保险人的父母由我们的母公司MY集团有限公司提供担保的具体形式，我们的客户每投入一美元的相应份额的母公司的支持。这种独特的安排，投资者有舒适和知识，在不太可能发生的破产SIXSTAR金融，他们必须在他们手中的股份的上市公司中，他们可以用它来减轻这种风险。</target></trans-unit>
+            <trans-unit><source>Sustained Profits</source><target>持续的利润</target></trans-unit>
+            <trans-unit><source>With the two key elements in place, leverage through resource pooling and an automated trading machine, SIXSTAR is able to achieve even greater revenue that what is has been generating stably over the decade. As our system produced profits for you, it is simultaneously producing profits off you because SIXSTAR achieves revenue through the number of lots traded. This creates a win-win situation through a fair system that yields profits for both parties.</source><target>随着地方的两个关键要素，充分利用通过资源池和自动贩卖机中，马克西姆交易，已产生稳定在过去的十年，能够实现更大的收入。由于我们的系统为你产生利润，同时产生掉你的利润，因为马克西姆交易实现收入通过交易手数。这将创建一个双赢的局面，产生的利润双方通过公平的制度。</target></trans-unit>
+            <trans-unit><source>Cashback Rewards</source><target>现金返还奖励</target></trans-unit>
+            <trans-unit><source>SIXSTAR gives credit where credit is due, often in the form of monetary rewards and incentives for our affiliates. The increase in revenue allows liquidity to be channeled towards marketing campaigns that will evidently generate more leads and business back to SIXSTAR. Our clients are happy, our affiliates are rewarded and company expands.</source><target>SIXSTAR金融交易者提供信贷信用，往往是由于货币奖励和激励措施，为我们的附属机构的形式。收入的增加使流动性渠道对营销活动，显然会产生更多的供应商和商业SIXSTAR金融。我们的客户很高兴，我们的分支机构给予奖励和公司扩大。</target></trans-unit>
+            <trans-unit><source>Listing Strategy</source><target>上市策略</target></trans-unit>
+            <trans-unit><source>As do all financial giants, the eventual goal is towards listing. With the capital raised, the positive growth on financial statements, the profitable trade history on our technology and the mustered support of all partners through the Consortium project, listing will be a reality. By the provision of value to our clients, we are in turn rewarded with profits which are further ploughed back into the business and eventually allows all stakeholders, partners and clients to prosper.</source><target>像所有的金融巨头，最终目标是向上市。募集资金，对财务报表的正增长，我们的技术和有利可图的贸易历史，纠集支持所有的合作伙伴通过联盟项目，上市将成为现实。通过为我们的客户提供的价值，我们是反过来的利润被进一步拨回的业务，并最终使所有利益相关者，客户和合作伙伴繁荣的回报。</target></trans-unit>
+            <trans-unit><source>Your wealth</source><target>你的财富</target></trans-unit>
+            <trans-unit><source>Wealth creation</source><target>创造财富</target></trans-unit>
+            <trans-unit><source>is a subject that intrigues most people and pervades their thoughts because whether we like it or not, money drives our lives and is a medium of exchange for basic needs to luxurious wants. Having interest in wealth is doing yourself a great service and finding SIXSTAR could possibly be the start of your financial career and freedom. The word create is defined as bringing something into existence. Wealth should be created and not competed for what already exists. Take a look around and you will notice the most successful business are build by creating value that is hard to compete with and was non existent in predecessors.</source><target>是一门所关心的大多数人并贯穿他们的想法，因为不管我们喜欢还是不喜欢，金钱推动着我们的生活，是一个中等交换的基本需求，以豪华的欲望。有兴趣的财富做自己出色的服务和寻找，SIXSTAR金融可能是您的金融职业生涯的开始和自由。 Word创建的定义是把存在的东西。的财富应建立和没有竞争已经存在。环顾四周，你会发现最成功的业务是建立在前人创造价值，是难分高下，是不存在的。</target></trans-unit>
+            <trans-unit><source>As a catalyst of chance, SIXSTAR has always adopted a forward looking attitude towards inducing change and creating more value for our clients, who form an integral part of our business model. With the Consortium project, clients are able to develop multiple income streams that stem from an all rounded trading experience.</source><target>作为催化剂的机会，马克西姆交易一直采取向前看的态度，向诱导变化和创造更多的价值为我们的客户，我们的业务模式的一个组成部分。与该财团项目，客户能够开发出多种收入流干的多元化贸易经验。</target></trans-unit>
+            <trans-unit><source>The time is now</source><target>最佳的实际就是现在</target></trans-unit>
+            <trans-unit><source>In this time of extreme volatility and global economic dislocations as seen by the mind-boggling public debts in both the Eurozone and U.S., the time to made superlative profits is now. After all, Baron Rothschild, an 18th century British nobleman and member of the Rothschild banking family, is credited with saying that</source><target>在极度波动及全球经济混乱所看到的令人难以置信的公共债务在欧元区和美国，时间作出最高级的利润是现在这个时候。毕竟，18世纪的英国贵族和罗斯柴尔德银行家族的成员，罗斯柴尔德男爵，计入说，</target></trans-unit>
+            <trans-unit><source>The time to buy is when there's blood in the streets.</source><target>最好买进的时间就是满街都是血的时候。</target></trans-unit>
+            <trans-unit><source>So wait no longer.</source><target>所以不再等待。</target></trans-unit>
+            <trans-unit><source>What SIXSTAR Offer</source><target>SIXSTAR金融要约</target></trans-unit>
+            <trans-unit><source>Your potential income at SIXSTAR is broadly defined in 3 main categories : Trade income, Entry package entitlements and Affiliate bonuses. This is a non exhaustive representation due to seasonal promotions and rewards through performance indicators.</source><target>你的潜在收入在Maxim交易的定义很广，在3个主要类别：贸易收入，进入包的权利和联盟的积分。这是一个非详尽表示，由于季节性促销和奖励，通过绩效指标。</target></trans-unit>
+            <trans-unit><source>Trade Income</source><target>贸易收支</target></trans-unit>
+            <trans-unit><source>With SIXSTAR, your basic income is derived from the profits generated by the trades that our fund management or algorithmic software executes. In addition, you have the full freedom to apply your own trading techniques and generate profits from trading as well.</source><target>SIXSTAR金融产生的利润的行业，我们的基金管理或执行算法的软件，你的基本收入来源。此外，你有充分的自由申请自己的交易技巧，以及从交易产生的利润。</target></trans-unit>
+            <trans-unit><source>Entry Package entitlements</source><target>初级产品包的权利</target></trans-unit>
+            <trans-unit><source>SIXSTAR Financial offers you at attractive array of entry packages to benefit from our proprietary trading system. The entitlements derived purely from becoming a member have a value that far outweighs the costs. This income is your entitlement as a member.</source><target>SIXSTAR金融金融为您提供有吸引力的阵列的入门套件受益于我们的专有交易系统。纯粹成为会员的权益有一个值，该值远远大于成本。这部分收入是你的权利的一员。</target></trans-unit>
+            <trans-unit><source>Affiliate Bonuses</source><target>加盟积分</target></trans-unit>
+            <trans-unit><source>Maximtrade™ Executor is our proprietary algorithmic trade technology, which is the outcome of SIXSTAR's research efforts over the last couple of years. Although the major experimenting, modification and enhancement has concluded, SIXSTAR is constantly monitoring performance for optimum trade productivity. We are proud to say that we will be offering Maximtrade™ Executor to our clients. A manumatic operating system that inputs SIXSTAR's trading expertise into your system while allowing you enough flexibility to make your own trading decisions.</source><target>Maximtrade™ Executor是我们的一种特有算法交易技术，这是的结果，Maxim的交易的研究工作在过去的几年里。虽然主要的试验，修改和提高的结论，马克西姆交易不断监控为最佳贸易生产率的性能。我们很自豪地说，我们将会为我们的客户提供Maximtrade™执行人。一个manumatic操作系统，输入Maxim的交易“交易进入你的系统的专业知识，同时让你有足够的灵活性，以使自己的交易决策。</target></trans-unit>
+            <trans-unit><source>Business synergy is a prerequisite to success and we recognise and reward all our affiliates and partners. Our business can be your business as we provide a platform for income generation.</source><target>业务协同效应是成功的先决条件，我们认识到，我们所有的分支机构和合作伙伴进行奖励。我们的业务可以是你的业务，为我们提供了一个平台，为创收。</target></trans-unit>
+            <trans-unit><source>SIXSTAR</source><target>SIXSTAR金融集团</target></trans-unit>
+            <trans-unit><source>have sought to structure an investment which addresses all the challenges which investors face today.</source><target>有试图构建的投资解决，投资者今天面临的所有挑战。</target></trans-unit>
+            <trans-unit><source>Fund Management Strategies</source><target>基金管理策略</target></trans-unit>
+            <trans-unit><source>SIXSTAR have sought to structure an investment which addresses all the challenges which investors face today. The SIXSTAR fund management provides investors with a low risk investment, competitive charges, aims to make absolute, positive returns irrespective of market conditions, offers immediate access to capital, safety of their investment, with added capital protection. The managed forex account is managed to very strict investment criteria, with risk management a priority, so that drawdowns and losses are minimised, and returns maximised.</source><target>SIXSTAR都力求构建一个投资解决，投资者今天面临的所有挑战。 Maxim公司的操盘手资金管理为投资者提供一个低风险的投资，有竞争力的收费，目的是使绝对的，积极的回报，不论市场条件，提供即时获得资本，其投资的安全，增加资本的保护。管理的外汇帐户管理非常严格的投资标准，风险管理的优先级，从而使提取和损失最小化，回报最大化。</target></trans-unit>
+            <trans-unit><source>are becoming an increasingly popular way of accessing the forex market for retail investors, who have neither the time nor expertise to trade their own account. An investment in a managed forex account provides investors with the ability to profit from the currency market, having their account managed by a professional money manager, whilst at the same time having complete access to their fund, 24 hours a day.</source><target>访问外汇市场的散户投资者，既没有时间，也没有专业知识，自己的帐户交易正在成为一个日益流行的方式。在管理外汇帐户的投资，为投资者提供从货币市场中获利的能力，管理他们的帐户，由专业的基金经理，而在同一时间有自己的基金，每天24小时的完全访问权限。</target></trans-unit>
+            <trans-unit><source>Alternative Strategies</source><target>替代战略</target></trans-unit>
+            <trans-unit><source>The universe of fund management can be complex and are often misunderstood. Among the most common is the employment of alternative investment strategies.</source><target>宇宙的基金管理可能很复杂，经常被误解。其中最常见的是就业的另类投资策略。</target></trans-unit>
+            <trans-unit><source>However, not all alternative strategies are the same and each has unique characteristics that may result in out-performance or under-performance in various market conditions.</source><target>然而，并非所有替代性的策略是相同的，每个人都有独特的特性，可能会导致性能或在不同的市场条件下的性能。</target></trans-unit>
+            <trans-unit><source>SIXSTAR employs a combination of strategies that take advantage of the price movements of related and correlated underlying to maximize profit potentials. To enhance profitability, we develop and incorporate highly complex high-speed frequency algorithmic trading computer modeling in our daily trading  modeling.</source><target>SIXSTAR使用相结合的战略，利用相关的价格变动和相关的基本利润最大化的潜力。为了提高盈利能力，我们开发和采用高度复杂的高速频率算法交易的计算机模拟在我们的日常交易模型。</target></trans-unit>
+            <trans-unit><source>Alternative Strategies Architecture</source><target>替代战略架构</target></trans-unit>
+            <trans-unit><source>Tactical Trading</source><target>战术贸易</target></trans-unit>
+            <trans-unit><source>Tactical trading strategies generally speculate on the direction of price action of commodities, equities , bonds precious metals and currencies.</source><target>战术交易策略，一般推测的商品，股票，债券，贵金属和货币的价格行动的方向。</target></trans-unit>
+            <trans-unit><source>Top-down approach focusing on global macroeconomic shifts in which outright and derivative positions are taken.</source><target>自顶向下的方法，重点对全球宏观经济的变化中，彻底的和衍生的位置。</target></trans-unit>
+            <trans-unit><source>Often managers will combine long and/or short positions with each strategy to maximize returns.</source><target>通常情况下，管理人员将结合长期和/或短仓，每个策略，以最大限度地回报。</target></trans-unit>
+            <trans-unit><source>Among the myriad of financial instruments that SIXSTAR trades in are the</source><target>在错综复杂的金融工具时，SIXSTAR行业的</target></trans-unit>
+            <trans-unit><source>These two markets are some of most liquid and volatile in recent years owing to the global financial crisis and it is for this very reason why these instruments are chosen. Using our in-house expertise, trading models are developed and vigorously tested and incorporated into our tactical trading strategies.</source><target>这两个市场是最具流动性和波动，近年来，由于全球金融危机的一些，这是因为这个原因，为什么这些工具的选择。使用我们的内部专业知识，交易模式的开发和严格测试，并纳入到我们的战术交易策略。</target></trans-unit>
+            <trans-unit><source>global currency markets</source><target>全球货币市场</target></trans-unit>
+            <trans-unit><source>cash market for gold.</source><target>黄金现货市场。</target></trans-unit>
+            <trans-unit><source>and</source><target>与</target></trans-unit>
+            <trans-unit><source>Managed Trading</source><target>管理贸易</target></trans-unit>
+            <trans-unit><source>Implementing Alternatives</source><target>寻找替代品</target></trans-unit>
+            <trans-unit><source>By investing in SIXSTAR alternative strategies, investors may achieve additional risk mitigation and potential return enhancement in today’s volatile markets.</source><target>通过SIXSTAR替代战略投资，投资者可能会达到减轻额外的风险和潜在回报增强在当今动荡的市场。</target></trans-unit>
+            <trans-unit><source>At SIXSTAR , we believe an alternative investments’ portfolio should provide exposure to both hedged strategies and private investments as a compliment to a traditional long-only portfolio like equities.</source><target>我们在SIXSTAR，相信另类投资的投资组合应提供接触到对冲战略投资和私人投资，​​作为一个传统的长只股票组合像一种恭维。</target></trans-unit>
+            <trans-unit><source>Fund Structure</source><target>基金结构</target></trans-unit>
+            <trans-unit><source>The future is Algo-trading : Conceptual Background</source><target>未来是算法交易的概念背景</target></trans-unit>
+            <trans-unit><source>Research Journey</source><target>研究之旅</target></trans-unit>
+            <trans-unit><source>TECHNOLOGY REVOLUTION</source><target>技术革命</target></trans-unit>
+            <trans-unit><source>Majority of the people are unaware of the on going Automated Trading revolution. Yet, they are well familiar with other revolutions that have radically changed the world within the past decade: The Internet, Online Trading, Email, Blogs, Google, YouTube, Facebook, Twitter, Skype and the list goes on.</source><target>大部分的人是不知道的，持续的自动交易革命。然而，与其他革命，从根本上改变了世界，在过去的十年中，他们是非常熟悉：互联网，网上交易，电子邮件，博客，谷歌，YouTube和Facebook，Twitter的，Skype和列表中的推移。</target></trans-unit>
+            <trans-unit><source>The advent of these technological advances have completely changed how we lead our lives. Could you imagine going about your daily activities without having access to your email, having to do research without search engines or having to execute every trade manually over the phone?</source><target>的出现，这些技术的进步，已经完全改变了我们的领导我们的生活。你能想象去了解你的日常活动，而无需访问您的电子邮件，有没有搜索引擎做研究，或通过电话手动执行每一个行业？</target></trans-unit>
+            <trans-unit><source>Yet the investing industry has changed little outside of the use of online brokers. Since the Internet is a powerful empowering technology, tools and information that help people analyze what to buy or sell is widely available and highly accessible. Besides this, everything else pretty much remains the same. Technology has not been utilised to its full potential when it comes to the aspect of trading.</source><target>然而，投资的行业变化不大外，使用网上经纪。由于互联网是一个功能强大的授权技术，工具和信息，帮助人们分析买入或卖出的广泛使用，非常方便。除了这个，其他的一切几乎保持不变。技术还没有被利用来充分发挥其潜力，当它涉及到交易方面。</target></trans-unit>
+            <trans-unit><source>The Automated Trading revolution will change all that. As people become more informed about the benefits of Automated Trading, they will begin utilizing these systems to gradually replace old investment strategies. Automated Trading enables higher returns with lesser risks. And, it puts them in control of their money.</source><target>自动交易革命将改变这一切。随着人们更多地了解自动交易的好处，他们将开始利用这些系统，以逐步取代旧的投资策略。自动交易能够实现更高的回报较少的风险。而且，它使他们在控制自己的钱。</target></trans-unit>
+            <trans-unit><source>The most important benefit of Automated Trading systems is the value it creates for users. The use of technical analysis to trade using a defined system creates consistency, negates human emotion, and recognises opportunity for superior returns.</source><target>自动交易系统的最重要的好处是它为用户创造的价值。使用技术分析交易使用已定义的系统创建一致性，否定人类的情感，认识的机会，丰厚的回报。</target></trans-unit>
+            <trans-unit><source>IMPACT OF HIGH SPEED INTERNET</source><target>影响高速互联网</target></trans-unit>
+            <trans-unit><source>It is arguable that the realisation of Automated Trading is driven largely by Artificial Intelligence advancements of the last decade. And that’s probably true. Besides this powerful force, there is another trend that has supported Automated Trading in a big way: the dawn of high speed Internet.</source><target>这是值得商榷的，很大程度上是由人工智能的进步在过去十年中实现自动交易。这可能是真实的。除了这种强大的力量，是另一种趋势，支持自动交易的一大途径：曙光高速互联网。</target></trans-unit>
+            <trans-unit><source>Why is the internet integral to Automated Trading? It allows the masses to benefit from it, practically anyone with access to a computer and an internet connection. Currently Automated Trading systems are being used mainly by hedge fund managers and these systems are capable of producing outstanding returns. However, the underlying issue is that most hedge funds are restricted to accredited investors. In other words, the average investor are excluded from participation.</source><target>为什么是互联网不可或缺的自动交易吗？它可以让群众从中受益，实际上任何人只要有一台电脑和互联网连接的访问。自动交易系统，主要用于对冲基金经理，这些系统能够产生可观的回报。然而，根本的问题是，大多数对冲基金仅限于经认可的投资者。换言之，平均投资者被排除在外。</target></trans-unit>
+            <trans-unit><source>High speed internet overcomes this problem because it allows Automated Trading systems to connect directly to an individual’s trading account. Even if they only have a few thousand dollars in their account, they can still reap the benefits of advanced artificial intelligence Automated Trading systems since there is no minimum net worth or income requirements to open a regular trading account.</source><target>高速互联网克服了这个问题，因为它允许自动交易系统直接连接到一个单独的交易账户。即使在他们的帐户，他们只有几千元，他们仍然可以从中受益的先进的人工智能自动交易系统，因为没有最低净资产或收入要求打开常规交易帐户。</target></trans-unit>
+            <trans-unit><source>Automated Trading systems and the internet will change the financial future of individuals throughout the world. These systems will revolutionize and redefine the foundations of the investment industry and SIXSTAR is at the forefront of this phenomenon.</source><target>自动交易系统和互联网将改变未来的财务状况，世界各地的人们。这些系统将彻底改变和重新定义的基础产业的投资和Maxim的交易是在这种现象的最前沿。</target></trans-unit>
+            <trans-unit><source>WHAT DOES THIS MEAN TO YOU, THE INDIVIDUAL INVESTORS?</source><target>个人投资者对你来说是什么意思？</target></trans-unit>
+            <trans-unit><source>It means that the shift to using Automated Trading can happen faster than ever before. It is easy for people to be better informed about how it works and why these systems can help in their goal towards achieving financial freedom. And, perhaps most compelling, as computers become ever faster and technology improves, the returns from these systems will further enhance. That translates to higher returns and lower risks.</source><target>这意味着可以使用自动交易比以往任何时候都更快的速度发生。这是很容易为人们更好地了解它是如何工作的，以及为什么这些系统可以帮助实现财务上的自由，他们的目标。而且，也许最引人注目的，如电脑越来越快，技术的改进，的回报这些系统将进一步提高。这转化为更高的回报和降低风险。</target></trans-unit>
+            <trans-unit><source>One criticism of Automated Trading is that once too many people use it, it will cease to work. Contrary to such a speculation, the opposite is true. In actual fact, as more Automated Trading systems are used and more assets are traded, it is more likely to detect trends and of course, make money. Presently, majority of trading decisions are still made by human traders. As Automated Trading systems grow, more executions of decisions will be determined by computers instead. These systems are much simpler and have much less variation in their decisions therefore making it even easier to identify market trends and patterns.</source><target>自动交易的批评之一是，一旦太多人使用它，它就会停止工作。相反，这样的猜测，事实正好相反。事实上，更多的自动交易系统的使用和更多的资产交易，它是更可能检测到的趋势，当然，赚钱。目前，大多数的交易决策仍然是由人贩子。自动交易系统的发展，更多的执行的决定将取决于由计算机代替。这些系统更加简单和有变化要小得多，因此，他们的决定使其更容易识别市场趋势和模式。</target></trans-unit>
+            <trans-unit><source>Another result of such automated systems is an increase in volatility. Most Automated Trading systems detect and ride trends. As more computers ride the same trends faster, the compounding effect will cause the movement to become bigger. Bigger trends then attract more Automated Trading systems and people, and a virtuous circle is created. Automated Trading systems will perform better as these trends become bigger and easier to identify and take advantage of.</source><target>这样的自动化系统的另一个结果是增加的波动性。自动交易系统的检测和骑趋势。随着越来越多的电脑更快地骑同样的趋势，复利效应将导致运动做大。更大的趋势，然后吸引更多的自动交易系统和人民，并创造了一个良性循环。自动交易系统有更好的表现，因为这些趋势变得更大，更容易识别和利用。</target></trans-unit>
+            <trans-unit><source>So, it is evident that Automated Trading will revolutionize how people trade the markets. A big change like this is not happening for the first time. The internet itself changed the way that people interact. It has made it possible for anyone regardless of capital to trade in the FOREX market. This gave rise to the retail trading market which is one of the most profitable businesses in the world</source><target>所以，显而易见的是，自动交易将彻底改变人们的市场交易。像这样的一个大的变化不是第一次发生。互联网本身改变了人们互动的方式。它使人们有可能对任何人，无论资本在外汇市场上进行交易。这引起了零售交易市场，这是在世界上最赚钱的企业之一</target></trans-unit>
+            <trans-unit><source>THE FOREX MARKET</source><target>外汇市场</target></trans-unit>
+            <trans-unit><source>More than $1.9 trillion U.S dollar is traded daily in the Forex market and it is with no doubt the largest financial market in the world. It is composed of approximately 4,500 international world banks and retail brokers and exponential growth has been recorded over the past few years.</source><target>超过$19000亿美元每天在外汇市场上进行交易，毫无疑问，这是在世界上最大的金融市场。它是由约4500名国际全球银行和零售经纪和已被记录在过去几年呈指数级增长。</target></trans-unit>
+            <trans-unit><source>People buy and sell different currencies, in an attempt to make money as the relative values fluctuate. Forex is popular as it allows traders very fast executions, has tight spreads and provides high leverage. Yet human traders are not the only ones who can benefit from these advantages.</source><target>人们买和卖不同的货币，赚钱的相对价值波动。外汇交易是受欢迎，因为它允许交易者非常快速的执行，有严格的利差，并提供高杠杆。然而，人类是不是唯一的交易商谁可以受益于这些优势。</target></trans-unit>
+            <trans-unit><source>With the Automated Trading Systems, a given currency pair can be traded and its relative prices monitored in real time. The systems can make a buying or selling decision in a fraction of a second, and send executions for orders with ruthless efficiency and accuracy. Considering the immensely liquid and highly volatile nature of the currency market, an Automated Trading System is an apt solution.</source><target>的自动交易系统，可以在给定的货币对交易的实时监控其相对价格。该系统可以在几分之一秒的一个买进或卖出的决定，无情的效率和准确性发送订单执行。考虑到货币市场的极大的液体，高挥发性的性质，自动交易系统是一个恰当的解决方案。</target></trans-unit>
+            <trans-unit><source>Automated Trading is not a silver bullet for investing, and there are still risks associated with it. However, it will continue to improve with technology and help millions of people achieve financial independence. We recognise the fact that Automated Trading Systems that trade the currencies market will play a huge role in this revolution.</source><target>自动交易投资的灵丹妙药，而且还有相关的风险。然而，将继续提高技术，并帮助数百万人实现财务独立。我们认识到，事实上，货币市场交易，自动交易系统将在这场革命中发挥了巨大的作用。</target></trans-unit>
+            <trans-unit><source>ARTIFICIAL INTELLIGENCE</source><target>人工智能技术</target></trans-unit>
+            <trans-unit><source>We are excited about the prospects of Automated Trading Systems. These computer programs automatically buy and sell currencies , stocks, options and other liquid assets, akin to a human trader. The big improvement however, is that positive returns are consistently generate with the absence of emotional reactions present in human traders.</source><target>我们很高兴的自动交易系统的发展前景。这些计算机程序自动购买和出售货币，股票，期权及其他流动资产，类似于一个人的交易者。很大的改善，是持续产生正回报的情况下的情绪反应，目前在人贩子。</target></trans-unit>
+            <trans-unit><source>Many different strategies are being explored for these Automated Trading Systems . Usually, a trading program would be encoded, but we at Hexagon wanted to take it up a notch. What if we could develop Artificial Intelligence that could generate its own trading systems? Would it be possible to create systems that work better than those designed by humans?</source><target>正在探索许多不同的策略，这些自动交易系统。通常情况下，交易程序进行编码，但我们在六角希望把它上升了一个档次。如果我们能够开发人工智能，可能会产生自己的交易系统？它可以创建系统更好地工作比人类设计的吗？</target></trans-unit>
+            <trans-unit><source>Our answer here is yes. Artificial Intelligence empowers the computer to generate its own trading strategies. These strategies have the potential to provide better returns with less risk as compared to human traders. Many people have doubts in such a possibility.</source><target>在这里，我们的答案是肯定的。人工智能授权的计算机来生成自己的交易策略。这些策略有可能以更低的风险相比，人贩子提供更好的回报。很多人都怀疑这种可能性。</target></trans-unit>
+            <trans-unit><source>The age old problem for human traders lies in the natural possession of emotions. As humans, virtually every trader is at the mercy of their emotions regardless of how much they try, or think they can suppress it . When you win, you are elated. When you lose, you are dejected. Many people enjoy this thrill. This common ailment is known as gambling. People do it at the casino, and they do it when they trade. It requires a very special mindset to totally eradicate emotions during trading. Seldom does any trader manage to master this skill. Even if they do, it could be at the hands of very highly priced mistake or what we call, learning process.</source><target>老问题在于对人贩子的自然拥有的情感。作为人，几乎每一个交易者是在怜悯自己的情绪，不管多少他们试图，或认为他们可以抑制它。当你赢了，你心花怒放。当你输了，你黯然神伤。许多人享受这种快感。这种常见的疾病被称为赌博。做到这一点的人在赌场，他们这样做时，他们交易。它需要一个非常特殊的心态，彻底根除在交易情绪。很少有商人能掌握这个技能。即使他们这样做，它可以在手中的价格非常高的错误就是我们所说的，学习过程。</target></trans-unit>
+            <trans-unit><source>The reason behind the reduced risk is because Artificial Intelligence generated automated trading systems can measure risk better than any human ever could. Computers are, literally, great at computational work, and that includes statistical analysis commonly used to measure trading strategies. We have found it possible for an integrated risk management system that leverages off the computer’s number crunching ability to develop an automated trading system that deals less risk.</source><target>降低了风险背后的原因是因为人工智能自动交易系统可以测量风险比任何人都做不到的。从字面上看，计算机是巨大的计算工作，和通常用来衡量交易策略，其中包括统计分析。我们发现有可能为一体的综合风险管理系统，充分利用计算机的数字运算能力开发的自动交易系统，交易风险较小。</target></trans-unit>
+            <trans-unit><source>Another major advantage to using an Artificial Intelligence approach to developing automated trading systems is that computers are getting faster all the time. What is brand new today is probably replaced 6 months down the road. As computing power continue to improve, so do the results of Artificial Intelligence systems. That means given all things constant and we do absolutely nothing, the results of an Artificial Intelligence system will improve purely based on hardware advancement.</source><target>使用人工智能的方法来开发自动交易系统的另一个主要优势是，电脑越来越快的时间。什么是全新的，今天可能是更换了6个月的道路上。随着计算能力的不断提高，这样做的结果，人工智能系统。这意味着所有的东西不变，我们什么都不做，结果的人工智能系统将提高纯粹基于硬件的进步。</target></trans-unit>
+            <trans-unit><source>There is already a paradigm shift on a global scale as Hedge funds and global trading banks are developing proprietary systems that are singularly responsible for the massive jump in trading volume across all asset classes.</source><target>已经有一个模式的转变在全球范围内，对冲基金和全球交易银行正在开发的专有系统是奇负责在所有资产类别的交易量巨大的飞跃。</target></trans-unit>
+            <trans-unit><source>Hexagon has undertaken a similar action in this massive revolution for automated trading systems at the retail level so that all our clients can gain this ‘unfair advantage’ when we pit man versus machine.</source><target>六角已经采取了类似的行动在这场声势浩大的革命，在零售水平，使我们的客户能够获得这种“不公平优势”时，我们坑的人与机器的自动交易系统。</target></trans-unit>
+            <trans-unit><source>Your Gateway to Prosperity</source><target>你的网关繁荣</target></trans-unit>
+            <trans-unit><source>MAN VERSUS MACHINE : THE OUTCOME IS OBVIOUS</source><target>人与机器的结果是显而易见的</target></trans-unit>
+            <trans-unit><source>is a server-hosted trading software solution complete with a web interface. It’s core proficiencies lie in its extremely powerful processing capability of running hundreds of automated trading strategies simultaneously and an incredible execution speed of up to 4000 orders per second.</source><target>是服务器托管交易软件完整的解决方案与一个网络接口。它的核心精通说谎的自动化交易策略同时运行数百个极为强大的处理能力和令人难以置信的执行速度可达每秒4000个订单。</target></trans-unit>
+            <trans-unit><source>runs strategies written in native Java minimizing latencies issues and enable IT driven trade strategy creation. Ergonomic user interface is the core advantage to system usability. Navigation is designed to be simple and intuitive to enable easy management of live portfolio, money, assets , and order history.</source><target>运行原生的Java最大限度地减少延迟的问题写在策略，使IT驱动的贸易战略创造。符合人体工程学的用户界面的核心优势是系统的可用性。导航的设计是简单，直观，方便管理，现场组合，资金，资产，和订单历史记录。</target></trans-unit>
+            <trans-unit><source>allows the flexibility of choice to be either hosted on ASP or deployed in user’s environment. With the deployment of our algorithmic trading system, you are no longer at the mercy of unstable internet connection or contend with hardware failures on your end. Everything is taken care of so you have peace of mind.</source><target>被托管在ASP或部署在用户的环境，允许更灵活的选择。通过部署我们的算法交易系统，你不再是在不稳定的互联网连接的怜悯或硬件故障，您的最终相抗衡。一切都让你安心照顾。</target></trans-unit>
+            <trans-unit><source>Trade strategies are included with deployment.</source><target>贸易战略的部署。</target></trans-unit>
+            <trans-unit><source>develops these algorithmic trading strategies based on our proprietary requirements and includes those with the system deployed. This can be easily converted into automated Forex trading software and strategies.</source><target>根据我们的一种特有要求这些算法交易策略，其中包括系统部署。这可以很容易地转换成自动外汇交易软件和策略。</target></trans-unit>
+            <trans-unit><source>Our distributed design is built for high-performance strategies, with the ability to manage virtually unlimited numbers of order slices across multiple asset classes in multiple venues. Each element of an algorithmic trading strategy can be analysed separately and in combination over market and trading history. Our expertise has allowed</source><target>我们的分布式的设计是专为高性能的战略，管理跨多个资产类别在多个场合几乎无限数量的顺序片的能力。算法交易策略的每一个元素可以单独进行分析，并结合对市场和交易历史记录。我们的专业知识</target></trans-unit>
+            <trans-unit><source>to develop ground-breaking transaction cost analysis techniques.</source><target>开发突破性的交易成本分析技术。</target></trans-unit>
+            <trans-unit><source>is not designed to be directional, but instead working the bid/offer spread to its maximum advantage while nevertheless moving price up or down like a game of Chutes and Ladders. The Volume Weighted Average Price (VWAP) is one of the more simplistic tools to follow that taps into some of the order-flow peculiarities of the algo-trading phenomenon.</source><target>是不是设计为定向，而是工作的买入/卖出差价最大的优势，但移动价格上涨或下跌，就像一场槽和梯子。成交量加权平均价（VWAP）是一个更简单的工具，水龙头到一些订单流特点的算法交易的现象。</target></trans-unit>
+            <trans-unit><source>MAXIMTRADE STRATEGIES</source><target>MAXIMTRADE 策略</target></trans-unit>
+            <trans-unit><source>A very brief glimpse into our formulation, the VWAP, is calculated by dividing the sum of the dollars traded (price multiplied by share volume) for every transaction by the total shares traded for the day.</source><target>我们的配方，VWAP，一个非常短暂的一瞥计算的总和除以交易的美元（价格乘以所占体积）的每一笔交易，交易的总股数的一天。</target></trans-unit>
+            <trans-unit><source>Calculation Image</source><target>计算图像</target></trans-unit>
+            <trans-unit><source>Where:</source><target>在哪里：</target></trans-unit>
+            <trans-unit><source>Pj = the price of trade j</source><target>Pj = the price of trade j</target></trans-unit>
+            <trans-unit><source>Qj = the quantity of trade j</source><target>Qj = the quantity of trade j</target></trans-unit>
+            <trans-unit><source>j = each trade taking place over the time period</source><target>j = each trade taking place over the time period</target></trans-unit>
+            <trans-unit><source>IMAGE</source><target>图像</target></trans-unit>
+            <trans-unit><source>The center green line is the Volume Weighted Average Price (VWAP) with one and two standard deviations (STD) marked. The blue and red arrows are suggested entry points, buying and selling to take advantage of the price discovery. The 100-period simple moving average (pink line) can be used to aid with trend direction.</source><target>该中心的绿线是一个和两个标准差（STD）标记的成交量加权平均价（VWAP）。蓝色和红色箭头建议的入口点，购买和销售优势的价格发现。 100期简单移动平均线（粉红色）可以用来帮助与趋势方向。</target></trans-unit>
+            <trans-unit><source>When the price bar closes through the VWAP, then a move to the second STD should be anticipated. Using the VWAP as a median line similar in nature to a pivot, that once penetrated and confirmed by a close, indicates that further advancement is likely. On subsequent bars, if there is no further advance, then a pullback to the first STD can be expected — again, using the close as a confirmation with a stop and reverse strategy either on a failure below the VWAP or at the top/bottom of the range and the second STD.</source><target>当价格吧关闭通过交易量加权平均价格，然后移动到第二STD应该可以预知的。作为中线性质类似的一个支点，一旦渗透，密切证实，使用VWAP表示，进一步的进步是可能的。在随后的酒吧中，如果没有进一步提前，然后回调至第一性病可以预期 - 再次，使用close停止和反向策略作为确认之VWAP下面的故障或在顶部/底部的范围和所述第二性病。</target></trans-unit>
+            <trans-unit><source>MAXIMTRADE COMPETITIVE ADVANTAGES</source><target>MAXIMTRADE的竞争优势</target></trans-unit>
+            <trans-unit><source>Optimised trading - Long term approach with short term gains</source><target>优化的交易 - 长期与短期收益的方法</target></trans-unit>
+            <trans-unit><source>Traders tend to fall largely into the category known as momentum strategists. The characteristics of these traders are they tend to look for breakouts, buying high in the hopes of selling even higher. More often that not, they get trapped by the whipsaw of the algorithm and end upside-down on their positions. Conversely, this does not happen in algo-trading performed by the</source><target>交易商趋于下降主要是被称为势头战略家的范畴。这些商人的特点是，他们往往寻找突破，购买高卖得更高的希望。更多的时候，他们被困洗盘的算法和上下颠倒自己的立场。相反，这不会发生在所执行的算法的交易</target></trans-unit>
+            <trans-unit><source>programmed to detect long-term trader behavior and establish the degree of power of the buying pressure. The time horizon of such a strategy looks at the market in a holistic way and targets the opportunity for a larger advance. The primary concern is whether the long-term trader will be aggressive and buy as price rises or be passive and try to buy low and create a basing action? This is when child orders come into play. By monitoring child orders,</source><target>编程来检测中长线交易者行为，建立权力的买盘压力的程度。这种策略的时间跨度着眼于市场的一个整体的方式，一个更大的前进目标的机会。主要的问题是中长线交易者是否会是积极的，购买价格上涨是被动的，尽量买低，并创建一个基于行动？这是当子订单开始发挥作用。通过监测子订单，</target></trans-unit>
+            <trans-unit><source>can sniff out long-term trading action and effectively front-run orders, believing that if there was a buyer at x, then they will pay x-plus to fill additional positions.</source><target>可以嗅出了长期的贸易行动，并有效地运行前的订单，相信，如果有一个买家在x，那么他们将支付X-PLUS，以填补额外的位置。</target></trans-unit>
+            <trans-unit><source>The Unfair Advantage</source><target>不公平的优势</target></trans-unit>
+            <trans-unit><source>Time-Weighted Average Price (TWAP) has always been in the domain of the institutional trader. Essentially it is akin to a dollar-averaging process. Institutions may wish to achieve a particular percentage or market share where time becomes an added factor for consideration rather than purely volume. For example, they may buy a line of stock whereby they remain constant at, say, 10% of the volume transacted. An alternative would be to transact a certain quantity split into x units every minute over a 15-minute time period.</source><target>时间加权平均的价格（TWAP）一直在域中的机构交易。本质上，它是类似于一美元平均过程。机构可能希望实现一个特定的百分比或市场份额的时间成为一个增值的考虑因素，而不是单纯的量。例如，他们可能会买的股票，使他们保持不变，说，10％的成交量。另一种方法是x单位分割成每分钟超过15分钟的时间内办理一定的数量。</target></trans-unit>
+            <trans-unit><source>This creates the impression that they will not upset the natural order flow and balance of the market. The reality is that an institution, despite being price conscious, needs to reflect the average of all their buys vs. sells rather than the actual price. This is complicated additionally in that the objective of some funds is to invest and monitor performance on a relative basis. This might be performance measured against their peers or some benchmark, whereas other funds are more about actual performance.</source><target>这给人的印象，他们不会破坏自然的市场流通秩序和平衡。现实情况是，一个机构，尽管是价格意识，需要其所有的购买与销售，而不是实际的价格，以反映平均。另外这是复杂的，在一些基金的目标是投资和监视性能在相对的基础。这可能是衡量他们的同龄人或一些基准性能，而其他基金的实际表现。</target></trans-unit>
+            <trans-unit><source>Unlike these large players, retail traders are not blessed with inordinate amounts of money and simply seek fair value calculation identified by volume. However, pure volume probably is irrelevant, as it is the pattern created that becomes key. After all, how many times have traders intoned how volume is weak yet price continues to grind higher?</source><target>与这些大玩家，分销商不拥有得天独厚的过多的钱，单纯追求量确定的公允价值计算。然而，纯量可能是无关紧要的，因为它是产生的图案，就成为关键。毕竟，有多少次贸易商吟诵量是薄弱的，但价格继续走高？</target></trans-unit>
+            <trans-unit><source>can correct this by providing a relative view of the markets, and traders thereby can align themselves with our high-frequency algorithmic trading rather than fight the machines.</source><target>纠正此问题的市场，提供了一个相对的观点和贸易商从而能够把自己与我们的高频算法交易，而不是打机。</target></trans-unit>
+            <trans-unit><source>We are available to assist you through many mediums to provide the best possible customer support. Our live chat and email support team is available 24 hours a day, five days a week.</source><target>我们为您提供帮助通过多种媒介，提供最佳的客户支持。我们的在线聊天和电子邮件支持团队提供每天24小时，每周5天。</target></trans-unit>
+            <trans-unit><source>You can also contact us by phone and talk to one of our support staffs. Should you prefer to communicate with us via traditional methods of communication, you are welcome to write to our physical address or send a fax and we will be thrilled to assist you in any way we can.</source><target>您也可以通过电话与我们联系，对我们的支持人员交谈。如果您愿意与我们沟通，通过传统的沟通方式，欢迎写信给我们的物理地址或发送传真，我们会很高兴以任何方式，我们可以为您提供帮助。</target></trans-unit>
+            <trans-unit><source>Thailand Address</source><target>泰国地址</target></trans-unit>
+            <trans-unit><source>New Zealand Address</source><target>新西兰地址</target></trans-unit>
+            <trans-unit><source>Hong Kong Adress</source><target>香港地址</target></trans-unit>
+            <trans-unit><source>Ranking</source><target>等级</target></trans-unit>
+            <trans-unit><source>Rank</source><target>等级</target></trans-unit>
+            <trans-unit><source>Home Page</source><target>首页</target></trans-unit>
+            <trans-unit><source>Welcome to SIXSTAR</source><target>欢迎来到SIXSTAR外汇集团。</target></trans-unit>
+            <trans-unit><source>MAIN MENU</source><target>主要菜单</target></trans-unit>
+            <trans-unit><source>User Profile</source><target>用户个人资料</target></trans-unit>
+            <trans-unit><source>Registration</source><target>注册</target></trans-unit>
+            <trans-unit><source>Package Purchase</source><target>购买配套</target></trans-unit>
+            <trans-unit><source>PACKAGE PURCHASE</source><target>购买理财包</target></trans-unit>
+            <trans-unit><source>Funds Deposit</source><target>存款</target></trans-unit>
+            <trans-unit><source>Package Upgrade</source><target>配套升级</target></trans-unit>
+            <trans-unit><source>Reload MT4 Fund</source><target>充值MT4</target></trans-unit>
+            <trans-unit><source>Commission</source><target>积分奖赏</target></trans-unit>
+            <trans-unit><source>Monetary Wallet</source><target>账户查询</target></trans-unit>
+            <trans-unit><source>ACCOUNT INFORMATION</source><target>帐户信息</target></trans-unit>
+            <trans-unit><source>EDUCATION / TRAINING COURSES</source><target>教育/培训课程</target></trans-unit>
+            <trans-unit><source>Education Course</source><target>教育课程</target></trans-unit>
+            <trans-unit><source>HIERARCHY</source><target>等级制度</target></trans-unit>
+            <trans-unit><source>EXCHANGE RATE</source><target>汇率</target></trans-unit>
+            <trans-unit><source>Exchange Rate</source><target>汇率</target></trans-unit>
+            <trans-unit><source>CONTACT</source><target>联系我们</target></trans-unit>
+            <trans-unit><source>CS Center</source><target>客户服务中心</target></trans-unit>
+            <trans-unit><source>REPORT</source><target>报告</target></trans-unit>
+            <trans-unit><source>Fund Management Report</source><target>基金管理报告</target></trans-unit>
+            <trans-unit><source>MaximTrade Executor™ Report</source><target>MaximTrade Executor™ 报告</target></trans-unit>
+            <trans-unit><source>DOWNLOAD</source><target>下载</target></trans-unit>
+            <trans-unit><source>Download MT4 Platform</source><target>下载MT4平台</target></trans-unit>
+            <trans-unit><source>Download Daily FX Guide</source><target>每日外汇指南</target></trans-unit>
+            <trans-unit><source>Account Information</source><target>帐户信息</target></trans-unit>
+            <trans-unit><source>Your Account Point</source><target>您的帐户点</target></trans-unit>
+            <trans-unit><source>Inactive Traders</source><target>未激活的会员</target></trans-unit>
+            <trans-unit><source>Inactive Members</source><target>未激活的会员</target></trans-unit>
+            <trans-unit><source>Currency</source><target>货币</target></trans-unit>
+            <trans-unit><source>No data available in table</source><target>无可用的数据</target></trans-unit>
+            <trans-unit><source>records</source><target>记录</target></trans-unit>
+            <trans-unit><source>Personal Information</source><target>个人资料</target></trans-unit>
+            <trans-unit><source>Personal Detail</source><target>个人详细资料</target></trans-unit>
+            <trans-unit><source>Referrer ID</source><target>推荐人</target></trans-unit>
+            <trans-unit><source>Referrer Name</source><target>推荐人名称</target></trans-unit>
+            <trans-unit><source>City / Town</source><target>市/镇</target></trans-unit>
+            <trans-unit><source>State / Province</source><target>州/省</target></trans-unit>
+            <trans-unit><source>Zip / Postal Code</source><target>邮编</target></trans-unit>
+            <trans-unit><source>Alternate Email</source><target>备用电子邮件</target></trans-unit>
+            <trans-unit><source>Contact Number</source><target>联系电话</target></trans-unit>
+            <trans-unit><source>Change Account login Password</source><target>更改帐户登录密码</target></trans-unit>
+            <trans-unit><source>Old Security Password</source><target>旧的二级密码</target></trans-unit>
+            <trans-unit><source>New Security Password</source><target>新的二级密码</target></trans-unit>
+            <trans-unit><source>Re-enter Security Password</source><target>重新输入二级密码</target></trans-unit>
+            <trans-unit><source>Update</source><target>更新</target></trans-unit>
+            <trans-unit><source>Bank Account Details</source><target>银行帐户资料</target></trans-unit>
+            <trans-unit><source>Bank Account Number</source><target>银行帐户号码</target></trans-unit>
+            <trans-unit><source>Bank Account Holder Name</source><target>银行账户持有人姓名</target></trans-unit>
+            <trans-unit><source>Bank Swift Code / ABA</source><target>银行代码/ ABA</target></trans-unit>
+            <trans-unit><source>Security Password</source><target>二级密码</target></trans-unit>
+            <trans-unit><source>Upload Bank Account Proof, Proof of Residence and Passport/Photo ID</source><target>上传银行帐户证明，居住证明和护照/ ID照片</target></trans-unit>
+            <trans-unit><source>Upload Bank Slip</source><target>上传银行单据</target></trans-unit>
+            <trans-unit><source>Bank Account Proof</source><target>银行帐户证明</target></trans-unit>
+            <trans-unit><source>Proof of Residence</source><target>居住证明</target></trans-unit>
+            <trans-unit><source>Passport/Photo ID</source><target>护照/照片ID</target></trans-unit>
+            <trans-unit><source>Note: Maximum upload size per file is 5 MB. Only pdf / bmp / jpg / jpeg / gif / png / tif / tiff / doc / docx / xls / xlsx formats are accepted.</source><target>注：每个文件最大上传大小为5 MB。 PDF / BMP / JPG / JPEG / GIF / PNG / TIF / TIFF / DOC / DOCX/ XLS / XLSX格式都可以接受。</target></trans-unit>
+            <trans-unit><source>Join Package</source><target>加入配套</target></trans-unit>
+            <trans-unit><source>Membership</source><target>会员</target></trans-unit>
+            <trans-unit><source>Price</source><target>价格</target></trans-unit>
+            <trans-unit><source>Below is the contractural terms and agreements that you are bound by as a client of SIXSTAR for signing up the package above. We recommend that you take the time to read each of them carefully.</source><target>下面的的挛缩条款和协议，你一定会签订了包以上的客户端SIXSTAR。我们建议您走的时候，他们每个人仔细阅读。</target></trans-unit>
+            <trans-unit><source>Please check the boxes below to acknowledge your acceptance, agreement and understanding of the terms and agreements.</source><target>请检查下面的框，以确认您接受的条款及协议，协议和谅解。</target></trans-unit>
+            <trans-unit><source>Private Investment Agreement</source><target>私人投资协议</target></trans-unit>
+            <trans-unit><source>Agreement</source><target>协议</target></trans-unit>
+            <trans-unit><source>Download Agreement</source><target>下载协议</target></trans-unit>
+            <trans-unit><source>Please sign and send it to</source><target>请登录并将其发送到</target></trans-unit>
+            <trans-unit><source>Confirm Security Password</source><target>确认二级密码</target></trans-unit>
+            <trans-unit><source>Please choose a unique username for your account. Username accepts 3-32 characters, a-z, 0-9 and underscore (_) only.</source><target>请选择一个唯一的用户名，您的帐户。用户名接受3-32个字符，AZ ,0-9和下划线（_）。</target></trans-unit>
+            <trans-unit><source>enter your password. Password accepts 4-32 characters, A-Z, a-z, 0-9 and underscore (_) only and must include at least one letter and one number. Password is also case sensitive.</source><target>输入您的密码。的密码接受4-32个字符，包括AZ，az,0-9和下划线（_），而且必须至少包含一个字母和一个数字。密码是区分大小写的。</target></trans-unit>
+            <trans-unit><source>Security Password is a separate password that is required when you withdraw money from your account. This is for security purposes to further protect your funds.</source><target>安全密码是一个独立的密码，当你需要从您的帐户中取钱。这是为了安全起见，以进一步保护您的资金。</target></trans-unit>
+            <trans-unit><source>Note: We strongly recommend that you choose a Security Password that is different from your login password.</source><target>注意：我们强烈建议您选择一个二级密码，从您的登录密码是不同的。</target></trans-unit>
+            <trans-unit><source>Security Password accepts 4-32 characters, A-Z, a-z, 0-9 and underscore (_) only and must include at least one letter and one number. Security Password is also case sensitive.</source><target>安全密码接受4-32个字符，包括AZ，az,0-9和下划线（_），而且必须至少包含一个字母和一个数字。二级密码是区分大小写的。</target></trans-unit>
+            <trans-unit><source>Confirm Security Password</source><target>确认二级密码</target></trans-unit>
+            <trans-unit><source>Please enter '0' if postal code is not applicable in your country.</source><target>邮政代码是不适用的，在您的国家，请输入“0”。</target></trans-unit>
+            <trans-unit><source>Please Select</source><target>请选择</target></trans-unit>
+            <trans-unit><source>Contact Details</source><target>联系方式</target></trans-unit>
+            <trans-unit><source>Telephone Number</source><target>电话号码</target></trans-unit>
+            <trans-unit><source>Primary Email</source><target>主要电子邮件</target></trans-unit>
+            <trans-unit><source>Retype your email</source><target>请重新输入您的电子邮件</target></trans-unit>
+            <trans-unit><source>Please enter a valid Email address. Note: If you use a Yahoo! email account, please also provide an Alternate Email below.</source><target>请输入一个有效的电子邮件地址。注：如果您使用的是雅虎电子邮件帐户，请在下面提供一个备用的电子邮件。</target></trans-unit>
+            <trans-unit><source>Alternate Email is required ONLY IF you use a Yahoo! email account as your primary Email. Note: Your Alternate Email cannot be a Yahoo! account. We recommend</source><target>备用的电子邮件是必需的，只有当您使用雅虎电子邮件帐户作为您的主电子邮件。注：您的备用电子邮件不能Yahoo!帐户。我们建议</target></trans-unit>
+            <trans-unit><source>Retype alternate email</source><target>重新输入备用电子邮件</target></trans-unit>
+            <trans-unit><source>Selected Package</source><target>所选的配套</target></trans-unit>
+            <trans-unit><source>Package</source><target>配套</target></trans-unit>
+            <trans-unit><source>Placement Position</source><target>按置的位置</target></trans-unit>
+            <trans-unit><source>Manual</source><target>手动方式</target></trans-unit>
+            <trans-unit><source>Auto Left</source><target>自动排位最左</target></trans-unit>
+            <trans-unit><source>Auto Right</source><target>自动排位最右</target></trans-unit>
+            <trans-unit><source>Auto Middle</source><target>自动排位中间</target></trans-unit>
+            <trans-unit><source>Accept Terms</source><target>接受条款</target></trans-unit>
+            <trans-unit><source>Agreements</source><target>协议</target></trans-unit>
+            <trans-unit><source>Below are the contractural terms and agreements that you are bound by as a client of SIXSTAR. We recommend that you take the time to read each of them carefully.</source><target>以下的的挛缩条款和协议，你一定会作为客户端的SIXSTAR。我们建议您走的时候，他们每个人仔细阅读。</target></trans-unit>
+            <trans-unit><source>Please check the boxes below to acknowledge your acceptance, argeement and understanding of these terms and agreements.</source><target>请检查下面的框，以确认您的的验收，argeement和理解这些条款和协议。</target></trans-unit>
+            <trans-unit><source>I hereby attest and certify that the above information is complete and accurate and I agree to be bound by these terms and conditions.</source><target>我在此证明和证明，上述信息是完整的和准确的，我同意这些条款和条件的约束。</target></trans-unit>
+            <trans-unit><source>I also authorise</source><target>我也授权</target></trans-unit>
+            <trans-unit><source>to verify any or all of the foregoing information. This electronic signature has the same validity and effect as a signature affixed by hand.</source><target>验证上述任何或所有信息。贴的手签名，电子签名具有同等法律效力和影响。</target></trans-unit>
+            <trans-unit><source>I understand that as an SIXSTAR customer, it is my responsibility to review all necessary information about currency trading and the SIXSTAR</source><target>我明白作为SIXSTAR客户，这是我的责任，检讨有关外汇交易的所有必要的SIXSTAR的信息</target></trans-unit>
+            <trans-unit><source>Terms and Conditions</source><target>条款和条件</target></trans-unit>
+            <trans-unit><source>I am aware of the risks associated with foreign exchange trading and will seek advice and further my education on foreign exchange prior to starting any trading activity.</source><target>我明白与外汇交易相关联的风险，并会征询法律意见和外汇留学深造任何交易活动开始之前。</target></trans-unit>
+            <trans-unit><source>Convert e-Cash To e-Point</source><target>现金币转换为注册币</target></trans-unit>
+            <trans-unit><source>Convert e-Cash To e-Point History</source><target>现金币转换为注册币列表</target></trans-unit>
+            <trans-unit><source>e-Point Transfer</source><target>注册币转账</target></trans-unit>
+            <trans-unit><source>e-Point Transfer History</source><target>注册币转账列表</target></trans-unit>
+            <trans-unit><source>Total Fund Deposited</source><target>缴存总额</target></trans-unit>
+            <trans-unit><source>Reference No</source><target>参考编号</target></trans-unit>
+            <trans-unit><source>Funds Deposit History</source><target>存款记录表</target></trans-unit>
+            <trans-unit><source>Funds Deposited will be credited into e-Point Account.</source><target>存入资金，将被记入注册币的帐户。</target></trans-unit>
+            <trans-unit><source>e-Point is ONLY for package purchase, package upgrade and for MT4 account reload and is NON-WITHDRAWAL.</source><target>e-Point只能用来收购配套，配套升级和充值MT4帐户，而不能兑现现金。</target></trans-unit>
+            <trans-unit><source>e-Point is ONLY for package purchase, reinvest package and is NON-WITHDRAWAL.</source><target>注册币只能用来收购配套和配套升级，而不能兑现现金。</target></trans-unit>
+            <trans-unit><source>1 equals to 1 value of e-Point</source><target>1等于1面值的注册币</target></trans-unit>
+            <trans-unit><source>e-Point Account</source><target>注册币账户</target></trans-unit>
+            <trans-unit><source>Upgrade Package</source><target>升级配套</target></trans-unit>
+            <trans-unit><source>Package Upgrade History</source><target>升级配套记录表</target></trans-unit>
+            <trans-unit><source>Transaction Code</source><target>交易代码</target></trans-unit>
+            <trans-unit><source>Downline Stats</source><target>组织统计简介</target></trans-unit>
+            <trans-unit><source>Placement Genealogy</source><target>组织系谱</target></trans-unit>
+            <trans-unit><source>Sponsor Genealogy</source><target>团队发展谱图</target></trans-unit>
+            <trans-unit><source>Accumulate Group BV</source><target>小组累积业绩</target></trans-unit>
+            <trans-unit><source>Today Group BV</source><target>今日小组业绩</target></trans-unit>
+            <trans-unit><source>Carry Forward</source><target>对碰余额</target></trans-unit>
+            <trans-unit><source>Today Total Group BV</source><target>今日小组总业绩</target></trans-unit>
+            <trans-unit><source>USD</source><target>美金</target></trans-unit>
+            <trans-unit><source>NOTE: e-Point is ONLY for package purchase, package upgrade and for MT4 account reload and is NON-WITHDRAWAL.</source><target>注：e-Point只能用来收购配套，配套升级和充值MT4帐户。e-Point是不能兑现的。</target></trans-unit>
+            <trans-unit><source>Commission Details</source><target>积分收益</target></trans-unit>
+            <trans-unit><source>Commission Categories</source><target>积分总结</target></trans-unit>
+            <trans-unit><source>Note: There will be no credit once mt4 credit amount finish.</source><target>注：积分将不会存入当MT4户口没有余额。</target></trans-unit>
+            <trans-unit><source>Direct Referral Bonus</source><target>业绩积分</target></trans-unit>
+            <trans-unit><source>Pairing Bonus</source><target>配对积分</target></trans-unit>
+            <trans-unit><source>Generation Bonus</source><target>代数积分</target></trans-unit>
+            <trans-unit><source>Pips Rebate</source><target>点数回赠</target></trans-unit>
+            <trans-unit><source>January</source><target>一月</target></trans-unit>
+            <trans-unit><source>February</source><target>二月</target></trans-unit>
+            <trans-unit><source>March</source><target>三月</target></trans-unit>
+            <trans-unit><source>April</source><target>四月</target></trans-unit>
+            <trans-unit><source>May</source><target>五月</target></trans-unit>
+            <trans-unit><source>June</source><target>六月</target></trans-unit>
+            <trans-unit><source>July</source><target>七月</target></trans-unit>
+            <trans-unit><source>August</source><target>八月</target></trans-unit>
+            <trans-unit><source>September</source><target>九月</target></trans-unit>
+            <trans-unit><source>October</source><target>十月</target></trans-unit>
+            <trans-unit><source>November</source><target>十一月</target></trans-unit>
+            <trans-unit><source>December</source><target>十二月</target></trans-unit>
+            <trans-unit><source>Click to DOWNLOAD Daily Fx Guide (Chinese)</source><target>点击下载：每日外汇指南（中文）</target></trans-unit>
+            <trans-unit><source>Click to DOWNLOAD Daily Fx Guide (English)</source><target>点击下载：每日外汇指南（英文）</target></trans-unit>
+            <trans-unit><source>Click to DOWNLOAD Daily Fx Guide (Japanese)</source><target>点击下载：每日外汇指南（日文）</target></trans-unit>
+            <trans-unit><source>Download MT4 (Standard)</source><target>下载MT4平台（普通版）</target></trans-unit>
+            <trans-unit><source>Download MT4 Pro</source><target>下载MT4平台（专业版）</target></trans-unit>
+            <trans-unit><source>Click to DOWNLOAD Meta Trader 4 (Standard)</source><target>下载MT4平台（普通版）</target></trans-unit>
+            <trans-unit><source>Click to DOWNLOAD Meta Trader 4 Pro</source><target>下载MT4平台（专业版）</target></trans-unit>
+            <trans-unit><source>The popular platform MetaTrader 4 can now be used for professional trading.</source><target>广受欢迎的MetaTrader 4平台，现在可以使用专业版来做交易。</target></trans-unit>
+            <trans-unit><source>Click to DOWNLOAD Meta Trader 4 Pro User Guide</source><target>点击下载MT4专业版指南</target></trans-unit>
+            <trans-unit><source>Meta Trader 4 (MT4) is one of the best Forex trading platforms in the world with its advanced charting package and user-friendly interface, MT4 is ideal for traders whatever your experience.</source><target>MT4是世界最好的外汇交易平台，凭借其先进的图表工具和友好的用户界面，让你体验快捷方便的外汇交易平台</target></trans-unit>
+            <trans-unit><source>OFX Trader Academy Accounts Team</source><target>OFX 交易学院帐户小组</target></trans-unit>
+            <trans-unit><source>Welcome to OFX Trader Academy</source><target>欢迎来到OFX 交易学院</target></trans-unit>
+            <trans-unit><source>OFX Trader Academy Accounts Team Chinese</source><target>OFX 交易学院帐户小组 OFX Trader Academy Accounts Team</target></trans-unit>
+            <trans-unit><source>FX-CMISC Listing</source><target>FX-CMISC币明细</target></trans-unit>
+            <trans-unit><source>FX-CMISC Wallet Listing</source><target>FX-CMISC币明细</target></trans-unit>
+            <trans-unit><source>FX-CMISC Wallet Transaction Log</source><target>FX-CMISC币交易明细</target></trans-unit>
+            <trans-unit><source>FX-CMISC Wallet Log</source><target>FX-CMISC币明细</target></trans-unit>
+            <trans-unit><source>e-Point Listing</source><target>注册币明细</target></trans-unit>
+            <trans-unit><source>Passive Listing</source><target>静态币明细</target></trans-unit>
+            <trans-unit><source>Passive Wallet Listing</source><target>静态币明细</target></trans-unit>
+            <trans-unit><source>Passive Wallet Transaction Log</source><target>静态币交易明细</target></trans-unit>
+            <trans-unit><source>Passive Wallet Log</source><target>静态币明细</target></trans-unit>
+            <trans-unit><source>e-Point Statement</source><target>注册币明细</target></trans-unit>
+            <trans-unit><source>e-Cash Statement</source><target>现金币明细</target></trans-unit>
+            <trans-unit><source>e-Wallet Statement</source><target>现金币明细</target></trans-unit>
+            <trans-unit><source>e-Wallet Listing</source><target>现金币明细</target></trans-unit>
+            <trans-unit><source>e-Wallet Transaction Log</source><target>现金币交易明细</target></trans-unit>
+            <trans-unit><source>e-Point Transaction Log</source><target>注册币交易明细</target></trans-unit>
+            <trans-unit><source>Maintenance Statement</source><target>种子账户明细</target></trans-unit>
+            <trans-unit><source>FX-CMISC Statement</source><target>FX-CMISC账户明细</target></trans-unit>
+            <trans-unit><source>Passive Statement</source><target>静态账户明细</target></trans-unit>
+            <trans-unit><source>e-Cash Withdrawal</source><target>提现申请</target></trans-unit>
+            <trans-unit><source>MT4 Withdrawal</source><target>MT4兑现</target></trans-unit>
+            <trans-unit><source>e-Point Amount</source><target>注册币兑额</target></trans-unit>
+            <trans-unit><source>e-Point Balance</source><target>注册币余额</target></trans-unit>
+            <trans-unit><source>Transfer To Trader ID</source><target>转账给会员</target></trans-unit>
+            <trans-unit><source>Transfer e-Point Amount</source><target>转账注册币数额</target></trans-unit>
+            <trans-unit><source>MT4 Fund Withdrawal Amount In USD</source><target>MT4兑现是以美金来计算的</target></trans-unit>
+            <trans-unit><source>MT4 Withdrawal Status</source><target>MT4兑现状态</target></trans-unit>
+            <trans-unit><source>e-Cash Withdrawal Status</source><target>e-Cash兑现状态</target></trans-unit>
+            <trans-unit><source>Amount Requested (USD)</source><target>兑现数额（美金）</target></trans-unit>
+            <trans-unit><source>NOTE :</source><target>注：</target></trans-unit>
+            <trans-unit><source>Minimum withdrawal amount : USD 100</source><target>兑现数额不能少过100美金</target></trans-unit>
+            <trans-unit><source>NOTE : Minimum withdrawal amount : USD 100</source><target>注：兑现数额不能少过100美金</target></trans-unit>
+            <trans-unit><source>NOTE : Minimum withdrawal amount : USD 200</source><target>注：兑现数额不能少过200美金</target></trans-unit>
+            <trans-unit><source>NOTE : Processing time : 2 working days</source><target>注：提现申请处理时间需要2个工作日</target></trans-unit>
+            <trans-unit><source>Can only be withdrawn on the first working week of the month</source><target>兑现只能在每个月的第一个星期</target></trans-unit>
+            <trans-unit><source>Processing time : 2 working days</source><target>处理时间：2个工作日</target></trans-unit>
+            <trans-unit><source>Processing time : 3-5 working days</source><target>处理时间：3至5个工作日</target></trans-unit>
+            <trans-unit><source>e-Cash Balance</source><target>现金币余额</target></trans-unit>
+            <trans-unit><source>e-Cash Withdrawal Amount</source><target>e-Cash兑现金额</target></trans-unit>
+            <trans-unit><source>After 10% handling fee</source><target>附加10％的手续费</target></trans-unit>
+            <trans-unit><source>After 5% handling fee</source><target>附加5％的手续费</target></trans-unit>
+            <trans-unit><source>Deduct Amount</source><target>扣除总金额</target></trans-unit>
+            <trans-unit><source>Below is the contractural terms and agreements that you are bound by as a client of Ofx Trader for signing up the package above. We recommend that you take the time to read each of them carefully.</source><target>您必须同意以上的条款和协议以签订配套。我们建议您仔细阅读以下的条款和协议。</target></trans-unit>
+            <trans-unit><source>Below is the contractural terms and agreements that you are bound by as a client of Ofx Trader. We recommend that you take the time to read each of them carefully.</source><target>您必须同意以上的条款和协议。我们建议您仔细阅读以下的条款和协议。</target></trans-unit>
+            <trans-unit><source>Sign up</source><target>签订</target></trans-unit>
+            <trans-unit><source>Referrer and Placement Position</source><target>推荐人和按置的位置</target></trans-unit>
+            <trans-unit><source>Placement Type</source><target>按置</target></trans-unit>
+            <trans-unit><source>Auto</source><target>自动</target></trans-unit>
+            <trans-unit><source>Auto Placement</source><target>自动按置</target></trans-unit>
+            <trans-unit><source>Account Login Details</source><target>户口登录配置</target></trans-unit>
+            <trans-unit><source>Search By Username</source><target>搜索用户名</target></trans-unit>
+            <trans-unit><source>Genealogy for your Member ID</source><target>您的团队架购图</target></trans-unit>
+            <trans-unit><source>I understand that as an OfxTrader customer, it is my responsibility to review all necessary information about currency trading and the OfxTrader</source><target>我同意作为OfxTrader客户的责任是检讨有关外汇交易的所有必要的信息和OfxTrader的</target></trans-unit>
+            <trans-unit><source>Existing Users Login</source><target>账号登入</target></trans-unit>
+            <trans-unit><source>Great day, Trader!</source><target>您好！</target></trans-unit>
+            <trans-unit><source>Email us</source><target>电邮我们</target></trans-unit>
+            <trans-unit><source>Hello</source><target>您好</target></trans-unit>
+            <trans-unit><source>ACTIVE</source><target>活跃</target></trans-unit>
+            <trans-unit><source>INACTIVE</source><target>未激活</target></trans-unit>
+            <trans-unit><source>Joined</source><target>加入于</target></trans-unit>
+            <trans-unit><source>Bank Information Detail</source><target>银行详细资料</target></trans-unit>
+            <trans-unit><source>Payment Reference</source><target>付款参考号码</target></trans-unit>
+            <trans-unit><source>Upload Bank Receipt</source><target>上传银行收据</target></trans-unit>
+            <trans-unit><source>Deposit Amount</source><target>转帐金额</target></trans-unit>
+            <trans-unit><source>Bank Swift Code</source><target>银行代码</target></trans-unit>
+            <trans-unit><source>Bank Account Holder</source><target>银行账户持有人</target></trans-unit>
+            <trans-unit><source>City of Bank</source><target>银行所在城市</target></trans-unit>
+            <trans-unit><source>Print</source><target>打印</target></trans-unit>
+            <trans-unit><source>Country of Bank</source><target>银行所在国家</target></trans-unit>
+            <trans-unit><source>Trading Currency on MT4</source><target>MT4交易货币</target></trans-unit>
+            <trans-unit><source>Note: you must present this Payment Reference when making payment to the bank. This PAYMENT REFERENCE NUMBER must be placed in the section where it says CAR NO. whenever it is applicable.</source><target>注意：当你付款时必须出示的银行付款参考号码。此付款参考号码必须放在一节中说 NO. KERETA/ CAR NO.</target></trans-unit>
+            <trans-unit><source>you must present this Payment Reference when making payment to the bank. THis PAYMENT REFERENCE NUMBER must be placed in the section where it says CAR NO. whenever it is applicable.</source><target>当你付款时必须出示的银行付款参考号码。此付款参考号码必须放在一节中说 NO. KERETA/ CAR NO.</target></trans-unit>
+            <trans-unit><source>Invalid username or password.</source><target>会员ID和密码不正确</target></trans-unit>
+            <trans-unit><source>Invalid username.</source><target>会员ID不正确</target></trans-unit>
+            <trans-unit><source>The CAPTCHA wasn't entered correctly. Go back and try it again.</source><target>验证码输入不正确。回去再试一次。</target></trans-unit>
+            <trans-unit><source>This content is restricted to site members. If you are an existing user, please login. New users may register below.</source><target>此内容仅限于网站成员。如果您已是我们的会员，请登录。新用户可以注册。</target></trans-unit>
+            <trans-unit><source>Your requests has been submitted, to complete the funding, please proceed to remit the payment to the account, with details as indicated below:</source><target>您的存款请求已提交成功，请继续进行汇款支付的帐户，详情如下表所示：</target></trans-unit>
+            <trans-unit><source>Contact Number / Email</source><target>联络号码/电邮</target></trans-unit>
+            <trans-unit><source>Subject</source><target>咨询要题</target></trans-unit>
+            <trans-unit><source>Inquiry Status</source><target>咨询状态</target></trans-unit>
+            <trans-unit><source>Progress</source><target>进度</target></trans-unit>
+            <trans-unit><source>Last Reply</source><target>最新回复</target></trans-unit>
+            <trans-unit><source>Latest News</source><target>最新消息</target></trans-unit>
+            <trans-unit><source>CLOSE</source><target>关闭</target></trans-unit>
+            <trans-unit><source>Close</source><target>关闭</target></trans-unit>
+            <trans-unit><source>Withdraw</source><target>兑现</target></trans-unit>
+            <trans-unit><source>Purchase</source><target>购买</target></trans-unit>
+            <trans-unit><source>Back to announcement list</source><target>回到公告表</target></trans-unit>
+            <trans-unit><source>Announcement List</source><target>公告表</target></trans-unit>
+            <trans-unit><source>ANNOUNCEMENT</source><target>公告</target></trans-unit>
+            <trans-unit><source>Contact us if you want to know more</source><target>若想了解更多，请直接联络我们</target></trans-unit>
+            <trans-unit><source>Please fill up the personal information, We will call you back in the soonest time</source><target>请您留下您的联络方式，我们的服务员将会联络您</target></trans-unit>
+            <trans-unit><source>CONTACT US</source><target>联络我们</target></trans-unit>
+            <trans-unit><source>Thank you for the submission. Have a good day!</source><target>感谢您的合作，愿你有一个美好的一天！</target></trans-unit>
+            <trans-unit><source>Your application submit successfully. We will call u back in the soonest time.</source><target>您的资料提交成功，我们的服务员将会在最短的时间内联络您。</target></trans-unit>
+            <trans-unit><source>Request Password</source><target>找回密码</target></trans-unit>
+            <trans-unit><source>Send</source><target>发送</target></trans-unit>
+            <trans-unit><source>Membership expiry date</source><target>合约到期</target></trans-unit>
+            <trans-unit><source>Days</source><target>天后</target></trans-unit>
+            <trans-unit><source>My Account</source><target>我的账户</target></trans-unit>
+            <trans-unit><source>Total Networks</source><target>推荐人数</target></trans-unit>
+            <trans-unit><source>Networks</source><target>推荐人数</target></trans-unit>
+            <trans-unit><source>Member Registered Successfully</source><target>会员注册成功</target></trans-unit>
+            <trans-unit><source>SUCCESSFUL</source><target>成功</target></trans-unit>
+            <trans-unit><source>REJECTED</source><target>不成功</target></trans-unit>
+            <trans-unit><source>Register</source><target>注册</target></trans-unit>
+            <trans-unit><source>User ID</source><target>会员</target></trans-unit>
+            <trans-unit><source>e-Cash convert to e-Point successful.</source><target>转换成功</target></trans-unit>
+            <trans-unit><source>Your requests has been submitted.</source><target>您的存款申请已提交成功</target></trans-unit>
+            <trans-unit><source>Reinvest membership</source><target>投资续费</target></trans-unit>
+            <trans-unit><source>Reinvest Membership Successfully.</source><target>投资续费成功</target></trans-unit>
+            <trans-unit><source>Sub Total</source><target>合计</target></trans-unit>
+            <trans-unit><source>Cash Paid Out</source><target>实发</target></trans-unit>
+            <trans-unit><source>REINVEST</source><target>投资续费</target></trans-unit>
+            <trans-unit><source>CONVERT</source><target>转换</target></trans-unit>
+            <trans-unit><source>POINT PURCHASE</source><target>购买注册币</target></trans-unit>
+            <trans-unit><source>INVESTMENT</source><target>投资理财包</target></trans-unit>
+            <trans-unit><source>CONVERT EPOINT</source><target>转换注册币</target></trans-unit>
+            <trans-unit><source>MAINTENANCE</source><target>管理费</target></trans-unit>
+            <trans-unit><source>Maintenance</source><target>管理费</target></trans-unit>
+            <trans-unit><source>Investment</source><target>投资理财</target></trans-unit>
+            <trans-unit><source>Purchase Investment Package</source><target>购买理财包</target></trans-unit>
+            <trans-unit><source>My Financial Package</source><target>我的理财包</target></trans-unit>
+            <trans-unit><source>Total Fund Management Return</source><target>投资分红累计</target></trans-unit>
+            <trans-unit><source>Total Investment Package In Wallet</source><target>您当前有用</target></trans-unit>
+            <trans-unit><source>Total Investment Package Sold (Today)</source><target>本期当前已有理财包</target></trans-unit>
+            <trans-unit><source>Each Investment Package Fund Return</source><target>每个理财包分红</target></trans-unit>
+            <trans-unit><source>Investment Package Unit</source><target>投资个数</target></trans-unit>
+            <trans-unit><source>Purchase Investment Package History</source><target>购买理财包列表</target></trans-unit>
+            <trans-unit><source>Investment Package</source><target>理财包</target></trans-unit>
+            <trans-unit><source>Investment Amount</source><target>投资总额</target></trans-unit>
+            <trans-unit><source>Empty</source><target>空置</target></trans-unit>
+            <trans-unit><source>Customer Enquiry</source><target>客户咨询</target></trans-unit>
+            <trans-unit><source>Total Amount is</source><target>总投资金额</target></trans-unit>
+            <trans-unit><source>Are you sure want to purchase investment package?</source><target>您确定要购买理财包?</target></trans-unit>
+            <trans-unit><source>In-sufficient fund to purchase investment package</source><target>注册币数量不足来购买理财包</target></trans-unit>
+            <trans-unit><source>Purchase investment package successfully.</source><target>购买理财包成功</target></trans-unit>
+            <trans-unit><source>Security Password is not valid</source><target>二级密码不正确</target></trans-unit>
+            <trans-unit><source>Security Password is required</source><target>请输入正确的二级密码</target></trans-unit>
+            <trans-unit><source>REINVEST PACKAGE</source><target>投资续费</target></trans-unit>
+            <trans-unit><source>PURCHASE INVESTMENT PACKAGE</source><target>购买理财包</target></trans-unit>
+            <trans-unit><source>Membership already expiry.</source><target>你的合约已经到期</target></trans-unit>
+            <trans-unit><source>FLUSH</source><target>封顶</target></trans-unit>
+            <trans-unit><source>TERMINATE</source><target>出局</target></trans-unit>
+            <trans-unit><source>Your current status cannot proceed this function.</source><target>您的目前状态是不允许进行该活动</target></trans-unit>
+            <trans-unit>
+                <source>PURCHASE INVESTMENT PACKAGE (%1%), tier:%2%, package amount:%3%</source>
+                <target>购买理财包(%1%), 代数:%2%, 配套数额:%3%</target>
+            </trans-unit>
+            <trans-unit>
+                <source>PURCHASE INVESTMENT PACKAGE (%1%), tier:%2%, bonus amount:%3%</source>
+                <target>购买理财包(%1%), 代数:%2%, 分红数额:%3%</target>
+            </trans-unit>
+            <trans-unit>
+                <source>REINVEST PACKAGE (%1%), tier:%2%</source>
+                <target>投资续费(%1%), 代数:%2%</target>
+            </trans-unit>
+            <trans-unit>
+                <source>REGISTER MEMBER (%1%), tier:%2%</source>
+                <target>注册会员(%1%), 代数:%2%</target>
+            </trans-unit>
+            <trans-unit><source>Official</source><target>文员</target></trans-unit>
+            <trans-unit><source>Supervisor</source><target>主任</target></trans-unit>
+            <trans-unit><source>Manager</source><target>经理</target></trans-unit>
+            <trans-unit><source>Partner</source><target>副总裁</target></trans-unit>
+            <trans-unit><source>Director</source><target>总裁</target></trans-unit>
+            <trans-unit><source>Vice President</source><target>副董事</target></trans-unit>
+            <trans-unit><source>President</source><target>董事</target></trans-unit>
+            <trans-unit><source>Promotion - Director</source><target>优惠总裁</target></trans-unit>
+            <trans-unit><source>SIXSTAR Wallet</source><target>SIXSTAR赔偿金</target></trans-unit>
+            <trans-unit><source>SIXSTAR Retain Fund</source><target>SIXSTAR保留金</target></trans-unit>
+            <trans-unit><source>State</source><target>省名</target></trans-unit>
+            <trans-unit><source>Branch Name</source><target>分行名字</target></trans-unit>
+            <trans-unit><source>Please key in your security password</source><target>请输入您的二级密码</target></trans-unit>
+            <trans-unit><source>Business Network</source><target>商务网络</target></trans-unit>
+            <trans-unit><source>Financial Management</source><target>财务管理</target></trans-unit>
+            <trans-unit><source>Learn Centre</source><target>学习园地</target></trans-unit>
+            <trans-unit><source>Transfer To Member ID</source><target>转账给会员ID</target></trans-unit>
+            <trans-unit><source>Upgrade Gradually</source><target>节节升级</target></trans-unit>
+            <trans-unit><source>Rush Point Rush Money</source><target>跑马圈地</target></trans-unit>
+            <trans-unit><source>Never Out</source><target>永不出局</target></trans-unit>
+            <trans-unit><source>Stay Forever</source><target>蛟龙永居</target></trans-unit>
+            <trans-unit><source>All Around Smash</source><target>重磅出击</target></trans-unit>
+            <trans-unit><source>Commission Date</source><target>结算时间</target></trans-unit>
+            <trans-unit><source>Member Nick Name</source><target>会员昵称</target></trans-unit>
+            <trans-unit><source>Nick Name</source><target>昵称</target></trans-unit>
+            <trans-unit><source>Total Group Member</source><target>会员总数</target></trans-unit>
+            <trans-unit><source>Nick Name already in use</source><target>对不起，会员名称存在，请用别的会员昵称！</target></trans-unit>
+            <trans-unit><source>Member is not exist.</source><target>会员不存在</target></trans-unit>
+            <trans-unit><source>Member ID</source><target>会员</target></trans-unit>
+            <trans-unit><source>FX-CMISC</source><target>FX-CMISC</target></trans-unit>
+            <trans-unit><source>TRADING</source><target>交易</target></trans-unit>
+            <trans-unit><source>Download MT4</source><target>下载MT4</target></trans-unit>
+            <trans-unit><source>e-Wallet Withdrawal</source><target>现金币兑现</target></trans-unit>
+            <trans-unit><source>e-Wallet Withdrawal Status</source><target>现金币兑现状态</target></trans-unit>
+            <trans-unit><source>e-Wallet</source><target>现金币</target></trans-unit>
+            <trans-unit><source>e-Wallet Transfer</source><target>现金币转账</target></trans-unit>
+            <trans-unit><source>e-Wallet Transfer History</source><target>现金币转账明细</target></trans-unit>
+            <trans-unit><source>Transfer e-Wallet Amount</source><target>现金币转账金额</target></trans-unit>
+            <trans-unit><source>TRADING</source><target>交易</target></trans-unit>
+            <trans-unit><source>Fund Management Return</source><target>基金管理回报</target></trans-unit>
+            <trans-unit><source>Fund Management Return List</source><target>基金管理回报列表</target></trans-unit>
+            <trans-unit><source>Fund Management Summary</source><target>基金管理回报摘要</target></trans-unit>
+            <trans-unit><source>Fund Management Summary Listing</source><target>基金管理回报摘要列表</target></trans-unit>
+            <trans-unit><source>Unrealized Profit</source><target>未实现利润</target></trans-unit>
+            <trans-unit><source>Realized Profit</source><target>实现利润</target></trans-unit>
+            <trans-unit><source>Convert FX-CMISC to e-Wallet</source><target>FX-CMISC账户转换现金币</target></trans-unit>
+            <trans-unit><source>Account Conversion</source><target>账户转换</target></trans-unit>
+            <trans-unit><source>Account Conversion History</source><target>账户转换明细</target></trans-unit>
+            <trans-unit><source>Conversion method</source><target>转换方法</target></trans-unit>
+            <trans-unit><source>Conversion Amount</source><target>转换金额</target></trans-unit>
+            <trans-unit><source>Sales List</source><target>业绩明细</target></trans-unit>
+            <trans-unit><source>Dashboard</source><target>主要界面</target></trans-unit>
+            <trans-unit><source>Member Profile</source><target>会员资料</target></trans-unit>
+            <trans-unit><source>Password Settings</source><target>密码设置</target></trans-unit>
+            <trans-unit><source>COPPER</source><target>青铜配套</target></trans-unit>
+            <trans-unit><source>SILVER</source><target>白银配套</target></trans-unit>
+            <trans-unit><source>GOLD</source><target>黄金配套</target></trans-unit>
+            <trans-unit><source>PLATINUM</source><target>白金配套</target></trans-unit>
+            <trans-unit><source>DIAMOND</source><target>钻石配套</target></trans-unit>
+            <trans-unit><source>VIP</source><target>贵宾配套</target></trans-unit>
+            <trans-unit><source>FX-CMISC</source><target>FX-CMISC配套</target></trans-unit>
+            <trans-unit><source>PEARL</source><target>珍珠配套</target></trans-unit>
+            <trans-unit><source>GEM</source><target>宝石配套</target></trans-unit>
+            <trans-unit><source>Bank Charges (USD)</source><target>银行费用（美元）</target></trans-unit>
+            <trans-unit><source>Grand Amount (USD)</source><target>总计（美元）</target></trans-unit>
+            <trans-unit><source>MT4 Withdrawal Amount</source><target>MT4提款金额</target></trans-unit>
+            <trans-unit><source>After handling fee</source><target>扣除手续费后</target></trans-unit>
+            <trans-unit><source>Sub Total (added handling fee)</source><target>附加手续费后</target></trans-unit>
+            <trans-unit><source>Withdrawal Amount will be credited to e-Wallet</source><target>提款金额将记入现金币</target></trans-unit>
+            <trans-unit><source>Handling fee USD50 or 5% whichever is higher</source><target>手续费50美元或5％以较高者为准</target></trans-unit>
+            <trans-unit><source>Processing time : 5 working days</source><target>办理时间：5个工作日</target></trans-unit>
+            <trans-unit><source>Withdrawal request must be done during the first 7 days of each month or 16th - 20th of each month</source><target>提款申请必须在每月的1日-7日，或16日-20日</target></trans-unit>
+            <trans-unit><source>MT4 Rank</source><target>MT4等级</target></trans-unit>
+            <trans-unit><source>Forgot Username or Password</source><target>忘记用户名或密码</target></trans-unit>
+            <trans-unit><source>Sign In</source><target>登录</target></trans-unit>
+            <trans-unit><source>Login to your account</source><target>登录到您的帐户</target></trans-unit>
+            <trans-unit><source>Your Email</source><target>您的电子邮件地址</target></trans-unit>
+            <trans-unit><source>Login Page</source><target>登录页面</target></trans-unit>
+            <trans-unit><source>Membership Summary</source><target>会员摘要</target></trans-unit>
+            <trans-unit><source>MT4 List</source><target>MT4列表</target></trans-unit>
+            <trans-unit><source>MT4 ID</source><target>MT4编号</target></trans-unit>
+            <trans-unit><source>Initial Password</source><target>初始密码</target></trans-unit>
+            <trans-unit><source>Please key in your password</source><target>请输入你的二级密码</target></trans-unit>
+            <trans-unit><source>Loading</source><target>载入中</target></trans-unit>
+            <trans-unit><source>Security Password is not valid</source><target>二级密码是无效的</target></trans-unit>
+            <trans-unit><source>NRIC</source><target>身份证</target></trans-unit>
+            <trans-unit><source>Please fill in all the personal information</source><target>请填写所有个人信息</target></trans-unit>
+            <trans-unit><source>Please fill in all the Bank Account Details</source><target>请填写所有银行账户资料</target></trans-unit>
+            <trans-unit><source>Bank Branch</source><target>银行分行</target></trans-unit>
+            <trans-unit><source>Bank Address</source><target>银行地址</target></trans-unit>
+            <trans-unit><source>Login Password</source><target>登入密码</target></trans-unit>
+            <trans-unit><source>Password Setting</source><target>密码设置</target></trans-unit>
+            <trans-unit><source>Are you sure want to purchase this package</source><target>你确定要购买此配套</target></trans-unit>
+            <trans-unit><source>In-sufficient fund to purchase package</source><target>您不足够资金购买配套</target></trans-unit>
+            <trans-unit><source>In-sufficient fund to upgrade package</source><target>您不足够资金升级配套</target></trans-unit>
+            <trans-unit><source>Minimum e-Point required is </source><target>您所需的最低限度注册币是</target></trans-unit>
+            <trans-unit><source>The total funds is not match with package price</source><target>资金总额不与配套的价格相匹配</target></trans-unit>
+            <trans-unit><source>Paid by e-Point</source><target>由注册币支付</target></trans-unit>
+            <trans-unit><source>Paid by e-Wallet</source><target>由现金币支付</target></trans-unit>
+            <trans-unit><source>Member Registration - Step 1</source><target>会员注册 - 步骤1</target></trans-unit>
+            <trans-unit><source>Member Registration - Step 2</source><target>会员注册 - 步骤2</target></trans-unit>
+            <trans-unit><source>Referrer</source><target>推荐人</target></trans-unit>
+            <trans-unit><source>Invalid Referrer ID</source><target>推荐人不正确</target></trans-unit>
+            <trans-unit><source>Deposit funds into your trading account today</source><target>立刻存入资金到您的交易账户</target></trans-unit>
+            <trans-unit><source>Payment Method</source><target>付款方法</target></trans-unit>
+            <trans-unit><source>Bank Transfer</source><target>银行转帐</target></trans-unit>
+            <trans-unit><source>Funds Deposit will be credited into e-Point Account</source><target>资金存款将被记入注册币账户</target></trans-unit>
+            <trans-unit><source>e-Point Account is ONLY for package purchase, package upgrade, MT4 account reload and is NON-WITHDRAWABLE</source><target>注册币帐户仅用于购买配套，升级配套，充值MT4账户不过不可兑现</target></trans-unit>
+            <trans-unit><source>Reload MT4 Funds</source><target>充值MT4账户</target></trans-unit>
+            <trans-unit><source>Reload MT4 Funds Status</source><target>充值MT4账户状态</target></trans-unit>
+            <trans-unit><source>MT4 Account</source><target>MT4账户</target></trans-unit>
+            <trans-unit><source>MT4 Fund Reload will take 2 business days</source><target>充值MT4账户需时两个工作天</target></trans-unit>
+            <trans-unit><source>Search member from your genealogy</source><target>搜索会员</target></trans-unit>
+            <trans-unit><source>Downline Sales List</source><target>小组业绩明细</target></trans-unit>
+            <trans-unit><source>Downline Sales Listing</source><target>小组业绩明细</target></trans-unit>
+            <trans-unit><source>Sales List</source><target>业绩明细</target></trans-unit>
+            <trans-unit><source>This Month</source><target>本月</target></trans-unit>
+            <trans-unit><source>-1 Month</source><target>上个月</target></trans-unit>
+            <trans-unit><source>-2 Month</source><target>前两个月</target></trans-unit>
+            <trans-unit><source>-3 Month</source><target>前三个月</target></trans-unit>
+            <trans-unit><source>CONVERT TO EWALLET</source><target>转换现金币</target></trans-unit>
+            <trans-unit><source>Overriding Bonus</source><target>领导覆盖奖金</target></trans-unit>
+            <trans-unit><source>Pips Bonus</source><target>点数回赠</target></trans-unit>
+            <trans-unit><source>Group Sales</source><target>小组业绩</target></trans-unit>
+            <trans-unit><source>Welcome</source><target>欢迎</target></trans-unit>
+            <trans-unit><source>Upload</source><target>上传</target></trans-unit>
+            <trans-unit><source>Memo</source><target>备忘录</target></trans-unit>
+            <trans-unit><source>BMW Challenge</source><target>BMW挑战</target></trans-unit>
+            <trans-unit><source>BMW Challenge Ranking</source><target>BMW挑战排行榜</target></trans-unit>
+            <trans-unit><source>Total Personal Sales</source><target>个人总业绩</target></trans-unit>
+            <trans-unit><source>Rolex Achiever</source><target>劳力士入围者</target></trans-unit>
+            <trans-unit><source>Your current personal sales : </source><target>您当前的个人销售：</target></trans-unit>
+            <trans-unit><source>Qualifying period October 24th to December 15th 2014 (GMT+8)</source><target>预选赛阶段：2014年10月24日至2014年12月15日（GMT+8）</target></trans-unit>
+            <trans-unit><source>Stage 1 : Qualify with Personal Sales of USD300,000</source><target>第一阶段：个人销售达300,000美元</target></trans-unit>
+            <trans-unit><source>Stage 2</source><target>第二阶段</target></trans-unit>
+            <trans-unit><source>Top Performer</source><target>最佳表现者</target></trans-unit>
+            <trans-unit><source>Runner-up</source><target>亚军得主</target></trans-unit>
+            <trans-unit><source>Second Runner-up</source><target>季军得主</target></trans-unit>
+            <trans-unit><source>during the Champions Challenge will win a Brand New BMW 5 SERIES</source><target>在冠军挑战赛将赢得一个全新的宝马5系 BMW 5 SERIES</target></trans-unit>
+            <trans-unit><source>during the Champions Challenge will win a Brand New Audi A3</source><target>在冠军挑战赛将赢得一个全新的奥迪A3 Audi A3</target></trans-unit>
+            <trans-unit><source>during the Champions Challenge will win a Brand New Kia K3</source><target>在冠军挑战赛将赢得一个全新的起亚K3 Kia K3</target></trans-unit>
+            <trans-unit><source>Challenge period start from 24th October 2014 till 15th December 2014 (GMT+8).</source><target>挑战赛日期从2014年10月24日开始，直到2014年12月15日（GMT+8）。</target></trans-unit>
+            <trans-unit><source>The prize will not be transferable to another person.</source><target>奖品不得转让给他人。</target></trans-unit>
+            <trans-unit><source>No part of a prize is exchangeable for cash or any other prize.</source><target>奖品的任何部分不得兑换成现金或其他奖品。</target></trans-unit>
+            <trans-unit><source>If an advertised prize is not available, we reserve the right to offer an alternative prize of equal or greater value.</source><target>如果刊登的奖品出现缺货或类似情况 ，我们有权提供同等或更高价值的替代奖品。</target></trans-unit>
+            <trans-unit><source>This challenge is to be run with the spirit of Trust &amp; Integrity which is the culture by which members’ have embraced and forms the foundation of our corporate Credo. We will not hesitate to disqualify any Registrant found manipulating fair-play and damaging company’s image and integrity during the challenge period.</source><target>这个挑战遵守信托与诚信的精神。若在挑战期间发现任何操纵竞赛公平和损害公司形象的行为，我们会毫不犹豫地取消该参赛者的资格。</target></trans-unit>
+            <trans-unit><source>Organizer will endeavor to send prizes within 3 month of the competition end date.</source><target>主办单位将尽力在竞争结束日期后的3个月内发送奖品。</target></trans-unit>
+            <trans-unit><source>If you win a competition, we will notify you by e-mail.</source><target>如果你赢得比赛，我们将通过电子邮件通知您。</target></trans-unit>
+            <trans-unit><source>The judges’ decision will be final, and no correspondence will be entered into.</source><target>评审的决定权为最终决定，恕不另外通知。</target></trans-unit>
+            <trans-unit><source>This competition is being run by FX-CMISC.</source><target>此比赛由FX-CMISC诚意献上。</target></trans-unit>
+            <trans-unit><source>(Qualifier will win a luxury Rolex watch)</source><target>(成功参赛者首先得到名贵劳力士手表）</target></trans-unit>
+            <trans-unit><source>Register Fee (e-Point)</source><target>注册费（注册币）</target></trans-unit>
+            <trans-unit><source>You need to pay for register fee</source><target>您需要支付注册费</target></trans-unit>
+            <trans-unit><source>Register Remark</source><target>登记备注</target></trans-unit>
+            <trans-unit><source>Security password is not valid.</source><target>二级密码不正确</target></trans-unit>
+            <trans-unit><source>Old Security password is not valid.</source><target>旧的二级密码不正确</target></trans-unit>
+            <trans-unit><source>Convert Passive to e-Wallet</source><target>静态币转换为现金币</target></trans-unit>
+            <trans-unit><source>PROFIT SHARING</source><target>盈利分享</target></trans-unit>
+            <trans-unit><source>GROUP BONUS</source><target>团体奖金</target></trans-unit>
+            <trans-unit><source>GENERATION BONUS</source><target>代数奖金</target></trans-unit>
+            <trans-unit><source>PROMO</source><target>优惠币</target></trans-unit>
+            <trans-unit><source>Promo Balance</source><target>优惠币账户余额</target></trans-unit>
+            <trans-unit><source>Promo Account</source><target>优惠币账户</target></trans-unit>
+            <trans-unit><source>Promo Listing</source><target>优惠币明细</target></trans-unit>
+            <trans-unit><source>Promo Wallet Listing</source><target>优惠币明细</target></trans-unit>
+            <trans-unit><source>Promo Wallet Transaction Log</source><target>优惠币交易明细</target></trans-unit>
+            <trans-unit><source>Promo Wallet Log</source><target>优惠币明细</target></trans-unit>
+            <trans-unit><source>Promo Statement</source><target>优惠币账户明细</target></trans-unit>
+            <trans-unit><source>Convert Promo to e-Wallet</source><target>优惠币转换为现金币</target></trans-unit>
+            <trans-unit><source>Paid by Promo Wallet</source><target>由优惠币支付</target></trans-unit>
+            <trans-unit><source>In-sufficient e-Wallet</source><target>现金币数量不足</target></trans-unit>
+            <trans-unit><source>In-sufficient Promo Point</source><target>优惠币数量不足</target></trans-unit>
+            <trans-unit><source>Promo Wallet Transfer</source><target>优惠币转账</target></trans-unit>
+            <trans-unit><source>Promo Wallet Transfer History</source><target>优惠币转账明细</target></trans-unit>
+            <trans-unit><source>Promo Wallet Balance</source><target>优惠币余额</target></trans-unit>
+            <trans-unit><source>Transfer Promo Wallet Amount</source><target>优惠币转账金额</target></trans-unit>
         </body>
     </file>
 </xliff>
