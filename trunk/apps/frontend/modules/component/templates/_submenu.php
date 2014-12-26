@@ -1,6 +1,6 @@
 <div class="menu">
     <ul>
-        <li><a href="/member/index" class="active">
+        <li><a href="/member/summary">
             <div>Account Summary</div>
         </a></li>
         <li><a href="/member/password">
@@ -29,12 +29,13 @@
         <div>Log Out</div>
     </a></div>
 </div>
+<?php echo "/" . $module . "/" . $action ?>
 
 <script type="text/javascript">
-$(document).ready(function()
+
+jQuery(document).ready(function($)
 {
-  $("a").click(function(){
-    $("a:first").addClass("active");
-  });
+    var url = "<?php echo "/" . $module . "/" . $action ?>";
+    $("div.menu").find("a[href='"+url+"']").addClass("active");
 });
 </script>

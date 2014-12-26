@@ -182,7 +182,7 @@ h2
 
 .menu ul li a.active
 {
-	background:url(images/arrow.png) no-repeat 20px center;
+	background:url(/images/arrow.png) no-repeat 20px center;
 	cursor:default;
 }
 
@@ -228,7 +228,7 @@ h2
 	float:left;
 	width:230px;
 	height:70px;
-	background:#AE0001 url(images/side_bg.jpg) no-repeat top;
+	background:#AE0001 url(/images/side_bg.jpg) no-repeat top;
 }
 
 .logout a
