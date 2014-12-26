@@ -78,11 +78,13 @@ use_helper('I18N');
 
 <td valign="top">
 
+    <h2><?php echo __("Password Settings")?></h2>
+
     <?php include_component('component', 'alert', array('param' => $sf_user->getAttribute(Globals::SESSION_DISTID, 0))) ?>
 
     <fieldset>
         <legend class="section">
-            <h2><?php echo __("Login Password")?></h2>
+            <h3><?php echo __("Login Password")?></h3>
         </legend>
         <form action="/member/loginPassword"
                         id="passwordForm"
@@ -139,7 +141,7 @@ use_helper('I18N');
     
     <fieldset>
         <legend class="section">
-            <h2><?php echo __("Security Password")?></h2>
+            <h3><?php echo __("Security Password")?></h3>
         </legend>
         <form action="/member/transactionPassword"
             id="securityPasswordForm"

@@ -83,11 +83,11 @@ img.tree-minus-button:hover, img.tree-plus-button:hover {
         <table cellpadding="5" cellspacing="1">
             <tbody>
             <tr>
-                <td>
+                <th>
                     <label class="control-label" for="txtFullName">
                         <?php echo __("Search By Username")?>
                     </label>
-                </td>
+                </th>
                 <td>
                     <input type="text" id="txtFullName" name="fullName" class="form-control" value="<?php echo $fullName?>">
                 </td>

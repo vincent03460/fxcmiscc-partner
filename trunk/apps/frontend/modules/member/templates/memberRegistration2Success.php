@@ -14,15 +14,6 @@ input[readonly] {
     background-color: #EEEEEE;
     cursor: not-allowed;
 }
-
-form#registerForm fieldset {
-    width: 800px;
-    margin-bottom: 20px;
-}
-
-form#registerForm fieldset th {
-    width: 150px;
-}
 </style>
 
 <script type="text/javascript" language="javascript">
