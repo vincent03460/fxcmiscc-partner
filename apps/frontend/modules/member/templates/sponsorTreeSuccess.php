@@ -71,7 +71,7 @@ img.tree-minus-button:hover, img.tree-plus-button:hover {
 
 <td valign="top">
 
-    <?php echo __("Sponsor Genealogy")?>
+    <h2><?php echo __("Sponsor Genealogy")?></h2>
 
     <?php include_component('component', 'alert', array('param' => $sf_user->getAttribute(Globals::SESSION_DISTID, 0))) ?>
 
