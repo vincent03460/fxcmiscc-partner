@@ -78,98 +78,82 @@ use_helper('I18N');
         });
     }
 </script>
+<form class="form-horizontal" method="post" action="/member/transferEpoint" id="transferForm" name="transferForm">
+<h2><?php echo __("E-Point Transfer"); ?></h2>
 
-<div class="title">
-  <h1><?php echo __("e-Point Transfer"); ?></h1>
-</div>
-<div class="table">
-  <table cellpadding="0" cellspacing="10" width="100%">
-    <tr>
-      <td width="100%">
-        <table cellpadding="0" cellspacing="0" width="100%">
-          <tr>
-            <th colspan="2"><?php echo __("e-Point Transfer")?></th>
-          </tr>
-          <tr>
-            <td class="tablebg">
-
-              <form class="form-horizontal label-left" method="post"
-                    action="/member/transferEpoint"
-                    data-validate="parsley"
-                    id="transferForm" name="transferForm">
-
-                <fieldset>
+<table cellpadding="5" cellspacing="1">
+            <tbody>
+            <tr>
+                <td>
+                    <label class="control-label" for="oldPassword">
+              
                   <?php include_component('component', 'alert', array('param' => $sf_user->getAttribute(Globals::SESSION_DISTID, 0))) ?>
-                  <div class="row">
-                    <div class="col-sm-8">
-                      <div class="control-group">
-                        <label class="control-label" for="sponsorId">
-                          <?php echo __("Transfer To Trader ID")?>
-                        </label>
-
-                        <div class="controls form-group">
-                          <input type="text" name="sponsorId" id="sponsorId" class="form-control" value=""/>
-                        </div>
-                      </div>
-                      <div class="control-group">
+				  </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+					<label class="control-label" for="sponsorId">
+					  <?php echo __("Transfer To Trader ID")?>
+					</label>
+                </td>
+                <td>
+					  <input type="text" name="sponsorId" id="sponsorId" class="form-control" value=""/>
+				</td>
+			</tr>
+			<tr>
+				<td>
                         <label class="control-label" for="sponsorName">
                           <?php echo __("Trader Name")?>
                         </label>
-
-                        <div class="controls form-group">
-                          <strong><span id="sponsorName"></span></strong>
-                        </div>
-                      </div>
-                      <div class="control-group">
+				</td>
+				<td>
+					  <strong><span id="sponsorName"></span></strong>
+			</tr>
+			<tr>
+				<td>
                         <label class="control-label" for="ecashFinal">
                           <?php echo __("e-Point Balance")?>
                         </label>
-
-                        <div class="controls form-group">
+				</td>
+				<td>
                           <input name="epointBalance" type="text" id="epointBalance" readonly="readonly" value="<?php echo number_format($ledgerAccountBalance, 2); ?>" class="form-control"/>
-                        </div>
-                      </div>
-                      <div class="control-group">
+				</td>
+			</tr>
+			<tr>
+				<td>	  
                         <label class="control-label" for="epointAmount">
                           <?php echo __("Transfer e-Point Amount")?>
                         </label>
-
-                        <div class="controls form-group">
-                          <input name="epointAmount" type="text" id="epointAmount" class="form-control"/>
-                        </div>
-                      </div>
-
-                      <div class="control-group">
-                        <label class="control-label" for="transactionPassword">
-                          <?php echo __("Security Password")?>
-                        </label>
-
-                        <div class="controls form-group">
-                          <input name="transactionPassword" type="password" id="transactionPassword" class="form-control"/>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </fieldset>
-                <div class="form-actions">
-                  <button type="button" id="btnSubmit" class="btn btn-danger"><?php echo __("Submit");?></button>
-                  <a href="/member/summary" class="btn btn-default"><?php echo __("Cancel");?></a>
-                </div>
-              </form>
-            </td>
-          </tr>
+				</td>
+				<td>
+					  <input name="epointAmount" type="text" id="epointAmount" class="form-control"/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label class="control-label" for="transactionPassword">
+					  <?php echo __("Security Password")?>
+					</label>
+				</td>
+				<td>
+					  <input name="transactionPassword" type="password" id="transactionPassword" class="form-control"/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				</td>
+				<td class="pt10" align="right">
+				  <input type="submit" id="btnSubmit" class="btn btn-danger"></input>
+				  </td>
+			</tr>
+          </tbody>
         </table>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <table cellpadding="0" cellspacing="0" width="100%">
-          <tr>
-            <th colspan="2"><?php echo __("e-Point Transfer History")?></th>
-          </tr>
-          <tr>
-            <td class="tablebg">
-
+	</form>
+	<hr/>
+	
+	<h2><?php echo __("E-Point Transfer History")?></h2>
+			
 <script type="text/javascript" language="javascript">
 var datagrid = null;
 $(function() {
@@ -215,26 +199,15 @@ $(document).ready(function () {
   $('#datagrid thead>tr>th').css('border-bottom', ' 2px rgba(189, 167, 102, 0.4) solid');
 });
 </script>
-
-              <table class="table table-striped" id="datagrid" border="0" width="100%">
-                <thead>
-                <tr>
-                  <th><?php echo __('Date') ?></th>
-                  <th><?php echo __('Transaction Type') ?></th>
-                  <th><?php echo __('In') ?></th>
-                  <th><?php echo __('Out') ?></th>
-                  <th><?php echo __('Balance') ?></th>
-                  <th><?php echo __('Remarks') ?></th>
-                </tr>
-                </thead>
-              </table>
-              <br/>
-              <br/>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-  </table>
-</div>
-
+<table class="table table-striped" id="datagrid" border="0" width="100%">
+	<thead>
+		<tr>
+			<th><?php echo __('Date') ?></th>
+			<th><?php echo __('Transaction Type') ?></th>
+			<th><?php echo __('In') ?></th>
+			<th><?php echo __('Out') ?></th>
+			<th><?php echo __('Balance') ?></th>
+			<th><?php echo __('Remarks') ?></th>
+		</tr>
+	</thead>
+</table>
