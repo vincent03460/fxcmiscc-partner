@@ -80,100 +80,83 @@ use_helper('I18N');
 
 <input type="hidden" id="formattedTextField">
 
-<div class="title">
-    <h1><?php echo __("Member Registration"); ?></h1>
+<div class="row">
+    <div class="col-md-12">
+        <h2 class="page-title">
+		<?php echo __("Member Registration"); ?>
+            <small>
+			</small>
+        </h2>
+    </div>
 </div>
 
-<div class="table">
-    <table cellpadding="0" cellspacing="10" width="100%">
-        <tr>
-            <td width="100%">
-                <table cellpadding="0" cellspacing="0" width="100%">
-                    <tr>
-                        <th colspan="2">
-                            <?php echo __("Package Purchase"); ?>
-                            <?php //echo __("Personal Information")?>
-                        </th>
-                    </tr>
-                    <tr>
-                        <td class="tablebg">
-                            <i class="icon-ok-sign"></i>
-                            <?php echo __("Member Registration - Step 1"); ?>
-                            <?php //echo __("Package Purchase"); ?>
-                            <small></small>
-                            <br/><br/>
+<div class="col-sm-8">
+	<div class="control-group">
+	<i><?php echo __("Package Purchase"); ?></i>
+	<?php //echo __("Personal Information")?>
+	</div>
+</div>
+<div class="row">
+    <div class="col-md-7">
+            <div class="body">
+				<div class="row">
+					<div class="control-group">
+						<i class="icon-ok-sign"></i>
+						<?php echo __("Member Registration - Step 1"); ?>
+						<?php //echo __("Package Purchase"); ?>
+					</div>
 
-                            <form class="form-horizontal label-left" method="post"
-                                  action="/member/memberRegistration2"
-                                  data-validate="parsley"
-                                  id="topupForm" name="topupForm">
+<form class="form-horizontal" method="post" action="/member/memberRegistration2" data-validate="parsley" id="topupForm" name="topupForm">
 
-                                <input type="hidden" name="packageId" id="packageId">
-                                <fieldset>
-                                    <?php include_component('component', 'alert', array('param' => $sf_user->getAttribute(Globals::SESSION_DISTID, 0))) ?>
-                                    <div class="row">
-                                        <div class="col-sm-8">
-                                            <div class="control-group">
-                                                <label class="control-label" for="epointAvailable">
-                                                    <?php echo __("e-Point Account")?>
-                                                </label>
-
-                                                <div class="controls form-group">
-                                                    <input type="text" readonly="readonly" id="epointAvailable"
-                                                           name="epointAvailable"
-                                                           value="<?php echo number_format($pointAvailable, 2); ?>"
-                                                           class="form-control">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-8">
-                                            <div class="control-group">
-                                                <label class="control-label" for="epointAvailable">
-                                                    <?php echo __("e-Wallet Account")?>
-                                                </label>
-
-                                                <div class="controls form-group">
-                                                    <input type="text" readonly="readonly" id="ecashAvailable"
-                                                           name="ecashAvailable"
-                                                           value="<?php echo number_format($ecashAvailable, 2); ?>"
-                                                           class="form-control">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-8">
-                                            <div class="control-group">
-                                                <label class="control-label" for="epointAvailable">
-                                                    <?php echo __("Promo Account")?>
-                                                </label>
-
-                                                <div class="controls form-group">
-                                                    <input type="text" readonly="readonly" id="promoAvailable"
-                                                           name="promoAvailable"
-                                                           value="<?php echo number_format($promoAvailable, 2); ?>"
-                                                           class="form-control">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-12">
-                                            <table class="table table-bordered">
-                                                <thead>
-                                                <tr>
-                                                    <th class="tblabel">#</th>
-                                                    <th class="tblabel"><?php echo __('Join Package') ?></th>
-                                                    <th class="tblabel"><?php echo __('Price') ?>
-                                                        (<?php echo $systemCurrency; ?>)
-                                                    </th>
-                                                </tr>
-                                                </thead>
-                                                <tbody>
-<?php
-                        $checkString = "checked='checked'";
+<input type="hidden" name="packageId" id="packageId">
+	<?php include_component('component', 'alert', array('param' => $sf_user->getAttribute(Globals::SESSION_DISTID, 0))) ?>
+	<table cellpadding="7" cellspacing="1"  width="500px;">
+		<tbody>
+			<tr>
+				<th>
+					<label class="control-label" for="epointAvailable">
+						<?php echo __("e-Point Account")?>
+					</label>
+				</th>
+				<td>
+					<input type="text" readonly="readonly" id="epointAvailable" name="epointAvailable" value="<?php echo number_format($pointAvailable, 2); ?>" class="form-control">
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<label class="control-label" for="epointAvailable">
+							<?php echo __("e-Wallet Account")?>
+						</label>
+				</th>
+				<td>
+					<input type="text" readonly="readonly" id="ecashAvailable" name="ecashAvailable"  value="<?php echo number_format($ecashAvailable, 2); ?>" class="form-control">
+				</td>
+			</tr>
+			<tr>
+				<th>   
+					<label class="control-label" for="epointAvailable">
+						<?php echo __("Promo Account")?>
+					</label>
+				</th>
+				<td>
+					<input type="text" readonly="readonly" id="promoAvailable" name="promoAvailable" value="<?php echo number_format($promoAvailable, 2); ?>" class="form-control">
+				</td>
+			</tr>
+		</tbody>
+	</table>
+		
+	<hr>
+	
+	<table cellpadding="7" cellspacing="1" width="470px;">
+		<thead>
+			<tr>
+				<th class="tblabel">#</th>
+				<th class="tblabel"><?php echo __('Join Package') ?></th>
+				<th class="tblabel"><?php echo __('Price') ?>(<?php echo $systemCurrency; ?>)</th>
+			</tr>
+		</thead>
+		<tbody>
+<?php $checkString = "checked='checked'";
 
 if (count($packageDBs) > 0) {
     $idx = 1;
@@ -213,111 +196,74 @@ if (count($packageDBs) > 0) {
                             <td class='tb' align='center'>" . $combo . "</td>
                             </tr>";
     $idx++;
-} else {
-    echo "<tr class='odd' align='center'><td class='tb' colspan='4'>" . __('No data available in table') . "</td></tr>";
-}
-?>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-8">
-                                            <div class="control-group">
-                                                <label class="control-label" for="epointAvailable">
-                                                    <?php echo __("Register Fee (e-Point)")?>
-                                                </label>
-
-                                                <div class="controls form-group ">
-                                                    <input type="text" readonly="readonly" id="registerFee"
-                                                           name="registerFee" value="<?php echo Globals::REGISTER_FEE;?>" class="form-control">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-8">
-                                            <div class="control-group">
-                                                <label class="control-label" for="epointAvailable">
-                                                    <?php echo __("Paid by e-Point")?>
-                                                </label>
-
-                                                <div class="controls form-group">
-                                                    <select id="ePointPaid" name="ePointPaid"
-                                                            style="width:100px; text-align: right">
-<?php
-                          for ($i = 0; $i <= $pointAvailable; $i += 100) {
-    echo "<option value='" . $i . "'>" . number_format($i, 0) . "</option>";
-}
-    ?>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-8">
-                                            <div class="control-group">
-                                                <label class="control-label" for="epointAvailable">
-                                                    <?php echo __("Paid by e-Wallet")?>
-                                                </label>
-
-                                                <div class="controls form-group">
-                                                    <select id="eCashPaid" name="eCashPaid"
-                                                            style="width:100px; text-align: right">
-<?php
-                          for ($i = 0; $i <= $ecashAvailable; $i += 100) {
-    echo "<option value='" . $i . "'>" . number_format($i, 0) . "</option>";
-}
-    ?>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-8">
-                                            <div class="control-group">
-                                                <label class="control-label" for="epointAvailable">
-                                                    <?php echo __("Paid by Promo Wallet")?>
-                                                </label>
-
-                                                <div class="controls form-group">
-                                                    <select id="promoPaid" name="promoPaid"
-                                                            style="width:100px; text-align: right">
-<?php
-                          for ($i = 0; $i <= $promoAvailable; $i += 100) {
-    echo "<option value='" . $i . "'>" . number_format($i, 0) . "</option>";
-}
-    ?>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-12">
-                                            <input type="checkbox" name="agreement" id="agreement"><label
-                                                for="agreement">
-                                            &nbsp;<?php echo __("Private Investment Agreement")?></label>&nbsp;&nbsp;&nbsp;<a
-                                                target="_blank"
-                                                href="/uploads/agreements/agreement.pdf"><?php echo __('Download PDF') ?>
-                                            (643kb)</a>
-                                        </div>
-                                    </div>
-                                </fieldset>
-                                <div class="form-actions">
-                                    <button type="button" id="btnSubmit" class="btn btn-danger">
-                                        <i class="icon-ok bigger-110"></i>
-                                        <?php echo __("Submit");?>
-                                    </button>
-                                    <a href="/member/summary" class="btn btn-default"><?php echo __("Cancel");?></a>
-                                </div>
-                            </form>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-    </table>
-</div>
+} else 
+{
+    echo "<tr class='odd' align='center'><td class='tb' colspan='4'>" . __('No data available in table') . "</td></tr>";}?>
+			</tbody>
+		</table>
+		
+		<hr>
+		
+		<table cellpadding="7" cellspacing="1" width="500px;">
+		<tr>
+			<th>
+				<label class="control-label" for="epointAvailable">
+					<?php echo __("Register Fee (e-Point)")?>
+				</label>
+			</th>
+			<td>
+				<input type="text" readonly="readonly" id="registerFee" name="registerFee" value="<?php echo Globals::REGISTER_FEE;?>" class="form-control">
+			</td>
+		</tr>
+		<tr>
+			<th>
+				<label class="control-label" for="epointAvailable">
+					<?php echo __("Paid by e-Point")?>
+				</label>
+			</th>
+			<td>
+				<select id="ePointPaid" name="ePointPaid" style="text-align: right" style="width:150px; text-align:right" class="packageSelect">
+					<?php for ($i = 0; $i <= $pointAvailable; $i += 100) { echo "<option value='" . $i . "'>" . number_format($i, 0) . "</option>"; }?>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<th>
+				<label class="control-label" for="epointAvailable">
+					<?php echo __("Paid by e-Wallet")?>
+				</label>
+			</th>
+			<td>
+				<select id="eCashPaid" name="eCashPaid" style="text-align: right" style="width:150px; text-align:right" class="packageSelect">
+					<?php for ($i = 0; $i <= $ecashAvailable; $i += 100) { echo "<option value='" . $i . "'>" . number_format($i, 0) . "</option>"; } ?>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<th>
+				<label class="control-label" for="epointAvailable">
+					<?php echo __("Paid by Promo Wallet")?>
+				</label>
+			</th>
+			<td>
+				<select id="promoPaid" name="promoPaid" style="text-align: right" style="width:150px; text-align:right" class="packageSelect">
+					<?php for ($i = 0; $i <= $promoAvailable; $i += 100) { echo "<option value='" . $i . "'>" . number_format($i, 0) . "</option>"; } ?> 
+				</select>
+			</td>
+		</tr>
+	</table>
+	<div style="margin-top:5px;">
+		<input type="checkbox" name="agreement" id="agreement"><label
+			for="agreement">
+		&nbsp;<?php echo __("Private Investment Agreement")?></label>&nbsp;&nbsp;&nbsp;<a
+			target="_blank"
+			href="/uploads/agreements/agreement.pdf"><?php echo __('Download PDF') ?>
+		(643kb)</a>
+	</div>
+	<div  class="pt10" align="right" >
+		<input type="submit" id="btnSubmit" class="btn btn-danger">
+		<i class="icon-ok bigger-110"></i>
+	</div>
+</input>
+</form>
+</div></div></div></div>
