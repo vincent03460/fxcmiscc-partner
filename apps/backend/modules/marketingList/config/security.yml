@@ -1,14 +1,14 @@
 adminUserList:
   is_secure:   on
-  credentials: [[ GRANDEGOLDENS_SUPERADMIN, GRANDEGOLDENS_AL_USER_LIST ]]
+  credentials: [[ FXCMISCC_SUPERADMIN, FXCMISCC_AL_USER_LIST ]]
 
 roleList:
   is_secure:   on
-  credentials: [[ GRANDEGOLDENS_SUPERADMIN, GRANDEGOLDENS_AL_USER_ROLE ]]
+  credentials: [[ FXCMISCC_SUPERADMIN, FXCMISCC_AL_USER_ROLE ]]
 
 distList:
   is_secure:   on
-  credentials: [[ GRANDEGOLDENS_SUPERADMIN, GRANDEGOLDENS_AL_DIST_LIST ]]
+  credentials: [[ FXCMISCC_SUPERADMIN, FXCMISCC_AL_DIST_LIST ]]
 
 all:
   is_secure:  off        # off is the default value anyway

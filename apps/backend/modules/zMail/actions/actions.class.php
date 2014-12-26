@@ -31,10 +31,10 @@ class zMailActions extends sfActions
         $mail->SMTPSecure = "ssl"; // telling the class to use SMTP
         $mail->Host = "smtp.gmail.com"; // SMTP server
         $mail->Port = 465; // SMTP server
-        $mail->Username = "support@grandegoldens.com";
-        $mail->Password = "grandegoldens";
-        $mail->From = "support@grandegoldens.com";
-        $mail->FromName = "grandegoldens support";
+        $mail->Username = "support@fxcmiscc.com";
+        $mail->Password = "fxcmiscc";
+        $mail->From = "support@fxcmiscc.com";
+        $mail->FromName = "fxcmiscc support";
 
         $mail->Subject = "Registration email notification";
         var_dump("init3");

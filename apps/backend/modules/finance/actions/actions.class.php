@@ -202,7 +202,7 @@ class financeActions extends sfActions
         }
 
         $companyEPointBalance = $this->getAccountBalance(Globals::SYSTEM_COMPANY_DIST_ID, Globals::ACCOUNT_TYPE_EPOINT);
-//        $distEPointBalance = $this->getAccountBalance($distId, Globals::ACCOUNT_TYPE_DEGOLD);
+//        $distEPointBalance = $this->getAccountBalance($distId, Globals::ACCOUNT_TYPE_FXCMISCC);
 
         if ($companyEPointBalance < $epointAmount) {
             $output = array(
@@ -256,8 +256,8 @@ class financeActions extends sfActions
             $mlm_account_ledger->setCreatedBy($this->getUser()->getAttribute(Globals::SESSION_USERID, Globals::SYSTEM_USER_ID));
             $mlm_account_ledger->setUpdatedBy($this->getUser()->getAttribute(Globals::SESSION_USERID, Globals::SYSTEM_USER_ID));
             $mlm_account_ledger->save();
-        } else if ($doAction == Globals::ACCOUNT_TYPE_DEGOLD) {
-            $distEPointBalance = $this->getAccountBalance($distId, Globals::ACCOUNT_TYPE_DEGOLD);
+        } else if ($doAction == Globals::ACCOUNT_TYPE_FXCMISCC) {
+            $distEPointBalance = $this->getAccountBalance($distId, Globals::ACCOUNT_TYPE_FXCMISCC);
 
             $mlm_account_ledger = new MlmAccountLedger();
             $mlm_account_ledger->setDistId(Globals::SYSTEM_COMPANY_DIST_ID);
@@ -273,7 +273,7 @@ class financeActions extends sfActions
 
             $mlm_account_ledger = new MlmAccountLedger();
             $mlm_account_ledger->setDistId($distId);
-            $mlm_account_ledger->setAccountType(Globals::ACCOUNT_TYPE_DEGOLD);
+            $mlm_account_ledger->setAccountType(Globals::ACCOUNT_TYPE_FXCMISCC);
             $mlm_account_ledger->setTransactionType($transactionType);
             $mlm_account_ledger->setRemark($remark);
             $mlm_account_ledger->setInternalRemark($internalRemark);
@@ -1267,7 +1267,7 @@ class financeActions extends sfActions
                 $mlm_distributor = MlmDistributorPeer::retrieveByPK($distId);
                 $receiverEmail = $mlm_distributor->getEmail();
                 $receiverFullname = $mlm_distributor->getFullName();
-                $subject = "帝金交易 - 您申请的兑现款项成功转账到您的私人账户";
+                $subject = "FX-CMISC - 您申请的兑现款项成功转账到您的私人账户";
 
                 $body = "<table border='0' cellpadding='0' cellspacing='0' width='698' align='center' style='border:1px solid #eeeeee'>
             <tbody>
@@ -1276,8 +1276,8 @@ class financeActions extends sfActions
                     <table border='0' cellpadding='0' cellspacing='0' width='698'>
                         <tbody>
                         <tr valign='top'>
-                            <td><img src='http://member.grandegoldens.com/images/email/top.jpg'
-                                    alt='Grandegoldens' border='0'></td>
+                            <td><img src='http://partner.fxcmiscc.com/images/email/top.jpg'
+                                    alt='FX-CMISC' border='0'></td>
                         </tr>
                         <tr valign='top'>
                             <td>
@@ -1288,23 +1288,23 @@ class financeActions extends sfActions
                                         <td style='border-left:1px solid #bac1c8;border-right:1px solid #bac1c8;padding:0 0 23px 0;font-size:12px;line-height:18px;font-family:Arial;color:#222222;padding:0px 24px 18px 24px'>
                                             <p style='font-size:16px;line-height:18px;color:#222222;width:100%;margin:0;padding:0 0 10px 0;font-weight:bold'>
                                                 兑现成功</p><br>
-                                            尊敬的帝金会员<br><br>
+                                            尊敬的FX-CMISC会员<br><br>
 
                                             此邮件是通知您；本公司已经成功把您所申请的款项转账到您的私人账户，请尽快查收。<br>
-                                            如果发现所申请的款项没能到帐，请及时联络当地的帝金顾问或迅速的回复此邮件，让我们能及时为您服务。<br><br>
+                                            如果发现所申请的款项没能到帐，请及时联络当地的FX-CMISC顾问或迅速的回复此邮件，让我们能及时为您服务。<br><br>
 
                                             我们非常感谢您给予本公司的支持与信任。<br>
                                             我们希望未来也能给予您最好的服务。<br><br>
                                             <br><br>
-                                            <b> 帝金交易集团  </b><br>
-                                            www.grandegoldens.com
+                                            <b> FX-CMISC </b><br>
+                                            www.fxcmiscc.com
                                             <br><br>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td style='background-color:#f3f3f3;border-top:1px solid #bac1c8;border-left:1px solid #bac1c8;border-right:1px solid #bac1c8;font-size:11px;line-height:16px;padding:26px 24px 18px 24px'>
                                             <p style='color:#ff0000;font-size:12px;line-height:20px;font-weight:normal;text-decoration:none'>
-                                                Privileged/confidential information may be contained in this message. If this message is received by anyone other than the intended addressee, please return the message to the sender by replying to it and then delete the message from your computer. Unintended recipients are prohibited from taking action on the basis of information in this e-mail. No confidentiality or privilege is waived or lost by Grandegoldens Group including its affiliates (Grandegoldens Group) by any mistransmission of this e-mail. Grandegoldens Group does not accept responsibility or liability for the accuracy or completeness of, or presence of any virus or disabling code in, this e-mail. Grandegoldens Group reserves the right to monitor e-mail communications through its networks (in accordance with applicable laws). Opinions, conclusions, statements and other information in this message that do not relate to the official business of Grandegoldens Group shall be understood as neither given nor endorsed by it.
+                                                Privileged/confidential information may be contained in this message. If this message is received by anyone other than the intended addressee, please return the message to the sender by replying to it and then delete the message from your computer. Unintended recipients are prohibited from taking action on the basis of information in this e-mail. No confidentiality or privilege is waived or lost by FX-CMISC Group including its affiliates (FX-CMISC Group) by any mistransmission of this e-mail. FX-CMISC Group does not accept responsibility or liability for the accuracy or completeness of, or presence of any virus or disabling code in, this e-mail. FX-CMISC Group reserves the right to monitor e-mail communications through its networks (in accordance with applicable laws). Opinions, conclusions, statements and other information in this message that do not relate to the official business of FX-CMISC Group shall be understood as neither given nor endorsed by it.
                                             </p>
                                         </td>
                                     </tr>
@@ -1313,7 +1313,7 @@ class financeActions extends sfActions
                             </td>
                         </tr>
                         <tr>
-                            <td><img src='http://member.grandegoldens.com/images/email/bottom.jpg'
+                            <td><img src='http://member.FX-CMISC.com/images/email/bottom.jpg'
                                     alt='' border='0' usemap='#1461c343c4ce9442_Map2'></td>
                         </tr>
                         </tbody>
@@ -1383,7 +1383,7 @@ class financeActions extends sfActions
         $mlm_distributor = MlmDistributorPeer::retrieveByPK($distId);
         $receiverEmail = $mlm_distributor->getEmail();
         $receiverFullname = $mlm_distributor->getFullName();
-        $subject = "帝金交易 - 您申请的兑现款项成功转账到您的私人账户";
+        $subject = "FX-CMISC - 您申请的兑现款项成功转账到您的私人账户";
 
         $body = "<table border='0' cellpadding='0' cellspacing='0' width='698' align='center' style='border:1px solid #eeeeee'>
     <tbody>
@@ -1392,8 +1392,8 @@ class financeActions extends sfActions
             <table border='0' cellpadding='0' cellspacing='0' width='698'>
                 <tbody>
                 <tr valign='top'>
-                    <td><img src='http://member.grandegoldens.com/images/email/top.jpg'
-                            alt='Grandegoldens' border='0'></td>
+                    <td><img src='http://member.FX-CMISC.com/images/email/top.jpg'
+                            alt='FX-CMISC' border='0'></td>
                 </tr>
                 <tr valign='top'>
                     <td>
@@ -1404,23 +1404,23 @@ class financeActions extends sfActions
                                 <td style='border-left:1px solid #bac1c8;border-right:1px solid #bac1c8;padding:0 0 23px 0;font-size:12px;line-height:18px;font-family:Arial;color:#222222;padding:0px 24px 18px 24px'>
                                     <p style='font-size:16px;line-height:18px;color:#222222;width:100%;margin:0;padding:0 0 10px 0;font-weight:bold'>
                                         兑现成功</p><br>
-                                    尊敬的帝金会员<br><br>
+                                    尊敬的FX-CMISC会员<br><br>
 
                                     此邮件是通知您；本公司已经成功把您所申请的款项转账到您的私人账户，请尽快查收。<br>
-                                    如果发现所申请的款项没能到帐，请及时联络当地的帝金顾问或迅速的回复此邮件，让我们能及时为您服务。<br><br>
+                                    如果发现所申请的款项没能到帐，请及时联络当地的FX-CMISC顾问或迅速的回复此邮件，让我们能及时为您服务。<br><br>
 
                                     我们非常感谢您给予本公司的支持与信任。<br>
                                     我们希望未来也能给予您最好的服务。<br><br>
                                     <br><br>
-                                    <b> 帝金交易集团  </b><br>
-                                    www.grandegoldens.com
+                                    <b> FX-CMISC </b><br>
+                                    www.FX-CMISC.com
                                     <br><br>
                                 </td>
                             </tr>
                             <tr>
                                 <td style='background-color:#f3f3f3;border-top:1px solid #bac1c8;border-left:1px solid #bac1c8;border-right:1px solid #bac1c8;font-size:11px;line-height:16px;padding:26px 24px 18px 24px'>
                                     <p style='color:#ff0000;font-size:12px;line-height:20px;font-weight:normal;text-decoration:none'>
-                                        Privileged/confidential information may be contained in this message. If this message is received by anyone other than the intended addressee, please return the message to the sender by replying to it and then delete the message from your computer. Unintended recipients are prohibited from taking action on the basis of information in this e-mail. No confidentiality or privilege is waived or lost by Grandegoldens Group including its affiliates (Grandegoldens Group) by any mistransmission of this e-mail. Grandegoldens Group does not accept responsibility or liability for the accuracy or completeness of, or presence of any virus or disabling code in, this e-mail. Grandegoldens Group reserves the right to monitor e-mail communications through its networks (in accordance with applicable laws). Opinions, conclusions, statements and other information in this message that do not relate to the official business of Grandegoldens Group shall be understood as neither given nor endorsed by it.
+                                        Privileged/confidential information may be contained in this message. If this message is received by anyone other than the intended addressee, please return the message to the sender by replying to it and then delete the message from your computer. Unintended recipients are prohibited from taking action on the basis of information in this e-mail. No confidentiality or privilege is waived or lost by FX-CMISC Group including its affiliates (FX-CMISC Group) by any mistransmission of this e-mail. FX-CMISC Group does not accept responsibility or liability for the accuracy or completeness of, or presence of any virus or disabling code in, this e-mail. FX-CMISC Group reserves the right to monitor e-mail communications through its networks (in accordance with applicable laws). Opinions, conclusions, statements and other information in this message that do not relate to the official business of FX-CMISC Group shall be understood as neither given nor endorsed by it.
                                     </p>
                                 </td>
                             </tr>
@@ -1429,7 +1429,7 @@ class financeActions extends sfActions
                     </td>
                 </tr>
                 <tr>
-                    <td><img src='http://member.grandegoldens.com/images/email/bottom.jpg'
+                    <td><img src='http://member.FX-CMISC.com/images/email/bottom.jpg'
                             alt='' border='0' usemap='#1461c343c4ce9442_Map2'></td>
                 </tr>
                 </tbody>
@@ -1828,23 +1828,23 @@ class financeActions extends sfActions
     function sendEmailForMt4($mt4UserName, $mt4Password, $fullName, $email)
     {
         if ($mt4UserName != "" && $mt4Password != "") {
-            $subject = "Your live trading account with GranDegoldens has been activated";
+            $subject = "Your live trading account with FX-CMISC has been activated";
 
             $body = "<table width='800' align='center' cellpadding='0' cellspacing='0' border='0'>
 			<tbody><tr>
 				<td valign='top' colspan='3'>
 					<table width='100%' cellpadding='0' cellspacing='0' border='0'>
 						<tbody><tr>
-							<td style='font-size:0;line-height:0' width='201' valign='top'><img src='http://member.grandegoldens.com/images/email/bg-top.png' width='201' height='226'></td>
+							<td style='font-size:0;line-height:0' width='201' valign='top'><img src='http://member.FX-CMISC.com/images/email/bg-top.png' width='201' height='226'></td>
 							<td valign='top' width='551'>
 								<table width='100%' cellpadding='0' cellspacing='0' border='0'>
-									<tbody><tr><td style='font-size:0;line-height:0' colspan='2'><img src='http://member.grandegoldens.com/images/email/transparent.gif' height='71'></td></tr>
+									<tbody><tr><td style='font-size:0;line-height:0' colspan='2'><img src='http://member.FX-CMISC.com/images/email/transparent.gif' height='71'></td></tr>
 									<tr>
-										<td valign='top' style='font-size:0;line-height:0' width='86'><img src='http://member.grandegoldens.com/images/email/transparent.gif' width='86' height='1'></td>
+										<td valign='top' style='font-size:0;line-height:0' width='86'><img src='http://member.FX-CMISC.com/images/email/transparent.gif' width='86' height='1'></td>
 										<td valign='top' style='line-height:17px'>
 											            <font face='Arial, Verdana, sans-serif' size='3' color='#000000' style='font-size:14px;line-height:17px'>
 															Dear <strong>" . $fullName . "</strong>,<br><br>
-															Congratulations! Your live trading account with GranDegoldens
+															Congratulations! Your live trading account with FX-CMISC
 															has been activated! Please find the details of your trading account as
 															per below :<br><br>
 															Live MT4 Trading Account ID : <strong>" . $mt4UserName . "</strong><br><br>
@@ -1855,7 +1855,7 @@ class financeActions extends sfActions
 															liable for any activity that may occur as a result of you losing your
 															password. Therefore, if you feel that your password has been
 															compromised, you should immediately contact us by email to
-															<strong>support@grandegoldens.com</strong> to rectify the situation.<br><br>
+															<strong>support@FX-CMISC.com</strong> to rectify the situation.<br><br>
 															We look forward to your custom in the near future. Should you have any
 															queries, please do not hesitate to get back to us.<br>
 														</font>
@@ -1865,46 +1865,46 @@ class financeActions extends sfActions
                                         </table>
 										</td>
 									</tr>
-									<tr><td style='font-size:0;line-height:0' colspan='2'><img src='http://member.grandegoldens.com/images/email/transparent.gif' height='32'></td></tr>
+									<tr><td style='font-size:0;line-height:0' colspan='2'><img src='http://member.FX-CMISC.com/images/email/transparent.gif' height='32'></td></tr>
 									<tr>
-										<td valign='top' style='font-size:0;line-height:0' width='86'><img src='http://member.grandegoldens.com/images/email/transparent.gif' width='86' height='1'></td>
-										<td style='font-size:0;line-height:0' bgcolor='#0080C8'><img src='http://member.grandegoldens.com/images/email/transparent.gif' height='1'></td>
+										<td valign='top' style='font-size:0;line-height:0' width='86'><img src='http://member.FX-CMISC.com/images/email/transparent.gif' width='86' height='1'></td>
+										<td style='font-size:0;line-height:0' bgcolor='#0080C8'><img src='http://member.FX-CMISC.com/images/email/transparent.gif' height='1'></td>
 									</tr>
-									<tr><td style='font-size:0;line-height:0' colspan='2'><img src='http://member.grandegoldens.com/images/email/transparent.gif' height='10'></td></tr>
+									<tr><td style='font-size:0;line-height:0' colspan='2'><img src='http://member.FX-CMISC.com/images/email/transparent.gif' height='10'></td></tr>
 									<tr>
 										<td valign='top' style='line-height:15px;text-align:right' colspan='2' align='right'>
 											<font face='Arial, Verdana, sans-serif' size='3' color='#000000' style='font-size:12px;line-height:15px'>
 												<em>
 													Best Regards,<br>
-													<strong>GranDegoldens</strong><br>
-													E mail : support@grandegoldens.com
+													<strong>FX-CMISC</strong><br>
+													E mail : support@FX-CMISC.com
 												</em>
 											</font>
 										</td>
 									</tr>
 								</tbody></table>
 							</td>
-							<td style='font-size:0;line-height:0' width='48'><img src='http://member.grandegoldens.com/images/email/transparent.gif' width='48' height='1'></td>
+							<td style='font-size:0;line-height:0' width='48'><img src='http://member.FX-CMISC.com/images/email/transparent.gif' width='48' height='1'></td>
 						</tr>
 					</tbody></table>
 				</td>
 			</tr>
 			<tr>
-				<td style='font-size:0;line-height:0' width='63'><img src='http://member.grandegoldens.com/images/email/transparent.gif' width='63' height='1'></td>
+				<td style='font-size:0;line-height:0' width='63'><img src='http://member.FX-CMISC.com/images/email/transparent.gif' width='63' height='1'></td>
 				<td valign='top' width='689'>
 					<table width='100%' cellpadding='0' cellspacing='0' border='0'>
-						<tbody><tr><td style='font-size:0;line-height:0'><img src='http://member.grandegoldens.com/images/email/transparent.gif' height='28'></td></tr>
+						<tbody><tr><td style='font-size:0;line-height:0'><img src='http://member.FX-CMISC.com/images/email/transparent.gif' height='28'></td></tr>
 						<tr>
 							<td align='right' style='text-align:right;font-size:0;line-height:0'>
-								<a href='http://www.grandegoldens.com/' target='_blank'><img src='http://member.grandegoldens.com/images/email/logo.png' height='87' border='0'></a>
+								<a href='http://www.FX-CMISC.com/' target='_blank'><img src='http://member.FX-CMISC.com/images/email/logo.png' height='87' border='0'></a>
 							</td>
 						</tr>
-						<tr><td style='font-size:0;line-height:0'><img src='http://member.grandegoldens.com/images/email/transparent.gif' height='16'></td></tr>
+						<tr><td style='font-size:0;line-height:0'><img src='http://member.FX-CMISC.com/images/email/transparent.gif' height='16'></td></tr>
 					</tbody></table>
 				</td>
-				<td style='font-size:0;line-height:0' width='48'><img src='http://member.grandegoldens.com/images/email/transparent.gif' width='48' height='1'></td>
+				<td style='font-size:0;line-height:0' width='48'><img src='http://member.FX-CMISC.com/images/email/transparent.gif' width='48' height='1'></td>
 			</tr>
-			<tr><td colspan='3' style='font-size:0;line-height:0' bgcolor='#D2D2D2'><img src='http://member.grandegoldens.com/images/email/transparent.gif' height='34'></td></tr>
+			<tr><td colspan='3' style='font-size:0;line-height:0' bgcolor='#D2D2D2'><img src='http://member.FX-CMISC.com/images/email/transparent.gif' height='34'></td></tr>
 		</tbody></table>";
 
 
