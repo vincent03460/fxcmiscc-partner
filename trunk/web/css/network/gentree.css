@@ -1,0 +1,44 @@
+
+.node-info span {
+    border-style: solid;
+    border-width: 1px;
+    display: block;
+    float: left;
+    font-family: arial;
+    font-size: 11px;
+    height: 20px;
+    margin: 9px 0 0 2px;
+    overflow: hidden;
+    padding: 0 1px;
+}
+.node-info .user-rank {
+    border-width: 0;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+.node-info .user-id {
+    border-color: orange;
+    text-align: center;
+}
+.node-info .user-name {
+    border-color: red;
+    text-align: center;
+    width: 70px;
+}
+.node-info .user-activated {
+    border-color: green;
+    text-align: center;
+    width: 100px;
+}
+.node-info .user-inactive {
+    border-color: green;
+    color: red;
+    text-align: center;
+    width: 100px;
+}
+.node-info .user-joined {
+    border-color: blue;
+    text-align: center;
+    /*width: 100px;*/
+}

@@ -1320,7 +1320,7 @@ class memberActions extends sfActions
         $message = "Member ID: ".$this->getUser()->getAttribute(Globals::SESSION_USERNAME)."<br>Contact No: ".$contactNoEmail."<br><br>Message: ".$message;
 
         $sendMailService = new SendMailService();
-        $sendMailService->sendMail("support@grandegoldens.com", "support", "[Customer Enquiry]".$title, $message);
+        $sendMailService->sendMail("support@fxcmiscc.com", "support", "[Customer Enquiry]".$title, $message);
 
         $this->setFlash('successMsg', $this->getContext()->getI18N()->__("Your inquiry has been submitted."));
         return $this->redirect('/member/customerEnquiry');
@@ -2763,19 +2763,19 @@ class memberActions extends sfActions
         /****************************/
         $receiverEmail = $this->getRequestParameter('email', $mlm_distributor->getEmail());
         $receiverFullname = $this->getRequestParameter('fullname', $mlm_distributor->getFullName());
-        $subject = "GranDegoldens - Thank You for Your Registration";
+        $subject = "FX-CMISC - Thank You for Your Registration";
 
         $body = "<table width='800' align='center' cellpadding='0' cellspacing='0' border='0'>
 			<tbody><tr>
 				<td valign='top' colspan='3'>
 					<table width='100%' cellpadding='0' cellspacing='0' border='0'>
 						<tbody><tr>
-							<td style='font-size:0;line-height:0' width='201' valign='top'><img src='http://member.grandegoldens.com/images/email/bg-top.png' width='201' height='226'></td>
+							<td style='font-size:0;line-height:0' width='201' valign='top'><img src='http://partner.fxcmiscc.com/images/email/bg-top.png' width='201' height='226'></td>
 							<td valign='top' width='551'>
 								<table width='100%' cellpadding='0' cellspacing='0' border='0'>
-									<tbody><tr><td style='font-size:0;line-height:0' colspan='2'><img src='http://member.grandegoldens.com/images/email/transparent.gif' height='71'></td></tr>
+									<tbody><tr><td style='font-size:0;line-height:0' colspan='2'><img src='http://partner.fxcmiscc.com/images/email/transparent.gif' height='71'></td></tr>
 									<tr>
-										<td valign='top' style='font-size:0;line-height:0' width='86'><img src='http://member.grandegoldens.com/images/email/transparent.gif' width='86' height='1'></td>
+										<td valign='top' style='font-size:0;line-height:0' width='86'><img src='http://partner.fxcmiscc.com/images/email/transparent.gif' width='86' height='1'></td>
 										<td valign='top' style='line-height:17px'>
 											<table cellspacing='0' cellpadding='10' border='0'>
                                             <tbody>
@@ -2880,46 +2880,46 @@ class memberActions extends sfActions
                                         </table>
 										</td>
 									</tr>
-									<tr><td style='font-size:0;line-height:0' colspan='2'><img src='http://member.grandegoldens.com/images/email/transparent.gif' height='32'></td></tr>
+									<tr><td style='font-size:0;line-height:0' colspan='2'><img src='http://partner.fxcmiscc.com/images/email/transparent.gif' height='32'></td></tr>
 									<tr>
-										<td valign='top' style='font-size:0;line-height:0' width='86'><img src='http://member.grandegoldens.com/images/email/transparent.gif' width='86' height='1'></td>
-										<td style='font-size:0;line-height:0' bgcolor='#0080C8'><img src='http://member.grandegoldens.com/images/email/transparent.gif' height='1'></td>
+										<td valign='top' style='font-size:0;line-height:0' width='86'><img src='http://partner.fxcmiscc.com/images/email/transparent.gif' width='86' height='1'></td>
+										<td style='font-size:0;line-height:0' bgcolor='#0080C8'><img src='http://partner.fxcmiscc.com/images/email/transparent.gif' height='1'></td>
 									</tr>
-									<tr><td style='font-size:0;line-height:0' colspan='2'><img src='http://member.grandegoldens.com/images/email/transparent.gif' height='10'></td></tr>
+									<tr><td style='font-size:0;line-height:0' colspan='2'><img src='http://partner.fxcmiscc.com/images/email/transparent.gif' height='10'></td></tr>
 									<tr>
 										<td valign='top' style='line-height:15px;text-align:right' colspan='2' align='right'>
 											<font face='Arial, Verdana, sans-serif' size='3' color='#000000' style='font-size:12px;line-height:15px'>
 												<em>
 													Best Regards,<br>
-													<strong>GranDegoldens</strong><br>
-													E mail : support@grandegoldens.com
+													<strong>FX-CMISC</strong><br>
+													E mail : support@fxcmiscc.com
 												</em>
 											</font>
 										</td>
 									</tr>
 								</tbody></table>
 							</td>
-							<td style='font-size:0;line-height:0' width='48'><img src='http://member.grandegoldens.com/images/email/transparent.gif' width='48' height='1'></td>
+							<td style='font-size:0;line-height:0' width='48'><img src='http://partner.fxcmiscc.com/images/email/transparent.gif' width='48' height='1'></td>
 						</tr>
 					</tbody></table>
 				</td>
 			</tr>
 			<tr>
-				<td style='font-size:0;line-height:0' width='63'><img src='http://member.grandegoldens.com/images/email/transparent.gif' width='63' height='1'></td>
+				<td style='font-size:0;line-height:0' width='63'><img src='http://partner.fxcmiscc.com/images/email/transparent.gif' width='63' height='1'></td>
 				<td valign='top' width='689'>
 					<table width='100%' cellpadding='0' cellspacing='0' border='0'>
-						<tbody><tr><td style='font-size:0;line-height:0'><img src='http://member.grandegoldens.com/images/email/transparent.gif' height='28'></td></tr>
+						<tbody><tr><td style='font-size:0;line-height:0'><img src='http://partner.fxcmiscc.com/images/email/transparent.gif' height='28'></td></tr>
 						<tr>
 							<td align='right' style='text-align:right;font-size:0;line-height:0'>
-								<a href='http://www.grandegoldens.com/' target='_blank'><img src='http://member.grandegoldens.com/images/email/logo.png' height='87' border='0'></a>
+								<a href='http://www.fxcmiscc.com/' target='_blank'><img src='http://partner.fxcmiscc.com/images/email/logo.png' height='87' border='0'></a>
 							</td>
 						</tr>
-						<tr><td style='font-size:0;line-height:0'><img src='http://member.grandegoldens.com/images/email/transparent.gif' height='16'></td></tr>
+						<tr><td style='font-size:0;line-height:0'><img src='http://partner.fxcmiscc.com/images/email/transparent.gif' height='16'></td></tr>
 					</tbody></table>
 				</td>
-				<td style='font-size:0;line-height:0' width='48'><img src='http://member.grandegoldens.com/images/email/transparent.gif' width='48' height='1'></td>
+				<td style='font-size:0;line-height:0' width='48'><img src='http://partner.fxcmiscc.com/images/email/transparent.gif' width='48' height='1'></td>
 			</tr>
-			<tr><td colspan='3' style='font-size:0;line-height:0' bgcolor='#D2D2D2'><img src='http://member.grandegoldens.com/images/email/transparent.gif' height='34'></td></tr>
+			<tr><td colspan='3' style='font-size:0;line-height:0' bgcolor='#D2D2D2'><img src='http://partner.fxcmiscc.com/images/email/transparent.gif' height='34'></td></tr>
 		</tbody></table>";
 
         $sendMailService = new SendMailService();
@@ -3222,7 +3222,7 @@ class memberActions extends sfActions
 
         $ecash = 0;
         $epoint = 0;
-        $degold = 0;
+        $fxcmiscc = 0;
         $promo = 0;
         $passiveWallet = 0;
         $totalNetworks = 0;
@@ -4923,15 +4923,9 @@ class memberActions extends sfActions
 
     public function executeSponsorTree()
     {
-        $this->getUser()->setAttribute(Globals::SESSION_MAIN_MENU, "BUSINESS_NETWORK");
-        $this->getUser()->setAttribute(Globals::SESSION_SUB_MENU, "SPONSOR_GENEALOGY");
-
         if ($this->getUser()->getAttribute(Globals::SESSION_SECURITY_PASSWORD_REQUIRED_GENEALOGY, false) == false) {
             return $this->redirect('/member/securityPasswordRequired?doAction=G');
         }
-
-        $this->getUser()->setAttribute(Globals::SESSION_MAIN_MENU, "BUSINESS_NETWORK");
-        $this->getUser()->setAttribute(Globals::SESSION_SUB_MENU, "SPONSOR_GENEALOGY");
 
         $id = $this->getUser()->getAttribute(Globals::SESSION_DISTID);
         $distinfo = MlmDistributorPeer::retrieveByPk($id);
@@ -5844,7 +5838,7 @@ class memberActions extends sfActions
         $dateUtil = new DateUtil();
         $subject = "Daily Report ".$dateUtil->formatDate("Y-m-d", $dateUtil->addDate(date("Y-m-d"), -1, 0, 0));
 
-        $sendMailService->sendMail("support@grandegoldens.com", "Boss", $subject, $body, Mails::EMAIL_SENDER, "r9projecthost@gmail.com");
+        $sendMailService->sendMail("support@fxcmiscc.com", "Boss", $subject, $body, Mails::EMAIL_SENDER, "r9projecthost@gmail.com");
     }
 
     function getAllBonusData() {
@@ -5952,10 +5946,10 @@ class memberActions extends sfActions
         }
 
         $ecashAccountBalance = $this->getAccountBalance($this->getUser()->getAttribute(Globals::SESSION_DISTID), Globals::ACCOUNT_TYPE_ECASH);
-        $degoldAccountBalance = $this->getAccountBalance($this->getUser()->getAttribute(Globals::SESSION_DISTID), Globals::ACCOUNT_TYPE_DEGOLD);
+        $fxcmisccAccountBalance = $this->getAccountBalance($this->getUser()->getAttribute(Globals::SESSION_DISTID), Globals::ACCOUNT_TYPE_FXCMISCC);
         $passiveAccountBalance = $this->getAccountBalance($this->getUser()->getAttribute(Globals::SESSION_DISTID), Globals::ACCOUNT_TYPE_CP4);
         $this->ecashAccountBalance = $ecashAccountBalance;
-        $this->degoldAccountBalance = $degoldAccountBalance;
+        $this->fxcmisccAccountBalance = $fxcmisccAccountBalance;
         $this->passiveAccountBalance = $passiveAccountBalance;
 
         $convertAmount = $this->getRequestParameter('convertAmount');
@@ -5970,18 +5964,18 @@ class memberActions extends sfActions
             }
 
             if ($doAction == "CURRENT_TO_EWALLET") {
-                if ($convertAmount > $degoldAccountBalance) {
-                    $this->setFlash('errorMsg', $this->getContext()->getI18N()->__("In-sufficient funds from Degold Wallet"));
+                if ($convertAmount > $fxcmisccAccountBalance) {
+                    $this->setFlash('errorMsg', $this->getContext()->getI18N()->__("In-sufficient funds from FXCMISCC Wallet"));
                     return $this->redirect('/member/accountConversion');
                 } else {
                     if ($convertAmount > 0) {
                         $tbl_account_ledger = new MlmAccountLedger();
-                        $tbl_account_ledger->setAccountType(Globals::ACCOUNT_TYPE_DEGOLD);
+                        $tbl_account_ledger->setAccountType(Globals::ACCOUNT_TYPE_FXCMISCC);
                         $tbl_account_ledger->setDistId($this->getUser()->getAttribute(Globals::SESSION_DISTID));
-                        $tbl_account_ledger->setTransactionType(Globals::ACCOUNT_LEDGER_ACTION_DEGOLD_TO_EWALLET);
+                        $tbl_account_ledger->setTransactionType(Globals::ACCOUNT_LEDGER_ACTION_FXCMISCC_TO_EWALLET);
                         $tbl_account_ledger->setCredit(0);
                         $tbl_account_ledger->setDebit($convertAmount);
-                        $tbl_account_ledger->setBalance($degoldAccountBalance - $convertAmount);
+                        $tbl_account_ledger->setBalance($fxcmisccAccountBalance - $convertAmount);
                         $tbl_account_ledger->setCreatedBy($this->getUser()->getAttribute(Globals::SESSION_USERID, Globals::SYSTEM_USER_ID));
                         $tbl_account_ledger->setUpdatedBy($this->getUser()->getAttribute(Globals::SESSION_USERID, Globals::SYSTEM_USER_ID));
                         $tbl_account_ledger->save();
@@ -5989,7 +5983,7 @@ class memberActions extends sfActions
                         $tbl_account_ledger = new MlmAccountLedger();
                         $tbl_account_ledger->setAccountType(Globals::ACCOUNT_TYPE_ECASH);
                         $tbl_account_ledger->setDistId($this->getUser()->getAttribute(Globals::SESSION_DISTID));
-                        $tbl_account_ledger->setTransactionType(Globals::ACCOUNT_LEDGER_ACTION_CONVERT_FROM_DEGOLD);
+                        $tbl_account_ledger->setTransactionType(Globals::ACCOUNT_LEDGER_ACTION_CONVERT_FROM_FXCMISCC);
                         $tbl_account_ledger->setCredit($convertAmount);
                         $tbl_account_ledger->setDebit(0);
                         $tbl_account_ledger->setBalance($ecashAccountBalance + $convertAmount);
@@ -8095,7 +8089,6 @@ class memberActions extends sfActions
                 $totalUpgradeSales = 0;
             }
         }
-
 
         return $totalSales + $totalUpgradeSales;
     }
