@@ -68,7 +68,7 @@ use_helper('I18N');
                 <div class="body no-margin">
                     <div class="row">
                         <div class="col-sm-6 col-print-6">
-                            <h4>GRAN <strong>DEGOLDENS TRADING</strong></h4>
+                            <h4>FX-CMISC</h4>
                             <!-- <img src="img/logo.png" alt="Logo" class="invoice-logo"/>-->
                         </div>
                         <div class="col-sm-6 col-print-6">
