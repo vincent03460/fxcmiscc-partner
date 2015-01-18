@@ -42,6 +42,12 @@ class MlmDailyDistMt4CreditMapBuilder {
 
 		$tMap->addColumn('TRADED_DATETIME', 'TradedDatetime', 'int', CreoleTypes::TIMESTAMP, false, null);
 
+		$tMap->addColumn('STATUS_CODE', 'StatusCode', 'string', CreoleTypes::VARCHAR, false, 10);
+
+		$tMap->addColumn('REMARK', 'Remark', 'string', CreoleTypes::LONGVARCHAR, false, null);
+
+		$tMap->addColumn('IDX', 'Idx', 'int', CreoleTypes::INTEGER, true, null);
+
 		$tMap->addColumn('CREATED_BY', 'CreatedBy', 'int', CreoleTypes::INTEGER, true, null);
 
 		$tMap->addColumn('CREATED_ON', 'CreatedOn', 'int', CreoleTypes::TIMESTAMP, true, null);

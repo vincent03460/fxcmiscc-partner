@@ -29,6 +29,18 @@ abstract class BaseMlmDailyDistMt4Credit extends BaseObject  implements Persiste
 
 
 	
+	protected $status_code = 'ACTIVE';
+
+
+	
+	protected $remark;
+
+
+	
+	protected $idx = 0;
+
+
+	
 	protected $created_by;
 
 
@@ -97,6 +109,27 @@ abstract class BaseMlmDailyDistMt4Credit extends BaseObject  implements Persiste
 		} else {
 			return date($format, $ts);
 		}
+	}
+
+	
+	public function getStatusCode()
+	{
+
+		return $this->status_code;
+	}
+
+	
+	public function getRemark()
+	{
+
+		return $this->remark;
+	}
+
+	
+	public function getIdx()
+	{
+
+		return $this->idx;
 	}
 
 	
@@ -227,6 +260,48 @@ abstract class BaseMlmDailyDistMt4Credit extends BaseObject  implements Persiste
 
 	} 
 	
+	public function setStatusCode($v)
+	{
+
+						if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
+		}
+
+		if ($this->status_code !== $v || $v === 'ACTIVE') {
+			$this->status_code = $v;
+			$this->modifiedColumns[] = MlmDailyDistMt4CreditPeer::STATUS_CODE;
+		}
+
+	} 
+	
+	public function setRemark($v)
+	{
+
+						if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
+		}
+
+		if ($this->remark !== $v) {
+			$this->remark = $v;
+			$this->modifiedColumns[] = MlmDailyDistMt4CreditPeer::REMARK;
+		}
+
+	} 
+	
+	public function setIdx($v)
+	{
+
+						if ($v !== null && !is_int($v) && is_numeric($v)) {
+			$v = (int) $v;
+		}
+
+		if ($this->idx !== $v || $v === 0) {
+			$this->idx = $v;
+			$this->modifiedColumns[] = MlmDailyDistMt4CreditPeer::IDX;
+		}
+
+	} 
+	
 	public function setCreatedBy($v)
 	{
 
@@ -303,19 +378,25 @@ abstract class BaseMlmDailyDistMt4Credit extends BaseObject  implements Persiste
 
 			$this->traded_datetime = $rs->getTimestamp($startcol + 4, null);
 
-			$this->created_by = $rs->getInt($startcol + 5);
+			$this->status_code = $rs->getString($startcol + 5);
 
-			$this->created_on = $rs->getTimestamp($startcol + 6, null);
+			$this->remark = $rs->getString($startcol + 6);
 
-			$this->updated_by = $rs->getInt($startcol + 7);
+			$this->idx = $rs->getInt($startcol + 7);
 
-			$this->updated_on = $rs->getTimestamp($startcol + 8, null);
+			$this->created_by = $rs->getInt($startcol + 8);
+
+			$this->created_on = $rs->getTimestamp($startcol + 9, null);
+
+			$this->updated_by = $rs->getInt($startcol + 10);
+
+			$this->updated_on = $rs->getTimestamp($startcol + 11, null);
 
 			$this->resetModified();
 
 			$this->setNew(false);
 
-						return $startcol + 9; 
+						return $startcol + 12; 
 		} catch (Exception $e) {
 			throw new PropelException("Error populating MlmDailyDistMt4Credit object", $e);
 		}
@@ -468,15 +549,24 @@ abstract class BaseMlmDailyDistMt4Credit extends BaseObject  implements Persiste
 				return $this->getTradedDatetime();
 				break;
 			case 5:
-				return $this->getCreatedBy();
+				return $this->getStatusCode();
 				break;
 			case 6:
-				return $this->getCreatedOn();
+				return $this->getRemark();
 				break;
 			case 7:
-				return $this->getUpdatedBy();
+				return $this->getIdx();
 				break;
 			case 8:
+				return $this->getCreatedBy();
+				break;
+			case 9:
+				return $this->getCreatedOn();
+				break;
+			case 10:
+				return $this->getUpdatedBy();
+				break;
+			case 11:
 				return $this->getUpdatedOn();
 				break;
 			default:
@@ -494,10 +584,13 @@ abstract class BaseMlmDailyDistMt4Credit extends BaseObject  implements Persiste
 			$keys[2] => $this->getMt4UserName(),
 			$keys[3] => $this->getMt4Credit(),
 			$keys[4] => $this->getTradedDatetime(),
-			$keys[5] => $this->getCreatedBy(),
-			$keys[6] => $this->getCreatedOn(),
-			$keys[7] => $this->getUpdatedBy(),
-			$keys[8] => $this->getUpdatedOn(),
+			$keys[5] => $this->getStatusCode(),
+			$keys[6] => $this->getRemark(),
+			$keys[7] => $this->getIdx(),
+			$keys[8] => $this->getCreatedBy(),
+			$keys[9] => $this->getCreatedOn(),
+			$keys[10] => $this->getUpdatedBy(),
+			$keys[11] => $this->getUpdatedOn(),
 		);
 		return $result;
 	}
@@ -529,15 +622,24 @@ abstract class BaseMlmDailyDistMt4Credit extends BaseObject  implements Persiste
 				$this->setTradedDatetime($value);
 				break;
 			case 5:
-				$this->setCreatedBy($value);
+				$this->setStatusCode($value);
 				break;
 			case 6:
-				$this->setCreatedOn($value);
+				$this->setRemark($value);
 				break;
 			case 7:
-				$this->setUpdatedBy($value);
+				$this->setIdx($value);
 				break;
 			case 8:
+				$this->setCreatedBy($value);
+				break;
+			case 9:
+				$this->setCreatedOn($value);
+				break;
+			case 10:
+				$this->setUpdatedBy($value);
+				break;
+			case 11:
 				$this->setUpdatedOn($value);
 				break;
 		} 	}
@@ -552,10 +654,13 @@ abstract class BaseMlmDailyDistMt4Credit extends BaseObject  implements Persiste
 		if (array_key_exists($keys[2], $arr)) $this->setMt4UserName($arr[$keys[2]]);
 		if (array_key_exists($keys[3], $arr)) $this->setMt4Credit($arr[$keys[3]]);
 		if (array_key_exists($keys[4], $arr)) $this->setTradedDatetime($arr[$keys[4]]);
-		if (array_key_exists($keys[5], $arr)) $this->setCreatedBy($arr[$keys[5]]);
-		if (array_key_exists($keys[6], $arr)) $this->setCreatedOn($arr[$keys[6]]);
-		if (array_key_exists($keys[7], $arr)) $this->setUpdatedBy($arr[$keys[7]]);
-		if (array_key_exists($keys[8], $arr)) $this->setUpdatedOn($arr[$keys[8]]);
+		if (array_key_exists($keys[5], $arr)) $this->setStatusCode($arr[$keys[5]]);
+		if (array_key_exists($keys[6], $arr)) $this->setRemark($arr[$keys[6]]);
+		if (array_key_exists($keys[7], $arr)) $this->setIdx($arr[$keys[7]]);
+		if (array_key_exists($keys[8], $arr)) $this->setCreatedBy($arr[$keys[8]]);
+		if (array_key_exists($keys[9], $arr)) $this->setCreatedOn($arr[$keys[9]]);
+		if (array_key_exists($keys[10], $arr)) $this->setUpdatedBy($arr[$keys[10]]);
+		if (array_key_exists($keys[11], $arr)) $this->setUpdatedOn($arr[$keys[11]]);
 	}
 
 	
@@ -568,6 +673,9 @@ abstract class BaseMlmDailyDistMt4Credit extends BaseObject  implements Persiste
 		if ($this->isColumnModified(MlmDailyDistMt4CreditPeer::MT4_USER_NAME)) $criteria->add(MlmDailyDistMt4CreditPeer::MT4_USER_NAME, $this->mt4_user_name);
 		if ($this->isColumnModified(MlmDailyDistMt4CreditPeer::MT4_CREDIT)) $criteria->add(MlmDailyDistMt4CreditPeer::MT4_CREDIT, $this->mt4_credit);
 		if ($this->isColumnModified(MlmDailyDistMt4CreditPeer::TRADED_DATETIME)) $criteria->add(MlmDailyDistMt4CreditPeer::TRADED_DATETIME, $this->traded_datetime);
+		if ($this->isColumnModified(MlmDailyDistMt4CreditPeer::STATUS_CODE)) $criteria->add(MlmDailyDistMt4CreditPeer::STATUS_CODE, $this->status_code);
+		if ($this->isColumnModified(MlmDailyDistMt4CreditPeer::REMARK)) $criteria->add(MlmDailyDistMt4CreditPeer::REMARK, $this->remark);
+		if ($this->isColumnModified(MlmDailyDistMt4CreditPeer::IDX)) $criteria->add(MlmDailyDistMt4CreditPeer::IDX, $this->idx);
 		if ($this->isColumnModified(MlmDailyDistMt4CreditPeer::CREATED_BY)) $criteria->add(MlmDailyDistMt4CreditPeer::CREATED_BY, $this->created_by);
 		if ($this->isColumnModified(MlmDailyDistMt4CreditPeer::CREATED_ON)) $criteria->add(MlmDailyDistMt4CreditPeer::CREATED_ON, $this->created_on);
 		if ($this->isColumnModified(MlmDailyDistMt4CreditPeer::UPDATED_BY)) $criteria->add(MlmDailyDistMt4CreditPeer::UPDATED_BY, $this->updated_by);
@@ -609,6 +717,12 @@ abstract class BaseMlmDailyDistMt4Credit extends BaseObject  implements Persiste
 		$copyObj->setMt4Credit($this->mt4_credit);
 
 		$copyObj->setTradedDatetime($this->traded_datetime);
+
+		$copyObj->setStatusCode($this->status_code);
+
+		$copyObj->setRemark($this->remark);
+
+		$copyObj->setIdx($this->idx);
 
 		$copyObj->setCreatedBy($this->created_by);
 

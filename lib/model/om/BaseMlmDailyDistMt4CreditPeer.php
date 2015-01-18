@@ -13,7 +13,7 @@ abstract class BaseMlmDailyDistMt4CreditPeer {
 	const CLASS_DEFAULT = 'lib.model.MlmDailyDistMt4Credit';
 
 	
-	const NUM_COLUMNS = 9;
+	const NUM_COLUMNS = 12;
 
 	
 	const NUM_LAZY_LOAD_COLUMNS = 0;
@@ -35,6 +35,15 @@ abstract class BaseMlmDailyDistMt4CreditPeer {
 	const TRADED_DATETIME = 'mlm_daily_dist_mt4_credit.TRADED_DATETIME';
 
 	
+	const STATUS_CODE = 'mlm_daily_dist_mt4_credit.STATUS_CODE';
+
+	
+	const REMARK = 'mlm_daily_dist_mt4_credit.REMARK';
+
+	
+	const IDX = 'mlm_daily_dist_mt4_credit.IDX';
+
+	
 	const CREATED_BY = 'mlm_daily_dist_mt4_credit.CREATED_BY';
 
 	
@@ -52,18 +61,18 @@ abstract class BaseMlmDailyDistMt4CreditPeer {
 
 	
 	private static $fieldNames = array (
-		BasePeer::TYPE_PHPNAME => array ('CreditId', 'DistId', 'Mt4UserName', 'Mt4Credit', 'TradedDatetime', 'CreatedBy', 'CreatedOn', 'UpdatedBy', 'UpdatedOn', ),
-		BasePeer::TYPE_COLNAME => array (MlmDailyDistMt4CreditPeer::CREDIT_ID, MlmDailyDistMt4CreditPeer::DIST_ID, MlmDailyDistMt4CreditPeer::MT4_USER_NAME, MlmDailyDistMt4CreditPeer::MT4_CREDIT, MlmDailyDistMt4CreditPeer::TRADED_DATETIME, MlmDailyDistMt4CreditPeer::CREATED_BY, MlmDailyDistMt4CreditPeer::CREATED_ON, MlmDailyDistMt4CreditPeer::UPDATED_BY, MlmDailyDistMt4CreditPeer::UPDATED_ON, ),
-		BasePeer::TYPE_FIELDNAME => array ('credit_id', 'dist_id', 'mt4_user_name', 'mt4_credit', 'traded_datetime', 'created_by', 'created_on', 'updated_by', 'updated_on', ),
-		BasePeer::TYPE_NUM => array (0, 1, 2, 3, 4, 5, 6, 7, 8, )
+		BasePeer::TYPE_PHPNAME => array ('CreditId', 'DistId', 'Mt4UserName', 'Mt4Credit', 'TradedDatetime', 'StatusCode', 'Remark', 'Idx', 'CreatedBy', 'CreatedOn', 'UpdatedBy', 'UpdatedOn', ),
+		BasePeer::TYPE_COLNAME => array (MlmDailyDistMt4CreditPeer::CREDIT_ID, MlmDailyDistMt4CreditPeer::DIST_ID, MlmDailyDistMt4CreditPeer::MT4_USER_NAME, MlmDailyDistMt4CreditPeer::MT4_CREDIT, MlmDailyDistMt4CreditPeer::TRADED_DATETIME, MlmDailyDistMt4CreditPeer::STATUS_CODE, MlmDailyDistMt4CreditPeer::REMARK, MlmDailyDistMt4CreditPeer::IDX, MlmDailyDistMt4CreditPeer::CREATED_BY, MlmDailyDistMt4CreditPeer::CREATED_ON, MlmDailyDistMt4CreditPeer::UPDATED_BY, MlmDailyDistMt4CreditPeer::UPDATED_ON, ),
+		BasePeer::TYPE_FIELDNAME => array ('credit_id', 'dist_id', 'mt4_user_name', 'mt4_credit', 'traded_datetime', 'status_code', 'remark', 'idx', 'created_by', 'created_on', 'updated_by', 'updated_on', ),
+		BasePeer::TYPE_NUM => array (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, )
 	);
 
 	
 	private static $fieldKeys = array (
-		BasePeer::TYPE_PHPNAME => array ('CreditId' => 0, 'DistId' => 1, 'Mt4UserName' => 2, 'Mt4Credit' => 3, 'TradedDatetime' => 4, 'CreatedBy' => 5, 'CreatedOn' => 6, 'UpdatedBy' => 7, 'UpdatedOn' => 8, ),
-		BasePeer::TYPE_COLNAME => array (MlmDailyDistMt4CreditPeer::CREDIT_ID => 0, MlmDailyDistMt4CreditPeer::DIST_ID => 1, MlmDailyDistMt4CreditPeer::MT4_USER_NAME => 2, MlmDailyDistMt4CreditPeer::MT4_CREDIT => 3, MlmDailyDistMt4CreditPeer::TRADED_DATETIME => 4, MlmDailyDistMt4CreditPeer::CREATED_BY => 5, MlmDailyDistMt4CreditPeer::CREATED_ON => 6, MlmDailyDistMt4CreditPeer::UPDATED_BY => 7, MlmDailyDistMt4CreditPeer::UPDATED_ON => 8, ),
-		BasePeer::TYPE_FIELDNAME => array ('credit_id' => 0, 'dist_id' => 1, 'mt4_user_name' => 2, 'mt4_credit' => 3, 'traded_datetime' => 4, 'created_by' => 5, 'created_on' => 6, 'updated_by' => 7, 'updated_on' => 8, ),
-		BasePeer::TYPE_NUM => array (0, 1, 2, 3, 4, 5, 6, 7, 8, )
+		BasePeer::TYPE_PHPNAME => array ('CreditId' => 0, 'DistId' => 1, 'Mt4UserName' => 2, 'Mt4Credit' => 3, 'TradedDatetime' => 4, 'StatusCode' => 5, 'Remark' => 6, 'Idx' => 7, 'CreatedBy' => 8, 'CreatedOn' => 9, 'UpdatedBy' => 10, 'UpdatedOn' => 11, ),
+		BasePeer::TYPE_COLNAME => array (MlmDailyDistMt4CreditPeer::CREDIT_ID => 0, MlmDailyDistMt4CreditPeer::DIST_ID => 1, MlmDailyDistMt4CreditPeer::MT4_USER_NAME => 2, MlmDailyDistMt4CreditPeer::MT4_CREDIT => 3, MlmDailyDistMt4CreditPeer::TRADED_DATETIME => 4, MlmDailyDistMt4CreditPeer::STATUS_CODE => 5, MlmDailyDistMt4CreditPeer::REMARK => 6, MlmDailyDistMt4CreditPeer::IDX => 7, MlmDailyDistMt4CreditPeer::CREATED_BY => 8, MlmDailyDistMt4CreditPeer::CREATED_ON => 9, MlmDailyDistMt4CreditPeer::UPDATED_BY => 10, MlmDailyDistMt4CreditPeer::UPDATED_ON => 11, ),
+		BasePeer::TYPE_FIELDNAME => array ('credit_id' => 0, 'dist_id' => 1, 'mt4_user_name' => 2, 'mt4_credit' => 3, 'traded_datetime' => 4, 'status_code' => 5, 'remark' => 6, 'idx' => 7, 'created_by' => 8, 'created_on' => 9, 'updated_by' => 10, 'updated_on' => 11, ),
+		BasePeer::TYPE_NUM => array (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, )
 	);
 
 	
@@ -126,6 +135,12 @@ abstract class BaseMlmDailyDistMt4CreditPeer {
 		$criteria->addSelectColumn(MlmDailyDistMt4CreditPeer::MT4_CREDIT);
 
 		$criteria->addSelectColumn(MlmDailyDistMt4CreditPeer::TRADED_DATETIME);
+
+		$criteria->addSelectColumn(MlmDailyDistMt4CreditPeer::STATUS_CODE);
+
+		$criteria->addSelectColumn(MlmDailyDistMt4CreditPeer::REMARK);
+
+		$criteria->addSelectColumn(MlmDailyDistMt4CreditPeer::IDX);
 
 		$criteria->addSelectColumn(MlmDailyDistMt4CreditPeer::CREATED_BY);
 
