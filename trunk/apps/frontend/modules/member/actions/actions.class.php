@@ -10,6 +10,209 @@
  */
 class memberActions extends sfActions
 {
+    public function executeMigrateMt4()
+    {
+        $c = new Criteria();
+        $c->add(MlmDailyDistMt4CreditPeer::STATUS_CODE, "COMPLETE");
+        $mlmDailyDistMt4CreditDBs = MlmDailyDistMt4CreditPeer::doSelect($c);
+
+        foreach ($mlmDailyDistMt4CreditDBs as $mlmDailyDistMt4CreditDB) {
+            //var_dump($mlmDailyDistMt4CreditDB);
+            $mt4Id = $mlmDailyDistMt4CreditDB->getMt4UserName();
+            $remark = $mlmDailyDistMt4CreditDB->getRemark();
+
+            $arrs = explode('@@@', $remark);
+
+            $fullName = strtoupper($arrs[0]);
+            $mt4Password = $arrs[1];
+
+            $memberId = str_replace(" ","",$fullName);
+            $memberId = strtoupper($memberId);
+            var_dump($fullName);
+            var_dump($memberId);
+            var_dump("<br>");
+            //continue;
+            $app_user = new AppUser();
+            $app_user->setUsername($memberId);
+            $app_user->setKeepPassword($mt4Password);
+            $app_user->setUserpassword($mt4Password);
+            $app_user->setKeepPassword2($mt4Password);
+            $app_user->setUserpassword2($mt4Password);
+            $app_user->setUserRole(Globals::ROLE_DISTRIBUTOR);
+            $app_user->setStatusCode(Globals::STATUS_ACTIVE);
+            $app_user->setCreatedBy($this->getUser()->getAttribute(Globals::SESSION_USERID, Globals::SYSTEM_USER_ID));
+            $app_user->setUpdatedBy($this->getUser()->getAttribute(Globals::SESSION_USERID, Globals::SYSTEM_USER_ID));
+            $app_user->save();
+
+            $mlm_distributor = new MlmDistributor();
+            $mlm_distributor->setDistributorCode($memberId);
+            $mlm_distributor->setUserId($app_user->getUserId());
+            $mlm_distributor->setStatusCode(Globals::STATUS_ACTIVE);
+
+            $fullName = trim($this->getRequestParameter('fullname'));
+            $fullName = strtoupper($fullName);
+
+            $mlm_distributor->setFullName($fullName);
+            $mlm_distributor->setNickname($memberId);
+            $mlm_distributor->setIc($this->getRequestParameter('nric'));
+            if ($this->getRequestParameter('country') == 'China') {
+                $mlm_distributor->setCountry('China (PRC)');
+            } else {
+                $mlm_distributor->setCountry($this->getRequestParameter('country'));
+            }
+            $mlm_distributor->setAddress($this->getRequestParameter('address'));
+            $mlm_distributor->setAddress2($this->getRequestParameter('address2'));
+            $mlm_distributor->setCity($this->getRequestParameter('city'));
+            $mlm_distributor->setState($this->getRequestParameter('state'));
+            $mlm_distributor->setPostcode($this->getRequestParameter('zip'));
+            $mlm_distributor->setEmail($this->getRequestParameter('email'));
+            $mlm_distributor->setAlternateEmail($this->getRequestParameter('alt_email'));
+            $mlm_distributor->setContact($this->getRequestParameter('contactNumber'));
+            $mlm_distributor->setGender($this->getRequestParameter('gender'));
+            if ($this->getRequestParameter('dob')) {
+                list($d, $m, $y) = sfI18N::getDateForCulture($this->getRequestParameter('dob'), $this->getUser()->getCulture());
+                $mlm_distributor->setDob("$y-$m-$d");
+            }
+            $mlm_distributor->setBankName($this->getRequestParameter('bankName'));
+            $mlm_distributor->setBankAccNo($this->getRequestParameter('bankAccountNo'));
+            $mlm_distributor->setBankHolderName($this->getRequestParameter('bankHolderName'));
+
+            //$mlm_distributor->setTreeLevel($treeLevel);
+            //$mlm_distributor->setUplineDistId($uplineDistDB->getDistributorId());
+            //$mlm_distributor->setUplineDistCode($uplineDistDB->getDistributorCode());
+
+            $mlm_distributor->setLeverage($this->getRequestParameter('leverage'));
+            $mlm_distributor->setSpread($this->getRequestParameter('spread'));
+            $mlm_distributor->setDepositCurrency($this->getRequestParameter('deposit_currency'));
+            $mlm_distributor->setDepositAmount($this->getRequestParameter('deposit_amount'));
+            $mlm_distributor->setSignName($this->getRequestParameter('sign_name'));
+            $mlm_distributor->setSignDate(date("Y/m/d h:i:s A"));
+            $mlm_distributor->setTermCondition($this->getRequestParameter('term_condition'));
+
+            //$mlm_distributor->setRankId($packageDB->getPackageId());
+            //$mlm_distributor->setRankCode($packageDB->getPackageName());
+            //$mlm_distributor->setMt4RankId($packageDB->getPackageId());
+            //$mlm_distributor->setInitRankId($packageDB->getPackageId());
+            //$mlm_distributor->setInitRankCode($packageDB->getPackageName());
+            $mlm_distributor->setStatusCode(Globals::STATUS_ACTIVE);
+            $mlm_distributor->setPackagePurchaseFlag("N");
+            $mlm_distributor->setActiveDatetime(date("Y/m/d h:i:s A"));
+            $mlm_distributor->setActivatedBy($this->getUser()->getAttribute(Globals::SESSION_DISTID));
+            $mlm_distributor->setCreatedBy($this->getUser()->getAttribute(Globals::SESSION_USERID, Globals::SYSTEM_USER_ID));
+            $mlm_distributor->setUpdatedBy($this->getUser()->getAttribute(Globals::SESSION_USERID, Globals::SYSTEM_USER_ID));
+            $mlm_distributor->save();
+
+            //$treeStructure = $uplineDistDB->getTreeStructure() . "|" . $mlm_distributor->getDistributorId() . "|";
+            //$mlm_distributor->setTreeStructure($treeStructure);
+            //$mlm_distributor->setRegisterRemark($this->getRequestParameter('registerRemark'));
+            $mlm_distributor->save();
+
+            $mlmDistMt4 = new MlmDistMt4();
+            $mlmDistMt4->setDistId($mlm_distributor->getDistributorId());
+            $mlmDistMt4->setMt4UserName($mt4Id);
+            $mlmDistMt4->setMt4Password($mt4Password);
+            $mlmDistMt4->setRankId(0);
+            $mlmDistMt4->setCreatedBy($this->getUser()->getAttribute(Globals::SESSION_USERID, Globals::SYSTEM_USER_ID));
+            $mlmDistMt4->setUpdatedBy($this->getUser()->getAttribute(Globals::SESSION_USERID, Globals::SYSTEM_USER_ID));
+            $mlmDistMt4->save();
+            //print_r($mt4Id.":".$fullName.":".$mt4Password."=".$remark);
+            //print_r("<br>");
+        }
+
+        return sfView::HEADER_ONLY;
+    }
+    public function executeMigrateMemberDate()
+    {
+        $physicalDirectory = sfConfig::get('sf_upload_dir') . DIRECTORY_SEPARATOR ."MemberList.xls";
+
+        error_reporting(E_ALL ^ E_NOTICE);
+        require_once 'excel_reader2.php';
+        $data = new Spreadsheet_Excel_Reader($physicalDirectory);
+
+        $totalRow = $data->rowcount($sheet_index = 0);
+        for ($x = $totalRow; $x > 0; $x--) {
+            $memberId = $data->val($x, "A");
+            $fullName = $data->val($x, "B");
+            $email = $data->val($x, "C");
+            $uplineMemberId = $data->val($x, "D");
+
+            $app_user = new AppUser();
+            $app_user->setUsername($userName);
+            $app_user->setKeepPassword($password);
+            $app_user->setUserpassword($password);
+            $app_user->setKeepPassword2($password2);
+            $app_user->setUserpassword2($password2);
+            $app_user->setUserRole(Globals::ROLE_DISTRIBUTOR);
+            $app_user->setStatusCode(Globals::STATUS_ACTIVE);
+            $app_user->setCreatedBy($this->getUser()->getAttribute(Globals::SESSION_USERID, Globals::SYSTEM_USER_ID));
+            $app_user->setUpdatedBy($this->getUser()->getAttribute(Globals::SESSION_USERID, Globals::SYSTEM_USER_ID));
+            $app_user->save();
+
+            $mlm_distributor = new MlmDistributor();
+            $mlm_distributor->setDistributorCode($userName);
+            $mlm_distributor->setUserId($app_user->getUserId());
+            $mlm_distributor->setStatusCode(Globals::STATUS_ACTIVE);
+
+            $fullName = trim($this->getRequestParameter('fullname'));
+            $fullName = strtoupper($fullName);
+
+            $mlm_distributor->setFullName($fullName);
+            $mlm_distributor->setNickname($userName);
+            $mlm_distributor->setIc($this->getRequestParameter('nric'));
+            if ($this->getRequestParameter('country') == 'China') {
+                $mlm_distributor->setCountry('China (PRC)');
+            } else {
+                $mlm_distributor->setCountry($this->getRequestParameter('country'));
+            }
+            $mlm_distributor->setAddress($this->getRequestParameter('address'));
+            $mlm_distributor->setAddress2($this->getRequestParameter('address2'));
+            $mlm_distributor->setCity($this->getRequestParameter('city'));
+            $mlm_distributor->setState($this->getRequestParameter('state'));
+            $mlm_distributor->setPostcode($this->getRequestParameter('zip'));
+            $mlm_distributor->setEmail($this->getRequestParameter('email'));
+            $mlm_distributor->setAlternateEmail($this->getRequestParameter('alt_email'));
+            $mlm_distributor->setContact($this->getRequestParameter('contactNumber'));
+            $mlm_distributor->setGender($this->getRequestParameter('gender'));
+            if ($this->getRequestParameter('dob')) {
+                list($d, $m, $y) = sfI18N::getDateForCulture($this->getRequestParameter('dob'), $this->getUser()->getCulture());
+                $mlm_distributor->setDob("$y-$m-$d");
+            }
+            $mlm_distributor->setBankName($this->getRequestParameter('bankName'));
+            $mlm_distributor->setBankAccNo($this->getRequestParameter('bankAccountNo'));
+            $mlm_distributor->setBankHolderName($this->getRequestParameter('bankHolderName'));
+
+            $mlm_distributor->setTreeLevel($treeLevel);
+            $mlm_distributor->setUplineDistId($uplineDistDB->getDistributorId());
+            $mlm_distributor->setUplineDistCode($uplineDistDB->getDistributorCode());
+
+            $mlm_distributor->setLeverage($this->getRequestParameter('leverage'));
+            $mlm_distributor->setSpread($this->getRequestParameter('spread'));
+            $mlm_distributor->setDepositCurrency($this->getRequestParameter('deposit_currency'));
+            $mlm_distributor->setDepositAmount($this->getRequestParameter('deposit_amount'));
+            $mlm_distributor->setSignName($this->getRequestParameter('sign_name'));
+            $mlm_distributor->setSignDate(date("Y/m/d h:i:s A"));
+            $mlm_distributor->setTermCondition($this->getRequestParameter('term_condition'));
+
+            $mlm_distributor->setRankId($packageDB->getPackageId());
+            $mlm_distributor->setRankCode($packageDB->getPackageName());
+            $mlm_distributor->setMt4RankId($packageDB->getPackageId());
+            $mlm_distributor->setInitRankId($packageDB->getPackageId());
+            $mlm_distributor->setInitRankCode($packageDB->getPackageName());
+            $mlm_distributor->setStatusCode(Globals::STATUS_ACTIVE);
+            $mlm_distributor->setPackagePurchaseFlag("N");
+            $mlm_distributor->setActiveDatetime(date("Y/m/d h:i:s A"));
+            $mlm_distributor->setActivatedBy($this->getUser()->getAttribute(Globals::SESSION_DISTID));
+            $mlm_distributor->setCreatedBy($this->getUser()->getAttribute(Globals::SESSION_USERID, Globals::SYSTEM_USER_ID));
+            $mlm_distributor->setUpdatedBy($this->getUser()->getAttribute(Globals::SESSION_USERID, Globals::SYSTEM_USER_ID));
+            $mlm_distributor->save();
+
+            $treeStructure = $uplineDistDB->getTreeStructure() . "|" . $mlm_distributor->getDistributorId() . "|";
+            $mlm_distributor->setTreeStructure($treeStructure);
+            $mlm_distributor->setRegisterRemark($this->getRequestParameter('registerRemark'));
+            $mlm_distributor->save();
+        }
+    }
+
     public function executeIndex()
     {
         return $this->redirect('/member/summary');
@@ -529,8 +732,8 @@ class memberActions extends sfActions
         return sfView::HEADER_ONLY;
     }
      public function executeAccountSummary() {
-        $this->getUser()->setAttribute(Globals::SESSION_MAIN_MENU, "MY_ACCOUNT");
-        $this->getUser()->setAttribute(Globals::SESSION_SUB_MENU, "ACCOUNT_SUMMARY");
+        //$this->getUser()->setAttribute(Globals::SESSION_MAIN_MENU, "MY_ACCOUNT");
+        //$this->getUser()->setAttribute(Globals::SESSION_SUB_MENU, "ACCOUNT_SUMMARY");
 
         if ($this->getUser()->getAttribute(Globals::SESSION_SECURITY_PASSWORD_REQUIRED_WALLET, false) == false) {
             return $this->redirect('/member/securityPasswordRequired?doAction=W');

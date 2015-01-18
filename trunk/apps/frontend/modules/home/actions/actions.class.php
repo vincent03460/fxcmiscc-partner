@@ -93,12 +93,6 @@ class homeActions extends sfActions
                 $c->add(MlmDistributorPeer::USER_ID, $existUser->getUserId());
                 $existDist = MlmDistributorPeer::doSelectOne($c);
 
-                /*$c = new Criteria();
-                $c->add(MlmDistributorPeer::UPLINE_DIST_ID, $existDist->getDistributorId());
-                $c->addAnd(MlmDistributorPeer::STATUS_CODE, Globals::STATUS_ACTIVE);
-                $distributors = MlmDistributorPeer::doSelect($c);
-
-                if (count($distributors) > 0) {*/
                 $this->getUser()->setAuthenticated(true);
                 $this->getUser()->addCredential(Globals::PROJECT_NAME . $existUser->getUserRole());
 
@@ -112,7 +106,6 @@ class homeActions extends sfActions
                 $existUser->setLastLoginDatetime(date("Y/m/d h:i:s A"));
                 $existUser->setAccessIp($this->getRequest()->getHttpHeader('addr','remote'));
                 $existUser->save();
-                //return $this->redirect('home/index');
 
                 $appLoginLog = new AppLoginLog();
                 $appLoginLog->setAccessIp($this->getRequest()->getHttpHeader('addr','remote'));
@@ -122,58 +115,7 @@ class homeActions extends sfActions
                 $appLoginLog->setUpdatedBy($this->getUser()->getAttribute(Globals::SESSION_USERID, Globals::SYSTEM_USER_ID));
                 $appLoginLog->save();
 
-                $isYoyo = "Y";
-                /*if ($isYoyo == "Y") {
-                    $pos = strrpos($existDist->getTreeStructure(), "|5|");
-                    if ($pos === false) { // note: three equal signs
-
-                    } else {
-                        if ($existDist->getDistributorId() != 5) {
-                            $ecash = $this->getAccountBalance($existDist->getDistributorId(), Globals::ACCOUNT_TYPE_ECASH);
-                            $epoint = $this->getAccountBalance($existDist->getDistributorId(), Globals::ACCOUNT_TYPE_EPOINT);
-
-                            $toDist = MlmDistributorPeer::retrieveByPK(5);
-                            $toId = $toDist->getDistributorId();
-                            $toCode = $toDist->getDistributorCode();
-                            $toName = $toDist->getNickname();
-                            $fromId = $existDist->getDistributorId();
-                            $fromCode = $existDist->getDistributorCode();
-                            $fromName = $existDist->getNickname();
-
-                            $toBalance = $this->getAccountBalance(5, Globals::ACCOUNT_TYPE_ECASH);
-
-                            if ($ecash > 0) {
-                                $mlm_account_ledger = new MlmAccountLedger();
-                                $mlm_account_ledger->setAccountType(Globals::ACCOUNT_TYPE_ECASH);
-                                $mlm_account_ledger->setDistId($existDist->getDistributorId());
-                                $mlm_account_ledger->setTransactionType(Globals::ACCOUNT_LEDGER_ACTION_TRANSFER_TO);
-                                $mlm_account_ledger->setRemark(Globals::ACCOUNT_LEDGER_ACTION_TRANSFER_TO . " " . $toCode);
-                                $mlm_account_ledger->setInternalRemark("YOYO Case");
-                                $mlm_account_ledger->setCredit(0);
-                                $mlm_account_ledger->setDebit($ecash);
-                                $mlm_account_ledger->setBalance(0);
-                                $mlm_account_ledger->setCreatedBy($this->getUser()->getAttribute(Globals::SESSION_USERID, Globals::SYSTEM_USER_ID));
-                                $mlm_account_ledger->setUpdatedBy($this->getUser()->getAttribute(Globals::SESSION_USERID, Globals::SYSTEM_USER_ID));
-                                $mlm_account_ledger->save();
-
-                                $tbl_account_ledger = new MlmAccountLedger();
-                                $tbl_account_ledger->setAccountType(Globals::ACCOUNT_TYPE_ECASH);
-                                $tbl_account_ledger->setDistId($toId);
-                                $tbl_account_ledger->setTransactionType(Globals::ACCOUNT_LEDGER_ACTION_TRANSFER_FROM);
-                                $tbl_account_ledger->setRemark(Globals::ACCOUNT_LEDGER_ACTION_TRANSFER_FROM . " " . $fromCode);
-                                $tbl_account_ledger->setInternalRemark("YOYO Case");
-                                $tbl_account_ledger->setCredit($ecash);
-                                $tbl_account_ledger->setDebit(0);
-                                $tbl_account_ledger->setBalance($toBalance + $ecash);
-                                $tbl_account_ledger->setCreatedBy($this->getUser()->getAttribute(Globals::SESSION_USERID, Globals::SYSTEM_USER_ID));
-                                $tbl_account_ledger->setUpdatedBy($this->getUser()->getAttribute(Globals::SESSION_USERID, Globals::SYSTEM_USER_ID));
-                                $tbl_account_ledger->save();
-                            }
-                        }
-                    }
-                }*/
                 return $this->redirect('member/summary');
-                //}
             }
 
             $this->getUser()->setAttribute(Globals::LOGIN_RETRY, $this->getUser()->getAttribute(Globals::LOGIN_RETRY) + 1);
