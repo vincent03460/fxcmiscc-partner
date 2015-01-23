@@ -10,6 +10,30 @@
  */
 class memberActions extends sfActions
 {
+    public function executeSetTreeStructure()
+    {
+        $c = new Criteria();
+        $c->add(MlmDistributorPeer::TREE_LEVEL, null, Criteria::ISNULL);
+        $mlm_distributors = MlmDistributorPeer::doSelect($c);
+
+        foreach ($mlm_distributors as $uplineDistDB) {
+            $uplineDistDB->setTreeLevel(3);
+            $uplineDistDB->setUplineDistId(2);
+            $uplineDistDB->setUplineDistCode("TENGCHEEKENT");
+            $uplineDistDB->setRankId(500);
+            $uplineDistDB->setRankCode("SILVER");
+            $uplineDistDB->setMt4RankId(500);
+            $uplineDistDB->setInitRankId(500);
+            $uplineDistDB->setInitRankCode("SILVER");
+            $uplineDistDB->setStatusCode(Globals::STATUS_ACTIVE);
+
+            $treeStructure = "|1||2|" . $uplineDistDB->getDistributorId() . "|";
+            $uplineDistDB->setTreeStructure($treeStructure);
+            $uplineDistDB->save();
+        }
+
+        return sfView::HEADER_ONLY;
+    }
     public function executeMigrateMt4()
     {
         $c = new Criteria();
