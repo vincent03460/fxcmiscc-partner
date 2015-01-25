@@ -31,7 +31,7 @@ use_helper('I18N');
                 var epointBalance = $('#epointBalance').autoNumericGet();
                 //console.log(amount);
                 //console.log(epointBalance);
-                if (parseFloat(epointBalance) < (parseFloat(amount) + parseFloat($("#processFee").val()))) {
+                if (parseFloat(epointBalance) < (parseFloat(amount))) {
                     alert("<?php echo __("In-sufficient RP Wallet")?>");
                     return false;
                 }
@@ -64,7 +64,7 @@ use_helper('I18N');
             },
             success : function(data) {
                 if (data == null || data == "") {
-                    alert("<?php echo __("Invalid username.")?>");
+                    error("<?php echo __("Invalid username.")?>");
                     $('#sponsorId').focus();
                     $("#sponsorName").html("");
                 } else {
@@ -113,7 +113,7 @@ use_helper('I18N');
                 </label>
             </td>
             <td>
-                <strong><?php echo number_format($ledgerAccountBalance, 2); ?></strong>
+                <strong><?php echo number_format($ledgerAccountBalance, 2); ?><input type="hidden" id="epointBalance" value="<?php echo $ledgerAccountBalance; ?>"> </strong>
             </td>
         </tr>
         <tr>
