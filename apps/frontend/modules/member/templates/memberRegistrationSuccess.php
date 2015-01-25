@@ -14,7 +14,7 @@ use_helper('I18N');
             },
             submitHandler: function(form) {
                 if ($('#agreement').is(':checked') == false) {
-                    alert("Please accept the Private Investment Agreement!");
+                    error("Please accept the Private Investment Agreement!");
                     return false;
                 }
 
@@ -27,38 +27,27 @@ use_helper('I18N');
                 $("#formattedTextField").val(pointPackageDisplay);
                 var pointPackageNeeded = $("#formattedTextField").autoNumericGet();
                 var pointAvail = parseFloat($('#epointAvailable').autoNumericGet());
-                var ecashAvail = parseFloat($('#ecashAvailable').autoNumericGet());
                 var promoAvailable = parseFloat($('#promoAvailable').autoNumericGet());
                 var epoint = parseFloat($('#ePointPaid').autoNumericGet());
-                var ecash = parseFloat($('#eCashPaid').autoNumericGet());
                 var promo = parseFloat($('#promoPaid').autoNumericGet());
-                var epointEcashPaid = epoint + ecash + promo;
+                var epointEcashPaid = epoint + promo;
                 $("#packageId").val(packageId);
 //            console.log("pointAvail", pointAvail);
 //            console.log("pointPackageNeeded", pointPackageNeeded);
 //            console.log("pointPackageDisplay", pointPackageDisplay);
                 var sure = confirm("<?php echo __('Are you sure want to purchase this package')?> " + pointPackageDisplay + "?");
                 if (sure) {
-                    var registerFee = <?php echo Globals::REGISTER_FEE;?>;
-                    sure = confirm("<?php echo __('You need to pay for register fee')?> " + registerFee + " (<?php echo __('e-Point')?>).");
-                    if (sure) {
-                        if (epointEcashPaid == 0 || epointEcashPaid == "" || parseFloat(epointEcashPaid) < (parseFloat(pointPackageNeeded))) {
-                            error("<?php echo __("In-sufficient fund to purchase package");?>");
-                        } else if ((pointPackageNeeded / 2) > epoint) {
-                            error("<?php echo __("Minimum e-Point required is ");?>" + (pointPackageNeeded / 2));
-                        } else if (parseFloat(epointEcashPaid) > (parseFloat(pointPackageNeeded))) {
-                            error("<?php echo __("The total funds is not match with package price");?>");
-                        }  else if (parseFloat(pointAvail) < (parseFloat(epoint) + registerFee)) {
-                            /*error("<?php echo __("In-sufficient e-Point to pay for register fee");?>" + pointAvail + "," + epoint + "," + registerFee);*/
-                            error("<?php echo __("In-sufficient e-Point to pay for register fee");?>");
-                        }  else if (parseFloat(ecashAvail) < (parseFloat(ecash))) {
-                            error("<?php echo __("In-sufficient e-Wallet");?>");
-                        }   else if (parseFloat(promoAvailable) < (parseFloat(promo))) {
-                            error("<?php echo __("In-sufficient Promo Wallet");?>");
-                        } else {
-                            waiting();
-                            form.submit();
-                        }
+                    if (epointEcashPaid == 0 || epointEcashPaid == "" || parseFloat(epointEcashPaid) < (parseFloat(pointPackageNeeded))) {
+                        error("<?php echo __("In-sufficient fund to purchase package");?>");
+                    } else if ((pointPackageNeeded / 2) > epoint) {
+                        error("<?php echo __("Minimum RP Wallet required is ");?>" + (pointPackageNeeded / 2));
+                    } else if (parseFloat(epointEcashPaid) > (parseFloat(pointPackageNeeded))) {
+                        error("<?php echo __("The total funds is not match with package price");?>");
+                    }   else if (parseFloat(promoAvailable) < (parseFloat(promo))) {
+                        error("<?php echo __("In-sufficient EP Wallet");?>");
+                    } else {
+                        waiting();
+                        form.submit();
                     }
                 }
             }
@@ -105,31 +94,22 @@ use_helper('I18N');
             <tr>
                 <th>
                     <label class="control-label">
-                        <?php echo __("e-Point Account")?>
+                        <?php echo __("RP Wallet")?>
                     </label>
                 </th>
                 <td>
-                    <strong><?php echo number_format($pointAvailable, 2); ?></strong>
+                    <strong><?php echo number_format($pointAvailable, 2); ?><input type="hidden" id="epointAvailable" value="<?php echo number_format($pointAvailable, 2); ?>"></strong>
                 </td>
             </tr>
+            
             <tr>
                 <th>
                     <label class="control-label">
-                        <?php echo __("e-Wallet Account")?>
+                        <?php echo __("EP Wallet")?>
                     </label>
                 </th>
                 <td>
-                    <strong><?php echo number_format($ecashAvailable, 2); ?></strong>
-                </td>
-            </tr>
-            <tr>
-                <th>
-                    <label class="control-label">
-                        <?php echo __("Promo Account")?>
-                    </label>
-                </th>
-                <td>
-                    <strong><?php echo number_format($promoAvailable, 2); ?></strong>
+                    <strong><?php echo number_format($promoAvailable, 2); ?><input type="hidden" id="promoAvailable" value="<?php echo number_format($pointAvailable, 2); ?>"></strong>
                 </td>
             </tr>
             </tbody>
@@ -198,18 +178,8 @@ use_helper('I18N');
         <table cellpadding="7" cellspacing="1" width="500px;">
             <tr>
                 <th>
-                    <label class="control-label" for="epointAvailable">
-                        <?php echo __("Register Fee (e-Point)")?>
-                    </label>
-                </th>
-                <td>
-                    <input type="text" readonly="readonly" id="registerFee" name="registerFee" value="<?php echo Globals::REGISTER_FEE;?>" class="form-control">
-                </td>
-            </tr>
-            <tr>
-                <th>
-                    <label class="control-label" for="epointAvailable">
-                        <?php echo __("Paid by e-Point")?>
+                    <label class="control-label">
+                        <?php echo __("Paid by RP Wallet")?>
                     </label>
                 </th>
                 <td>
@@ -220,24 +190,11 @@ use_helper('I18N');
                     </select>
                 </td>
             </tr>
+            
             <tr>
                 <th>
-                    <label class="control-label" for="epointAvailable">
-                        <?php echo __("Paid by e-Wallet")?>
-                    </label>
-                </th>
-                <td>
-                    <select id="eCashPaid" name="eCashPaid" style="text-align: right" style="width:150px; text-align:right" class="packageSelect">
-                        <?php for ($i = 0; $i <= $ecashAvailable; $i += 100) {
-                        echo "<option value='" . $i . "'>" . number_format($i, 0) . "</option>";
-                    } ?>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <th>
-                    <label class="control-label" for="epointAvailable">
-                        <?php echo __("Paid by Promo Wallet")?>
+                    <label class="control-label">
+                        <?php echo __("Paid by EP Wallet")?>
                     </label>
                 </th>
                 <td>

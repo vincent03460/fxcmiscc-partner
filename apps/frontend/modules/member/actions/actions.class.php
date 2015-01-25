@@ -1830,11 +1830,11 @@ class memberActions extends sfActions
             $this->sponsorName = $existDist->getFullName();
 
             if ($epointPaid > $ledgerEPointBalance) {
-                $this->setFlash('errorMsg', "In-sufficient e-Point amount");
+                $this->setFlash('errorMsg', "In-sufficient RP Wallet amount");
                 return $this->redirect('/member/purchasePackageViaTree?distcode='.$this->uplineDistCode.'&position='.$this->position);
             }
             if ($ecashPaid > $ledgerECashBalance) {
-                $this->setFlash('errorMsg', "In-sufficient e-Wallet amount");
+                $this->setFlash('errorMsg', "In-sufficient EP Wallet amount");
                 return $this->redirect('/member/purchasePackageViaTree?distcode='.$this->uplineDistCode.'&position='.$this->position);
             }
             $totalPaid = $epointPaid + $ecashPaid;
@@ -1847,7 +1847,7 @@ class memberActions extends sfActions
                 return $this->redirect('/member/purchasePackageViaTree?distcode='.$this->uplineDistCode.'&position='.$this->position);
             }
             if ($amountNeeded > $ledgerEPointBalance) {
-                $this->setFlash('errorMsg', "In-sufficient e-Point amount");
+                $this->setFlash('errorMsg', "In-sufficient RP Wallet amount");
                 return $this->redirect('/member/purchasePackageViaTree?distcode='.$this->uplineDistCode.'&position='.$this->position);
             }
 
@@ -2432,11 +2432,11 @@ class memberActions extends sfActions
             $packageTotalInvested = $selectedPackage->getPrice();
 
             if (($this->getRequestParameter('ePointPaid') + Globals::REGISTER_FEE) > $ledgerPointBalance) {
-                $this->setFlash('errorMsg', $this->getContext()->getI18N()->__("In-sufficient e-Point"));
+                $this->setFlash('errorMsg', $this->getContext()->getI18N()->__("In-sufficient RP Wallet"));
                 return $this->redirect('/member/memberRegistration');
             }
             if ($this->getRequestParameter('eCashPaid') > $ledgerEcashBalance) {
-                $this->setFlash('errorMsg', $this->getContext()->getI18N()->__("In-sufficient e-Wallet"));
+                $this->setFlash('errorMsg', $this->getContext()->getI18N()->__("In-sufficient EP Wallet"));
                 return $this->redirect('/member/memberRegistration');
             }
             if ($this->getRequestParameter('promoPaid') > $ledgerPromoBalance) {
@@ -2676,9 +2676,9 @@ class memberActions extends sfActions
         $password2 = $this->getRequestParameter('securityPassword');
         $packageId = $this->getRequestParameter('packageId');
         $ePointPaid = $this->getRequestParameter('ePointPaid');
-        $eCashPaid = $this->getRequestParameter('eCashPaid');
+        //$eCashPaid = $this->getRequestParameter('eCashPaid');
         $promoPaid = $this->getRequestParameter('promoPaid');
-        $amountPaid = $ePointPaid + $eCashPaid + $promoPaid;
+        $amountPaid = $ePointPaid + $promoPaid;
 
         $packageDB = MlmPackagePeer::retrieveByPK($packageId);
 
@@ -2709,16 +2709,16 @@ class memberActions extends sfActions
                 $this->setFlash('errorMsg', $this->getContext()->getI18N()->__("In-sufficient fund to purchase package"));
                 return $this->redirect('/member/memberRegistration');
             }
-            if ($eCashPaid > $sponsorEcashBalance) {
+            /*if ($eCashPaid > $sponsorEcashBalance) {
                 $this->setFlash('errorMsg', $this->getContext()->getI18N()->__("In-sufficient fund to purchase package"));
                 return $this->redirect('/member/memberRegistration');
-            }
+            }*/
             if ($promoPaid > $sponsorPromoBalance) {
                 $this->setFlash('errorMsg', $this->getContext()->getI18N()->__("In-sufficient fund to purchase package"));
                 return $this->redirect('/member/memberRegistration');
             }
             if (($amountNeeded / 2) > $ePointPaid) {
-                $this->setFlash('errorMsg', $this->getContext()->getI18N()->__("Minimum e-Point required is ") . ($amountNeeded / 2));
+                $this->setFlash('errorMsg', $this->getContext()->getI18N()->__("Minimum RP required is ") . ($amountNeeded / 2));
                 return $this->redirect('/member/memberRegistration');
             }
         }
@@ -2884,7 +2884,7 @@ class memberActions extends sfActions
                 $tbl_account_ledger->setUpdatedBy($this->getUser()->getAttribute(Globals::SESSION_USERID, Globals::SYSTEM_USER_ID));
                 $tbl_account_ledger->save();
 
-                if (Globals::REGISTER_FEE > 0) {
+                /*if (Globals::REGISTER_FEE > 0) {
                     $tbl_account_ledger = new MlmAccountLedger();
                     $tbl_account_ledger->setAccountType(Globals::ACCOUNT_TYPE_EPOINT);
                     $tbl_account_ledger->setDistId($this->getUser()->getAttribute(Globals::SESSION_DISTID));
@@ -2898,9 +2898,9 @@ class memberActions extends sfActions
                     $tbl_account_ledger->setCreatedBy($this->getUser()->getAttribute(Globals::SESSION_USERID, Globals::SYSTEM_USER_ID));
                     $tbl_account_ledger->setUpdatedBy($this->getUser()->getAttribute(Globals::SESSION_USERID, Globals::SYSTEM_USER_ID));
                     $tbl_account_ledger->save();
-                }
+                }*/
 
-                if ($eCashPaid > 0) {
+                /*if ($eCashPaid > 0) {
                     $tbl_account_ledger = new MlmAccountLedger();
                     $tbl_account_ledger->setAccountType(Globals::ACCOUNT_TYPE_ECASH);
                     $tbl_account_ledger->setDistId($this->getUser()->getAttribute(Globals::SESSION_DISTID));
@@ -2914,7 +2914,7 @@ class memberActions extends sfActions
                     $tbl_account_ledger->setCreatedBy($this->getUser()->getAttribute(Globals::SESSION_USERID, Globals::SYSTEM_USER_ID));
                     $tbl_account_ledger->setUpdatedBy($this->getUser()->getAttribute(Globals::SESSION_USERID, Globals::SYSTEM_USER_ID));
                     $tbl_account_ledger->save();
-                }
+                }*/
 
                 if ($promoPaid > 0) {
                     $tbl_account_ledger = new MlmAccountLedger();
@@ -4634,7 +4634,7 @@ class memberActions extends sfActions
             $tbl_user = AppUserPeer::retrieveByPk($this->getUser()->getAttribute(Globals::SESSION_USERID));
 
             if ($pointNeeded > $ledgerBalance) {
-                $this->setFlash('errorMsg', "In-sufficient e-Point");
+                $this->setFlash('errorMsg', "In-sufficient RP Wallet");
 
             } elseif (strtoupper($tbl_user->getUserpassword2()) <> strtoupper($this->getRequestParameter('transactionPassword'))) {
                 $this->setFlash('errorMsg', "Invalid Security password");
@@ -4811,7 +4811,7 @@ class memberActions extends sfActions
             $existDist = MlmDistributorPeer::doSelectOne($c);
 
             if ($existDist->getIsIb() == 1) {
-                $this->setFlash('errorMsg', $this->getContext()->getI18N()->__("You are not allowed to transfer e-Wallet."));
+                $this->setFlash('errorMsg', $this->getContext()->getI18N()->__("You are not allowed to transfer EP Wallet."));
                 return $this->redirect('/member/transferEcash');
             }
 
@@ -4837,7 +4837,7 @@ class memberActions extends sfActions
 
             if (($this->getRequestParameter('ecashAmount') + $processFee) > $ledgerAccountBalance) {
 
-                $this->setFlash('errorMsg', $this->getContext()->getI18N()->__("In-sufficient e-Wallet Amount"));
+                $this->setFlash('errorMsg', $this->getContext()->getI18N()->__("In-sufficient EP Wallet Amount"));
                 return $this->redirect('/member/transferEcash');
             } elseif (strtoupper($appUser->getUserPassword2()) <> strtoupper($this->getRequestParameter('transactionPassword'))) {
 
@@ -4977,7 +4977,7 @@ class memberActions extends sfActions
 
             if (($this->getRequestParameter('epointAmount') + $processFee) > $ledgerAccountBalance) {
 
-                $this->setFlash('errorMsg', $this->getContext()->getI18N()->__("In-sufficient e-Point"));
+                $this->setFlash('errorMsg', $this->getContext()->getI18N()->__("In-sufficient RP Wallet"));
                 return $this->redirect('/member/transferEpoint');
 
             } elseif (strtoupper($appUser->getUserPassword2()) <> strtoupper($this->getRequestParameter('transactionPassword'))) {
@@ -5464,7 +5464,7 @@ class memberActions extends sfActions
             }
 
             if (($withdrawAmount + $processFee) > $ledgerAccountBalance) {
-                $this->setFlash('errorMsg', $this->getContext()->getI18N()->__("In-sufficient funds in e-Wallet account"));
+                $this->setFlash('errorMsg', $this->getContext()->getI18N()->__("In-sufficient funds in EP Wallet account"));
 
             } elseif (strtoupper($tbl_user->getUserpassword2()) <> strtoupper($this->getRequestParameter('transactionPassword'))) {
                 $this->setFlash('errorMsg', $this->getContext()->getI18N()->__("Invalid Security password"));
@@ -6459,7 +6459,7 @@ class memberActions extends sfActions
                 return $this->redirect('/member/packageUpgrade');
             }
             if (($amountNeeded / 2) > $ePointPaid) {
-                $this->setFlash('errorMsg', $this->getContext()->getI18N()->__("Minimum e-Point required is ") . ($amountNeeded / 2));
+                $this->setFlash('errorMsg', $this->getContext()->getI18N()->__("Minimum RP Wallet required is ") . ($amountNeeded / 2));
                 return $this->redirect('/member/packageUpgrade');
             }
 
@@ -8606,3 +8606,5 @@ class memberActions extends sfActions
         return 0;
     }
 }
+
+
