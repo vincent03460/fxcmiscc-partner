@@ -16,7 +16,7 @@ use_helper('I18N');
             <div><?php echo __("Sponsor Genealogy") ?></div>
         </a></li>
         <li><a href="/member/transferEpoint">
-            <div><?php echo __("e-Point Transfer") ?></div>
+            <div><?php echo __("RP Wallet Transfer") ?></div>
         </a></li>
         <li><a href="/member/withdrawal">
             <div><?php echo __("Withdrawal") ?></div>
