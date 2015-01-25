@@ -5,7 +5,7 @@ abstract class Globals {
     const PROJECT_NAME = "FXCMISCC_";
     const COMPANY_NAME = "FXCMISCC";
     const DRB_PAYOUT = 1000;
-    const TOTAL_BONUS_PAYOUT = 16;
+    const TOTAL_BONUS_PAYOUT = 10;
     const UPGRADE_GRADUALLY_BONUS = 2000;
     const UPGRADE_GRADUALLY_MAINTENANCE = 100;
     const DOWN_3_LEVEL_BONUS = 4000;
