@@ -39,8 +39,8 @@ use_helper('I18N');
                 if (sure) {
                     if (epointEcashPaid == 0 || epointEcashPaid == "" || parseFloat(epointEcashPaid) < (parseFloat(pointPackageNeeded))) {
                         error("<?php echo __("In-sufficient fund to purchase package");?>");
-                    } else if ((pointPackageNeeded / 2) > epoint) {
-                        error("<?php echo __("Minimum RP Wallet required is ");?>" + (pointPackageNeeded / 2));
+                    } else if ((pointPackageNeeded * 0.7) > epoint) {
+                        error("<?php echo __("Minimum RP Wallet required is ");?>" + (pointPackageNeeded * 0.7));
                     } else if (parseFloat(epointEcashPaid) > (parseFloat(pointPackageNeeded))) {
                         error("<?php echo __("The total funds is not match with package price");?>");
                     }   else if (parseFloat(promoAvailable) < (parseFloat(promo))) {
