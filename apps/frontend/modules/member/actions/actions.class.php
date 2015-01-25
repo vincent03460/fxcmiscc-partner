@@ -2717,8 +2717,8 @@ class memberActions extends sfActions
                 $this->setFlash('errorMsg', $this->getContext()->getI18N()->__("In-sufficient fund to purchase package"));
                 return $this->redirect('/member/memberRegistration');
             }
-            if (($amountNeeded * 0.7) > $ePointPaid) {
-                $this->setFlash('errorMsg', $this->getContext()->getI18N()->__("Minimum RP required is ") . ($amountNeeded * 0.7));
+            if (($amountNeeded * 0.3) > $ePointPaid) {
+                $this->setFlash('errorMsg', $this->getContext()->getI18N()->__("Minimum RP required is ") . ($amountNeeded * 0.3));
                 return $this->redirect('/member/memberRegistration');
             }
         }
