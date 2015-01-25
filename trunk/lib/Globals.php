@@ -9,7 +9,7 @@ abstract class Globals {
     const UPGRADE_GRADUALLY_BONUS = 2000;
     const UPGRADE_GRADUALLY_MAINTENANCE = 100;
     const DOWN_3_LEVEL_BONUS = 4000;
-    const REGISTER_FEE = 20;
+    const REGISTER_FEE = 0;
 
     const BASIC_MEMBER_CHARGE = 300;
 
