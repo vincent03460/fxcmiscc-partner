@@ -32,7 +32,7 @@ use_helper('I18N');
                 //console.log(amount);
                 //console.log(epointBalance);
                 if (parseFloat(epointBalance) < (parseFloat(amount) + parseFloat($("#processFee").val()))) {
-                    alert("<?php echo __("In-sufficient e-Point")?>");
+                    alert("<?php echo __("In-sufficient RP Wallet")?>");
                     return false;
                 }
 
@@ -80,7 +80,7 @@ use_helper('I18N');
 </script>
 <form class="form-horizontal" method="post" action="/member/transferEpoint" id="transferForm" name="transferForm">
 
-    <h2><?php echo __("E-Point Transfer"); ?></h2>
+    <h2><?php echo __("RP Wallet Transfer"); ?></h2>
 
     <?php include_component('component', 'alert', array('param' => $sf_user->getAttribute(Globals::SESSION_DISTID, 0))) ?>
 
@@ -109,7 +109,7 @@ use_helper('I18N');
         <tr>
             <td>
                 <label class="control-label">
-                    <?php echo __("e-Point Balance")?>
+                    <?php echo __("RP Wallet Balance")?>
                 </label>
             </td>
             <td>
@@ -119,7 +119,7 @@ use_helper('I18N');
         <tr>
             <td>
                 <label class="control-label" for="epointAmount">
-                    <?php echo __("Transfer e-Point Amount")?>
+                    <?php echo __("Transfer RP Wallet Amount")?>
                 </label>
             </td>
             <td>
@@ -148,7 +148,7 @@ use_helper('I18N');
 </form>
 <hr/>
 
-<h2><?php echo __("E-Point Transfer History")?></h2>
+<h2><?php echo __("RP Wallet Transfer History")?></h2>
 
 <script type="text/javascript" language="javascript">
     var datagrid = null;

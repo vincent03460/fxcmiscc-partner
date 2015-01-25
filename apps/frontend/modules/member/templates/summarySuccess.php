@@ -58,12 +58,12 @@ use_helper('I18N');
             <th width="150px"><?php echo __("Partner ID"); ?></th>
             <td><?php echo $distributor_code ?></td>
         </tr>
-        <tr>
+        <tr style="display: none;">
             <th><?php echo __("MT4 Rank")?></th>
             <td><?php echo __($mt4Ranking);?></td>
         </tr>
         <tr>
-            <th><?php echo __("e-Point Account")?></th>
+            <th><?php echo __("RP Wallet")?></th>
             <td><?php echo number_format($epoint, 2)?></td>
         </tr>
         <tr>
