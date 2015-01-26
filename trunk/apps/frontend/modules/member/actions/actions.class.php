@@ -2735,10 +2735,10 @@ class memberActions extends sfActions
             $c->add(MlmDistributorPeer::TREE_STRUCTURE, "%|".$this->getUser()->getAttribute(Globals::SESSION_DISTID)."|%", Criteria::LIKE);
             $c->add(MlmDistributorPeer::STATUS_CODE, Globals::STATUS_ACTIVE);
             $uplineDistDB = MlmDistributorPeer::doSelectOne($c);
-            var_dump($this->getUser()->getAttribute(Globals::SESSION_DISTID));
-            var_dump($uplineDistCode);
-            var_dump($uplineDistDB);
-            exit();
+            //var_dump($this->getUser()->getAttribute(Globals::SESSION_DISTID));
+            //var_dump($uplineDistCode);
+            //var_dump($uplineDistDB);
+            //exit();
             if (!$uplineDistDB) {
                 $this->setFlash('errorMsg', $this->getContext()->getI18N()->__("Invalid Referrer ID"));
                 return $this->redirect('/member/memberRegistration');
