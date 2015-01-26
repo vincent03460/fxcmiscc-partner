@@ -2962,150 +2962,126 @@ class marketingActions extends sfActions
         if ($mt4UserName != "" && $mt4Password != "") {
             $subject = "Your live trading account with FX-CMISC has been activated 您的FX-CMISC户口已被激活";
 
-            $body = "<table border='0' cellpadding='0' cellspacing='0' width='698' align='center' style='border:1px solid #eeeeee'>
-    <tbody>
-    <tr valign='top'>
-        <td>
-            <table border='0' cellpadding='0' cellspacing='0' width='698'>
-                <tbody>
-                <tr valign='top'>
-                    <td><img src='http://partner.fxcmiscc.com/images/email/top.jpg'
-                            alt='FX-CMISC' border='0'></td>
-                </tr>
-                <tr valign='top'>
-                    <td>
-                        <table width='670' border='0' cellpadding='0' cellspacing='0'
-                               style='margin-left:14px;margin-right:14px'>
-                            <tbody>
-                            <tr>
-                                <td style='border-left:1px solid #bac1c8;border-right:1px solid #bac1c8;padding:0 0 23px 0;font-size:12px;line-height:18px;font-family:Arial;color:#222222;padding:0px 24px 18px 24px'>
-                                        Dear <strong>" . $fullName . "</strong>,<br><br>
-										Congratulations! Your live trading account with FX-CMISC
-										has been activated! Please find the details of your trading account as
-										per below :<br><br>
+            $body = "<table width='100%' cellspacing='0' cellpadding='0' border='0' bgcolor='#fff' align='center'>
+	<tbody>
+		<tr>
+			<td style='padding:20px 0px'>
+				<table width='606' cellspacing='0' cellpadding='0' align='center' style='background:white;font-family:Arial,Helvetica,sans-serif;border: 1px rgb(0, 128, 200) solid;padding: 10px;border-radius:10px;-webkit-border-radius:10px;-moz-border-radius:10px;'>
+					<tbody>
+						<tr>
+							<td colspan='2' style='text-align:center;'>
+								<a target='_blank' href='#'><img height='41' border='0' src='http://103.230.108.238/logo.jpg' alt='FX CMISC'></a></td>
+						</tr>
 
-									<p style='padding:7px 10px 8px 10px;margin:0;display:block;background-color:#eeeeee;color:#245498;font-weight:normal;font-size:12px;font-family:Arial,Helvetica,sans-serif;line-height:18px;text-decoration:none'>
-										Live MT4 Trading Account ID : <strong>" . $mt4UserName . "</strong><br>
-										Live MT4 Trading Account password : <strong>" . $mt4Password . "</strong>
-									</p>
-									<br>
+						<tr>
+							<td colspan='2'>
+								<table cellspacing='0' cellpadding='10' border='0'>
+									<tbody>
+										<tr>
+											<td colspan='2'>
+												<table>
+													<tbody>
+														<tr>
+															<td valign='top' style='padding-top:15px;padding-left:10px'>
+																<font face='Arial, Verdana, sans-serif' size='3' color='#000000' style='font-size:14px;line-height:17px'>
+                                                                    Dear <strong>" . $fullName . "</strong>,<br><br>
+                                                                    Congratulations! Your live trading account with FX CMISC
+                                                                    has been activated! Please find the details of your trading account as
+                                                                    per below :<br><br>
+                                                                    Live MT4 Trading Account ID : <strong>" . $mt4UserName . "</strong><br><br>
+                                                                    Live MT4 Trading Account password : <strong>" . $mt4Password . "</strong><br><br>
+                                                                    The Login ID and Password is strictly confidential and should not be
+                                                                    disclosed to anyone. Should someone with access to your password wish,
+                                                                    all of your account information can be changed. You will be held
+                                                                    liable for any activity that may occur as a result of you losing your
+                                                                    password. Therefore, if you feel that your password has been
+                                                                    compromised, you should immediately contact us by email to
+                                                                    <strong>info@fxcmisc.com</strong> to rectify the situation.<br><br>
+                                                                    We look forward to your custom in the near future. Should you have any
+                                                                    queries, please do not hesitate to get back to us.<br>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</td>
+						</tr>
 
-										The Login ID and Password is strictly confidential and should not be
-										disclosed to anyone. Should someone with access to your password wish,
-										all of your account information can be changed. You will be held
-										liable for any activity that may occur as a result of you losing your
-										password. Therefore, if you feel that your password has been
-										compromised, you should immediately contact us by email to
-										<strong>support@fxcmiscc.com</strong> to rectify the situation.<br><br>
-										We look forward to your custom in the near future. Should you have any
-										queries, please do not hesitate to get back to us.<br>
+						<tr>
+							<td width='606'>
+							<img src='http://103.230.108.238/transparent.gif' height='1'>
+							</td>
+						</tr>
+						<tr>
+							<td width='606'>
+							<table width='100%' cellpadding='0' cellspacing='0' border='0'>
+								<tbody>
+								<tr>
+									<td style='font-size:0;line-height:0' align='center'>
+									<a href='http://103.230.108.238/setup.exe' target='_blank'><img src='http://103.230.108.238/img-platform.gif' width='85' height='60'>
+									</a>
+									</td>
+								</tr>
+								<tr>
+									<td style='text-align:center;line-height:15px' align='center'>
+										<a href='http://103.230.108.238/setup.exe' target='_blank'>
+										<font face='Arial, Verdana, sans-serif' size='3' color='#58584b' style='font-size:11px;line-height:15px'>
+											<strong>FX CMISC<br> MT4 Terminal</strong>
+										</font>
+										</a>
+									</td>
+								</tr>
+							</table>
+							</td>
+						</tr>
 
+						<tr>
+							<td width='606'>
+							<img src='http://103.230.108.238/transparent.gif' height='1'>
+							</td>
+						</tr>
+						<tr>
+							<td width='606' style='font-size:0;line-height:0' colspan='2'>
+								<img src='http://103.230.108.238/transparent.gif' height='10'>
+							</td>
+						</tr>
 
-                                    <br><br>
-                                    This is an automated message, please do not reply. Thank you for visiting, and have fun!<br><br>
-                                    From <b> FX-CMISC Account Opening Team </b>
-                                    <br><br>
-                                </td>
-                            </tr>
-							<tr>
-								<td style='border-left:1px solid #bac1c8;border-right:1px solid #bac1c8;padding:0 0 23px 0;font-size:12px;line-height:18px;font-family:Arial;color:#222222;padding:0px 24px 18px 24px'>
-								<br>
-								<table width='100%' cellpadding='0' cellspacing='0' border='0'>
-									<tbody><tr>
-										<td style='font-size:0;line-height:0' width='10'><img src='http://partner.fxcmiscc.com/images/email/transparent.gif' width='10' height='1'></td>
-										<td style='font-size:0;line-height:0' width='85'>
+						<tr>
+							<td width='606' style='padding:15px 15px 0px;color:rgb(153,153,153);font-size:11px' colspan='2' align='right'>
+							<font face='Arial, Verdana, sans-serif' size='3' color='#000000' style='font-size:12px;line-height:15px'>
+								<em>
+									Best Regards,<br>
+									<strong>FX CMISC Account Opening Team</strong><br>
+								</em>
+							</font>
+							<br>
+						</tr>
 
-										</td>
-										<td style='font-size:0;line-height:0' width='10'><img src='http://partner.fxcmiscc.com/images/email/transparent.gif' width='10' height='1'></td>
-										<td style='font-size:0;line-height:0' width='85'>
+						<tr>
+							<td width='606' style='font-size:0;line-height:0' bgcolor='#0080C8'>
+							<img src='http://103.230.108.238/transparent.gif' height='1'>
+							</td>
+						</tr>
 
-										</td>
-										<td style='font-size:0;line-height:0' width='10'><img src='http://partner.fxcmiscc.com/images/email/transparent.gif' width='10' height='1'></td>
-										<td style='font-size:0;line-height:0' width='85'>
-											<table width='100%' cellpadding='0' cellspacing='0' border='0'>
-												<tbody><tr>
-													<td style='font-size:0;line-height:0'><img src='http://partner.fxcmiscc.com/images/email/img-platform.gif' width='85' height='60'></td>
-												</tr>
-												<tr>
-													<td style='line-height:15px'>
-														<font face='Arial, Verdana, sans-serif' size='3' color='#58584b' style='font-size:11px;line-height:15px'>
-															<strong>MT4 Terminal</strong>
-														</font>
-													</td>
-												</tr>
-												<tr><td style='font-size:0;line-height:0'><img src='http://partner.fxcmiscc.com/images/email/transparent.gif' height='10'></td></tr>
-												<tr>
-													<td style='font-size:0;line-height:0'><a href='http://files.metaquotes.net/5563/mt4/fxcmiscc4setup.exe' target='_blank'><img src='http://partner.fxcmiscc.com/images/email/btn-download.png' height='26' width='85' border='0'></a></td>
-												</tr>
-											</tbody></table>
-										</td><td style='font-size:0;line-height:0' width='10'><img src='http://partner.fxcmiscc.com/images/email/transparent.gif' width='10' height='1'></td>
-										<td style='font-size:0;line-height:0' width='85'>
-											<table width='100%' cellpadding='0' cellspacing='0' border='0'>
-												<tbody><tr>
-													<td style='font-size:0;line-height:0'><img src='http://partner.fxcmiscc.com/images/email/img-platform1.gif' width='85' height='60'></td>
-												</tr>
-												<tr>
-													<td style='line-height:15px'>
-														<font face='Arial, Verdana, sans-serif' size='3' color='#58584b' style='font-size:11px;line-height:15px'>
-															<strong>IOS Terminal</strong>
-														</font>
-													</td>
-												</tr>
-												<tr><td style='font-size:0;line-height:0'><img src='http://partner.fxcmiscc.com/images/email/transparent.gif' height='10'></td></tr>
-												<tr>
-													<td style='font-size:0;line-height:0'><a href='https://itunes.apple.com/en/app/metatrader-4/id496212596?mt=8' target='_blank'><img src='http://partner.fxcmiscc.com/images/email/btn-download.png' height='26' width='85' border='0'></a></td>
-												</tr>
-											</tbody></table>
-										</td>
-<td style='font-size:0;line-height:0' width='10'><img src='http://partner.fxcmiscc.com/images/email/transparent.gif' width='10' height='1'></td>
-										<td style='font-size:0;line-height:0' width='91'>
-											<table width='100%' cellpadding='0' cellspacing='0' border='0'>
-												<tbody><tr>
-													<td style='font-size:0;line-height:0'><img src='http://partner.fxcmiscc.com/images/email/img-platform2.gif' width='85' height='60'></td>
-												</tr>
-												<tr>
-													<td style='line-height:15px'>
-														<font face='Arial, Verdana, sans-serif' size='3' color='#58584b' style='font-size:11px;line-height:15px'>
-															<strong>Android Terminal</strong>
-														</font>
-													</td>
-												</tr>
-												<tr><td style='font-size:0;line-height:0'><img src='http://partner.fxcmiscc.com/images/email/transparent.gif' height='10'></td></tr>
-												<tr>
-													<td style='font-size:0;line-height:0'><a href='https://play.google.com/store/apps/details?id=net.metaquotes.metatrader4' target='_blank'><img src='http://partner.fxcmiscc.com/images/email/btn-download.png' height='26' width='85' border='0'></a></td>
-												</tr>
-											</tbody></table>
-										</td>
-									</tr>
-								</tbody></table>
-								<br>
-								</td>
-							</tr>
-                            <tr>
-                                <td style='background-color:#f3f3f3;border-top:1px solid #bac1c8;border-left:1px solid #bac1c8;border-right:1px solid #bac1c8;font-size:11px;line-height:16px;padding:26px 24px 18px 24px'>
-
-                                        CONFIDENTIALITY: This e-mail and any files transmitted with it are confidential and intended solely for the use of the recipient(s) only. Any review, retransmission, dissemination or other use of, or taking any action in reliance upon this information by persons or entities other than the intended recipient(s) is prohibited. If you have received this e-mail in error please notify the sender immediately and destroy the material whether stored on a computer or otherwise.
-									<br><br>DISCLAIMER: Any views or opinions presented within this e-mail are solely those of the author and do not necessarily represent those of FX-CMISC, unless otherwise specifically stated. The content of this message does not constitute Investment Advice.
+						<tr>
+							<td width='606' style='padding:5px 15px 20px;color:rgb(153,153,153);font-size:11px' colspan='2'>
+							<p align='justify'>
+								<font face='Arial, Verdana, sans-serif' size='3' color='#666666' style='font-size:10px;line-height:15px'>
+									CONFIDENTIALITY: This e-mail and any files transmitted with it are confidential and intended solely for the use of the recipient(s) only. Any review, retransmission, dissemination or other use of, or taking any action in reliance upon this information by persons or entities other than the intended recipient(s) is prohibited. If you have received this e-mail in error please notify the sender immediately and destroy the material whether stored on a computer or otherwise.
+									<br><br>DISCLAIMER: Any views or opinions presented within this e-mail are solely those of the author and do not necessarily represent those of FX CMISC, unless otherwise specifically stated. The content of this message does not constitute Investment Advice.
 									<br><br>RISK WARNING: Forex, spread bets, and CFDs carry a high degree of risk to your capital and it is possible to lose more than your initial investment. Only speculate with money you can afford to lose. As with any trading, you should not engage in it unless you understand the nature of the transaction you are entering into and, the true extent of your exposure to the risk of loss. These products may not be suitable for all investors, therefore if you do not fully understand the risks involved, please seek independent advice.
-									<br><br>
-<br><br>保密条款: 本邮件及其附件仅限于发送给上面地址中列出的个人、群组。禁止任何其他人以任何形式使用（包括但不限于全部或部分的泄露、复制、或散发）本邮件中的信息。如果您错收了本邮件，请您立即电话或邮件通知发件人，并删除任何您存于电脑或者其他终端的本邮件！
-<br><br>免责声明: 本邮件中任何观点和意见仅代表邮件发件人个人观点； 且除非特别声明，本邮件中的任何观点或意见并不代表FX-CMISC的立场。另本邮件中所含信息并不构成投资建议。
-<br><br>风险警示:外汇、差价赌注、差价合同交易均为高风险操作，您的损失可能会超出您的初始投入。 请根据您可以承受的损失程度理性参与投资。 在您决定参与任何交易前，请一定了解您正在接触的交易其本质，并全面理解您个人的风险暴露程度。这些产品可能不适用于所有的投资者，所以若您未能充分了解所涉及的风险，请您寻求独立意见。
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td><img src='http://partner.fxcmiscc.com/images/email/bottom.jpg'
-                            alt='' border='0' usemap='#1461c343c4ce9442_Map2'></td>
-                </tr>
-                </tbody>
-            </table>
-        </td>
-    </tr>
-    </tbody ></table>";
+								</font>
+							</p>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+	</tbody>
+</table>";
 
 
             $sendMailService = new SendMailService();
