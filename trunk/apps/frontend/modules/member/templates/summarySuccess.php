@@ -6,6 +6,32 @@ use_helper('I18N');
     #announcement .page_content img {
         max-width: 536px;
     }
+    #announcement h4.modal-title {
+        color: #AF0001;
+        font-size: large;
+        margin: 20px 0px;
+    }
+    #announcement .modal-body {
+        padding-top: 20px;
+    }
+    #announcement button.close {
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background-color: rgb(255, 92, 92);
+        border: 3px rgb(240, 50, 50) solid;
+        color: white;
+        padding: 5px 9px;
+    }
+    #announcement button.close2 {
+        background-color: rgb(255, 92, 92);
+        border: 3px rgb(240, 50, 50) solid;
+        color: white;
+        margin: 14px 0px;
+        padding: 6px 14px;
+        display: none;
+    }
 </style>
 
 <script type="text/javascript">
@@ -22,12 +48,39 @@ use_helper('I18N');
                 $(this).css('display', 'none');
             }
 
-            btn_html += '<button class="btn btn-info pager_button" type="button" data-original-title="" title="" ref="' + page_id + '">' + page_id + '</button>';
+            btn_html += '<button class="btn btn-info pager_button" type="button" style="padding: 3px 8px;" data-original-title="" title="" ref="' + page_id + '">' + page_id + '</button>';
             page_id++;
         });
 
         $('#announcement .btn-group').html(btn_html);
 //        $('#announcement').modal('show');
+
+        $("#announcement button.close").click(function() {
+            $.unblockUI();
+        });
+
+        $("#showAnnouncement").click(function() {
+            var message_width = 600;
+            var message_height = $(window).height() - 50;
+
+            $.blockUI({
+                message: $("#announcement"),
+                onOverlayClick: $.unblockUI,
+                css: {
+                    cursor: "default",
+                    backgroundColor: "rgb(242, 242, 242)",
+                    width: message_width + "px",
+                    height: message_height + "px",
+                    top: '50%',
+                    left: '50%',
+                    margin: (-message_height / 2) + 'px 0 0 '+ (-message_width/2) + 'px',
+                    overflow: "auto"
+                }
+            });
+        });
+
+        // Auto show announcement on page loaded.
+//        $("#showAnnouncement").trigger("click");
 
         $(".pager_button").click(function(event) {
             event.preventDefault();
@@ -46,7 +99,10 @@ use_helper('I18N');
 </style>
 
 <td valign="top">
+    <a href="javascript:void(0);" id="showAnnouncement" style="display: none;">#</a>
+
     <h2><?php echo __("Account Summary"); ?></h2>
+
     <table cellpadding="7" cellspacing="1">
         <tbody>
         <tr>
@@ -100,15 +156,13 @@ use_helper('I18N');
         </tbody>
     </table>
 
-    <div id="announcement" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-         aria-hidden="false" style="display: none;">
+    <div id="announcement" style="display: none;">
         <div class="modal-dialog">
             <div class="modal-content">
 
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    <h4 class="modal-title" id="myModalLabel2"><strong
-                            style="color: #fff;"><?php echo __('Announcement') ?></strong></h4>
+                    <button type="button" class="close">×</button>
+                    <h4 class="modal-title"><?php echo __('Announcement') ?></h4>
                 </div>
                 <div class="modal-body" style="overflow: auto">
                     <div class="row margin-bottom text-align-center">
@@ -132,7 +186,7 @@ use_helper('I18N');
 
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal"><?php echo __('Close') ?></button>
+                    <button type="button" class="btn btn-default close2" data-dismiss="modal"><?php echo __('Close') ?></button>
                 </div>
             </div>
             <!-- /.modal-content -->
