@@ -4753,11 +4753,16 @@ class memberActions extends sfActions
                     $fromName = $this->getUser()->getAttribute(Globals::SESSION_NICKNAME);
                     $fromBalance = $ledgerAccountBalance;
 
+                    $remark = "";
+                    if ($this->getRequestParameter('remark')) {
+                        $remark = ", ".$this->getRequestParameter('remark');
+                    }
+
                     $mlm_account_ledger = new MlmAccountLedger();
                     $mlm_account_ledger->setAccountType(Globals::ACCOUNT_TYPE_PROMO);
                     $mlm_account_ledger->setDistId($fromId);
                     $mlm_account_ledger->setTransactionType(Globals::ACCOUNT_LEDGER_ACTION_TRANSFER_TO);
-                    $mlm_account_ledger->setRemark(Globals::ACCOUNT_LEDGER_ACTION_TRANSFER_TO . " " . $toCode);
+                    $mlm_account_ledger->setRemark(Globals::ACCOUNT_LEDGER_ACTION_TRANSFER_TO . " " . $toCode . $remark);
                     $mlm_account_ledger->setCredit(0);
                     $mlm_account_ledger->setDebit($this->getRequestParameter('ecashAmount'));
                     $mlm_account_ledger->setBalance($fromBalance - $this->getRequestParameter('ecashAmount'));
@@ -4771,7 +4776,7 @@ class memberActions extends sfActions
                     $tbl_account_ledger->setAccountType(Globals::ACCOUNT_TYPE_PROMO);
                     $tbl_account_ledger->setDistId($toId);
                     $tbl_account_ledger->setTransactionType(Globals::ACCOUNT_LEDGER_ACTION_TRANSFER_FROM);
-                    $tbl_account_ledger->setRemark(Globals::ACCOUNT_LEDGER_ACTION_TRANSFER_FROM . " " . $fromCode);
+                    $tbl_account_ledger->setRemark(Globals::ACCOUNT_LEDGER_ACTION_TRANSFER_FROM . " " . $fromCode . " (" . $fromName . ")" . $remark);
                     $tbl_account_ledger->setCredit($this->getRequestParameter('ecashAmount'));
                     $tbl_account_ledger->setDebit(0);
                     $tbl_account_ledger->setBalance($toBalance + $this->getRequestParameter('ecashAmount'));
@@ -5008,11 +5013,16 @@ class memberActions extends sfActions
                 $fromName = $this->getUser()->getAttribute(Globals::SESSION_NICKNAME);
                 $fromBalance = $ledgerAccountBalance;
 
+                $remark = "";
+                if ($this->getRequestParameter('remark')) {
+                    $remark = ", ".$this->getRequestParameter('remark');
+                }
+
                 $mlm_account_ledger = new MlmAccountLedger();
                 $mlm_account_ledger->setAccountType(Globals::ACCOUNT_TYPE_EPOINT);
                 $mlm_account_ledger->setDistId($fromId);
                 $mlm_account_ledger->setTransactionType(Globals::ACCOUNT_LEDGER_ACTION_TRANSFER_TO);
-                $mlm_account_ledger->setRemark(Globals::ACCOUNT_LEDGER_ACTION_TRANSFER_TO . " " . $toCode);
+                $mlm_account_ledger->setRemark(Globals::ACCOUNT_LEDGER_ACTION_TRANSFER_TO . " " . $toCode . $remark);
                 $mlm_account_ledger->setCredit(0);
                 $mlm_account_ledger->setDebit($epointAmount);
                 $mlm_account_ledger->setBalance($fromBalance - $epointAmount);
@@ -5026,7 +5036,7 @@ class memberActions extends sfActions
                 $tbl_account_ledger->setAccountType(Globals::ACCOUNT_TYPE_EPOINT);
                 $tbl_account_ledger->setDistId($toId);
                 $tbl_account_ledger->setTransactionType(Globals::ACCOUNT_LEDGER_ACTION_TRANSFER_FROM);
-                $tbl_account_ledger->setRemark(Globals::ACCOUNT_LEDGER_ACTION_TRANSFER_FROM . " " . $fromCode . " (" . $fromName . ")");
+                $tbl_account_ledger->setRemark(Globals::ACCOUNT_LEDGER_ACTION_TRANSFER_FROM . " " . $fromCode . " (" . $fromName . ")" . $remark);
                 $tbl_account_ledger->setCredit($epointAmount);
                 $tbl_account_ledger->setDebit(0);
                 $tbl_account_ledger->setBalance($toBalance + $epointAmount);
@@ -5411,6 +5421,8 @@ class memberActions extends sfActions
 
         $ledgerAccountBalance = $this->getAccountBalance($this->getUser()->getAttribute(Globals::SESSION_DISTID), Globals::ACCOUNT_TYPE_ECASH);
         $this->ledgerAccountBalance = $ledgerAccountBalance;
+        $distributorDB = MlmDistributorPeer::retrieveByPk($this->getUser()->getAttribute(Globals::SESSION_DISTID));
+        $this->distributorDB = $distributorDB;
 
         $withdrawAmount = $this->getRequestParameter('ecashAmount');
 
@@ -5421,6 +5433,17 @@ class memberActions extends sfActions
                 $this->setFlash('errorMsg', $this->getContext()->getI18N()->__("Withdrawal request must be done during the first 7 days of each month or 16th - 20th of each month"));
                 return $this->redirect('/member/ewalletWithdrawal');
             }*/
+
+            if ($distributorDB->getBankAccNo() == "" || $distributorDB->getBankAccNo() == null
+                || $distributorDB->getBankName() == "" || $distributorDB->getBankName() == null
+                || $distributorDB->getBankBranch() == "" || $distributorDB->getBankBranch() == null
+                || $distributorDB->getBankAddress() == "" || $distributorDB->getBankAddress() == null
+                || $distributorDB->getBankHolderName() == "" || $distributorDB->getBankHolderName() == null
+                || $distributorDB->getFileBankPassBook() == "" || $distributorDB->getFileBankPassBook() == null
+                || $distributorDB->getFileNric() == "" || $distributorDB->getFileNric() == null) {
+
+                $this->setFlash('errorMsg', $this->getContext()->getI18N()->__("Invalid Action."));
+            }
 
             $tbl_user = AppUserPeer::retrieveByPk($this->getUser()->getAttribute(Globals::SESSION_USERID));
 

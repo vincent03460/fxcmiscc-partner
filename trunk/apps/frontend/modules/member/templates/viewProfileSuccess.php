@@ -1,6 +1,16 @@
 <?php
 use_helper('I18N');
 ?>
+<style>
+    label.error{
+        padding-top: 4px !important;
+        padding-bottom: 0px !important;
+    }
+    .mandatory {
+        color: #E5603B;
+    }
+</style>
+
 <script>
 $(function() {
     $("#registerForm").validate({
@@ -98,314 +108,300 @@ $(function() {
     });
 });
 </script>
-<div class="title">
-  <h1><?php echo __("Personal Information"); ?></h1>
-</div>
-<div class="table">
-  <table cellpadding="0" cellspacing="10" width="100%">
-    <tr>
-      <td width="100%">
-        <table cellpadding="0" cellspacing="0" width="100%">
-          <tr>
-            <th colspan="2"><?php echo __("Personal Information")?></th>
-          </tr>
-          <tr>
-            <td class="tablebg">
-              <i class="icon-ok-sign"></i>
-              <?php echo __("Please fill in all the personal information"); ?>
-              <small></small>
-              <br/><br/>
 
-              <form action="/member/updateProfile"
-                      id="registerForm"
-                      name="registerForm"
-                      method="post" class="form-horizontal" role="form">
+<td valign="top">
 
-                <fieldset>
-                  <?php include_component('component', 'alert', array('param' => $sf_user->getAttribute(Globals::SESSION_DISTID, 0))) ?>
+    <?php include_component('component', 'alert', array('param' => $sf_user->getAttribute(Globals::SESSION_DISTID, 0))) ?>
 
-                  <div class="row">
-                    <div class="col-sm-8">
-                      <div class="control-group">
+    <h2><?php echo __("Member Profile"); ?></h2>
+
+    <form class="form-horizontal" method="post"
+          action="/member/updateProfile"
+          id="registerForm" name="registerForm">
+
+        <fieldset>
+            <legend class="section">
+                <h3><?php echo __("Personal Information")?></h3>
+            </legend>
+
+            <i><?php echo __("Please fill in all the personal information"); ?></i>
+
+            <br/><br/>
+
+            <table cellpadding="5" cellspacing="1">
+                <tbody>
+                <tr>
+                    <th>
                         <label class="control-label" for="fullname">
-                        <?php echo __("Full Name")?>
+                            <?php echo __("Full Name")?>
                         </label>
-
-                        <div class="controls form-group">
-                          <input name="fullname" type="text" id="fullname" readonly="readonly" class="form-control" size="30" value="<?php echo $distDB->getFullName() ?>"/>
-                        </div>
-                      </div>
-                        <div class="control-group">
-                          <label class="control-label" for="nric">
-                          <?php echo __("NRIC")?>
-                          </label>
-
-                          <?php
-                          $toReadonly = "readonly='readonly'";
-                          if ($distDB->getIc() == "") {
+                    </th>
+                    <td>
+                        <input type="text" class="col-sm-6 col-xs-12" id="fullname" name="fullname" readonly="readonly" value="<?php echo $distDB->getFullName() ?>">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label class="control-label" for="nric">
+                            <?php echo __("NRIC")?>
+                        </label>
+                    </th>
+                    <td>
+                        <?php
+                        $toReadonly = "readonly='readonly'";
+                        if ($distDB->getIc() == "") {
                             $toReadonly = "";
-                          }
-                          ?>
-                          <div class="controls form-group">
-                            <input name="nric" type="text" id="nric" class="form-control" size="30" value="<?php echo $distDB->getIc() ?>" <?php echo $toReadonly ?>/>
-                          </div>
-                        </div>
-                        <div class="control-group">
-                          <label class="control-label" for="country">
-                          <?php echo __("Country")?>
-                          </label>
-
-                          <div class="controls form-group">
-                            <?php include_component('component', 'countrySelectOption', array('countrySelected' => $distDB->getCountry(), 'countryName' => 'country', 'countryId' => 'country')) ?>
-                          </div>
-                        </div>
-                        <div class="control-group">
-                          <label class="control-label" for="address">
-                          <?php echo __("Address")?>
-                          </label>
-
-                          <div class="controls form-group">
-                            <input name="address" type="text" id="address" size="30" class="form-control" value="<?php echo $distDB->getAddress() ?>"/>
-                          </div>
-                        </div>
-                        <div class="control-group">
-                            <label class="control-label" for="address2">
+                        }
+                        ?>
+                        <input type="text" class="col-sm-6 col-xs-12" id="nric" name="nric" size="30" value="<?php echo $distDB->getIc() ?>" <?php echo $toReadonly ?>>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label class="control-label" for="country">
+                            <?php echo __("Country")?>
+                        </label>
+                    </th>
+                    <td>
+                        <?php include_component('component', 'countrySelectOption', array('countrySelected' => $distDB->getCountry(), 'countryName' => 'country', 'countryId' => 'country')) ?>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label class="control-label" for="address">
+                            <?php echo __("Address")?>
+                        </label>
+                    </th>
+                    <td>
+                        <input type="text" class="col-sm-6 col-xs-12" id="address" name="address" size="30" value="<?php echo $distDB->getAddress() ?>">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label class="control-label" for="address2">
                             <?php echo __("Address")?> 2
-                            </label>
+                        </label>
+                    </th>
+                    <td>
+                        <input type="text" class="col-sm-6 col-xs-12" id="address2" name="address2" size="30" value="<?php echo $distDB->getAddress2() ?>">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label class="control-label" for="city">
+                            <?php echo __("City / Town")?>
+                        </label>
+                    </th>
+                    <td>
+                        <input type="text" class="col-sm-6 col-xs-12" id="city" name="city" size="30" value="<?php echo $distDB->getCity() ?>">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label class="control-label" for="state">
+                            <?php echo __("State / Province")?>
+                        </label>
+                    </th>
+                    <td>
+                        <input type="text" class="col-sm-6 col-xs-12" id="state" name="state" size="30" value="<?php echo $distDB->getState() ?>">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label class="control-label" for="zip">
+                            <?php echo __("Zip / Postal Code")?>
+                        </label>
+                    </th>
+                    <td>
+                        <input type="text" class="col-sm-6 col-xs-12" id="zip" name="zip" size="30" value="<?php echo $distDB->getPostcode() ?>">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label class="control-label" for="email">
+                            <?php echo __("Email")?>
+                        </label>
+                    </th>
+                    <td>
+                        <input type="text" class="col-sm-6 col-xs-12" id="email" name="email" size="30" value="<?php echo $distDB->getEmail() ?>">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label class="control-label" for="contactNumber">
+                            <?php echo __("Contact Number")?>
+                        </label>
+                    </th>
+                    <td>
+                        <input type="text" class="col-sm-6 col-xs-12" id="contactNumber" name="contactNumber" size="30" value="<?php echo $distDB->getContact() ?>">
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </fieldset>
 
-                            <div class="controls form-group">
-                              <input name="address2" type="text" id="address2" size="30" class="form-control" value="<?php echo $distDB->getAddress2() ?>"/>
-                            </div>
-                        </div>
-                        <div class="control-group">
-                          <label class="control-label" for="city">
-                          <?php echo __("City / Town")?>
-                          </label>
+        <input type="submit" id="btnSubmit" class="btn btn-danger" value="<?php echo __("Submit");?>" style="margin-left: 712px;" />
 
-                          <div class="controls form-group">
-                            <input name="city" type="text" id="city" size="30" class="form-control" value="<?php echo $distDB->getCity() ?>"/>
-                          </div>
-                        </div>
-                        <div class="control-group">
-                          <label class="control-label" for="state">
-                          <?php echo __("State / Province")?>
-                          </label>
+    </form>
 
-                          <div class="controls form-group">
-                            <input name="state" type="text" id="state" size="30" class="form-control" value="<?php echo $distDB->getState() ?>"/>
-                          </div>
-                        </div>
-                        <div class="control-group">
-                          <label class="control-label" for="zip">
-                          <?php echo __("Zip / Postal Code")?>
-                          </label>
+    <br/><br/>
 
-                          <div class="controls form-group">
-                            <input name="zip" type="text" id="zip" size="30" class="form-control" value="<?php echo $distDB->getPostcode() ?>"/>
-                          </div>
-                        </div>
-                        <div class="control-group">
-                          <label class="control-label" for="email">
-                          <?php echo __("Email")?>
-                          </label>
+    <form class="form-horizontal" method="post"
+          action="/member/updateBankInformation"
+          id="bankForm" name="bankForm">
 
-                          <div class="controls form-group">
-                            <input name="email" type="text" id="email" size="30" class="form-control" value="<?php echo $distDB->getEmail() ?>"/>
-                          </div>
-                        </div>
-                        <div class="control-group">
-                          <label class="control-label" for="contactNumber">
-                          <?php echo __("Contact Number")?>
-                          </label>
+        <fieldset>
+            <legend class="section">
+                <h3><?php echo __("Bank Account Details")?></h3>
+            </legend>
 
-                          <div class="controls form-group">
-                            <input name="contactNumber" type="text" id="contactNumber" size="30" class="form-control" value="<?php echo $distDB->getContact() ?>"/>
-                          </div>
-                        </div>
-                    </div>
-                  </div>
-                </fieldset>
-                <div class="form-actions">
-                  <button type="button" id="btnSubmit" class="btn btn-info">
-                    <i class="icon-ok bigger-110"></i>
-                    <?php echo __("Submit");?>
-                  </button>
-                  <a href="/member/summary" class="btn btn-default"><?php echo __("Cancel");?></a>
-                </div>
-              </form>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <table cellpadding="10" cellspacing="0" width="100%">
-          <tr>
-            <th colspan="4"><?php echo __("Bank Account Details")?></th>
-          </tr>
-          <tr>
-            <td class="tablebg">
-              <i class="icon-ok-sign"></i>
-              <?php echo __("Please fill in all the Bank Account Details"); ?>
-              <small></small>
-              <br/><br/>
+            <i><?php echo __("Please fill in all the Bank Account information"); ?></i>
 
-              <form action="/member/updateBankInformation"
-                    id="bankForm"
-                    name="bankForm"
-                    method="post" class="form-horizontal" role="form">
+            <br/><br/>
 
-                <fieldset>
-                  <div class="row">
-                    <div class="col-sm-8">
-                      <div class="control-group">
+            <table cellpadding="5" cellspacing="1">
+                <tbody>
+                <tr>
+                    <th>
                         <label class="control-label" for="bankName">
-                          <?php echo __("Bank Name")?>
+                            <?php echo __("Bank Name")?>
                         </label>
-
-                        <div class="controls form-group">
-                          <input name="bankName" type="text" id="bankName"
-                                 size="30" value="<?php echo $distDB->getBankName() ?>"/>
-                        </div>
-                      </div>
-                      <div class="control-group">
+                    </th>
+                    <td>
+                        <input type="text" class="col-sm-6 col-xs-12" id="bankName" name="bankName" value="<?php echo $distDB->getBankName() ?>">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
                         <label class="control-label" for="bankBranch">
-                          <?php echo __("Bank Branch")?>
+                            <?php echo __("Bank Branch")?>
                         </label>
-
-                        <div class="controls form-group">
-                          <input name="bankBranch" type="text" id="bankBranch" size="30"
-                                 value="<?php echo $distDB->getBankBranch() ?>"/>
-                        </div>
-                      </div>
-                      <div class="control-group">
+                    </th>
+                    <td>
+                        <input type="text" class="col-sm-6 col-xs-12" id="bankBranch" name="bankBranch" value="<?php echo $distDB->getBankBranch() ?>">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
                         <label class="control-label" for="bankState">
-                          <?php echo __("Bank Address")?>
+                            <?php echo __("Bank Address")?>
                         </label>
-
-                        <div class="controls form-group">
-                          <input name="bankState" type="text" id="bankState" size="30"
-                                 value="<?php echo $distDB->getBankAddress() ?>"/>
-                        </div>
-                      </div>
-                      <div class="control-group">
-                        <label class="control-label" for="bankState">
-                          <?php echo __("Bank Swift Code")?>
+                    </th>
+                    <td>
+                        <input type="text" class="col-sm-6 col-xs-12" id="bankState" name="bankState" value="<?php echo $distDB->getBankAddress() ?>">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label class="control-label" for="bankSwiftCode">
+                            <?php echo __("Bank Swift Code")?>
                         </label>
-
-                        <div class="controls form-group">
-                          <input name="bankSwiftCode" type="text" id="bankSwiftCode" size="30"
-                                 value="<?php echo $distDB->getBankSwiftCode() ?>"/>
-                        </div>
-                      </div>
-                      <div class="control-group">
+                    </th>
+                    <td>
+                        <input type="text" class="col-sm-6 col-xs-12" id="bankSwiftCode" name="bankSwiftCode" size="30" value="<?php echo $distDB->getBankSwiftCode() ?>">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
                         <label class="control-label" for="bankAccNo">
-                          <?php echo __("Bank Account Number")?>
+                            <?php echo __("Bank Account Number")?>
                         </label>
-
-                        <div class="controls form-group">
-                          <input name="bankAccNo" type="text" id="bankAccNo" size="30"
-                                 value="<?php echo $distDB->getBankAccNo() ?>"/>
-                        </div>
-                      </div>
-                      <div class="control-group">
+                    </th>
+                    <td>
+                        <input type="text" class="col-sm-6 col-xs-12" id="bankAccNo" name="bankAccNo" size="30" value="<?php echo $distDB->getBankAccNo() ?>">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
                         <label class="control-label" for="bankHolderName">
-                          <?php echo __("Bank Account Holder Name")?>
+                            <?php echo __("Bank Account Holder Name")?>
                         </label>
+                    </th>
+                    <td>
+                        <input type="text" class="col-sm-6 col-xs-12" id="bankHolderName" name="bankHolderName" size="30" value="<?php echo $distDB->getBankHolderName() ?>">
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </fieldset>
 
-                        <div class="controls form-group">
-                          <input name="bankHolderName" type="text" id="bankHolderName" size="30"
-                                 value="<?php echo $distDB->getBankHolderName() ?>"/>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </fieldset>
-                <div class="form-actions">
-                  <button type="button" id="btnBankUpdate" class="btn btn-info">
-                    <i class="icon-ok bigger-110"></i>
-                    <?php echo __("Submit");?>
-                  </button>
-                  <a href="/member/summary" class="btn btn-default"><?php echo __("Cancel");?></a>
-                </div>
-              </form>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <table cellpadding="10" cellspacing="0" width="100%">
-          <tr>
-            <th colspan="4"><?php echo __("Bank Account Proof")?></th>
-          </tr>
-          <tr>
-            <td class="tablebg">
-              <i class="icon-cogs"></i>
-              <?php echo __("Upload Bank Account Proof, Proof of Residence and Passport/Photo ID"); ?>
-              <small></small>
-              <br/><br/>
+        <input type="submit" id="btnSubmit" class="btn btn-danger" value="<?php echo __("Submit");?>" style="margin-left: 712px;" />
 
-              <form id="uploadForm" name="uploadForm"
-                    action="/member/doUploadFile" enctype="multipart/form-data"
-                    method="post">
+    </form>
 
-                <fieldset>
-                  <div class="form-group">
-                    <label><?php echo __('Bank Account Proof') ?></label>
-                    <?php echo input_file_tag('bankPassBook', array("id" => "bankPassBook", "name" => "bankPassBook")); ?>
-                    <?php
-                    if ($distDB->getFileBankPassBook() != "") {
-                    ?>
-                    <a href="<?php echo url_for("/download/bankPassBook?q=" . rand()) ?>">
-                      <img src="/images/common/fileopen.png" alt="view file">
-                    </a>
-                    <?php
-                    }
-                    ?>
-                  </div>
-                  <div class="form-group">
-                    <label><?php echo __('Proof of Residence') ?></label>
-                    <?php echo input_file_tag('proofOfResidence', array("id" => "proofOfResidence", "name" => "proofOfResidence")); ?>
-                    <?php
-                    if ($distDB->getFileProofOfResidence() != "") {
-                    ?>
-                    <a href="<?php echo url_for("/download/proofOfResidence?q=" . rand()) ?>">
-                      <img src="/images/common/fileopen.png" alt="view file">
-                    </a>
-                    <?php
-                    }
-                    ?>
-                  </div>
-                  <div class="form-group">
-                    <label><?php echo __('Passport/Photo ID') ?></label>
-                    <?php echo input_file_tag('nric', array("id" => "nric", "name" => "nric")); ?>
-                    <?php
-                    if ($distDB->getFileNric() != "") {
-                    ?>
-                    <a href="<?php echo url_for("/download/nric?q=" . rand()) ?>">
-                      <img src="/images/common/fileopen.png" alt="view file">
-                    </a>
-                    <?php
-                    }
-                    ?>
-                  </div>
+    <br/><br/>
 
-                  <div class="form-actions" style="padding-left: 180px;">
-                    <button type="button" id="btnUpload" class="btn btn-info">
-                      <i class="icon-upload-alt bigger-110"></i>
-                      <?php echo __("Upload");?>
-                    </button>
-                    <a href="/member/summary" class="btn btn-default"><?php echo __("Cancel");?></a>
-                  </div>
-                </fieldset>
-              </form>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-  </table>
-</div>
+    <form class="form-horizontal" method="post"
+          action="/member/doUploadFile" enctype="multipart/form-data"
+          id="uploadForm" name="uploadForm">
+
+        <fieldset>
+            <legend class="section">
+                <h3><?php echo __("Bank Account Proof")?></h3>
+            </legend>
+
+            <i><?php echo __("Upload Bank Account Proof, Proof of Residence and Passport/Photo ID"); ?></i>
+
+            <br/><br/>
+
+            <table cellpadding="5" cellspacing="1">
+                <tbody>
+                <tr>
+                    <th>
+                        <label class="control-label" for="bankPassBook">
+                            <?php echo __("Bank Account Proof")?>
+                        </label>
+                    </th>
+                    <td>
+                        <?php echo input_file_tag('bankPassBook', array("id" => "bankPassBook", "name" => "bankPassBook")); ?>
+                        <?php if ($distDB->getFileNric() != "") { ?>
+                            <span class="ui-icon ui-icon-circle-check" style="display:inline-block;"></span> <span style="color: #468847">Uploaded Successfully</span>
+                        <?php } ?>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label class="control-label" for="proofOfResidence">
+                            <?php echo __("Proof of Residence")?>
+                        </label>
+                    </th>
+                    <td>
+                        <?php echo input_file_tag('proofOfResidence', array("id" => "proofOfResidence", "name" => "proofOfResidence")); ?>
+                        <?php if ($distDB->getFileNric() != "") { ?>
+                            <span class="ui-icon ui-icon-circle-check" style="display:inline-block;"></span> <span style="color: #468847">Uploaded Successfully</span>
+                        <?php } ?>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label class="control-label" for="bankState">
+                            <?php echo __("Passport/Photo ID")?>
+                        </label>
+                    </th>
+                    <td>
+                        <?php echo input_file_tag('nric', array("id" => "nric", "name" => "nric")); ?>
+                        <?php if ($distDB->getFileNric() != "") { ?>
+                        <span class="ui-icon ui-icon-circle-check" style="display:inline-block;"></span> <span style="color: #468847">Uploaded Successfully</span>
+                        <?php } ?>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        &nbsp;
+                    </th>
+                    <td>
+                        <span color="#dc143c">
+                            <?php echo __('Note: Maximum upload size per file is 5 MB. Only pdf / bmp / jpg / jpeg / gif / png / tif / tiff / doc / docx / xls / xlsx formats are accepted.') ?>
+                        </span>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </fieldset>
+
+        <input type="submit" id="btnSubmit" class="btn btn-danger" value="<?php echo __("Upload");?>" style="margin-left: 712px;" />
+
+    </form>
+
+    <br/><br/>
+</td>
