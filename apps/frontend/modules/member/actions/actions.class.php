@@ -13,23 +13,24 @@ class memberActions extends sfActions
     public function executeSetTreeStructure()
     {
         $c = new Criteria();
-        $c->add(MlmDistributorPeer::TREE_LEVEL, null, Criteria::ISNULL);
+        $c->addAscendingOrderByColumn(MlmDistributorPeer::TREE_LEVEL);
         $mlm_distributors = MlmDistributorPeer::doSelect($c);
 
-        foreach ($mlm_distributors as $uplineDistDB) {
-            $uplineDistDB->setTreeLevel(3);
-            $uplineDistDB->setUplineDistId(2);
-            $uplineDistDB->setUplineDistCode("TENGCHEEKENT");
-            $uplineDistDB->setRankId(500);
-            $uplineDistDB->setRankCode("SILVER");
-            $uplineDistDB->setMt4RankId(500);
-            $uplineDistDB->setInitRankId(500);
-            $uplineDistDB->setInitRankCode("SILVER");
-            $uplineDistDB->setStatusCode(Globals::STATUS_ACTIVE);
+        $idx = 0;
+        foreach ($mlm_distributors as $mlm_distributor) {
+            $idx++;
+            if ($idx == 1) {
+                continue;
+            }
+            print_r("<br>".$mlm_distributor->getDistributorCode());
+            $uplineDistDB = MlmDistributorPeer::retrieveByPK($mlm_distributor->getUplineDistId());
 
-            $treeStructure = "|1||2|" . $uplineDistDB->getDistributorId() . "|";
-            $uplineDistDB->setTreeStructure($treeStructure);
-            $uplineDistDB->save();
+            $mlm_distributor->setTreeLevel($uplineDistDB->getTreeLevel() + 1);
+            $mlm_distributor->setTreeStructure($uplineDistDB->getTreeStructure()."|". $mlm_distributor->getDistributorId() ."|");
+
+            print_r("<br>".$mlm_distributor->getTreeLevel(). "::".$mlm_distributor->getTreeStructure()."<br><br>");
+
+            $mlm_distributor->save();
         }
 
         return sfView::HEADER_ONLY;
@@ -2734,7 +2735,10 @@ class memberActions extends sfActions
             $c->add(MlmDistributorPeer::TREE_STRUCTURE, "%|".$this->getUser()->getAttribute(Globals::SESSION_DISTID)."|%", Criteria::LIKE);
             $c->add(MlmDistributorPeer::STATUS_CODE, Globals::STATUS_ACTIVE);
             $uplineDistDB = MlmDistributorPeer::doSelectOne($c);
-
+            var_dump($this->getUser()->getAttribute(Globals::SESSION_DISTID));
+            var_dump($uplineDistCode);
+            var_dump($uplineDistDB);
+            exit();
             if (!$uplineDistDB) {
                 $this->setFlash('errorMsg', $this->getContext()->getI18N()->__("Invalid Referrer ID"));
                 return $this->redirect('/member/memberRegistration');
