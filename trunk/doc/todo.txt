@@ -1,0 +1,11 @@
+Hi Jason,
+
+Registration,
+Please add on another 3 column or link at registration page, the columns or links is for us to upload National ID, Proof of Residence, Bank Statement(not-necessary for registration)
+We are unable to go on step 2 to see the following registration so we cannot check is it anything have to change.
+
+Edit profile part,
+3 more column or links for trader self-upload National ID, Proof of Residence&Bank Statement. This 3 is required when trader needed to make withdrawal.
+
+Withdrawal part,
+If can, help to change the withdrawal below info, and note that if withdraw without National ID, Proof of Residence & Bank Statement will be take as rejected transaction.
