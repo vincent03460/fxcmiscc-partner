@@ -165,7 +165,7 @@ input[readonly] {
         waiting();
         $.ajax({
             type : 'POST',
-            url : "/member/verifyActiveSponsorId",
+            url : "/member/verifySponsorId",
             dataType : 'json',
             cache: false,
             data: {
