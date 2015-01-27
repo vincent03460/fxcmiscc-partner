@@ -86,32 +86,11 @@ use_helper('I18N');
                         <option value="300">300</option>
                         <option value="400">400</option>
                         <option value="500">500</option>
-                        <option value="600">600</option>
-                        <option value="700">700</option>
-                        <option value="800">800</option>
-                        <option value="900">900</option>
                         <option value="1000">1,000</option>
-                        <option value="1100">1,100</option>
-                        <option value="1200">1,200</option>
-                        <option value="1300">1,300</option>
-                        <option value="1400">1,400</option>
                         <option value="1500">1,500</option>
-                        <option value="1600">1,600</option>
-                        <option value="1700">1,700</option>
-                        <option value="1800">1,800</option>
-                        <option value="1900">1,900</option>
                         <option value="2000">2,000</option>
                         <option value="2500">2,500</option>
                         <option value="3000">3,000</option>
-                        <option value="3500">3,500</option>
-                        <option value="4000">4,000</option>
-                        <option value="4500">4,500</option>
-                        <option value="5000">5,000</option>
-                        <?php
-                        for ($i = 6000; $i <= 100000; $i = $i + 1000) {
-                            echo "<option value='" . $i . "'>" . number_format($i, 0) . "</option>";
-                        }
-                        ?>
                     </select>
                 </td>
             </tr>

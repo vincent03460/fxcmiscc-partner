@@ -42,15 +42,15 @@ use_helper('I18N');
             </ul>
             &nbsp;
         </li>
-        <li>
-            <span class="group_header"><?php echo __("Hierarchy") ?></span>
-            <ul>
-                <li>
-                    <a href="/member/sponsorTree"><div><?php echo __("Sponsor Genealogy") ?></div></a>
-                </li>
-            </ul>
-            &nbsp;
-        </li>
+<!--        <li>-->
+<!--            <span class="group_header">--><?php //echo __("Hierarchy") ?><!--</span>-->
+<!--            <ul>-->
+<!--                <li>-->
+<!--                    <a href="/member/sponsorTree"><div>--><?php //echo __("Sponsor Genealogy") ?><!--</div></a>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--            &nbsp;-->
+<!--        </li>-->
         <li>
             <span class="group_header"><?php echo __("More") ?></span>
             <ul>

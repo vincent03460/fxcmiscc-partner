@@ -5395,7 +5395,7 @@ class memberActions extends sfActions
                                 <div class='node-info'>
                                     <span class='user-rank'><img
                                             src='/css/network/".$headColor."_head.png'></span>
-                                    <span class='user-id'>".$distributorCode."</span>
+                                    <span class='user-id'>".$distributorCode . "<br/>(" . $dist->getFullName() . ")" . "</span>
                                     <span class='user-joined'>".$this->getContext()->getI18N()->__("Joined")." ".date('Y-m-d', strtotime($dist->getActiveDatetime()))."</span>
                                     <span class='user-joined'>".$this->getContext()->getI18N()->__("Group Sales").": ".$totalGroupSale."</span>
                                     <span class='user-joined'>".$this->getContext()->getI18N()->__("Rank").": ".$this->getContext()->getI18N()->__($packageName)."</span>
