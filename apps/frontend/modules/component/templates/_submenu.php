@@ -15,7 +15,7 @@ use_helper('I18N');
         <li><a href="/member/memberRegistration">
             <div><?php echo __("Registration") ?></div>
         </a></li>
-        <li><a href="/member/sponsorTree">
+        <li style="display: none;"><a href="/member/sponsorTree">
             <div><?php echo __("Sponsor Genealogy") ?></div>
         </a></li>
         <li><a href="/member/transferPromo">
