@@ -114,8 +114,16 @@ use_helper('I18N');
             <td><?php echo __($mt4Ranking);?></td>
         </tr>
         <tr>
+            <th><?php echo __("EP Wallet")?></th>
+            <td><?php echo number_format($promo, 2)?></td>
+        </tr>
+        <tr>
             <th><?php echo __("RP Wallet")?></th>
             <td><?php echo number_format($epoint, 2)?></td>
+        </tr>
+        <tr>
+            <th><?php echo __("e-Wallet")?></th>
+            <td><?php echo number_format($ecash, 2)?></td>
         </tr>
         <tr>
             <th><?php echo __("Email") ?></th>

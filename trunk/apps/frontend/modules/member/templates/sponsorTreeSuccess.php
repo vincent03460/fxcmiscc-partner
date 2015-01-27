@@ -194,7 +194,7 @@ img.tree-minus-button:hover, img.tree-plus-button:hover {
                           <div id="node-id-<?php echo $distinfo->getDistributorId();?>" class="node-info-raw">
                             <div class="node-info">
                               <span class="user-rank"><img src="/css/network/<?php echo $headColor; ?>_head.png"></span>
-                              <span class="user-id"><?php echo $distinfo->getDistributorCode(); ?></span>
+                              <span class="user-id"><?php echo $distinfo->getDistributorCode() . "<br/>(" . $distinfo->getFullName() . ")" ?></span>
                               <span class="user-joined"><?php echo __('Joined'); ?> <?php echo date('Y-m-d', strtotime($distinfo->getActiveDatetime())); ?></span>
                               <span class="user-joined"><?php echo __('Group Sales').": ".$totalGroupSale; ?></span>
                               <span class="user-joined"><?php echo __('Rank').": ".__($packageName); ?></span>

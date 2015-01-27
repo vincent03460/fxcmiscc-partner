@@ -9,10 +9,29 @@ $culture = $sf_user->getCulture();
 
     <script type='text/javascript' src='/js/jquery/jquery-1.6.2.min.js'></script>
     <script type='text/javascript' src='/js/jquery/jquery.validate.min.js'></script>
-    
+
     <?php if ($sf_user->getCulture() == "cn") { ?>
     <script type='text/javascript' src='/js/jquery/localization/messages_cn.js'></script>
     <?php } ?>
+
+    <style type="text/css">
+        body {
+            background:url('/images/bg.jpg');
+            background-size: cover;
+            background-position: -10px -10px;
+            background-repeat:no-repeat;
+            background-attachment:fixed;
+            /*background: url('/images/bg1.jpg') no-repeat 0 0 scroll;*/
+            /*background-size: cover;*/
+            /*height: auto;*/
+            /*left: 0;*/
+            /*min-height: 100%;*/
+            /*min-width: 1024px;*/
+            /*overflow: hidden;*/
+            /*position: fixed;*/
+            /*top: 0;*/
+        }
+    </style>
 
     <link rel='stylesheet' type='text/css' media='screen' href='/css/validate/validate.css'/>
     <link rel="stylesheet" href="/css/layout.css">
@@ -30,11 +49,21 @@ $culture = $sf_user->getCulture();
                     }
                 }
             });
+
+            initBg();
+
+            function initBg() {
+                $(document).mousemove(function(e){
+                    var mousePosX = 50 + (e.pageX/$(window).width())*25;
+                    var mousePosY = 50 + (e.pageY/$(window).height())*25;
+                    $('body').css('backgroundPosition', mousePosX + '% ' +  mousePosY + '%');
+                });
+            }
         });
     </script>
 </head>
 
-<body style="background: url('images/bg.gif') repeat;">
+<body>
 <form id="loginForm" name="loginForm" method="post" action="/home/doLogin">
     <div class="login_box">
         <img src="/images/logo.png">
