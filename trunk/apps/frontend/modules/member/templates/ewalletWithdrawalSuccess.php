@@ -143,7 +143,7 @@ use_helper('I18N');
                         <li><?php echo __('Withdrawal request must be done during the first 7 days of each month') ?></li>
                         <li><?php echo __('Handling fee USD50 or 5% whichever is higher'); ?></li>
                         <!--  <li>--><?php //echo __('Withdrawal request must be done during the first 7 days of each month or 16th - 20th of each month'); ?><!--</li>-->
-                        <li><?php echo __('Processing time : 3-5 working days'); ?></li>
+                        <li><?php echo __('Processing time : 7-10 working days'); ?></li>
                     </ol>
                 </td>
             </tr>
