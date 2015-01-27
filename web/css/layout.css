@@ -153,11 +153,20 @@ h2
 .menu
 {
 	float:left;
-	position:absolute;
-	top:92px;
+	/*position:absolute;*/
+	/*top:92px;*/
 	width:230px;
 	background-color:#E00000;
-	padding:15px 0px 100px 0px;
+	padding-top:15px;
+}
+
+.menu .group_header {
+	padding: 8px 40px;
+	font-weight: bold;
+	color: #fff;
+	font-size: medium;
+	/*background-color: rgb(158, 0, 0);*/
+	text-transform: uppercase;
 }
 
 .menu ul
@@ -169,7 +178,7 @@ h2
 
 .menu ul li a
 {
-	font-size:16px;
+	font-size:14px;
 	color:#FFF;
 	float:left;
 	width:100%;
@@ -177,7 +186,7 @@ h2
 
 .menu ul li a div
 {
-	padding:10px 40px;
+	padding:8px 40px;
 }
 
 .menu ul li a.active
@@ -232,8 +241,8 @@ label.error {
 
 .logout
 {
-	position:absolute;
-	bottom:0px;
+	/*position:absolute;*/
+	/*bottom:0px;*/
 	float:left;
 	width:230px;
 	height:70px;
@@ -267,6 +276,7 @@ label.error {
 	color:#FCF;
 	font-size:12px;
 	line-height:1.5;
+	margin-top: 260px;
 }
 
 .copyright div
