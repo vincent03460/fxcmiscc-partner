@@ -57,12 +57,12 @@ use_helper('I18N');
         <li>
             <span class="group_header"><?php echo __("More") ?></span>
             <ul>
-                <li>
-                    <a href="/member/download"><div><?php echo __("Download") ?></div></a>
-                </li>
-                <li>
-                    <a href="/member/agreement"><div><?php echo __("Agreement") ?></div></a>
-                </li>
+                <!--<li>
+                    <a href="/member/download"><div><?php /*echo __("Download") */?></div></a>
+                </li>-->
+                <!--<li>
+                    <a href="/member/agreement"><div><?php /*echo __("Agreement") */?></div></a>
+                </li>-->
                 <li>
                     <a href="/member/memo"><div><?php echo __("Memo") ?></div></a>
                 </li>

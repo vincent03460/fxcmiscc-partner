@@ -13,10 +13,10 @@ use_helper('I18N');
 
             },
             submitHandler: function(form) {
-                if ($('#agreement').is(':checked') == false) {
+                /*if ($('#agreement').is(':checked') == false) {
                     error("Please accept the Private Investment Agreement!");
                     return false;
-                }
+                }*/
 
                 var radioId = $('input:radio[name=radio_packageId]:checked').val();
                 $("#list option[value='2']").text();
