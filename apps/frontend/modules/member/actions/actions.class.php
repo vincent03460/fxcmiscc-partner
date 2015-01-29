@@ -4765,7 +4765,7 @@ class memberActions extends sfActions
                     $tbl_account_ledger->setAccountType(Globals::ACCOUNT_TYPE_ECASH);
                     $tbl_account_ledger->setDistId($toId);
                     $tbl_account_ledger->setTransactionType(Globals::ACCOUNT_LEDGER_ACTION_TRANSFER_FROM);
-                    $tbl_account_ledger->setRemark(Globals::ACCOUNT_LEDGER_ACTION_TRANSFER_FROM . " " . $fromCode);
+                    $tbl_account_ledger->setRemark(Globals::ACCOUNT_LEDGER_ACTION_TRANSFER_FROM . " " . $fromCode . "(" . $fromName . ")");
                     $tbl_account_ledger->setCredit($this->getRequestParameter('ecashAmount'));
                     $tbl_account_ledger->setDebit(0);
                     $tbl_account_ledger->setBalance($toBalance + $this->getRequestParameter('ecashAmount'));
@@ -6644,6 +6644,81 @@ class memberActions extends sfActions
         }
     }
 
+    public function executeConvertEcashToPromo()
+    {
+        $ledgerAccountBalance = $this->getAccountBalance($this->getUser()->getAttribute(Globals::SESSION_DISTID), Globals::ACCOUNT_TYPE_ECASH);
+        $this->ledgerAccountBalance = $ledgerAccountBalance;
+
+        $ecashAmount = $this->getRequestParameter('ecashAmount');
+        $ecashAmount = str_replace(",", "", $ecashAmount);
+        $distDB = MlmDistributorPeer::retrieveByPK($this->getUser()->getAttribute(Globals::SESSION_DISTID));
+
+        if ($ecashAmount > 0 && $this->getRequestParameter('transactionPassword') <> "") {
+            if ($this->checkIsDebitedAccount($this->getUser()->getAttribute(Globals::SESSION_DISTID), null, Globals::YES_Y, null, null, null, null, null, null)) {
+                $this->setFlash('errorMsg', $this->getContext()->getI18N()->__("Convert e-Wallet To EP temporary out of service."));
+                return $this->redirect('/member/convertEcashToPromo');
+            }
+
+            $tbl_user = AppUserPeer::retrieveByPk($this->getUser()->getAttribute(Globals::SESSION_USERID));
+
+            if ($ecashAmount > $ledgerAccountBalance) {
+                $this->setFlash('errorMsg', $this->getContext()->getI18N()->__("In-sufficient e-Wallet credit."));
+
+            } elseif (strtoupper($tbl_user->getUserpassword2()) <> strtoupper($this->getRequestParameter('transactionPassword'))) {
+                $this->setFlash('errorMsg', $this->getContext()->getI18N()->__("Invalid Security password"));
+
+            } elseif ($ecashAmount > 0) {
+                $con = Propel::getConnection();
+                try {
+                    $con->begin();
+
+                    $ledgerPromoBalance = $this->getAccountBalance($this->getUser()->getAttribute(Globals::SESSION_DISTID), Globals::ACCOUNT_TYPE_PROMO);
+
+                    $tbl_account_ledger = new MlmAccountLedger();
+                    $tbl_account_ledger->setAccountType(Globals::ACCOUNT_TYPE_ECASH);
+                    $tbl_account_ledger->setDistId($this->getUser()->getAttribute(Globals::SESSION_DISTID));
+                    $tbl_account_ledger->setTransactionType(Globals::ACCOUNT_LEDGER_ACTION_CONVERT_PROMO);
+                    $tbl_account_ledger->setCredit(0);
+                    $tbl_account_ledger->setDebit($ecashAmount);
+                    $tbl_account_ledger->setRemark("CONVERT ECASH (EW) TO PROMO (EP)");
+                    $tbl_account_ledger->setBalance($ledgerAccountBalance - $ecashAmount);
+                    $tbl_account_ledger->setCreatedBy($this->getUser()->getAttribute(Globals::SESSION_USERID, Globals::SYSTEM_USER_ID));
+                    $tbl_account_ledger->setUpdatedBy($this->getUser()->getAttribute(Globals::SESSION_USERID, Globals::SYSTEM_USER_ID));
+                    $tbl_account_ledger->save();
+
+//                    $this->mirroringAccountLedger($tbl_account_ledger, "43");
+
+                    $promoConvertedAmount = floor($ecashAmount * 1.05);
+
+                    $tbl_account_ledger = new MlmAccountLedger();
+                    $tbl_account_ledger->setAccountType(Globals::ACCOUNT_TYPE_PROMO);
+                    $tbl_account_ledger->setDistId($this->getUser()->getAttribute(Globals::SESSION_DISTID));
+                    $tbl_account_ledger->setTransactionType(Globals::ACCOUNT_LEDGER_ACTION_CONVERT);
+                    $tbl_account_ledger->setCredit($promoConvertedAmount);
+                    $tbl_account_ledger->setDebit(0);
+                    $tbl_account_ledger->setRemark("CONVERT ECASH (EW) TO PROMO (EP), 5% EXTRA, ECASH: ".$ecashAmount);
+                    $tbl_account_ledger->setBalance($ledgerPromoBalance + $promoConvertedAmount);
+                    $tbl_account_ledger->setCreatedBy($this->getUser()->getAttribute(Globals::SESSION_USERID, Globals::SYSTEM_USER_ID));
+                    $tbl_account_ledger->setUpdatedBy($this->getUser()->getAttribute(Globals::SESSION_USERID, Globals::SYSTEM_USER_ID));
+                    $tbl_account_ledger->save();
+
+//                    $this->mirroringAccountLedger($tbl_account_ledger, "44");
+
+                    $this->revalidateAccount($this->getUser()->getAttribute(Globals::SESSION_DISTID), Globals::ACCOUNT_TYPE_PROMO);
+                    $this->revalidateAccount($this->getUser()->getAttribute(Globals::SESSION_DISTID), Globals::ACCOUNT_TYPE_ECASH);
+
+                    $this->setFlash('successMsg', $this->getContext()->getI18N()->__("Convert e-Wallet to EP successful."));
+
+                    $con->commit();
+                } catch (PropelException $e) {
+                    $con->rollback();
+                    throw $e;
+                }
+                return $this->redirect('/member/convertEcashToPromo');
+            }
+        }
+    }
+
     /************************************************************************************************************************
      * function
      ************************************************************************************************************************/
@@ -8469,6 +8544,63 @@ class memberActions extends sfActions
             }
         }
         return 0;
+    }
+
+    function revalidateAccount($distributorId, $accountType)
+    {
+        $balance = $this->getAccountBalance($distributorId, $accountType);
+
+        $c = new Criteria();
+        $c->add(MlmAccountPeer::ACCOUNT_TYPE, $accountType);
+        $c->add(MlmAccountPeer::DIST_ID, $distributorId);
+        $tbl_account = MlmAccountPeer::doSelectOne($c);
+
+        if (!$tbl_account) {
+            $tbl_account = new MlmAccount();
+            $tbl_account->setDistId($distributorId);
+            $tbl_account->setAccountType($accountType);
+            $tbl_account->setCreatedBy($this->getUser()->getAttribute(Globals::SESSION_USERID, Globals::SYSTEM_USER_ID));
+            $tbl_account->setUpdatedBy($this->getUser()->getAttribute(Globals::SESSION_USERID, Globals::SYSTEM_USER_ID));
+        }
+
+        $tbl_account->setBalance($balance);
+        $tbl_account->save();
+    }
+
+    function checkIsDebitedAccount($distId, $convertRpToCp1, $convertCp3ToCp1, $cp3Withdrawal, $convertCp2ToCp1, $ecashWithdrawal, $transferCp1, $transferCp2, $transferCp3) {
+        $c = new Criteria();
+
+        $c->add(MlmDebitAccountPeer::DIST_ID, $distId);
+        if ($convertRpToCp1 != null) {
+            $c->add(MlmDebitAccountPeer::CONVERT_RP_TO_CP1, $convertRpToCp1);
+        }
+        if ($convertCp3ToCp1 != null) {
+            $c->add(MlmDebitAccountPeer::CONVERT_CP3_TO_CP1, $convertCp3ToCp1);
+        }
+        if ($convertCp2ToCp1 != null) {
+            $c->add(MlmDebitAccountPeer::CONVERT_CP2_TO_CP1, $convertCp2ToCp1);
+        }
+        if ($ecashWithdrawal != null) {
+            $c->add(MlmDebitAccountPeer::ECASH_WITHDRAWAL, $ecashWithdrawal);
+        }
+        if ($cp3Withdrawal != null) {
+            $c->add(MlmDebitAccountPeer::CP3_WITHDRAWAL, $cp3Withdrawal);
+        }
+        if ($transferCp1 != null) {
+            $c->add(MlmDebitAccountPeer::TRANSFER_CP1, $transferCp1);
+        }
+        if ($transferCp2 != null) {
+            $c->add(MlmDebitAccountPeer::TRANSFER_CP2, $transferCp2);
+        }
+        if ($transferCp3 != null) {
+            $c->add(MlmDebitAccountPeer::TRANSFER_CP3, $transferCp3);
+        }
+        $debitAccountDB = MlmDebitAccountPeer::doSelectOne($c);
+
+        if ($debitAccountDB) {
+            return true;
+        }
+        return false;
     }
 }
 

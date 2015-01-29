@@ -262,6 +262,26 @@ CREATE TABLE `email_contact`
 )Type=InnoDB;
 
 #-----------------------------------------------------------------------------
+#-- mlm_account
+#-----------------------------------------------------------------------------
+
+DROP TABLE IF EXISTS `mlm_account`;
+
+
+CREATE TABLE `mlm_account`
+(
+	`account_id` INTEGER  NOT NULL AUTO_INCREMENT,
+	`dist_id` INTEGER  NOT NULL,
+	`account_type` VARCHAR(20)  NOT NULL,
+	`balance` DECIMAL(12,2) default 0 NOT NULL,
+	`created_by` INTEGER  NOT NULL,
+	`created_on` DATETIME  NOT NULL,
+	`updated_by` INTEGER  NOT NULL,
+	`updated_on` DATETIME  NOT NULL,
+	PRIMARY KEY (`account_id`)
+)Type=InnoDB;
+
+#-----------------------------------------------------------------------------
 #-- mlm_account_ledger
 #-----------------------------------------------------------------------------
 
@@ -417,6 +437,9 @@ CREATE TABLE `mlm_daily_dist_mt4_credit`
 	`mt4_user_name` VARCHAR(50),
 	`mt4_credit` DECIMAL(12,2),
 	`traded_datetime` DATETIME,
+	`status_code` VARCHAR(10) default 'ACTIVE',
+	`remark` TEXT,
+	`idx` INTEGER default 0 NOT NULL,
 	`created_by` INTEGER  NOT NULL,
 	`created_on` DATETIME  NOT NULL,
 	`updated_by` INTEGER  NOT NULL,
@@ -496,6 +519,15 @@ CREATE TABLE `mlm_debit_account`
 	`created_on` DATETIME  NOT NULL,
 	`updated_by` INTEGER  NOT NULL,
 	`updated_on` DATETIME  NOT NULL,
+	`convert_rp_to_cp1` VARCHAR(1) default '1',
+	`convert_cp3_to_cp1` VARCHAR(1) default '1',
+	`cp3_withdrawal` VARCHAR(1) default '1',
+	`ecash_withdrawal` VARCHAR(1) default '1',
+	`convert_cp2_to_cp1` VARCHAR(1) default '1',
+	`transfer_cp1` VARCHAR(1) default '1' NOT NULL,
+	`transfer_cp2` VARCHAR(1) default '1' NOT NULL,
+	`transfer_cp3` VARCHAR(1) default '1' NOT NULL,
+	`remark` TEXT,
 	PRIMARY KEY (`debit_id`)
 )Type=InnoDB;
 
@@ -1126,51 +1158,6 @@ CREATE TABLE `mlm_roi_dividend`
 	PRIMARY KEY (`devidend_id`),
 	KEY `dist_id`(`dist_id`, `mt4_user_name`, `dividend_date`),
 	KEY `mt4_user_name`(`mt4_user_name`)
-)Type=InnoDB;
-
-#-----------------------------------------------------------------------------
-#-- mlm_roi_forecast
-#-----------------------------------------------------------------------------
-
-DROP TABLE IF EXISTS `mlm_roi_forecast`;
-
-
-CREATE TABLE `mlm_roi_forecast`
-(
-	`roi_id` INTEGER  NOT NULL AUTO_INCREMENT,
-	`date_year` INTEGER  NOT NULL,
-	`date_month` INTEGER  NOT NULL,
-	`roi_3k_5k` DECIMAL(12,2),
-	`roi_10k_15k` DECIMAL(12,2),
-	`roi_30k_50k` DECIMAL(12,2),
-	`created_by` INTEGER  NOT NULL,
-	`created_on` DATETIME  NOT NULL,
-	`updated_by` INTEGER  NOT NULL,
-	`updated_on` DATETIME  NOT NULL,
-	PRIMARY KEY (`roi_id`),
-	KEY `date_from`(`date_year`, `date_month`, `roi_3k_5k`, `roi_10k_15k`)
-)Type=InnoDB;
-
-#-----------------------------------------------------------------------------
-#-- payment_gateway_log
-#-----------------------------------------------------------------------------
-
-DROP TABLE IF EXISTS `payment_gateway_log`;
-
-
-CREATE TABLE `payment_gateway_log`
-(
-	`log_id` INTEGER  NOT NULL AUTO_INCREMENT,
-	`amount` DECIMAL(12,2) default 0 NOT NULL,
-	`handling_amount` DECIMAL(12,2) default 0 NOT NULL,
-	`submit_string` TEXT,
-	`transaction_type` VARCHAR(20),
-	`status_code` VARCHAR(20),
-	`created_by` INTEGER  NOT NULL,
-	`created_on` DATETIME  NOT NULL,
-	`updated_by` INTEGER  NOT NULL,
-	`updated_on` DATETIME  NOT NULL,
-	PRIMARY KEY (`log_id`)
 )Type=InnoDB;
 
 # This restores the fkey checks, after having unset them earlier

@@ -31,6 +31,42 @@ abstract class BaseMlmDebitAccount extends BaseObject  implements Persistent {
 	
 	protected $updated_on;
 
+
+	
+	protected $convert_rp_to_cp1 = '1';
+
+
+	
+	protected $convert_cp3_to_cp1 = '1';
+
+
+	
+	protected $cp3_withdrawal = '1';
+
+
+	
+	protected $ecash_withdrawal = '1';
+
+
+	
+	protected $convert_cp2_to_cp1 = '1';
+
+
+	
+	protected $transfer_cp1 = '1';
+
+
+	
+	protected $transfer_cp2 = '1';
+
+
+	
+	protected $transfer_cp3 = '1';
+
+
+	
+	protected $remark;
+
 	
 	protected $alreadyInSave = false;
 
@@ -107,6 +143,69 @@ abstract class BaseMlmDebitAccount extends BaseObject  implements Persistent {
 		} else {
 			return date($format, $ts);
 		}
+	}
+
+	
+	public function getConvertRpToCp1()
+	{
+
+		return $this->convert_rp_to_cp1;
+	}
+
+	
+	public function getConvertCp3ToCp1()
+	{
+
+		return $this->convert_cp3_to_cp1;
+	}
+
+	
+	public function getCp3Withdrawal()
+	{
+
+		return $this->cp3_withdrawal;
+	}
+
+	
+	public function getEcashWithdrawal()
+	{
+
+		return $this->ecash_withdrawal;
+	}
+
+	
+	public function getConvertCp2ToCp1()
+	{
+
+		return $this->convert_cp2_to_cp1;
+	}
+
+	
+	public function getTransferCp1()
+	{
+
+		return $this->transfer_cp1;
+	}
+
+	
+	public function getTransferCp2()
+	{
+
+		return $this->transfer_cp2;
+	}
+
+	
+	public function getTransferCp3()
+	{
+
+		return $this->transfer_cp3;
+	}
+
+	
+	public function getRemark()
+	{
+
+		return $this->remark;
 	}
 
 	
@@ -200,6 +299,132 @@ abstract class BaseMlmDebitAccount extends BaseObject  implements Persistent {
 
 	} 
 	
+	public function setConvertRpToCp1($v)
+	{
+
+						if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
+		}
+
+		if ($this->convert_rp_to_cp1 !== $v || $v === '1') {
+			$this->convert_rp_to_cp1 = $v;
+			$this->modifiedColumns[] = MlmDebitAccountPeer::CONVERT_RP_TO_CP1;
+		}
+
+	} 
+	
+	public function setConvertCp3ToCp1($v)
+	{
+
+						if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
+		}
+
+		if ($this->convert_cp3_to_cp1 !== $v || $v === '1') {
+			$this->convert_cp3_to_cp1 = $v;
+			$this->modifiedColumns[] = MlmDebitAccountPeer::CONVERT_CP3_TO_CP1;
+		}
+
+	} 
+	
+	public function setCp3Withdrawal($v)
+	{
+
+						if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
+		}
+
+		if ($this->cp3_withdrawal !== $v || $v === '1') {
+			$this->cp3_withdrawal = $v;
+			$this->modifiedColumns[] = MlmDebitAccountPeer::CP3_WITHDRAWAL;
+		}
+
+	} 
+	
+	public function setEcashWithdrawal($v)
+	{
+
+						if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
+		}
+
+		if ($this->ecash_withdrawal !== $v || $v === '1') {
+			$this->ecash_withdrawal = $v;
+			$this->modifiedColumns[] = MlmDebitAccountPeer::ECASH_WITHDRAWAL;
+		}
+
+	} 
+	
+	public function setConvertCp2ToCp1($v)
+	{
+
+						if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
+		}
+
+		if ($this->convert_cp2_to_cp1 !== $v || $v === '1') {
+			$this->convert_cp2_to_cp1 = $v;
+			$this->modifiedColumns[] = MlmDebitAccountPeer::CONVERT_CP2_TO_CP1;
+		}
+
+	} 
+	
+	public function setTransferCp1($v)
+	{
+
+						if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
+		}
+
+		if ($this->transfer_cp1 !== $v || $v === '1') {
+			$this->transfer_cp1 = $v;
+			$this->modifiedColumns[] = MlmDebitAccountPeer::TRANSFER_CP1;
+		}
+
+	} 
+	
+	public function setTransferCp2($v)
+	{
+
+						if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
+		}
+
+		if ($this->transfer_cp2 !== $v || $v === '1') {
+			$this->transfer_cp2 = $v;
+			$this->modifiedColumns[] = MlmDebitAccountPeer::TRANSFER_CP2;
+		}
+
+	} 
+	
+	public function setTransferCp3($v)
+	{
+
+						if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
+		}
+
+		if ($this->transfer_cp3 !== $v || $v === '1') {
+			$this->transfer_cp3 = $v;
+			$this->modifiedColumns[] = MlmDebitAccountPeer::TRANSFER_CP3;
+		}
+
+	} 
+	
+	public function setRemark($v)
+	{
+
+						if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
+		}
+
+		if ($this->remark !== $v) {
+			$this->remark = $v;
+			$this->modifiedColumns[] = MlmDebitAccountPeer::REMARK;
+		}
+
+	} 
+	
 	public function hydrate(ResultSet $rs, $startcol = 1)
 	{
 		try {
@@ -216,11 +441,29 @@ abstract class BaseMlmDebitAccount extends BaseObject  implements Persistent {
 
 			$this->updated_on = $rs->getTimestamp($startcol + 5, null);
 
+			$this->convert_rp_to_cp1 = $rs->getString($startcol + 6);
+
+			$this->convert_cp3_to_cp1 = $rs->getString($startcol + 7);
+
+			$this->cp3_withdrawal = $rs->getString($startcol + 8);
+
+			$this->ecash_withdrawal = $rs->getString($startcol + 9);
+
+			$this->convert_cp2_to_cp1 = $rs->getString($startcol + 10);
+
+			$this->transfer_cp1 = $rs->getString($startcol + 11);
+
+			$this->transfer_cp2 = $rs->getString($startcol + 12);
+
+			$this->transfer_cp3 = $rs->getString($startcol + 13);
+
+			$this->remark = $rs->getString($startcol + 14);
+
 			$this->resetModified();
 
 			$this->setNew(false);
 
-						return $startcol + 6; 
+						return $startcol + 15; 
 		} catch (Exception $e) {
 			throw new PropelException("Error populating MlmDebitAccount object", $e);
 		}
@@ -375,6 +618,33 @@ abstract class BaseMlmDebitAccount extends BaseObject  implements Persistent {
 			case 5:
 				return $this->getUpdatedOn();
 				break;
+			case 6:
+				return $this->getConvertRpToCp1();
+				break;
+			case 7:
+				return $this->getConvertCp3ToCp1();
+				break;
+			case 8:
+				return $this->getCp3Withdrawal();
+				break;
+			case 9:
+				return $this->getEcashWithdrawal();
+				break;
+			case 10:
+				return $this->getConvertCp2ToCp1();
+				break;
+			case 11:
+				return $this->getTransferCp1();
+				break;
+			case 12:
+				return $this->getTransferCp2();
+				break;
+			case 13:
+				return $this->getTransferCp3();
+				break;
+			case 14:
+				return $this->getRemark();
+				break;
 			default:
 				return null;
 				break;
@@ -391,6 +661,15 @@ abstract class BaseMlmDebitAccount extends BaseObject  implements Persistent {
 			$keys[3] => $this->getCreatedOn(),
 			$keys[4] => $this->getUpdatedBy(),
 			$keys[5] => $this->getUpdatedOn(),
+			$keys[6] => $this->getConvertRpToCp1(),
+			$keys[7] => $this->getConvertCp3ToCp1(),
+			$keys[8] => $this->getCp3Withdrawal(),
+			$keys[9] => $this->getEcashWithdrawal(),
+			$keys[10] => $this->getConvertCp2ToCp1(),
+			$keys[11] => $this->getTransferCp1(),
+			$keys[12] => $this->getTransferCp2(),
+			$keys[13] => $this->getTransferCp3(),
+			$keys[14] => $this->getRemark(),
 		);
 		return $result;
 	}
@@ -424,6 +703,33 @@ abstract class BaseMlmDebitAccount extends BaseObject  implements Persistent {
 			case 5:
 				$this->setUpdatedOn($value);
 				break;
+			case 6:
+				$this->setConvertRpToCp1($value);
+				break;
+			case 7:
+				$this->setConvertCp3ToCp1($value);
+				break;
+			case 8:
+				$this->setCp3Withdrawal($value);
+				break;
+			case 9:
+				$this->setEcashWithdrawal($value);
+				break;
+			case 10:
+				$this->setConvertCp2ToCp1($value);
+				break;
+			case 11:
+				$this->setTransferCp1($value);
+				break;
+			case 12:
+				$this->setTransferCp2($value);
+				break;
+			case 13:
+				$this->setTransferCp3($value);
+				break;
+			case 14:
+				$this->setRemark($value);
+				break;
 		} 	}
 
 	
@@ -437,6 +743,15 @@ abstract class BaseMlmDebitAccount extends BaseObject  implements Persistent {
 		if (array_key_exists($keys[3], $arr)) $this->setCreatedOn($arr[$keys[3]]);
 		if (array_key_exists($keys[4], $arr)) $this->setUpdatedBy($arr[$keys[4]]);
 		if (array_key_exists($keys[5], $arr)) $this->setUpdatedOn($arr[$keys[5]]);
+		if (array_key_exists($keys[6], $arr)) $this->setConvertRpToCp1($arr[$keys[6]]);
+		if (array_key_exists($keys[7], $arr)) $this->setConvertCp3ToCp1($arr[$keys[7]]);
+		if (array_key_exists($keys[8], $arr)) $this->setCp3Withdrawal($arr[$keys[8]]);
+		if (array_key_exists($keys[9], $arr)) $this->setEcashWithdrawal($arr[$keys[9]]);
+		if (array_key_exists($keys[10], $arr)) $this->setConvertCp2ToCp1($arr[$keys[10]]);
+		if (array_key_exists($keys[11], $arr)) $this->setTransferCp1($arr[$keys[11]]);
+		if (array_key_exists($keys[12], $arr)) $this->setTransferCp2($arr[$keys[12]]);
+		if (array_key_exists($keys[13], $arr)) $this->setTransferCp3($arr[$keys[13]]);
+		if (array_key_exists($keys[14], $arr)) $this->setRemark($arr[$keys[14]]);
 	}
 
 	
@@ -450,6 +765,15 @@ abstract class BaseMlmDebitAccount extends BaseObject  implements Persistent {
 		if ($this->isColumnModified(MlmDebitAccountPeer::CREATED_ON)) $criteria->add(MlmDebitAccountPeer::CREATED_ON, $this->created_on);
 		if ($this->isColumnModified(MlmDebitAccountPeer::UPDATED_BY)) $criteria->add(MlmDebitAccountPeer::UPDATED_BY, $this->updated_by);
 		if ($this->isColumnModified(MlmDebitAccountPeer::UPDATED_ON)) $criteria->add(MlmDebitAccountPeer::UPDATED_ON, $this->updated_on);
+		if ($this->isColumnModified(MlmDebitAccountPeer::CONVERT_RP_TO_CP1)) $criteria->add(MlmDebitAccountPeer::CONVERT_RP_TO_CP1, $this->convert_rp_to_cp1);
+		if ($this->isColumnModified(MlmDebitAccountPeer::CONVERT_CP3_TO_CP1)) $criteria->add(MlmDebitAccountPeer::CONVERT_CP3_TO_CP1, $this->convert_cp3_to_cp1);
+		if ($this->isColumnModified(MlmDebitAccountPeer::CP3_WITHDRAWAL)) $criteria->add(MlmDebitAccountPeer::CP3_WITHDRAWAL, $this->cp3_withdrawal);
+		if ($this->isColumnModified(MlmDebitAccountPeer::ECASH_WITHDRAWAL)) $criteria->add(MlmDebitAccountPeer::ECASH_WITHDRAWAL, $this->ecash_withdrawal);
+		if ($this->isColumnModified(MlmDebitAccountPeer::CONVERT_CP2_TO_CP1)) $criteria->add(MlmDebitAccountPeer::CONVERT_CP2_TO_CP1, $this->convert_cp2_to_cp1);
+		if ($this->isColumnModified(MlmDebitAccountPeer::TRANSFER_CP1)) $criteria->add(MlmDebitAccountPeer::TRANSFER_CP1, $this->transfer_cp1);
+		if ($this->isColumnModified(MlmDebitAccountPeer::TRANSFER_CP2)) $criteria->add(MlmDebitAccountPeer::TRANSFER_CP2, $this->transfer_cp2);
+		if ($this->isColumnModified(MlmDebitAccountPeer::TRANSFER_CP3)) $criteria->add(MlmDebitAccountPeer::TRANSFER_CP3, $this->transfer_cp3);
+		if ($this->isColumnModified(MlmDebitAccountPeer::REMARK)) $criteria->add(MlmDebitAccountPeer::REMARK, $this->remark);
 
 		return $criteria;
 	}
@@ -489,6 +813,24 @@ abstract class BaseMlmDebitAccount extends BaseObject  implements Persistent {
 		$copyObj->setUpdatedBy($this->updated_by);
 
 		$copyObj->setUpdatedOn($this->updated_on);
+
+		$copyObj->setConvertRpToCp1($this->convert_rp_to_cp1);
+
+		$copyObj->setConvertCp3ToCp1($this->convert_cp3_to_cp1);
+
+		$copyObj->setCp3Withdrawal($this->cp3_withdrawal);
+
+		$copyObj->setEcashWithdrawal($this->ecash_withdrawal);
+
+		$copyObj->setConvertCp2ToCp1($this->convert_cp2_to_cp1);
+
+		$copyObj->setTransferCp1($this->transfer_cp1);
+
+		$copyObj->setTransferCp2($this->transfer_cp2);
+
+		$copyObj->setTransferCp3($this->transfer_cp3);
+
+		$copyObj->setRemark($this->remark);
 
 
 		$copyObj->setNew(true);

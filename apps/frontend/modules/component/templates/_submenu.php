@@ -33,11 +33,14 @@ use_helper('I18N');
                 <li>
                     <a href="/member/transferEpoint"><div><?php echo __("RP Wallet Transfer") ?></div></a>
                 </li>
-                <!--                <li>-->
-                <!--                    <a href="/member/mt4Withdrawal"><div>--><?php //echo __("MT4 Withdrawal") ?><!--</div></a>-->
-                <!--                </li>-->
+                <li>
+                    <a href="/member/convertEcashToPromo"><div><?php echo __("Convert e-Wallet To EP") ?></div></a>
+                </li>
                 <li>
                     <a href="/member/ewalletWithdrawal"><div><?php echo __("e-Wallet Withdrawal") ?></div></a>
+                </li>
+                <li>
+                    <a href="/member/mt4Withdrawal"><div><?php echo __("MT4 Withdrawal") ?></div></a>
                 </li>
             </ul>
             &nbsp;
