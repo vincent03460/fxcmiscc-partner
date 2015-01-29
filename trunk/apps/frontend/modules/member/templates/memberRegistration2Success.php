@@ -53,13 +53,13 @@ input[readonly] {
                 }
             },
             rules: {
-                /*"userName" : {
+                "userName" : {
                     required : true,
                     noSpace: true,
                     loginRegex: true,
                     minlength : 6,
                     remote: "/member/verifyUserName"
-                },*/
+                },
                 "fullname" : {
                     required: true
                 },
@@ -243,6 +243,16 @@ input[readonly] {
             </legend>
             <table cellpadding="5" cellspacing="1">
                 <tbody>
+                <tr>
+                    <th>
+                        <label class="control-label">
+                            <?php echo __("User Name")?><span class="mandatory">*</span>
+                        </label>
+                    </th>
+                    <td>
+                        <input type="text" class="col-sm-6 col-xs-12" id="userName" name="userName">
+                    </td>
+                </tr>
                 <tr>
                     <th>
                         <label class="control-label" for="sponsorName">

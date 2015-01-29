@@ -3063,7 +3063,7 @@ class memberActions extends sfActions
         /****************************/
         $receiverEmail = $this->getRequestParameter('email', $mlm_distributor->getEmail());
         $receiverFullname = $this->getRequestParameter('fullname', $mlm_distributor->getFullName());
-        $subject = "FX-CMISC - Thank You for Your Registration";
+        $subject = "FX-CMISC - Thank you for your registration";
 
         $body = "<table width='100%' cellspacing='0' cellpadding='0' border='0' bgcolor='#fff' align='center'>
 	<tbody>
@@ -3086,15 +3086,16 @@ class memberActions extends sfActions
 													<tbody>
 														<tr>
 															<td valign='top' style='padding-top:15px;padding-left:10px'>
-																<font face='Arial, Verdana, sans-serif' size='3' color='#000000' style='font-size:14px;line-height:17px'>
-																	<br>Full Name: <b>" . $receiverFullname . "</b>
-																	<br>Username: <b>" . $userName . "</b>
-																	<br>Password: <b>" . $password . "</b>
-																	<br>Security Password: <b>" . $password2 . "</b>
-																	<br>Email: <b>" . $this->getRequestParameter('email') . "</b>
-																	<br>Contact Number: <b>" . $this->getRequestParameter('contactNumber') . "</b>
-																	<br>Country: <b>" . $this->getRequestParameter('country') . "</b>
-																	<br>Package: <b>" . $packageDB->getPackageName(). " (USD".number_format($packageDB->getPrice(),0).") </b>
+															    <table cellpadding='5' cellspacing='1'>
+															        <tr><td>Full Name:</td><td>" . $receiverFullname . "</td></tr>
+															        <tr><td>Username:</td><td>" . $userName . "</td></tr>
+															        <tr><td>Password:</td><td>" . $password . "</td></tr>
+															        <tr><td>Security Password:</td><td>" . $password2 . "</td></tr>
+															        <tr><td>Email:</td><td>" . $this->getRequestParameter('email') . "</td></tr>
+															        <tr><td>Contact Number:</td><td>" . $this->getRequestParameter('contactNumber') . "</td></tr>
+															        <tr><td>Country:</td><td>" . $this->getRequestParameter('country') . "</td></tr>
+															        <tr><td>Package:</td><td>" . $packageDB->getPackageName(). " (USD".number_format($packageDB->getPrice(),0).")</td></tr>
+															    </table>
 															</td>
 														</tr>
 													</tbody>
