@@ -3005,7 +3005,7 @@ class marketingActions extends sfActions
 					<tbody>
 						<tr>
 							<td colspan='2' style='text-align:center;'>
-								<a target='_blank' href='#'><img height='41' border='0' src='http://103.230.108.238/logo.jpg' alt='FX CMISC'></a></td>
+								<a target='_blank' href='#'><img height='41' border='0' src='http://partner.fxcmisc.com/images/logo.jpg' alt='FX CMISC'></a></td>
 						</tr>
 
 						<tr>
@@ -3031,7 +3031,7 @@ class marketingActions extends sfActions
                                                                     liable for any activity that may occur as a result of you losing your
                                                                     password. Therefore, if you feel that your password has been
                                                                     compromised, you should immediately contact us by email to
-                                                                    <strong>info@fxcmisc.com</strong> to rectify the situation.<br><br>
+                                                                    <strong>support@fxcmisc.com</strong> to rectify the situation.<br><br>
                                                                     We look forward to your custom in the near future. Should you have any
                                                                     queries, please do not hesitate to get back to us.<br>
 															</td>
@@ -3047,7 +3047,7 @@ class marketingActions extends sfActions
 
 						<tr>
 							<td width='606'>
-							<img src='http://103.230.108.238/transparent.gif' height='1'>
+							<img src='http://partner.fxcmisc.com/images/transparent.gif' height='1'>
 							</td>
 						</tr>
 						<tr>
@@ -3056,15 +3056,37 @@ class marketingActions extends sfActions
 								<tbody>
 								<tr>
 									<td style='font-size:0;line-height:0' align='center'>
-									<a href='http://103.230.108.238/setup.exe' target='_blank'><img src='http://103.230.108.238/img-platform.gif' width='85' height='60'>
+									<a href='http://files.metaquotes.net/5994/mt4/cmis4setup.exe' target='_blank'><img src='http://partner.fxcmisc.com/images/img-platform.gif' width='85' height='60'>
+									</a>
+									</td>
+									<td style='font-size:0;line-height:0' align='center'>
+									<a href='http://itunes.apple.com/en/app/metatrader-4/id496212596' target='_blank'><img src='http://partner.fxcmisc.com/images/img-platform1.gif' width='85' height='60'>
+									</a>
+									</td>
+									<td style='font-size:0;line-height:0' align='center'>
+									<a href='https://play.google.com/store/apps/details?id=net.metaquotes.metatrader4&hl=en' target='_blank'><img src='http://partner.fxcmisc.com/images/img-platform1.gif' width='85' height='60'>
 									</a>
 									</td>
 								</tr>
 								<tr>
 									<td style='text-align:center;line-height:15px' align='center'>
-										<a href='http://103.230.108.238/setup.exe' target='_blank'>
+										<a href='http://files.metaquotes.net/5994/mt4/cmis4setup.exe' target='_blank'>
 										<font face='Arial, Verdana, sans-serif' size='3' color='#58584b' style='font-size:11px;line-height:15px'>
 											<strong>FX CMISC<br> MT4 Terminal</strong>
+										</font>
+										</a>
+									</td>
+									<td style='text-align:center;line-height:15px' align='center'>
+										<a href='http://itunes.apple.com/en/app/metatrader-4/id496212596' target='_blank'>
+										<font face='Arial, Verdana, sans-serif' size='3' color='#58584b' style='font-size:11px;line-height:15px'>
+											<strong>MetaTrader 4 <br>for iPhone</strong>
+										</font>
+										</a>
+									</td>
+									<td style='text-align:center;line-height:15px' align='center'>
+										<a href='https://play.google.com/store/apps/details?id=net.metaquotes.metatrader4&hl=en' target='_blank'>
+										<font face='Arial, Verdana, sans-serif' size='3' color='#58584b' style='font-size:11px;line-height:15px'>
+											<strong>MetaTrader 4 <br>for Android</strong>
 										</font>
 										</a>
 									</td>
@@ -3075,12 +3097,12 @@ class marketingActions extends sfActions
 
 						<tr>
 							<td width='606'>
-							<img src='http://103.230.108.238/transparent.gif' height='1'>
+							<img src='http://partner.fxcmisc.com/images/transparent.gif' height='1'>
 							</td>
 						</tr>
 						<tr>
 							<td width='606' style='font-size:0;line-height:0' colspan='2'>
-								<img src='http://103.230.108.238/transparent.gif' height='10'>
+								<img src='http://partner.fxcmisc.com/images/transparent.gif' height='10'>
 							</td>
 						</tr>
 
@@ -3097,7 +3119,7 @@ class marketingActions extends sfActions
 
 						<tr>
 							<td width='606' style='font-size:0;line-height:0' bgcolor='#0080C8'>
-							<img src='http://103.230.108.238/transparent.gif' height='1'>
+							<img src='http://partner.fxcmisc.com/images/transparent.gif' height='1'>
 							</td>
 						</tr>
 
