@@ -2681,6 +2681,24 @@ class memberActions extends sfActions
         $promoPaid = $this->getRequestParameter('promoPaid');
         $amountPaid = $ePointPaid + $promoPaid;
 
+        $userName = trim($userName);
+        //$fcode = $this->generateFcode($this->getRequestParameter('country'));
+        if ($userName == '') {
+            $this->setFlash('errorMsg', $this->getContext()->getI18N()->__("Invalid action."));
+            return $this->redirect('/member/memberRegistration');
+        }
+        $userName = strtoupper($userName);
+//            $userName = $this->generateFcode();
+
+        $c = new Criteria();
+        $c->add(AppUserPeer::USERNAME, $userName);
+        $exist = AppUserPeer::doSelectOne($c);
+
+        if ($exist) {
+            $this->setFlash('errorMsg', $this->getContext()->getI18N()->__("User Name already exist."));
+            return $this->redirect('/member/memberRegistration');
+        }
+
         $packageDB = MlmPackagePeer::retrieveByPK($packageId);
 
         //$this->setFlash('warningMsg', $this->getContext()->getI18N()->__("Temporary out of service."));
@@ -2749,10 +2767,6 @@ class memberActions extends sfActions
 
             //$password = $this->generateFcode();
             //$password2 = $this->generateFcode();
-
-            //$userName = strtoupper($userName);
-            $userName = $this->generateFcode();
-
             $app_user = new AppUser();
             $app_user->setUsername($userName);
             $app_user->setKeepPassword($password);
@@ -3038,85 +3052,6 @@ class memberActions extends sfActions
                 }
             }
 
-            // **********************************************************************************************
-            // ************************         check auto upgrade package          *************************
-            // **********************************************************************************************
-            //Promotion until 31/10
-            //Join 15k find 5x15k n above + 300k go diamond(normal way)
-            //
-            //2)Join 30k n above  find 5x30k n above + 150k go diamond
-            //
-            //3)Join 50k n above find 5x50k +1.5mil go VIP.
-
-
-            $sponsorUplineDistId = $mlm_distributor->getUplineDistId();
-            if ($sponsorUplineDistId != "") {
-                $uplineDistDB = MlmDistributorPeer::retrieveByPK($sponsorUplineDistId);
-
-                $level = 0;
-                while ($level < 100) {
-                    if (!$uplineDistDB)
-                        break;
-
-                    $distId = $uplineDistDB->getDistributorId();
-                    $packageId = $uplineDistDB->getRankId();
-                    $uplinePackageDB = MlmPackagePeer::retrieveByPK($packageId);
-                    $upgraded = false;
-                    if ($uplinePackageDB) {
-                        //var_dump($distId);
-//                        var_dump($packageId);
-//                        exit();
-                        if ($packageId == 1) {
-                            $upgraded = $this->doCheckingGold($uplineDistDB, $uplinePackageDB);
-
-                            if ($upgraded == false) {
-                                $upgraded = $this->doCheckingSilver($uplineDistDB, $uplinePackageDB);
-                                if ($upgraded == false) {
-                                    $upgraded = $this->doCheckingCopper($uplineDistDB, $uplinePackageDB);
-                                }
-                            }
-                        } else if ($packageId == 2) {
-                            $upgraded = $this->doCheckingGold($uplineDistDB, $uplinePackageDB);
-                            if ($upgraded == false) {
-                                $upgraded = $this->doCheckingSilver($uplineDistDB, $uplinePackageDB);
-                            }
-                        } else if ($packageId == 3) {
-                            $upgraded = $this->doCheckingGold($uplineDistDB, $uplinePackageDB);
-                        } else if ($packageId == 4 || $packageId == 5 || $packageId == 6 || $packageId == 7) {
-                            $upgraded = $this->doCheckingDiamond($uplineDistDB, $uplinePackageDB);
-                        /*} else if ($packageId == 4 || $packageId == 5) {
-                            $upgraded = $this->doCheckingDiamond($uplineDistDB, $uplinePackageDB);
-                        } else if ($packageId == 6) {
-                            $upgraded = $this->doCheckingDiamondByPearl($uplineDistDB, $uplinePackageDB);
-                        } else if ($packageId == 7) {
-                            $upgraded = $this->doCheckingVipByGem($uplineDistDB, $uplinePackageDB);
-                            if ($upgraded == false) {
-                                $upgraded = $this->doCheckingDiamondByPearl($uplineDistDB, $uplinePackageDB);
-                            }*/
-                        } else if ($packageId == 21) {
-                            $upgraded = $this->doCheckingVip($uplineDistDB, $uplinePackageDB);
-
-                        } else if ($packageId == 22) {
-                            $upgraded = $this->doCheckingDegold($uplineDistDB, $uplinePackageDB);
-                        }
-                    }
-
-                    /*if ($upgraded == false) {
-                        break;
-                    }*/
-
-                    $uplineDistId = $uplineDistDB->getUplineDistId();
-                    //print_r("uplineDistId:".$uplineDistId);
-                    //print_r("<br>");
-                    if ($uplineDistId == null || $uplineDistId == "")
-                        break;
-                    //var_dump($uplineDistId);
-                    $uplineDistDB = MlmDistributorPeer::retrieveByPK($uplineDistId);
-                    //var_dump($uplineDistDB);
-                    $level += 1;
-                }
-            }
-
             $con->commit();
         } catch (PropelException $e) {
             $con->rollback();
@@ -3153,7 +3088,7 @@ class memberActions extends sfActions
 															<td valign='top' style='padding-top:15px;padding-left:10px'>
 																<font face='Arial, Verdana, sans-serif' size='3' color='#000000' style='font-size:14px;line-height:17px'>
 																	<br>Full Name: <b>" . $receiverFullname . "</b>
-																	<br>Username: <b>" . $username . "</b>
+																	<br>Username: <b>" . $userName . "</b>
 																	<br>Password: <b>" . $password . "</b>
 																	<br>Security Password: <b>" . $password2 . "</b>
 																	<br>Email: <b>" . $this->getRequestParameter('email') . "</b>
