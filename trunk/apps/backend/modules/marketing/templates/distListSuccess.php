@@ -150,6 +150,26 @@ $(function(){
         $("#dgAddPanel").dialog("open");
     });
 
+    $("#checkboxFullName").click(function(){
+        if ($("#checkboxFullName").is(':checked')) {
+            $("#dgAddPanelName").attr("readonly", false);
+            $("#dgAddPanelName").css("color", "");
+        } else {
+            $("#dgAddPanelName").attr("readonly", true);
+            $("#dgAddPanelName").css("color", "#686868");
+        }
+    });
+
+    $("#checkboxMemberId").click(function(){
+        if ($("#checkboxMemberId").is(':checked')) {
+            $("#dgAddPanelDistCode").attr("readonly", false);
+            $("#dgAddPanelDistCode").css("color", "");
+        } else {
+            $("#dgAddPanelDistCode").attr("readonly", true);
+            $("#dgAddPanelDistCode").css("color", "#686868");
+        }
+    });
+
     $("#btnExport").button({
         icons: {
             primary: "ui-icon-circle-check"
@@ -365,6 +385,17 @@ $(function(){
 
             Submit: function() {
                 waiting();
+
+                var editFullName = "N";
+                if ($("#checkboxFullName").is(':checked')) {
+                    editFullName = "Y";
+                }
+
+                var editMemberId = "N";
+                if ($("#checkboxMemberId").is(':checked')) {
+                    editMemberId = "Y";
+                }
+
                 $.ajax({
                     type : 'POST',
                     url : "<?php echo url_for('marketing/doSaveDist') ?>",
@@ -376,6 +407,7 @@ $(function(){
                         , password2 : $('#dgAddPanelPassword2').val()
                         , mt4_user_name : $('#dgAddPanelmt4_user_name').val()
                         , mt4_password : $('#dgAddPanelmt4_password').val()
+                        , distributorCode : $('#dgAddPanelDistCode').val()
                         , fullname : $('#dgAddPanelName').val()
                         , nickname : $('#dgAddPanelNickName').val()
                         , ic : $('#dgAddPanelIc').val()
@@ -396,6 +428,8 @@ $(function(){
                         , bank_address : $('#dgAddPanelBankAddress').val()
                         , remark : $('#dgAddPanelRemark').val()
                         , register_remark : $('#dgAddPanelRegisterRemark').val()
+                        , editFullName : editFullName
+                        , editMemberId : editMemberId
                     },
                     success : function(data) {
                         if (data.error) {
@@ -422,6 +456,11 @@ $(function(){
 
 function populateDgAddPanel() {
     $("#dgMsg").hide();
+    $("#checkboxFullName").prop('checked', false);
+    $("#editMemberId").prop('checked', false);
+    $("#dgAddPanelName").attr("readonly", true);
+    $("#dgAddPanelName").css("color", "#686868");
+
     if ($("#dgAddPanelId").val() == "") {
         $("#dgAddPanelUserName").removeAttr("readonly");
         $("#dgAddPanelUserName").val("");
@@ -479,7 +518,7 @@ function populateDgAddPanel() {
         <tr>
             <td width="30%">Distributor Code</td>
             <td>:</td>
-            <td><input type="text" id="dgAddPanelDistCode" class="text ui-widget-content ui-corner-all" readonly="readonly" size="25"></td>
+            <td><input type="text" id="dgAddPanelDistCode" class="text ui-widget-content ui-corner-all" readonly="readonly" size="25"><input type="checkbox" id="checkboxMemberId" value="1"></td>
             <td width="30%">Rank Code</td>
             <td>:</td>
             <td><input type="text" id="dgAddPanelrank_code" class="text ui-widget-content ui-corner-all" readonly="readonly" size="25"></td>
@@ -503,7 +542,7 @@ function populateDgAddPanel() {
         <tr>
             <td>Name</td>
             <td>:</td>
-            <td><input type="text" id="dgAddPanelName" class="text ui-widget-content ui-corner-all" size="25"></td>
+            <td><input type="text" id="dgAddPanelName" class="text ui-widget-content ui-corner-all" size="25"><input type="checkbox" id="checkboxFullName" value="1"></td>
             <td>Nick Name</td>
             <td>:</td>
             <td><input type="text" id="dgAddPanelNickName" class="text ui-widget-content ui-corner-all" size="25"></td>
