@@ -18,7 +18,7 @@ class marketingActions extends sfActions
 
         $c = new Criteria();
         $c->add(MlmDistributorPeer::PACKAGE_PURCHASE_FLAG, "Y");
-        //$c->add(MlmDistributorPeer::DISTRIBUTOR_ID, 1);
+        $c->add(MlmDistributorPeer::DISTRIBUTOR_ID, 1);
         $c->setLimit(30);
         $distributorDBs = MlmDistributorPeer::doSelect($c);
 
@@ -111,7 +111,7 @@ class marketingActions extends sfActions
                     /* ****************************************************
                    * ROI Divident
                    * ***************************************************/
-                    $packageDB = MlmPackagePeer::retrieveByPK($tbl_distributor->getInitRankId());
+                    /*$packageDB = MlmPackagePeer::retrieveByPK($tbl_distributor->getInitRankId());
 
                     $dateUtil = new DateUtil();
                     $currentDate = $dateUtil->formatDate("Y-m-d", $tbl_distributor->getActiveDatetime()) . " 00:00:00";
@@ -136,7 +136,7 @@ class marketingActions extends sfActions
                         $mlm_roi_dividend->setCreatedBy($this->getUser()->getAttribute(Globals::SESSION_USERID, Globals::SYSTEM_USER_ID));
                         $mlm_roi_dividend->setUpdatedBy($this->getUser()->getAttribute(Globals::SESSION_USERID, Globals::SYSTEM_USER_ID));
                         $mlm_roi_dividend->save();
-                    }
+                    }*/
 
                     $appSettingDB->setSettingValue($mt4Id + 1);
                     $appSettingDB->save();
@@ -242,7 +242,7 @@ class marketingActions extends sfActions
                     /* ****************************************************
                    * ROI Divident
                    * ***************************************************/
-                    $dateUtil = new DateUtil();
+                    /*$dateUtil = new DateUtil();
                     $currentDate = $dateUtil->formatDate("Y-m-d", $packageUpgradeHistoryDB->getCreatedOn()) . " 00:00:00";
                     $currentDate_timestamp = strtotime($currentDate);
                     $firstDividendDate = strtotime("+1 months", $currentDate_timestamp);
@@ -265,7 +265,7 @@ class marketingActions extends sfActions
                         $mlm_roi_dividend->setCreatedBy($this->getUser()->getAttribute(Globals::SESSION_USERID, Globals::SYSTEM_USER_ID));
                         $mlm_roi_dividend->setUpdatedBy($this->getUser()->getAttribute(Globals::SESSION_USERID, Globals::SYSTEM_USER_ID));
                         $mlm_roi_dividend->save();
-                    }
+                    }*/
 
                     $appSettingDB->setSettingValue($mt4Id + 1);
                     $appSettingDB->save();
