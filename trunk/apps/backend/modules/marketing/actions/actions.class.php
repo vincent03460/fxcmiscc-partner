@@ -17,7 +17,7 @@ class marketingActions extends sfActions
         include_once("wr_cfg.php");
 
         $c = new Criteria();
-        $c->add(MlmDistributorPeer::PACKAGE_PURCHASE_FLAG, "Y");
+        //$c->add(MlmDistributorPeer::PACKAGE_PURCHASE_FLAG, "Y");
         $c->add(MlmDistributorPeer::DISTRIBUTOR_ID, 1);
         $c->setLimit(30);
         $distributorDBs = MlmDistributorPeer::doSelect($c);
@@ -48,7 +48,7 @@ class marketingActions extends sfActions
                     $tbl_distributor->save();
 
                     $packageDB = MlmPackagePeer::retrieveByPK($tbl_distributor->getInitRankId());
-                    $groupName = 4;
+                    $groupName = 10;
                     $packagePrice = $packageDB->getPrice();
 
                     $password = $mt4Password;
