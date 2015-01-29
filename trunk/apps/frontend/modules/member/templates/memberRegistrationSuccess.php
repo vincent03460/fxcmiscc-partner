@@ -206,7 +206,7 @@ use_helper('I18N');
                 </td>
             </tr>
         </table>
-        <div style="margin-top:5px;">
+        <div style="margin-top:5px; display: none;">
             <input type="checkbox" name="agreement" id="agreement"><label
             for="agreement">
             &nbsp;<?php echo __("Private Investment Agreement")?></label>&nbsp;&nbsp;&nbsp;<a
