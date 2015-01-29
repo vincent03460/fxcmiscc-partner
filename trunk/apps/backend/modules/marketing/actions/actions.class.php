@@ -3005,7 +3005,7 @@ class marketingActions extends sfActions
 					<tbody>
 						<tr>
 							<td colspan='2' style='text-align:center;'>
-								<a target='_blank' href='#'><img height='41' border='0' src='http://partner.fxcmisc.com/images/logo.jpg' alt='FX CMISC'></a></td>
+								<a target='_blank' href='#'><img height='41' border='0' src='http://partner.fxcmisc.com/images/logo.png' alt='FX CMISC'></a></td>
 						</tr>
 
 						<tr>
