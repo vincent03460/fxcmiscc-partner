@@ -2036,9 +2036,44 @@ class marketingActions extends sfActions
     {
         $tbl_distributor = MlmDistributorPeer::retrieveByPk($this->getRequestParameter('distId'));
 
-        //$tbl_distributor->setMt4UserName($this->getRequestParameter('mt4_user_name'));
-        //$tbl_distributor->setMt4Password($this->getRequestParameter('mt4_password'));
-        $tbl_distributor->setFullName($this->getRequestParameter('fullname'));
+        $editFullname = $this->getRequestParameter('editFullName');
+        $editMemberId = $this->getRequestParameter('editMemberId');
+
+        if ($editMemberId == "Y") {
+            $c = new Criteria();
+            $c->add(AppUserPeer::USERNAME, $this->getRequestParameter('distributorCode'));
+            $exist = AppUserPeer::doSelectOne($c);
+
+            if ($exist) {
+                $output = array(
+                    "error" => true
+                    , "errorMsg" => "Username ".$this->getRequestParameter('distributorCode')." already exist"
+                );
+                echo json_encode($output);
+                return sfView::HEADER_ONLY;
+            }
+
+            $remark = $tbl_distributor->getRemark();
+            if ($remark != "") {
+                $remark .= ", ";
+            }
+            $remark .= "renamed member ID from ".$tbl_distributor->getDistributorCode();
+            $tbl_distributor->setRemark($remark);
+            $tbl_distributor->setDistributorCode($this->getRequestParameter('distributorCode'));
+
+            $tbl_user = AppUserPeer::retrieveByPk($tbl_distributor->getUserId());
+            $tbl_user->setUsername($this->getRequestParameter('distributorCode'));
+            $tbl_user->save();
+        }
+        if ($editFullname == "Y") {
+            $remark = $tbl_distributor->getRemark();
+            if ($remark != "") {
+                $remark .= ", ";
+            }
+            $remark .= "renamed from ".$tbl_distributor->getFullName();
+            $tbl_distributor->setRemark($remark);
+            $tbl_distributor->setFullName($this->getRequestParameter('fullname'));
+        }
         $tbl_distributor->setNickname($this->getRequestParameter('nickname'));
         $tbl_distributor->setIc($this->getRequestParameter('ic'));
         $tbl_distributor->setCountry($this->getRequestParameter('country'));
