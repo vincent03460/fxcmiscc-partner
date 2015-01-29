@@ -3151,68 +3151,95 @@ class marketingActions extends sfActions
         if ($existDistributor && $username != "" && $password != "" && $password2 != "") {
             $subject = "FX-CMISC - Account Password Retrieval";
 
-            $body = "<table width='800' align='center' cellpadding='0' cellspacing='0' border='0'>
-			<tbody><tr>
-				<td valign='top' colspan='3'>
-					<table width='100%' cellpadding='0' cellspacing='0' border='0'>
-						<tbody><tr>
-							<td style='font-size:0;line-height:0' width='201' valign='top'><img src='http://partner.fxcmiscc.com/images/email/bg-top.png' width='201' height='226'></td>
-							<td valign='top' width='551'>
-								<table width='100%' cellpadding='0' cellspacing='0' border='0'>
-									<tbody><tr><td style='font-size:0;line-height:0' colspan='2'><img src='http://partner.fxcmiscc.com/images/email/transparent.gif' height='71'></td></tr>
-									<tr>
-										<td valign='top' style='font-size:0;line-height:0' width='86'><img src='http://partner.fxcmiscc.com/images/email/transparent.gif' width='86' height='1'></td>
-										<td valign='top' style='line-height:17px'>
-                                            <font face='Arial, Verdana, sans-serif' size='3' color='#000000' style='font-size:14px;line-height:17px'>
-                                                Dear <strong>".$existDistributor->getFullName()."</strong>,<br>
-                                                <br>" . $this->getContext()->getI18N()->__("Username", null) . ": <b>" . $username . "</b>
-                                                <br>" . $this->getContext()->getI18N()->__("Login Password", null) . ": <b>" . $password . "</b>
-                                                <br>" . $this->getContext()->getI18N()->__("Security Password", null) . ": <b>" . $password2 . "</b>
-                                                <br><br>" . $this->getContext()->getI18N()->__("If you do not requested for this password retrieval, you can simply ignore this email since only you will receive this email. For more information, please contact us.", null, 'email') . "
-                                            </font>
-										</td>
-									</tr>
-									<tr><td style='font-size:0;line-height:0' colspan='2'><img src='http://partner.fxcmiscc.com/images/email/transparent.gif' height='32'></td></tr>
-									<tr>
-										<td valign='top' style='font-size:0;line-height:0' width='86'><img src='http://partner.fxcmiscc.com/images/email/transparent.gif' width='86' height='1'></td>
-										<td style='font-size:0;line-height:0' bgcolor='#0080C8'><img src='http://partner.fxcmiscc.com/images/email/transparent.gif' height='1'></td>
-									</tr>
-									<tr><td style='font-size:0;line-height:0' colspan='2'><img src='http://partner.fxcmiscc.com/images/email/transparent.gif' height='10'></td></tr>
-									<tr>
-										<td valign='top' style='line-height:15px;text-align:right' colspan='2' align='right'>
-											<font face='Arial, Verdana, sans-serif' size='3' color='#000000' style='font-size:12px;line-height:15px'>
-												<em>
-													Best Regards,<br>
-													<strong>FX-CMISC</strong><br>
-													E mail : support@fxcmiscc.com
-												</em>
-											</font>
-										</td>
-									</tr>
-								</tbody></table>
-							</td>
-							<td style='font-size:0;line-height:0' width='48'><img src='http://partner.fxcmiscc.com/images/email/transparent.gif' width='48' height='1'></td>
-						</tr>
-					</tbody></table>
-				</td>
-			</tr>
-			<tr>
-				<td style='font-size:0;line-height:0' width='63'><img src='http://partner.fxcmiscc.com/images/email/transparent.gif' width='63' height='1'></td>
-				<td valign='top' width='689'>
-					<table width='100%' cellpadding='0' cellspacing='0' border='0'>
-						<tbody><tr><td style='font-size:0;line-height:0'><img src='http://partner.fxcmiscc.com/images/email/transparent.gif' height='28'></td></tr>
+            $body = "<table width='100%' cellspacing='0' cellpadding='0' border='0' bgcolor='#fff' align='center'>
+	<tbody>
+		<tr>
+			<td style='padding:20px 0px'>
+				<table width='606' cellspacing='0' cellpadding='0' align='center' style='background:white;font-family:Arial,Helvetica,sans-serif;border: 1px rgb(0, 128, 200) solid;padding: 10px;border-radius:10px;-webkit-border-radius:10px;-moz-border-radius:10px;'>
+					<tbody>
 						<tr>
-							<td align='right' style='text-align:right;font-size:0;line-height:0'>
-								<a href='http://www.fxcmiscc.com/' target='_blank'><img src='http://partner.fxcmiscc.com/images/email/logo.png' height='87' border='0'></a>
+							<td colspan='2' style='text-align:center;'>
+								<a target='_blank' href='#'><img height='41' border='0' src='http://partner.fxcmisc.com/images/logo.png' alt='FX CMISC'></a></td>
+						</tr>
+
+						<tr>
+							<td colspan='2'>
+								<table cellspacing='0' cellpadding='10' border='0'>
+									<tbody>
+										<tr>
+											<td colspan='2'>
+												<table>
+													<tbody>
+														<tr>
+															<td valign='top' style='padding-top:15px;padding-left:10px'>
+																<font face='Arial, Verdana, sans-serif' size='3' color='#000000' style='font-size:14px;line-height:17px'>
+                                                                    Dear <strong>".$existDistributor->getFullName()."</strong>,<br>
+																	<br>" . $this->getContext()->getI18N()->__("Username", null) . ": <b>" . $username . "</b>
+																	<br>" . $this->getContext()->getI18N()->__("Login Password", null) . ": <b>" . $password . "</b>
+																	<br>" . $this->getContext()->getI18N()->__("Security Password", null) . ": <b>" . $password2 . "</b>
+																	<br><br>" . $this->getContext()->getI18N()->__("If you do not requested for this password retrieval, you can simply ignore this email since only you will receive this email. For more information, please contact us.", null, 'email') . "
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</td>
+										</tr>
+									</tbody>
+								</table>
 							</td>
 						</tr>
-						<tr><td style='font-size:0;line-height:0'><img src='http://partner.fxcmiscc.com/images/email/transparent.gif' height='16'></td></tr>
-					</tbody></table>
-				</td>
-				<td style='font-size:0;line-height:0' width='48'><img src='http://partner.fxcmiscc.com/images/email/transparent.gif' width='48' height='1'></td>
-			</tr>
-			<tr><td colspan='3' style='font-size:0;line-height:0' bgcolor='#D2D2D2'><img src='http://partner.fxcmiscc.com/images/email/transparent.gif' height='34'></td></tr>
-		</tbody></table>";
+
+						<tr>
+							<td width='606'>
+							<img src='http://partner.fxcmisc.com/images/transparent.gif' height='1'>
+							</td>
+						</tr>
+
+
+						<tr>
+							<td width='606'>
+							<img src='http://partner.fxcmisc.com/images/transparent.gif' height='1'>
+							</td>
+						</tr>
+						<tr>
+							<td width='606' style='font-size:0;line-height:0' colspan='2'>
+								<img src='http://partner.fxcmisc.com/images/transparent.gif' height='10'>
+							</td>
+						</tr>
+
+						<tr>
+							<td width='606' style='padding:15px 15px 0px;color:rgb(153,153,153);font-size:11px' colspan='2' align='right'>
+							<font face='Arial, Verdana, sans-serif' size='3' color='#000000' style='font-size:12px;line-height:15px'>
+								<em>
+									Best Regards,<br>
+									<strong>FX CMISC Account Opening Team</strong><br>
+								</em>
+							</font>
+							<br>
+						</tr>
+
+						<tr>
+							<td width='606' style='font-size:0;line-height:0' bgcolor='#0080C8'>
+							<img src='http://partner.fxcmisc.com/images/transparent.gif' height='1'>
+							</td>
+						</tr>
+
+						<tr>
+							<td width='606' style='padding:5px 15px 20px;color:rgb(153,153,153);font-size:11px' colspan='2'>
+							<p align='justify'>
+								<font face='Arial, Verdana, sans-serif' size='3' color='#666666' style='font-size:10px;line-height:15px'>
+									CONFIDENTIALITY: This e-mail and any files transmitted with it are confidential and intended solely for the use of the recipient(s) only. Any review, retransmission, dissemination or other use of, or taking any action in reliance upon this information by persons or entities other than the intended recipient(s) is prohibited. If you have received this e-mail in error please notify the sender immediately and destroy the material whether stored on a computer or otherwise.
+									<br><br>DISCLAIMER: Any views or opinions presented within this e-mail are solely those of the author and do not necessarily represent those of FX CMISC, unless otherwise specifically stated. The content of this message does not constitute Investment Advice.
+									<br><br>RISK WARNING: Forex, spread bets, and CFDs carry a high degree of risk to your capital and it is possible to lose more than your initial investment. Only speculate with money you can afford to lose. As with any trading, you should not engage in it unless you understand the nature of the transaction you are entering into and, the true extent of your exposure to the risk of loss. These products may not be suitable for all investors, therefore if you do not fully understand the risks involved, please seek independent advice.
+								</font>
+							</p>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+	</tbody>
+</table>";
                 $sendMailService = new SendMailService();
                 $sendMailService->sendForgetPassword($existDistributor, $subject, $body);
         }
