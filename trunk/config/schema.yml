@@ -465,6 +465,39 @@ propel:
     _indexes: 
       receiver_email: 
         - receiver_email
+  mlm_account: 
+    _attributes: 
+      idMethod: native
+    account_id: 
+      type: INTEGER
+      required: true
+      autoIncrement: true
+      primaryKey: true
+    dist_id: 
+      type: INTEGER
+      required: true
+    account_type: 
+      type: VARCHAR
+      size: 20
+      required: true
+    balance: 
+      type: DECIMAL
+      size: 12
+      scale: 2
+      required: true
+      default: 0.00
+    created_by: 
+      type: INTEGER
+      required: true
+    created_on: 
+      type: TIMESTAMP
+      required: true
+    updated_by: 
+      type: INTEGER
+      required: true
+    updated_on: 
+      type: TIMESTAMP
+      required: true
   mlm_account_ledger: 
     _attributes: 
       idMethod: native
@@ -739,6 +772,16 @@ propel:
       scale: 2
     traded_datetime: 
       type: TIMESTAMP
+    status_code: 
+      type: VARCHAR
+      size: 10
+      default: ACTIVE
+    remark: 
+      type: LONGVARCHAR
+    idx: 
+      type: INTEGER
+      required: true
+      default: 0
     created_by: 
       type: INTEGER
       required: true
@@ -891,6 +934,43 @@ propel:
     updated_on: 
       type: TIMESTAMP
       required: true
+    convert_rp_to_cp1: 
+      type: VARCHAR
+      size: 1
+      default: Y
+    convert_cp3_to_cp1: 
+      type: VARCHAR
+      size: 1
+      default: Y
+    cp3_withdrawal: 
+      type: VARCHAR
+      size: 1
+      default: Y
+    ecash_withdrawal: 
+      type: VARCHAR
+      size: 1
+      default: Y
+    convert_cp2_to_cp1: 
+      type: VARCHAR
+      size: 1
+      default: Y
+    transfer_cp1: 
+      type: VARCHAR
+      size: 1
+      required: true
+      default: Y
+    transfer_cp2: 
+      type: VARCHAR
+      size: 1
+      required: true
+      default: Y
+    transfer_cp3: 
+      type: VARCHAR
+      size: 1
+      required: true
+      default: Y
+    remark: 
+      type: LONGVARCHAR
   mlm_dist_commission_ledger: 
     _attributes: 
       idMethod: native
@@ -2229,87 +2309,3 @@ propel:
         - dividend_date
       mt4_user_name: 
         - mt4_user_name
-  mlm_roi_forecast: 
-    _attributes: 
-      idMethod: native
-    roi_id: 
-      type: INTEGER
-      required: true
-      autoIncrement: true
-      primaryKey: true
-    date_year: 
-      type: INTEGER
-      required: true
-    date_month: 
-      type: INTEGER
-      required: true
-    roi_3k_5k: 
-      type: DECIMAL
-      size: 12
-      scale: 2
-    roi_10k_15k: 
-      type: DECIMAL
-      size: 12
-      scale: 2
-    roi_30k_50k: 
-      type: DECIMAL
-      size: 12
-      scale: 2
-    created_by: 
-      type: INTEGER
-      required: true
-    created_on: 
-      type: TIMESTAMP
-      required: true
-    updated_by: 
-      type: INTEGER
-      required: true
-    updated_on: 
-      type: TIMESTAMP
-      required: true
-    _indexes: 
-      date_from: 
-        - date_year
-        - date_month
-        - roi_3k_5k
-        - roi_10k_15k
-  payment_gateway_log: 
-    _attributes: 
-      idMethod: native
-    log_id: 
-      type: INTEGER
-      required: true
-      autoIncrement: true
-      primaryKey: true
-    amount: 
-      type: DECIMAL
-      size: 12
-      scale: 2
-      required: true
-      default: 0.00
-    handling_amount: 
-      type: DECIMAL
-      size: 12
-      scale: 2
-      required: true
-      default: 0.00
-    submit_string: 
-      type: LONGVARCHAR
-    transaction_type: 
-      type: VARCHAR
-      size: 20
-    status_code: 
-      type: VARCHAR
-      size: 20
-    created_by: 
-      type: INTEGER
-      required: true
-    created_on: 
-      type: TIMESTAMP
-      required: true
-    updated_by: 
-      type: INTEGER
-      required: true
-    updated_on: 
-      type: TIMESTAMP
-      required: true
