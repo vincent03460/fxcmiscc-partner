@@ -3003,7 +3003,8 @@ class memberActions extends sfActions
                     $sponsorDistCommissionledger->setUpdatedBy($this->getUser()->getAttribute(Globals::SESSION_USERID, Globals::SYSTEM_USER_ID));
                     $sponsorDistCommissionledger->save();
 
-                    if ($totalBonusPayOut < Globals::TOTAL_BONUS_PAYOUT) {
+                    break;
+                    /*if ($totalBonusPayOut < Globals::TOTAL_BONUS_PAYOUT) {
 
                         if ($uplineDistDB->getUplineDistId() == null)
                             break;
@@ -3048,7 +3049,7 @@ class memberActions extends sfActions
                         }
                     } else {
                         break;
-                    }
+                    }*/
                 }
             }
 
