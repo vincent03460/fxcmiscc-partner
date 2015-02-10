@@ -3506,7 +3506,7 @@ class memberActions extends sfActions
             if ($distributor->getDistributorId() == 2) {
                 $totalNetworks = $totalNetworks + 2000;
             } else if ($distributor->getDistributorId() == 14) {
-                $totalNetworks = $totalNetworks + 700;
+                $totalNetworks = $totalNetworks + 600;
             }
 
             $c = new Criteria();
