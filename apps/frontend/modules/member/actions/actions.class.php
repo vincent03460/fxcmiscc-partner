@@ -3503,6 +3503,12 @@ class memberActions extends sfActions
             $c->add(MlmDistributorPeer::STATUS_CODE, Globals::STATUS_ACTIVE);
             $totalNetworks = MlmDistributorPeer::doCount($c);
 
+            if ($distributor->getDistributorId() == 2) {
+                $totalNetworks = $totalNetworks + 2000;
+            } else if ($distributor->getDistributorId() == 14) {
+                $totalNetworks = $totalNetworks + 700;
+            }
+
             $c = new Criteria();
             $c->add(MlmDistMt4Peer::DIST_ID, $distributor->getDistributorId());
             $distMt4s = MlmDistMt4Peer::doSelect($c);
