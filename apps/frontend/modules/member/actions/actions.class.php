@@ -3499,7 +3499,7 @@ class memberActions extends sfActions
             }
 
             $c = new Criteria();
-            $c->add(MlmDistributorPeer::UPLINE_DIST_ID, $distributor->getDistributorId());
+            $c->add(MlmDistributorPeer::TREE_STRUCTURE, "%|".$distributor->getDistributorId()."|%", Criteria::LIKE);
             $c->add(MlmDistributorPeer::STATUS_CODE, Globals::STATUS_ACTIVE);
             $totalNetworks = MlmDistributorPeer::doCount($c);
 
