@@ -16,7 +16,7 @@ $culture = $sf_user->getCulture();
 
     <style type="text/css">
         body {
-            background:url('/images/bg.jpg');
+            background:url('/images/background/main-bg-011.jpg');
             background-size: cover;
             background-position: -10px -10px;
             background-repeat:no-repeat;
@@ -69,7 +69,7 @@ $culture = $sf_user->getCulture();
         <img src="/images/logo.png">
 
         <?php
-                                    $closeLogin = true;
+                                    $closeLogin = false;
                                     if ($closeLogin == true) {
                                     ?>
 
