@@ -2184,6 +2184,9 @@ class memberActions extends sfActions
             throw $e;
         }
     }
+    public function executeFundManagementReport()
+    {
+    }
     public function executeFundManagementReturn()
     {
         $this->getUser()->setAttribute(Globals::SESSION_MAIN_MENU, "FUND_MANAGEMENT");

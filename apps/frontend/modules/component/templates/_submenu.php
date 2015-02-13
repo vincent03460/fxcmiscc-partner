@@ -55,14 +55,17 @@ use_helper('I18N');
 <!--            &nbsp;-->
 <!--        </li>-->
         <li>
+            <span class="group_header"><?php echo __("Fund Management") ?></span>
+            <ul>
+                <li>
+                    <a href="/member/fundManagementReport"><div><?php echo __("Fund Management Report") ?>&nbsp;<img src="/images/new_icon.gif"></div></a>
+                </li>
+            </ul>
+            &nbsp;
+        </li>
+        <li>
             <span class="group_header"><?php echo __("More") ?></span>
             <ul>
-                <!--<li>
-                    <a href="/member/download"><div><?php /*echo __("Download") */?></div></a>
-                </li>-->
-                <!--<li>
-                    <a href="/member/agreement"><div><?php /*echo __("Agreement") */?></div></a>
-                </li>-->
                 <li>
                     <a href="/member/memo"><div><?php echo __("Memo") ?></div></a>
                 </li>
