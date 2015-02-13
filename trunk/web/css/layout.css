@@ -161,7 +161,7 @@ h2
 }
 
 .menu .group_header {
-	padding: 8px 40px;
+	padding: 8px 20px;
 	font-weight: bold;
 	color: #fff;
 	font-size: medium;
@@ -186,7 +186,7 @@ h2
 
 .menu ul li a div
 {
-	padding:8px 40px;
+	padding:5px 40px;
 }
 
 .menu ul li a.active
