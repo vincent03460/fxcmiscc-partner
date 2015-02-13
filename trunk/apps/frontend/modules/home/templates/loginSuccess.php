@@ -67,6 +67,37 @@ $culture = $sf_user->getCulture();
 <form id="loginForm" name="loginForm" method="post" action="/home/doLogin">
     <div class="login_box">
         <img src="/images/logo.png">
+
+        <?php
+                                    $closeLogin = true;
+                                    if ($closeLogin == true) {
+                                    ?>
+
+                                    <div style="margin-top: 10px; margin-bottom: 10px; padding: 0 .7em;"
+                         class="ui-state-highlight ui-corner-all">
+                        <p style="margin: 10px; width: 450px;"><span style="float: left; margin-right: .3em;"
+                                                      class="ui-icon ui-icon-info"></span>
+                            <strong>Dear Members,
+<br>
+<br>Please NOTE that the company server will be SHUT DOWN at 2359hrs February 13th 2015 for a period of 10 hours.
+
+<br>
+<br>This is necessary because we are UPGRADING our servers to better serve our IMs and to keep up abreast with the demands of our continued growth.
+
+<br>
+<br>We seek your kind understanding and apologize for any inconvenience caused.
+<br>
+
+<br>亲爱的会员们:
+                                <br>
+<br>请注意公司将于2015.02.13日晚23:59分关闭服务器, 时长为10小时.
+                                <br>
+                                <br>这一操作是因为我们需要升级服务器,也是为了满足我们不断快速成长的需求, 更好地服务所有代理及会员.
+                                <br>
+                                <br>敬请留意,谢谢大家的理解!为此造成任何不便,我们深表歉意.
+                            </strong>
+                                    </p></div>
+<?php } else { ?>
         <table cellpadding="5" cellspacing="0" align="center">
             <tbody>
             <tr height="20px">
@@ -105,6 +136,7 @@ $culture = $sf_user->getCulture();
             </tr>
             </tbody>
         </table>
+    <?php }  ?>
     </div>
 </form>
 
