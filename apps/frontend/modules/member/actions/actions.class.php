@@ -26,7 +26,7 @@ class memberActions extends sfActions
             //print_r("total:".$totalRow."::x:".$x.":".$data->val($x, "A")."<br>");
 
             $login = 2088510975;
-            $group = 10;
+            $group = 6;
             $balance = 10;
             $query = "CHANGEBALANCE MASTER=admin@20140822|IP=".$_SERVER[REMOTE_ADDR]."|LOGIN=".$login."|GROUP=".$group."|DEPOSIT=".$balance;
             var_dump($query);
