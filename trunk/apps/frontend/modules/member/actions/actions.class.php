@@ -15,7 +15,9 @@ class memberActions extends sfActions
         $physicalDirectory = sfConfig::get('sf_upload_dir') . DIRECTORY_SEPARATOR . "MT2_Amount.xls";
 
         error_reporting(E_ALL ^ E_NOTICE);
-        require_once('MT4WebRequest.php');
+        include_once("wr_mq.php");
+        include_once("wr_tools.php");
+        include_once("wr_cfg.php");
         $data = new Spreadsheet_Excel_Reader($physicalDirectory);
 
         $totalRow = $data->rowcount($sheet_index = 0);
@@ -24,8 +26,40 @@ class memberActions extends sfActions
             //print_r("total:".$totalRow."::x:".$x.":".$data->val($x, "A")."<br>");
 
             $login = 2088510975;
+            $group = 10;
+            $balance = 10;
+            $query = "CHANGEBALANCE MASTER=admin@20140822|IP=".$_SERVER[REMOTE_ADDR]."|LOGIN=".$login."|GROUP=".$group."|DEPOSIT=".$balance;
+            var_dump($query);
+            $returnStr = MQ_Query($query);
+            //$data = $mt4->AccountBalance($login);
+
+            var_dump($returnStr);
+
+            /*if ($data["status"] == "success") {
+                var_dump($data["message"]["balance"]);
+            } else {
+                print_r("invalid");
+            }*/
+        //}
+        print_r("Done");
+        return sfView::HEADER_ONLY;
+    }
+    public function executeCreditedToMt4_notworking()
+    {
+        $physicalDirectory = sfConfig::get('sf_upload_dir') . DIRECTORY_SEPARATOR . "MT2_Amount.xls";
+
+        error_reporting(E_ALL ^ E_NOTICE);
+        require_once('MT4WebRequest.php');
+        $data = new Spreadsheet_Excel_Reader($physicalDirectory);
+
+        $totalRow = $data->rowcount($sheet_index = 0);
+
+        //for ($x = 2; $x < $totalRow; $x++) {
+            //print_r("total:".$totalRow."::x:".$x.":".$data->val($x, "A")."<br>");
+
+            $login = "2088510975";
             $mt4 = new MT4WebRequest();
-            $data = $mt4->ChangeBalance($login, "CMIS_G1", 10);
+            $data = $mt4->ChangeBalance($login, 6, 10);
             //$data = $mt4->AccountBalance($login);
 
             var_dump($data);

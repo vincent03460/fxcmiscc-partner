@@ -164,7 +164,7 @@ class MT4WebRequest {
 		
 		//--- prepare query
 		$query = "CHANGEBALANCE MASTER=" . $this->master_password . "|IP=$_SERVER[REMOTE_ADDR]|LOGIN=$login|GROUP=$group|DEPOSIT=$balance";
-		
+		var_dump($query);
 		//--- send request
 		$result = $this->request($query);
 		
