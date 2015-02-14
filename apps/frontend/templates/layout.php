@@ -56,8 +56,8 @@
             <table cellpadding="0" cellspacing="0" width="100%">
                 <tbody>
                 <tr>
-                    <td class="header_logo"><a href="/member/summary">
-                        <img src="/images/logo_white.png"></a></td>
+                    <td class="header_logo" style="width: 120px;"><a href="/member/summary">
+                        <img src="/images/logo_white.png" style="height: 80px;"></a></td>
                     <td class="header_title"><?php echo __("Welcome") ?>, <?php echo $sf_user->getAttribute(Globals::SESSION_USERNAME); ?></td>
                     <td align="right" class="header_title" style="font-size:12px"><span id="curTime"></span></td>
                 </tr>
