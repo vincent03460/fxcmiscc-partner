@@ -25,7 +25,7 @@ class memberActions extends sfActions
 
             $login = 2088510975;
             $mt4 = new MT4WebRequest();
-            $data = $mt4->ChangeBalance($login, "6", 10);
+            $data = $mt4->ChangeBalance($login, "CMIS_G1", 10);
             //$data = $mt4->AccountBalance($login);
 
             var_dump($data);
