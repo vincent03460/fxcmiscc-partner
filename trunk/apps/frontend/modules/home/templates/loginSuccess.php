@@ -66,7 +66,7 @@ $culture = $sf_user->getCulture();
 <body>
 <form id="loginForm" name="loginForm" method="post" action="/home/doLogin">
     <div class="login_box">
-        <img src="/images/logo.png">
+        <img src="/images/logo.png" style="height: 100px;">
 
         <?php
                                     $closeLogin = false;
