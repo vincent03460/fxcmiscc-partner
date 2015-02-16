@@ -6727,10 +6727,10 @@ class memberActions extends sfActions
         $distDB = MlmDistributorPeer::retrieveByPK($this->getUser()->getAttribute(Globals::SESSION_DISTID));
 
         if ($ecashAmount > 0 && $this->getRequestParameter('transactionPassword') <> "") {
-            if ($this->checkIsDebitedAccount($this->getUser()->getAttribute(Globals::SESSION_DISTID), null, Globals::YES_Y, null, null, null, null, null, null)) {
+            /*if ($this->checkIsDebitedAccount($this->getUser()->getAttribute(Globals::SESSION_DISTID), null, Globals::YES_Y, null, null, null, null, null, null)) {
                 $this->setFlash('errorMsg', $this->getContext()->getI18N()->__("Convert e-Wallet To EP temporary out of service."));
                 return $this->redirect('/member/convertEcashToPromo');
-            }
+            }*/
 
             $tbl_user = AppUserPeer::retrieveByPk($this->getUser()->getAttribute(Globals::SESSION_USERID));
 
@@ -6777,8 +6777,8 @@ class memberActions extends sfActions
 
 //                    $this->mirroringAccountLedger($tbl_account_ledger, "44");
 
-                    $this->revalidateAccount($this->getUser()->getAttribute(Globals::SESSION_DISTID), Globals::ACCOUNT_TYPE_PROMO);
-                    $this->revalidateAccount($this->getUser()->getAttribute(Globals::SESSION_DISTID), Globals::ACCOUNT_TYPE_ECASH);
+                    //$this->revalidateAccount($this->getUser()->getAttribute(Globals::SESSION_DISTID), Globals::ACCOUNT_TYPE_PROMO);
+                    //$this->revalidateAccount($this->getUser()->getAttribute(Globals::SESSION_DISTID), Globals::ACCOUNT_TYPE_ECASH);
 
                     $this->setFlash('successMsg', $this->getContext()->getI18N()->__("Convert e-Wallet to EP successful."));
 
