@@ -143,7 +143,7 @@
 
         <div id="sidebar-bottom">
             <ul></ul>
-            <p style="text-align: center;">© 2012 - 2015 fxcmiscc.com <br> All rights reserved.</p>
+            <p style="text-align: center;">© 2012 - 2015 CMIS Trader <br> All rights reserved.</p>
         </div>
     </div>
 </div>

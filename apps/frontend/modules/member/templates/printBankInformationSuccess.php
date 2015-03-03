@@ -4,7 +4,7 @@ use_helper('I18N');
 <!DOCTYPE html>
 <html>
 <head>
-    <title>FX-CMISC</title>
+    <title>CMIS</title>
     <link href="/light-blue/css/application.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
@@ -68,7 +68,7 @@ use_helper('I18N');
                 <div class="body no-margin">
                     <div class="row">
                         <div class="col-sm-6 col-print-6">
-                            <h4>FX-CMISC</h4>
+                            <h4>CMIS</h4>
                             <!-- <img src="img/logo.png" alt="Logo" class="invoice-logo"/>-->
                         </div>
                         <div class="col-sm-6 col-print-6">
@@ -86,7 +86,7 @@ use_helper('I18N');
                             <div class="col-sm-6 col-print-6">
                                 <h4 class="details-title">Company Information</h4>
                                 <h3 class="company-name">
-                                    FX-CMISC
+                                    CMIS
                                 </h3>
                                 <address>
                                     <strong>St Martins Tower</strong><br>

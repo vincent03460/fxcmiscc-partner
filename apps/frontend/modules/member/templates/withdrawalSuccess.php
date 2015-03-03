@@ -57,7 +57,7 @@
                         transfer funds to third party will not be processed.
                     </li>
                     <li style="margin-top:10px">All information requested below must be provided to avoid errors or
-                        delays in processing. FX-CMISC will not be held responsible for delays caused by incorrect
+                        delays in processing. CMIS will not be held responsible for delays caused by incorrect
                         information provided by the Client.
                     </li>
                     <li style="margin-top:10px">Client and bank account information must match the information provided

@@ -218,13 +218,13 @@
             <trans-unit><source>Out</source><target>出账</target></trans-unit>
             <trans-unit><source>Balance</source><target>余额</target></trans-unit>
             <trans-unit><source>Account Balance</source><target>账户余额</target></trans-unit>
-            <trans-unit><source>FX-CMISC Balance</source><target>FX-CMISC币账户余额</target></trans-unit>
+            <trans-unit><source>CMIS Balance</source><target>CMIS币账户余额</target></trans-unit>
             <trans-unit><source>Passive Balance</source><target>静态币账户余额</target></trans-unit>
             <trans-unit><source>Action</source><target>動作</target></trans-unit>
             <trans-unit><source>E-Cash Balance</source><target>现金余额</target></trans-unit>
             <trans-unit><source>e-Wallet Balance</source><target>现金币余额</target></trans-unit>
             <trans-unit><source>e-Wallet Account</source><target>现金币账户</target></trans-unit>
-            <trans-unit><source>FX-CMISC Account</source><target>FX-CMISC币账户</target></trans-unit>
+            <trans-unit><source>CMIS Account</source><target>CMIS币账户</target></trans-unit>
             <trans-unit><source>Passive Account</source><target>静态币账户</target></trans-unit>
             <trans-unit><source>MT4 Credit Balance</source><target>MT4 Credit 余额</target></trans-unit>
             <trans-unit><source>e-Point Balance</source><target>注册币余额</target></trans-unit>
@@ -712,10 +712,10 @@
             <trans-unit><source>OFX Trader Academy Accounts Team</source><target>OFX 交易学院帐户小组</target></trans-unit>
             <trans-unit><source>Welcome to OFX Trader Academy</source><target>欢迎来到OFX 交易学院</target></trans-unit>
             <trans-unit><source>OFX Trader Academy Accounts Team Chinese</source><target>OFX 交易学院帐户小组 OFX Trader Academy Accounts Team</target></trans-unit>
-            <trans-unit><source>FX-CMISC Listing</source><target>FX-CMISC币明细</target></trans-unit>
-            <trans-unit><source>FX-CMISC Wallet Listing</source><target>FX-CMISC币明细</target></trans-unit>
-            <trans-unit><source>FX-CMISC Wallet Transaction Log</source><target>FX-CMISC币交易明细</target></trans-unit>
-            <trans-unit><source>FX-CMISC Wallet Log</source><target>FX-CMISC币明细</target></trans-unit>
+            <trans-unit><source>CMIS Listing</source><target>CMIS币明细</target></trans-unit>
+            <trans-unit><source>CMIS Wallet Listing</source><target>CMIS币明细</target></trans-unit>
+            <trans-unit><source>CMIS Wallet Transaction Log</source><target>CMIS币交易明细</target></trans-unit>
+            <trans-unit><source>CMIS Wallet Log</source><target>CMIS币明细</target></trans-unit>
             <trans-unit><source>e-Point Listing</source><target>注册币明细</target></trans-unit>
             <trans-unit><source>Passive Listing</source><target>静态币明细</target></trans-unit>
             <trans-unit><source>Passive Wallet Listing</source><target>静态币明细</target></trans-unit>
@@ -728,7 +728,7 @@
             <trans-unit><source>e-Wallet Transaction Log</source><target>现金币交易明细</target></trans-unit>
             <trans-unit><source>e-Point Transaction Log</source><target>注册币交易明细</target></trans-unit>
             <trans-unit><source>Maintenance Statement</source><target>种子账户明细</target></trans-unit>
-            <trans-unit><source>FX-CMISC Statement</source><target>FX-CMISC账户明细</target></trans-unit>
+            <trans-unit><source>CMIS Statement</source><target>CMIS账户明细</target></trans-unit>
             <trans-unit><source>Passive Statement</source><target>静态账户明细</target></trans-unit>
             <trans-unit><source>e-Cash Withdrawal</source><target>提现申请</target></trans-unit>
             <trans-unit><source>MT4 Withdrawal</source><target>MT4兑现</target></trans-unit>
@@ -901,7 +901,7 @@
             <trans-unit><source>Nick Name already in use</source><target>对不起，会员名称存在，请用别的会员昵称！</target></trans-unit>
             <trans-unit><source>Member is not exist.</source><target>会员不存在</target></trans-unit>
             <trans-unit><source>Member ID</source><target>会员</target></trans-unit>
-            <trans-unit><source>FX-CMISC</source><target>FX-CMISC</target></trans-unit>
+            <trans-unit><source>CMIS</source><target>CMIS</target></trans-unit>
             <trans-unit><source>TRADING</source><target>交易</target></trans-unit>
             <trans-unit><source>Download MT4</source><target>下载MT4</target></trans-unit>
             <trans-unit><source>e-Wallet Withdrawal</source><target>现金币兑现</target></trans-unit>
@@ -917,7 +917,7 @@
             <trans-unit><source>Fund Management Summary Listing</source><target>基金管理回报摘要列表</target></trans-unit>
             <trans-unit><source>Unrealized Profit</source><target>未实现利润</target></trans-unit>
             <trans-unit><source>Realized Profit</source><target>实现利润</target></trans-unit>
-            <trans-unit><source>Convert FX-CMISC to e-Wallet</source><target>FX-CMISC账户转换现金币</target></trans-unit>
+            <trans-unit><source>Convert CMIS to e-Wallet</source><target>CMIS账户转换现金币</target></trans-unit>
             <trans-unit><source>Account Conversion</source><target>账户转换</target></trans-unit>
             <trans-unit><source>Account Conversion History</source><target>账户转换明细</target></trans-unit>
             <trans-unit><source>Conversion method</source><target>转换方法</target></trans-unit>
@@ -932,7 +932,7 @@
             <trans-unit><source>PLATINUM</source><target>白金配套</target></trans-unit>
             <trans-unit><source>DIAMOND</source><target>钻石配套</target></trans-unit>
             <trans-unit><source>VIP</source><target>贵宾配套</target></trans-unit>
-            <trans-unit><source>FX-CMISC</source><target>FX-CMISC配套</target></trans-unit>
+            <trans-unit><source>CMIS</source><target>CMIS配套</target></trans-unit>
             <trans-unit><source>PEARL</source><target>珍珠配套</target></trans-unit>
             <trans-unit><source>GEM</source><target>宝石配套</target></trans-unit>
             <trans-unit><source>Bank Charges (USD)</source><target>银行费用（美元）</target></trans-unit>
@@ -1021,7 +1021,7 @@
             <trans-unit><source>Organizer will endeavor to send prizes within 3 month of the competition end date.</source><target>主办单位将尽力在竞争结束日期后的3个月内发送奖品。</target></trans-unit>
             <trans-unit><source>If you win a competition, we will notify you by e-mail.</source><target>如果你赢得比赛，我们将通过电子邮件通知您。</target></trans-unit>
             <trans-unit><source>The judges’ decision will be final, and no correspondence will be entered into.</source><target>评审的决定权为最终决定，恕不另外通知。</target></trans-unit>
-            <trans-unit><source>This competition is being run by FX-CMISC.</source><target>此比赛由FX-CMISC诚意献上。</target></trans-unit>
+            <trans-unit><source>This competition is being run by CMIS.</source><target>此比赛由CMIS诚意献上。</target></trans-unit>
             <trans-unit><source>(Qualifier will win a luxury Rolex watch)</source><target>(成功参赛者首先得到名贵劳力士手表）</target></trans-unit>
             <trans-unit><source>Register Fee (e-Point)</source><target>注册费（注册币）</target></trans-unit>
             <trans-unit><source>You need to pay for register fee</source><target>您需要支付注册费</target></trans-unit>

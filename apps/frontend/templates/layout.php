@@ -70,7 +70,7 @@
         <td valign="bottom" width="230px" bgcolor="#AE0001" style="vertical-align: top;">
             <?php include_component('component', 'submenu', array('module' => $sf_context->getModuleName(), 'action' => $sf_context->getActionName())) ?>
             <div class="copyright">
-                <div>Copyright © 2011 - 2013<br>FX-CMISC All Rights Reserved.</div>
+                <div>Copyright © 2011 - 2013<br>CMIS Trader | All Rights Reserved.</div>
             </div>
         </td>
         <td valign="top" class="column_right">

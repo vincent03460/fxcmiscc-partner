@@ -48,7 +48,7 @@ use_helper('I18N');
 </script>
 
 <div class="title">
-  <h1><?php echo __("FXCMISCC Wallet Log"); ?></h1>
+  <h1><?php echo __("CMIS Wallet Log"); ?></h1>
 </div>
 <div class="table">
   <table cellpadding="0" cellspacing="10" width="100%">
@@ -56,7 +56,7 @@ use_helper('I18N');
       <td width="100%">
         <table cellpadding="0" cellspacing="0" width="100%">
           <tr>
-            <th colspan="2"><?php echo __("FXCMISCC Wallet Transaction Log")?></th>
+            <th colspan="2"><?php echo __("CMIS Wallet Transaction Log")?></th>
           </tr>
           <tr>
             <td class="tablebg">
@@ -66,7 +66,7 @@ use_helper('I18N');
                 <section class="widget" style="background: none;">
                   <header>
                     <i class="icon-file-alt"></i>
-                    <?php echo __("FXCMISCC Wallet Listing")?>
+                    <?php echo __("CMIS Wallet Listing")?>
                     <br/><br/>
                   </header>
                   <div class="body">
