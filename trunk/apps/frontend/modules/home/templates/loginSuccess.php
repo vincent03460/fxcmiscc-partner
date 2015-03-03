@@ -35,7 +35,7 @@ $culture = $sf_user->getCulture();
 
     <link rel='stylesheet' type='text/css' media='screen' href='/css/validate/validate.css'/>
     <link rel="stylesheet" href="/css/layout.css">
-    <title><?php echo __("FX-CMISC Administration")?></title>
+    <title><?php echo __("CMIS Administration")?></title>
 
     <script type="text/javascript">
         $(document).ready(function() {

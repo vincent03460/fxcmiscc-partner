@@ -1267,7 +1267,7 @@ class financeActions extends sfActions
                 $mlm_distributor = MlmDistributorPeer::retrieveByPK($distId);
                 $receiverEmail = $mlm_distributor->getEmail();
                 $receiverFullname = $mlm_distributor->getFullName();
-                $subject = "FX-CMISC - 您申请的兑现款项成功转账到您的私人账户";
+                $subject = "CMIS - 您申请的兑现款项成功转账到您的私人账户";
 
                 $body = "<table border='0' cellpadding='0' cellspacing='0' width='698' align='center' style='border:1px solid #eeeeee'>
             <tbody>
@@ -1277,7 +1277,7 @@ class financeActions extends sfActions
                         <tbody>
                         <tr valign='top'>
                             <td><img src='http://partner.fxcmiscc.com/images/email/top.jpg'
-                                    alt='FX-CMISC' border='0'></td>
+                                    alt='CMIS' border='0'></td>
                         </tr>
                         <tr valign='top'>
                             <td>
@@ -1288,15 +1288,15 @@ class financeActions extends sfActions
                                         <td style='border-left:1px solid #bac1c8;border-right:1px solid #bac1c8;padding:0 0 23px 0;font-size:12px;line-height:18px;font-family:Arial;color:#222222;padding:0px 24px 18px 24px'>
                                             <p style='font-size:16px;line-height:18px;color:#222222;width:100%;margin:0;padding:0 0 10px 0;font-weight:bold'>
                                                 兑现成功</p><br>
-                                            尊敬的FX-CMISC会员<br><br>
+                                            尊敬的CMIS会员<br><br>
 
                                             此邮件是通知您；本公司已经成功把您所申请的款项转账到您的私人账户，请尽快查收。<br>
-                                            如果发现所申请的款项没能到帐，请及时联络当地的FX-CMISC顾问或迅速的回复此邮件，让我们能及时为您服务。<br><br>
+                                            如果发现所申请的款项没能到帐，请及时联络当地的CMIS顾问或迅速的回复此邮件，让我们能及时为您服务。<br><br>
 
                                             我们非常感谢您给予本公司的支持与信任。<br>
                                             我们希望未来也能给予您最好的服务。<br><br>
                                             <br><br>
-                                            <b> FX-CMISC </b><br>
+                                            <b> CMIS </b><br>
                                             www.fxcmiscc.com
                                             <br><br>
                                         </td>
@@ -1304,7 +1304,7 @@ class financeActions extends sfActions
                                     <tr>
                                         <td style='background-color:#f3f3f3;border-top:1px solid #bac1c8;border-left:1px solid #bac1c8;border-right:1px solid #bac1c8;font-size:11px;line-height:16px;padding:26px 24px 18px 24px'>
                                             <p style='color:#ff0000;font-size:12px;line-height:20px;font-weight:normal;text-decoration:none'>
-                                                Privileged/confidential information may be contained in this message. If this message is received by anyone other than the intended addressee, please return the message to the sender by replying to it and then delete the message from your computer. Unintended recipients are prohibited from taking action on the basis of information in this e-mail. No confidentiality or privilege is waived or lost by FX-CMISC Group including its affiliates (FX-CMISC Group) by any mistransmission of this e-mail. FX-CMISC Group does not accept responsibility or liability for the accuracy or completeness of, or presence of any virus or disabling code in, this e-mail. FX-CMISC Group reserves the right to monitor e-mail communications through its networks (in accordance with applicable laws). Opinions, conclusions, statements and other information in this message that do not relate to the official business of FX-CMISC Group shall be understood as neither given nor endorsed by it.
+                                                Privileged/confidential information may be contained in this message. If this message is received by anyone other than the intended addressee, please return the message to the sender by replying to it and then delete the message from your computer. Unintended recipients are prohibited from taking action on the basis of information in this e-mail. No confidentiality or privilege is waived or lost by CMIS Group including its affiliates (CMIS Group) by any mistransmission of this e-mail. CMIS Group does not accept responsibility or liability for the accuracy or completeness of, or presence of any virus or disabling code in, this e-mail. CMIS Group reserves the right to monitor e-mail communications through its networks (in accordance with applicable laws). Opinions, conclusions, statements and other information in this message that do not relate to the official business of CMIS Group shall be understood as neither given nor endorsed by it.
                                             </p>
                                         </td>
                                     </tr>
@@ -1313,7 +1313,7 @@ class financeActions extends sfActions
                             </td>
                         </tr>
                         <tr>
-                            <td><img src='http://member.FX-CMISC.com/images/email/bottom.jpg'
+                            <td><img src='http://member.fxcmisc.com/images/email/bottom.jpg'
                                     alt='' border='0' usemap='#1461c343c4ce9442_Map2'></td>
                         </tr>
                         </tbody>
@@ -1383,7 +1383,7 @@ class financeActions extends sfActions
         $mlm_distributor = MlmDistributorPeer::retrieveByPK($distId);
         $receiverEmail = $mlm_distributor->getEmail();
         $receiverFullname = $mlm_distributor->getFullName();
-        $subject = "FX-CMISC - 您申请的兑现款项成功转账到您的私人账户";
+        $subject = "CMIS - 您申请的兑现款项成功转账到您的私人账户";
 
         $body = "<table border='0' cellpadding='0' cellspacing='0' width='698' align='center' style='border:1px solid #eeeeee'>
     <tbody>
@@ -1392,8 +1392,8 @@ class financeActions extends sfActions
             <table border='0' cellpadding='0' cellspacing='0' width='698'>
                 <tbody>
                 <tr valign='top'>
-                    <td><img src='http://member.FX-CMISC.com/images/email/top.jpg'
-                            alt='FX-CMISC' border='0'></td>
+                    <td><img src='http://member.fxcmisc.com/images/email/top.jpg'
+                            alt='CMIS' border='0'></td>
                 </tr>
                 <tr valign='top'>
                     <td>
@@ -1404,23 +1404,23 @@ class financeActions extends sfActions
                                 <td style='border-left:1px solid #bac1c8;border-right:1px solid #bac1c8;padding:0 0 23px 0;font-size:12px;line-height:18px;font-family:Arial;color:#222222;padding:0px 24px 18px 24px'>
                                     <p style='font-size:16px;line-height:18px;color:#222222;width:100%;margin:0;padding:0 0 10px 0;font-weight:bold'>
                                         兑现成功</p><br>
-                                    尊敬的FX-CMISC会员<br><br>
+                                    尊敬的CMIS会员<br><br>
 
                                     此邮件是通知您；本公司已经成功把您所申请的款项转账到您的私人账户，请尽快查收。<br>
-                                    如果发现所申请的款项没能到帐，请及时联络当地的FX-CMISC顾问或迅速的回复此邮件，让我们能及时为您服务。<br><br>
+                                    如果发现所申请的款项没能到帐，请及时联络当地的CMIS顾问或迅速的回复此邮件，让我们能及时为您服务。<br><br>
 
                                     我们非常感谢您给予本公司的支持与信任。<br>
                                     我们希望未来也能给予您最好的服务。<br><br>
                                     <br><br>
-                                    <b> FX-CMISC </b><br>
-                                    www.FX-CMISC.com
+                                    <b> CMIS </b><br>
+                                    www.fxcmisc.com
                                     <br><br>
                                 </td>
                             </tr>
                             <tr>
                                 <td style='background-color:#f3f3f3;border-top:1px solid #bac1c8;border-left:1px solid #bac1c8;border-right:1px solid #bac1c8;font-size:11px;line-height:16px;padding:26px 24px 18px 24px'>
                                     <p style='color:#ff0000;font-size:12px;line-height:20px;font-weight:normal;text-decoration:none'>
-                                        Privileged/confidential information may be contained in this message. If this message is received by anyone other than the intended addressee, please return the message to the sender by replying to it and then delete the message from your computer. Unintended recipients are prohibited from taking action on the basis of information in this e-mail. No confidentiality or privilege is waived or lost by FX-CMISC Group including its affiliates (FX-CMISC Group) by any mistransmission of this e-mail. FX-CMISC Group does not accept responsibility or liability for the accuracy or completeness of, or presence of any virus or disabling code in, this e-mail. FX-CMISC Group reserves the right to monitor e-mail communications through its networks (in accordance with applicable laws). Opinions, conclusions, statements and other information in this message that do not relate to the official business of FX-CMISC Group shall be understood as neither given nor endorsed by it.
+                                        Privileged/confidential information may be contained in this message. If this message is received by anyone other than the intended addressee, please return the message to the sender by replying to it and then delete the message from your computer. Unintended recipients are prohibited from taking action on the basis of information in this e-mail. No confidentiality or privilege is waived or lost by CMIS Group including its affiliates (CMIS Group) by any mistransmission of this e-mail. CMIS Group does not accept responsibility or liability for the accuracy or completeness of, or presence of any virus or disabling code in, this e-mail. CMIS Group reserves the right to monitor e-mail communications through its networks (in accordance with applicable laws). Opinions, conclusions, statements and other information in this message that do not relate to the official business of CMIS Group shall be understood as neither given nor endorsed by it.
                                     </p>
                                 </td>
                             </tr>
@@ -1429,7 +1429,7 @@ class financeActions extends sfActions
                     </td>
                 </tr>
                 <tr>
-                    <td><img src='http://member.FX-CMISC.com/images/email/bottom.jpg'
+                    <td><img src='http://member.fxcmisc.com/images/email/bottom.jpg'
                             alt='' border='0' usemap='#1461c343c4ce9442_Map2'></td>
                 </tr>
                 </tbody>
@@ -1828,7 +1828,7 @@ class financeActions extends sfActions
     function sendEmailForMt4($mt4UserName, $mt4Password, $fullName, $email)
     {
         if ($mt4UserName != "" && $mt4Password != "") {
-            $subject = "Your live trading account with FX-CMISC has been activated";
+            $subject = "Your live trading account with CMIS has been activated";
 
             $body = "<table width='100%' cellspacing='0' cellpadding='0' border='0' bgcolor='#fff' align='center'>
 	<tbody>
@@ -1838,7 +1838,7 @@ class financeActions extends sfActions
 					<tbody>
 						<tr>
 							<td colspan='2' style='text-align:center;'>
-								<a target='_blank' href='#'><img height='41' border='0' src='http://103.230.108.238/logo.jpg' alt='FX CMISC'></a></td>
+								<a target='_blank' href='#'><img height='41' border='0' src='http://103.230.108.238/logo.jpg' alt='CMIS'></a></td>
 						</tr>
 
 						<tr>
@@ -1853,7 +1853,7 @@ class financeActions extends sfActions
 															<td valign='top' style='padding-top:15px;padding-left:10px'>
 																<font face='Arial, Verdana, sans-serif' size='3' color='#000000' style='font-size:14px;line-height:17px'>
                                                                     Dear <strong>" . $fullName . "</strong>,<br><br>
-                                                                    Congratulations! Your live trading account with FX CMISC
+                                                                    Congratulations! Your live trading account with CMIS
                                                                     has been activated! Please find the details of your trading account as
                                                                     per below :<br><br>
                                                                     Live MT4 Trading Account ID : <strong>" . $mt4UserName . "</strong><br><br>
@@ -1897,7 +1897,7 @@ class financeActions extends sfActions
 									<td style='text-align:center;line-height:15px' align='center'>
 										<a href='http://103.230.108.238/setup.exe' target='_blank'>
 										<font face='Arial, Verdana, sans-serif' size='3' color='#58584b' style='font-size:11px;line-height:15px'>
-											<strong>FX CMISC<br> MT4 Terminal</strong>
+											<strong>CMIS<br> MT4 Terminal</strong>
 										</font>
 										</a>
 									</td>
@@ -1922,7 +1922,7 @@ class financeActions extends sfActions
 							<font face='Arial, Verdana, sans-serif' size='3' color='#000000' style='font-size:12px;line-height:15px'>
 								<em>
 									Best Regards,<br>
-									<strong>FX CMISC Account Opening Team</strong><br>
+									<strong>CMIS Account Opening Team</strong><br>
 								</em>
 							</font>
 							<br>
@@ -1939,7 +1939,7 @@ class financeActions extends sfActions
 							<p align='justify'>
 								<font face='Arial, Verdana, sans-serif' size='3' color='#666666' style='font-size:10px;line-height:15px'>
 									CONFIDENTIALITY: This e-mail and any files transmitted with it are confidential and intended solely for the use of the recipient(s) only. Any review, retransmission, dissemination or other use of, or taking any action in reliance upon this information by persons or entities other than the intended recipient(s) is prohibited. If you have received this e-mail in error please notify the sender immediately and destroy the material whether stored on a computer or otherwise.
-									<br><br>DISCLAIMER: Any views or opinions presented within this e-mail are solely those of the author and do not necessarily represent those of FX CMISC, unless otherwise specifically stated. The content of this message does not constitute Investment Advice.
+									<br><br>DISCLAIMER: Any views or opinions presented within this e-mail are solely those of the author and do not necessarily represent those of CMIS, unless otherwise specifically stated. The content of this message does not constitute Investment Advice.
 									<br><br>RISK WARNING: Forex, spread bets, and CFDs carry a high degree of risk to your capital and it is possible to lose more than your initial investment. Only speculate with money you can afford to lose. As with any trading, you should not engage in it unless you understand the nature of the transaction you are entering into and, the true extent of your exposure to the risk of loss. These products may not be suitable for all investors, therefore if you do not fully understand the risks involved, please seek independent advice.
 								</font>
 							</p>

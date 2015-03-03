@@ -167,7 +167,7 @@
 <!--end of content-->
 <!--------------------------------Glossy menu------------------------------------->
 
-<div id="footer">Copyright &copy; 2012 fxcmiscc.com. All right reserved.&nbsp;&nbsp;</div>
+<div id="footer">Copyright &copy; 2012 CMIS Trader | All right reserved.&nbsp;&nbsp;</div>
 <!--end of footer-->
 
 </div>

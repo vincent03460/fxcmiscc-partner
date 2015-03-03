@@ -257,7 +257,7 @@ ul, ol {
                                 <img src="/css/pages/banner/bg1.png"></div>
                             <div class="slide-main">
                                 <img src="/css/pages/banner/bg1-word.png"
-                                     alt="We are FX-CMISC. A worldwide leader in currency trading.">
+                                     alt="We are CMIS. A worldwide leader in currency trading.">
 
                             </div>
                             <div class="slide-tc">
@@ -338,13 +338,13 @@ ul, ol {
             <!--#####################################################################-->
 
             <div class="hr2"></div>
-            <a href="<?php echo url_for("/home/fxcmisccExecutor")?>"><p><img width="582" height="184" src="/css/pages/banner/banner-08.jpg" alt="" title="FX-CMISC EXECUTOR™" class="aligncenter size-full wp-image-162"></p></a>
+            <a href="<?php echo url_for("/home/fxcmisccExecutor")?>"><p><img width="582" height="184" src="/css/pages/banner/banner-08.jpg" alt="" title="CMIS EXECUTOR™" class="aligncenter size-full wp-image-162"></p></a>
 
             <strong><?php echo __('SIXSTAR') ?></strong> <?php echo __('have sought to structure an investment which addresses all the challenges which investors face today.') ?>
             <a href="<?php echo url_for("/home/investment")?>" style="color: #0080C8"><?php echo __('Learn more') ?> ?</a>
 
             <div class="hr2"></div>
-            <a href="<?php echo url_for("/home/fxcmisccExecutor")?>"><p><img width="582" height="184" src="/css/pages/banner/bg2.png" alt="" title="FX-CMISC EXECUTOR™" class="aligncenter size-full wp-image-162"></p></a>
+            <a href="<?php echo url_for("/home/fxcmisccExecutor")?>"><p><img width="582" height="184" src="/css/pages/banner/bg2.png" alt="" title="CMIS EXECUTOR™" class="aligncenter size-full wp-image-162"></p></a>
 
             <!--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^-->
             <!--<div class="hr2"></div>
@@ -404,7 +404,7 @@ ul, ol {
 
         <div id="sidebar-bottom">
             <ul></ul>
-            <p style="text-align: center;">© 2012 - 2015 fxcmiscc.com <br> All rights reserved.</p>
+            <p style="text-align: center;">© 2012 - 2015 CMIS Trader <br> All rights reserved.</p>
         </div>
     </div>
 </div>

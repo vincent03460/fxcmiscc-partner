@@ -3,10 +3,10 @@ default:
     content-type: text/html
 
   metas:
-    title:        FX-CMISC Administrator Backend
-    robots:       FX-CMISC Administrator Backend
-    description:  FX-CMISC Administrator Backend
-    keywords:     FX-CMISC Administrator Backend
+    title:        CMIS Administrator Backend
+    robots:       CMIS Administrator Backend
+    description:  CMIS Administrator Backend
+    keywords:     CMIS Administrator Backend
     language:     en
 
   stylesheets:    []
