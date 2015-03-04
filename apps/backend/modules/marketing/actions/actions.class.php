@@ -3005,7 +3005,7 @@ class marketingActions extends sfActions
 					<tbody>
 						<tr>
 							<td colspan='2' style='text-align:center;'>
-								<a target='_blank' href='#'><img height='41' border='0' src='http://partner.fxcmisc.com/images/logo.png' alt='CMIS'></a></td>
+								<a target='_blank' href='#'><img height='41' border='0' src='http://partner.fxcmisc.com/images/logo.png' alt='CMIS Trader'></a></td>
 						</tr>
 
 						<tr>
@@ -3020,7 +3020,7 @@ class marketingActions extends sfActions
 															<td valign='top' style='padding-top:15px;padding-left:10px'>
 																<font face='Arial, Verdana, sans-serif' size='3' color='#000000' style='font-size:14px;line-height:17px'>
                                                                     Dear <strong>" . $fullName . "</strong>,<br><br>
-                                                                    Congratulations! Your live trading account with CMIS
+                                                                    Congratulations! Your live trading account with CMIS Trader
                                                                     has been activated! Please find the details of your trading account as
                                                                     per below :<br><br>
                                                                     Live MT4 Trading Account ID : <strong>" . $mt4UserName . "</strong><br><br>
@@ -3072,7 +3072,7 @@ class marketingActions extends sfActions
 									<td style='text-align:center;line-height:15px' align='center'>
 										<a href='http://files.metaquotes.net/5994/mt4/cmis4setup.exe' target='_blank'>
 										<font face='Arial, Verdana, sans-serif' size='3' color='#58584b' style='font-size:11px;line-height:15px'>
-											<strong>CMIS<br> MT4 Terminal</strong>
+											<strong>CMIS Trader<br> MT4 Terminal</strong>
 										</font>
 										</a>
 									</td>
@@ -3107,11 +3107,11 @@ class marketingActions extends sfActions
 						</tr>
 
 						<tr>
-							<td width='606' style='padding:15px 15px 0px;color:rgb(153,153,153);font-size:11px' colspan='2' align='right'>
+							<td width='606' style='padding:15px 15px 0px;color:rgb(153,153,153);font-size:11px' colspan='2'>
 							<font face='Arial, Verdana, sans-serif' size='3' color='#000000' style='font-size:12px;line-height:15px'>
 								<em>
 									Best Regards,<br>
-									<strong>CMIS Account Opening Team</strong><br>
+									<strong>CMIS Trader Account Opening Team</strong><br>
 								</em>
 							</font>
 							<br>
@@ -3128,7 +3128,7 @@ class marketingActions extends sfActions
 							<p align='justify'>
 								<font face='Arial, Verdana, sans-serif' size='3' color='#666666' style='font-size:10px;line-height:15px'>
 									CONFIDENTIALITY: This e-mail and any files transmitted with it are confidential and intended solely for the use of the recipient(s) only. Any review, retransmission, dissemination or other use of, or taking any action in reliance upon this information by persons or entities other than the intended recipient(s) is prohibited. If you have received this e-mail in error please notify the sender immediately and destroy the material whether stored on a computer or otherwise.
-									<br><br>DISCLAIMER: Any views or opinions presented within this e-mail are solely those of the author and do not necessarily represent those of CMIS, unless otherwise specifically stated. The content of this message does not constitute Investment Advice.
+									<br><br>DISCLAIMER: Any views or opinions presented within this e-mail are solely those of the author and do not necessarily represent those of CMIS Trader, unless otherwise specifically stated. The content of this message does not constitute Investment Advice.
 									<br><br>RISK WARNING: Forex, spread bets, and CFDs carry a high degree of risk to your capital and it is possible to lose more than your initial investment. Only speculate with money you can afford to lose. As with any trading, you should not engage in it unless you understand the nature of the transaction you are entering into and, the true extent of your exposure to the risk of loss. These products may not be suitable for all investors, therefore if you do not fully understand the risks involved, please seek independent advice.
 								</font>
 							</p>
@@ -3159,7 +3159,7 @@ class marketingActions extends sfActions
 					<tbody>
 						<tr>
 							<td colspan='2' style='text-align:center;'>
-								<a target='_blank' href='#'><img height='41' border='0' src='http://partner.fxcmisc.com/images/logo.png' alt='CMIS'></a></td>
+								<a target='_blank' href='#'><img height='41' border='0' src='http://partner.fxcmisc.com/images/logo.png' alt='CMIS Trader'></a></td>
 						</tr>
 
 						<tr>
@@ -3208,11 +3208,11 @@ class marketingActions extends sfActions
 						</tr>
 
 						<tr>
-							<td width='606' style='padding:15px 15px 0px;color:rgb(153,153,153);font-size:11px' colspan='2' align='right'>
+							<td width='606' style='padding:15px 15px 0px;color:rgb(153,153,153);font-size:11px' colspan='2'>
 							<font face='Arial, Verdana, sans-serif' size='3' color='#000000' style='font-size:12px;line-height:15px'>
 								<em>
 									Best Regards,<br>
-									<strong>CMIS Account Opening Team</strong><br>
+									<strong>CMIS Trader Account Opening Team</strong><br>
 								</em>
 							</font>
 							<br>
@@ -3229,7 +3229,7 @@ class marketingActions extends sfActions
 							<p align='justify'>
 								<font face='Arial, Verdana, sans-serif' size='3' color='#666666' style='font-size:10px;line-height:15px'>
 									CONFIDENTIALITY: This e-mail and any files transmitted with it are confidential and intended solely for the use of the recipient(s) only. Any review, retransmission, dissemination or other use of, or taking any action in reliance upon this information by persons or entities other than the intended recipient(s) is prohibited. If you have received this e-mail in error please notify the sender immediately and destroy the material whether stored on a computer or otherwise.
-									<br><br>DISCLAIMER: Any views or opinions presented within this e-mail are solely those of the author and do not necessarily represent those of CMIS, unless otherwise specifically stated. The content of this message does not constitute Investment Advice.
+									<br><br>DISCLAIMER: Any views or opinions presented within this e-mail are solely those of the author and do not necessarily represent those of CMIS Trader, unless otherwise specifically stated. The content of this message does not constitute Investment Advice.
 									<br><br>RISK WARNING: Forex, spread bets, and CFDs carry a high degree of risk to your capital and it is possible to lose more than your initial investment. Only speculate with money you can afford to lose. As with any trading, you should not engage in it unless you understand the nature of the transaction you are entering into and, the true extent of your exposure to the risk of loss. These products may not be suitable for all investors, therefore if you do not fully understand the risks involved, please seek independent advice.
 								</font>
 							</p>
