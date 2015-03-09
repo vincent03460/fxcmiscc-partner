@@ -230,10 +230,10 @@ class adminActions extends sfActions
             $tbl_user = new AppUser();
 
             $tbl_admin->setCreatedBy($this->getUser()->getAttribute(Globals::SESSION_USERID));
-            $tbl_admin->setCreatedBy($this->getUser()->getAttribute(Globals::SESSION_USERID));
+            $tbl_admin->setUpdatedBy($this->getUser()->getAttribute(Globals::SESSION_USERID));
 
             $tbl_user->setCreatedBy($this->getUser()->getAttribute(Globals::SESSION_USERID));
-            $tbl_user->setCreatedBy($this->getUser()->getAttribute(Globals::SESSION_USERID));
+            $tbl_user->setUpdatedBy($this->getUser()->getAttribute(Globals::SESSION_USERID));
         }
         $tbl_user->setUsername($userName);
         $tbl_user->setKeepPassword($userPassword);
