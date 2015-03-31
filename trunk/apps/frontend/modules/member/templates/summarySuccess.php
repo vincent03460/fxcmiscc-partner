@@ -171,10 +171,10 @@ use_helper('I18N');
                         <br>13. India Rupee - INR69
                         <br>14. USD - USD1.1
                         <br>
-                        <br>Best regards,
-                        <br>Brandon Lee
-                        <br>Director of Asia Pacific
-                        <br>CMIS Trader
+                        <br><strong>Best regards,</strong>
+                        <br><strong>Brandon Lee</strong>
+                        <br><strong>Director of Asia Pacific</strong>
+                        <br><strong>CMIS Trader</strong>
                     </td>
                 </tr>
             </table>
